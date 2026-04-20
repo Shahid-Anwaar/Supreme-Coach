@@ -10,7 +10,7 @@ import {
 } from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import { reviews, type ReviewItem } from "@/data/home";
+import { reviews, type ReviewItem } from "@/data/data";
 
 const CENTER_W = 820;
 const SIDE_W = 320;

@@ -259,18 +259,17 @@ function FramedGrid({ layout }: { layout: GridLayout }) {
     );
 }
 
-export default function IntegrationsSection() {
+export default function IntegrationsSection({title, description}: {title: string, description: string}) {
     return (
         <section className="bg-white px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-10 lg:py-18">
             <div className="mx-auto max-w-[1500px]">
                 <div className="mx-auto max-w-[900px] text-center">
                     <h2 className="section-title text-black">
-                        Your stack, supercharged
+                        {title}
                     </h2>
 
                     <p className="section-description mx-auto mt-4 max-w-2xl text-black">
-                        Teachable flexes to fit your workflow, integrating with the apps
-                        you love while powering them into a system for growth.
+                        {description}
                     </p>
                 </div>
 

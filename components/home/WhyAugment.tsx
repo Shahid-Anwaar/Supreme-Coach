@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { whyAugmentSlides } from "@/data/home";
+import { whyAugmentSlides } from "@/data/data";
 
 function SlideDots({
     total,

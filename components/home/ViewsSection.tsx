@@ -87,10 +87,10 @@ export default function ViewsSection() {
         <section className="overflow-hidden bg-white px-4 pb-16 pt-8 sm:pb-18 sm:pt-10 md:px-6 md:pb-24 md:pt-12">
             <div className="mx-auto max-w-8xl text-center">
                 <div className="text-center">
-                    <h2 className="section-title mx-auto mb-5 max-w-[22rem] text-black sm:mb-6 sm:max-w-xl">
+                    <h2 className="section-title mx-auto mb-5 max-w-88 text-black sm:mb-6 sm:max-w-xl">
                         The future of your education business happens here
                     </h2>
-                    <p className="section-description mx-auto max-w-[38rem] text-black">
+                    <p className="section-description mx-auto max-w-152 text-black">
                         Whatever your expertise—languages, fitness, or coding—Teachable helps you deliver impactful learning, run a smarter business, and scale worldwide.
                     </p>
                 </div>

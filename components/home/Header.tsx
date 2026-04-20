@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 type NavItem = {
   label: string;
@@ -11,18 +12,19 @@ type NavItem = {
 };
 
 const DESKTOP_NAV_ITEMS: readonly NavItem[] = [
-  { label: "Home", href: "#" },
-  { label: "Products", href: "#" },
-  { label: "Solutions", href: "#" },
-  { label: "For Coach", href: "#" },
-  { label: "For Teams", href: "#" },
-  { label: "Community", href: "#" },
-  { label: "About", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Products", href: "/products" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "For Coach", href: "/for-coach" },
+  { label: "For Teams", href: "/for-teams" },
+  { label: "Community", href: "/community" },
+  { label: "About", href: "/about" },
   // { label: "Log in", href: "#" },
 ] as const;
 
 export default function HeaderSection() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const originalOverflow = document.body.style.overflow;
@@ -77,7 +79,7 @@ export default function HeaderSection() {
                       >
                         <span className="group-hover:text-primary">{item.label}</span>
                         <span
-                          className={`mt-1.5 h-px rounded-full bg-primary transition-all duration-300 ${index === 0 ? "w-10.5 opacity-100" : "w-0 opacity-0"
+                          className={`mt-1.5 h-px rounded-full bg-primary transition-all duration-300 ${item.href === pathname ? "w-full opacity-100" : "w-0 opacity-0"
                             }`}
                         />
                       </Link>
@@ -170,12 +172,12 @@ function PrimaryCta({
     <Link
       href={href}
       className={`group contained-btn mx-auto ${mobile
-          ? "inline-flex w-full px-6 py-3 text-[13px] sm:w-auto sm:mx-auto sm:px-8 sm:text-[14px]"
-          : "px-8 py-3 text-[13px] xl:px-10 xl:text-[14px]"
+        ? "inline-flex w-full px-6 py-3 text-[13px] sm:w-auto sm:mx-auto sm:px-8 sm:text-[14px]"
+        : "px-8 py-3 text-[13px] xl:px-10 xl:text-[14px]"
         }`}
     >
       <span className="text-[0.98em] font-semibold uppercase tracking-[0.12em]">
-      Book a call
+        Book a call
       </span>
 
       <Icon

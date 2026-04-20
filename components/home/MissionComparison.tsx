@@ -4,7 +4,7 @@ import {
   augmentMbaItems,
   traditionalMbaItems,
   type ComparisonItem,
-} from "@/data/home";
+} from "@/data/data";
 
 type ComparisonCardProps = {
   title: string;

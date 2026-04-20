@@ -64,7 +64,7 @@ export default function CoursesCommunity() {
         // </div>
         <div className="overflow-hidden bg-black text-white">
     <div className="section-container section-spacing text-center">
-        <h2 className="section-title mx-auto max-w-[22rem] text-white sm:max-w-[32rem] lg:max-w-150">
+        <h2 className="section-title mx-auto max-w-88 text-white sm:max-w-[32rem] lg:max-w-150">
             Courses. Community. Commerce. We do them better.
         </h2>
 

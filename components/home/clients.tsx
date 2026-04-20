@@ -38,7 +38,7 @@ const companyLogos = [
   },
 ];
 
-export const TESTIMONIALS: TestimonialItem[] = [
+const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 1,
     image: "/client (1).webp",

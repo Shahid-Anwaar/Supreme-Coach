@@ -144,7 +144,7 @@ export default function CustomEmblaCarousel({
                 className={`overflow-hidden bg-black ${wrapperClassName}`}
                 ref={emblaRef}
             >
-                <div className="flex h-full">
+                <div className="flex h-full cursor-grab">
                     {items.map((review, index) =>
                         CustomCard(review, index, selectedSnap)
                     )}

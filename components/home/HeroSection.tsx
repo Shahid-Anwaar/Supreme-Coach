@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { FEATURES, HERO_SLIDES, HeroSlide } from "@/data/home";
+import { FEATURES, HERO_SLIDES, HeroSlide } from "@/data/data";
 import CustomEmblaCarousel from "./CustomCarosal";
 
 export default function AugmentHeroSection() {
@@ -10,7 +10,7 @@ export default function AugmentHeroSection() {
         <section className="hero-carousel relative z-1 overflow-hidden bg-black">
             <div className="relative mx-auto flex max-w-full flex-col bg-black pb-8 pt-18 sm:pb-10 sm:pt-22 md:pt-24 lg:flex-row lg:items-center lg:pb-18 lg:pt-28 2xl:max-w-400">
                 <div className="relative z-30 mx-auto w-full px-4 pb-6 pt-4 text-center text-white sm:px-6 sm:pb-8 lg:absolute lg:left-0 lg:w-[50%] lg:px-0 lg:pb-4 lg:pl-8 lg:pr-0 lg:text-left xl:mx-16 xl:max-w-116 xl:pl-0">
-                    <h1 className="section-title mx-auto max-w-[11ch] text-[34px] font-normal leading-[1.02] tracking-tight text-white sm:max-w-[13ch] sm:text-[46px] md:max-w-[15ch] md:text-[58px] lg:mx-0 lg:max-w-125 lg:text-[66px]">
+                    <h1 className="section-title hero-title mx-auto max-w-[11ch] text-white sm:max-w-[13ch] md:max-w-[15ch] lg:mx-0 lg:max-w-125 ">
                         The MBA for Entrepreneurs
                     </h1>
 
@@ -36,7 +36,7 @@ export default function AugmentHeroSection() {
                         ))}
                     </ul>
 
-                    <div className="mx-auto mt-7 flex w-full max-w-[22rem] flex-col items-center gap-3 sm:mt-8 sm:max-w-none lg:mx-0 lg:mt-10.5 lg:items-start">
+                    <div className="mx-auto mt-7 flex w-full max-w-88 flex-col items-center gap-3 sm:mt-8 sm:max-w-none lg:mx-0 lg:mt-10.5 lg:items-start">
                         <Link
                             href="https://augment.school/sHK7SoG?"
                             className="group flex w-full items-center justify-center px-6 contained-btn sm:w-auto sm:min-w-65"

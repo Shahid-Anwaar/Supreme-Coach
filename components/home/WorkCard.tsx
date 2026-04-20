@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import { HowItWorksCardItem } from "@/data/home";
+import { HowItWorksCardItem } from "@/data/data";
 
 type HowItWorksCardProps = {
     item: HowItWorksCardItem;

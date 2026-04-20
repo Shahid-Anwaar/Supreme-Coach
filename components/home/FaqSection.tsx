@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import { faqs, type FAQItem } from "@/data/home";
+import { FAQItem } from "@/data/data";
 
 type FAQRowProps = {
   item: FAQItem;
@@ -48,8 +48,8 @@ function FAQRow({ item, isOpen, onToggle }: FAQRowProps) {
   );
 }
 
-export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+export default function FAQSection({faqs}: {faqs: any}) {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section className="bg-[#f3f4f6]">
@@ -69,7 +69,7 @@ export default function FAQSection() {
           </div>
 
           <div className="pt-0 md:pt-0.5">
-            {faqs.map((item, index) => (
+            {faqs.map((item: FAQItem, index: number) => (
               <FAQRow
                 key={item.question}
                 item={item}

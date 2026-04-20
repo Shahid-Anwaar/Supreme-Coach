@@ -24,9 +24,11 @@ export type TestimonialItem = {
   id: number;
   name: string;
   role: string;
+  title?: string;
   avatar: string;
   text: string;
   linkedin?: boolean;
+  schoolLink?: string;
 };
 
 export type WhyAugmentSlide = {
@@ -91,6 +93,79 @@ export type HowItWorksCardItem = {
     text: string;
   }[];
 };
+
+export const ProductStoriesTestimonials = [
+  {
+    id: 1,
+    avatar:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472413569b297952cca46_913afd2f27884db7e271d63afae0dc26_AnnaGeiger.webp",
+    name: "Anna Geiger",
+    role: "The Science of Reading",
+    title:   "Revenue Engine",
+    text: "I’ve been using Teachable since 2017, and it continues to be a major revenue generator for my business. It’s easy to create and upload content, and I never have to worry about tax compliance or payment processing. I’ve tried other platforms—Teachable is hands down the best for me and my students.",
+    schoolLink: "#",
+  },
+  {
+    id: 2,
+    avatar:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47241731fcd597b0e34c7_5eac61fb053a8becdbd0a29455c59bb5_LeilaGharani_xel.webp",
+    name: "Leila Gharani",
+    role: "XelPlus Academy",
+    title: "Global Reach",
+    text: "With students from 188 countries, tax compliance could have been a nightmare. Teachable handles it all, so instead of drowning in admin work, we can focus on helping our members upgrade their data skills. The platform makes our global reach possible.",
+    schoolLink: "#",
+  },
+  {
+    id: 3,
+    avatar:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e696146624fd498ea179d8_fd7a70083fe8fe915699fc2085035a53_ErinBooth.webp",
+    name: "Erin Booth",
+    role: "Virtual Assistant Coach",
+    title: "Get Full Control",
+    text: "You should never have anyone dictating the prices you charge for your content. With Teachable, you get full control—you can talk to your students, match their learning styles, and build real relationships instead of going through third parties.",
+    schoolLink: "#",
+  },
+  {
+    id: 4,
+    avatar:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472416ae55881ceb0b6ab_a2de2377ce4b09a8b5f8b765899567ca_RazvanCiobanu.webp",
+    name: "Razvan Ciobanu",
+    role: "Voxyde",
+    title: "Peace of Mind",
+    text: "Teachable is consistently monitored and delivers excellent uptime. As an instructor, that peace of mind is invaluable. On top of that, Teachable’s built-in tax handling has been a huge advantage, freeing me up to focus more on creating content and supporting my students.",
+    schoolLink: "#",
+  },
+  {
+    id: 5,
+    avatar:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e696151b1e1847cbe8c324_6f744f022c2b792ccc48c4e542526f9f_FrancescoCositore.webp",
+    name: "Francesco Cositore",
+    role: "Vaporetto Italiano",
+    title: "Has Been Essential",
+    text: "Teachable has been essential for the growth of my business and for reaching thousands of students all over the world. It automatically takes care of payments, taxes, and enrollments, freeing me from administrative tasks so I can fully focus on the creative side of my job.",
+    schoolLink: "#",
+  },
+  {
+    id: 6,
+    avatar:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472412b52873214f161ed_af941bac35e86470a5fc50c0e4d11805_DanGeorge.webp",
+    name: "Dan George",
+    role: "FlightInsight",
+    title: "10,000+ Students",
+    text: "Teachable gave me the structure to scale beyond the classroom. What started as a few dozen students has grown into 10,000+ pilots worldwide. My courses now run 24/7, serving pilots in every time zone, while I focus on teaching and Teachable handles the technology.",
+    schoolLink: "#",
+  },
+  {
+    id: 7,
+    avatar:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472411eac276ecb2a885d_acd3419cdc23d64a536b9362a0f77c55_Headshot.webp",
+    name: "Huzan R & Nicoleta S",
+    role: "Speak Norsk",
+    title: "Made Simple",
+    text: "We realized we couldn’t do everything on our own—teaching, managing operations, and course delivery. That’s when Teachable came in. The platform made it simple to create and deliver our programs, and even let us offer a free course so students could get comfortable before enrolling.",
+    schoolLink: "#",
+  },
+];
 
 export const HOW_IT_WORKS_CARDS: HowItWorksCardItem[] = [
   {
@@ -553,6 +628,42 @@ export const whyAugmentSlides: WhyAugmentSlide[] = [
     image: "/step3.webp",
     imageAlt: "Founder community member collage",
     layout: "right-community",
+  },
+];
+
+export const COURSE_FEATURES = [
+    {
+        title: "On-the-go learning",
+        description:
+            "It’s your course, anywhere. Let students take it to go, with offline access on our top-rated iOS and Android mobile apps.",
+    },
+    {
+        title: "Meaningful engagement",
+        description:
+            "Motivate your students and drive their progress with graded quizzes, certificates, drip content, and more.",
+    },
+    {
+        title: "Conversion boosters",
+        description:
+            "Reach the right people (and make more sales) using marketing features like student referrals and upsells.",
+    },
+];
+
+export const COURSE_FEATURES2 = [
+  {
+    title: "Intuitive course builder",
+    description:
+      "Our drag-and-drop builder makes it easy to create and customize your course. Rearrange and add content blocks with ease.",
+  },
+  {
+    title: "Powered by AI",
+    description:
+      "Use our built-in AI tools to kickstart ideas, draft content, create sales pages, transcribe and translate video subtitles, and more in no time.",
+  },
+  {
+    title: "Make it yours",
+    description:
+      "With advanced customizations, a custom domain, and a white label website, you can make your course totally yours.",
   },
 ];
 

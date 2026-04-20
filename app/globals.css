@@ -74,7 +74,7 @@ body {
 
   /* Secondary outlined action button */
   .outlined-btn {
-    @apply inline-flex rounded-full items-center uppercase justify-center border border-black px-4 py-3 font-semibold text-black transition-colors bg-white hover:bg-gray-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply inline-flex rounded-full items-center uppercase text-[15px] justify-center border border-black px-4 py-3 font-semibold text-black transition-colors bg-white hover:bg-gray-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50;
   }
 
   /* Neutral close / cancel button */
@@ -126,7 +126,7 @@ body {
 
   /* Hero main heading */
   .hero-title {
-    @apply text-[34px] font-bold leading-[1.05] tracking-[-0.03em] sm:text-[48px] lg:text-[64px];
+    @apply text-[34px] font-normal leading-[1.02] tracking-tight sm:text-[46px] md:text-[58px] lg:text-[66px];
   }
 
   /* Hero supporting text */
@@ -167,7 +167,7 @@ body {
   }
 }
 
-.embla {
+/* .embla {
   overflow: hidden;
 }
 
@@ -182,4 +182,4 @@ body {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
-}
+} */

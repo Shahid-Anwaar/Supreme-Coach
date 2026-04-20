@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { instructors, type InstructorItem } from "@/data/home";
+import { instructors, type InstructorItem } from "@/data/data";
 
 const CARD_WIDTH = 292;
 const CARD_GAP = 24;

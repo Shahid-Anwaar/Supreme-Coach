@@ -1,6 +1,6 @@
 "use client";
 
-import { HOW_IT_WORKS_CARDS } from "@/data/home";
+import { HOW_IT_WORKS_CARDS } from "@/data/data";
 import WorksCard from "./WorkCard";
 
 const steps = [

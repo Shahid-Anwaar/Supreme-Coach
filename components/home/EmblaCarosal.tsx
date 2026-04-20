@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
-import { ReviewItem, reviews } from "@/data/home";
+import { ReviewItem, reviews } from "@/data/data";
 import Image from "next/image";
 
 type EmblaCarouselProps = {

@@ -4,11 +4,9 @@ import FAQSection from "@/components/home/FaqSection";
 import FeaturedInSection from "@/components/home/FeaturedIn";
 import Footer from "@/components/home/Footer";
 import MissionComparisonSection from "@/components/home/MissionComparison";
-import HeaderSection from "@/components/home/Header";
 import TeaserVideoSection from "@/components/home/TeaserVideo";
 import StudentTestimonialsSection from "@/components/home/TestmonialSection";
 import WhyAugmentSection from "@/components/home/WhyAugment";
-import Chats from "@/components/home/Chats";
 import EmblaCarousel from "@/components/home/EmblaCarosal";
 import AugmentHeroSection from "@/components/home/HeroSection";
 import ViewsSection from "@/components/home/ViewsSection";
@@ -18,7 +16,7 @@ import ClientsSection from "@/components/home/clients";
 import CoursesCommunity from "@/components/home/CoursesCommunity";
 import { faqs } from "@/data/data";
 
-export default function Home() {
+export default function AllPage() {
   return (
     <main className="bg-white text-black relative">
       <AugmentHeroSection />
@@ -27,10 +25,10 @@ export default function Home() {
       <FacultySection />
       <EmblaCarousel />
       <HowItWorksCard />
-      <IntegrationsSection
-        title="Your stack, supercharged"
-        description="Teachable flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
-      />
+  <IntegrationsSection
+                  title="It's your business, your way"
+                  description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
+              />
       <ClientsSection />
       <BookCallSection
         title="15-Day Money-Back Guarantee"
@@ -58,26 +56,11 @@ export default function Home() {
       />
       <CoursesCommunity />
 
-      {/* <TeaserVideoSection /> */}
-      {/* <WhyAugmentSection /> */}
-      {/* <StudentTestimonialsSection /> */}
-      {/* <BookCallSection
-        title="Stand out with the Augment LinkedIn Certificate"
-        btnText="Enroll Now"
-        subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
-        topClasses="bg-[#f3f4f6]"
-        bottomClasses="bg-[#000000]"
-        imgSrc="/certificate.webp"
-      />
-      <MissionComparisonSection />
-      <BookCallSection
-        title="15-Day Money-Back Guarantee"
-        btnText="Enroll Now"
-        subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-        topClasses="bg-[#000000]"
-        bottomClasses="bg-[#f3f4f6]"
-      />
-      <FAQSection /> */}
+      <TeaserVideoSection />
+      <WhyAugmentSection />
+      <StudentTestimonialsSection />
+      
+    
       <BookCallSection
         title="Book a Call with a Program Advisor"
         icon="solar:phone-linear"

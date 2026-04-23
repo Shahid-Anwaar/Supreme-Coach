@@ -285,7 +285,7 @@ export function TestimonialCard({ item }: { item: TestimonialItem }) {
   );
 }
 
-export default function ClientsSection() {
+export default function ClientsSection({ title }: { title: string }) {
   return (
     <section className="overflow-hidden bg-[#f3f4f6] py-14 sm:py-16 md:py-20 lg:py-24 xl:py-32">
       <div className="mx-auto max-w-400 px-4 sm:px-6 lg:px-0">
@@ -293,7 +293,7 @@ export default function ClientsSection() {
           <span className="section-label text-black">Testimonials</span>
 
           <h2 className="section-title mx-auto mt-5 text-black">
-            Trusted by growing companies
+            {title}
           </h2>
 
           <CustomEmblaCarousel

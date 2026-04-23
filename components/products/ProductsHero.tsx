@@ -7,7 +7,7 @@ export default function ProductsHeroSection() {
         <section className="bg-white">
             <div className="section-container max-w-390 relative pb-10 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24 pt-32">
                 <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(520px,1fr)] lg:gap-10 xl:gap-14">
-                    <div className="max-w-150 text-center lg:text-left">
+                    <div className="max-w-150 mx-auto text-center lg:text-left">
                         <p className="section-label text-black">
                             — Teachable
                         </p>

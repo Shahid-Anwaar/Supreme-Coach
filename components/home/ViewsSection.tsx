@@ -4,7 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const views = [
+type View = { title: string; description: string; image: string };
+
+const views: View[] = [
     {
         title: "Your view",
         description:
@@ -32,6 +34,7 @@ function ProgressBar({
 
     useEffect(() => {
         if (!active) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setStarted(false);
             return;
         }
@@ -63,13 +66,15 @@ function ProgressBar({
     );
 }
 
-export default function ViewsSection() {
+export default function ViewsSection({ items }: { items?: View[] }) {
     const [activeIndex, setActiveIndex] = useState(0);
     const [progressVersion, setProgressVersion] = useState(0);
 
+    const usedItems = items && items.length > 0 ? items : views;
+
     useEffect(() => {
         const interval = window.setInterval(() => {
-            setActiveIndex((prev) => (prev + 1) % views.length);
+            setActiveIndex((prev) => (prev + 1) % usedItems.length);
             setProgressVersion((prev) => prev + 1);
         }, 5000);
 
@@ -113,7 +118,7 @@ export default function ViewsSection() {
 
                 <div className="mx-auto mt-10 max-w-330 overflow-hidden rounded-[12px] bg-gray-100 sm:mt-12 sm:rounded-[15px]">
                     <div className="relative mb-3 aspect-[4/3] overflow-hidden bg-gray-100 sm:mb-4 sm:aspect-[16/10] md:aspect-[1300/700]">
-                        {views.map((view, index) => (
+                        {usedItems.map((view, index) => (
                             <Image
                                 key={view.image}
                                 src={view.image}
@@ -127,12 +132,12 @@ export default function ViewsSection() {
                         ))}
                     </div>
 
-                    <div className="mt-8 grid grid-cols-1 gap-2 px-2 py-3 sm:mt-10 sm:gap-3 sm:px-3 sm:py-4 md:mt-14 md:grid-cols-2 md:px-0 md:py-4">
-                        {views.map((view, index) => (
+                    <div className="mt-8 flex flex-col gap-2 px-2 py-3 sm:mt-10 sm:gap-3 sm:px-3 sm:py-4 md:mt-14 md:flex-row md:flex-wrap md:px-0 md:py-4">
+                        {usedItems.map((view, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleCardClick(index)}
-                                className="cursor-pointer rounded-[12px] px-4 py-4 text-left transition-colors duration-200 hover:bg-black/[0.03] sm:px-5 md:rounded-none md:px-8"
+                                className="w-full cursor-pointer rounded-[12px] px-4 py-4 text-left transition-colors duration-200 hover:bg-black/[0.03] sm:px-5 md:min-w-0 md:flex-1 md:basis-0 md:rounded-none md:px-6 lg:px-8"
                             >
                                 <ProgressBar
                                     active={activeIndex === index}
@@ -141,7 +146,7 @@ export default function ViewsSection() {
                                 <h3 className="mb-2 mt-3 text-[17px] font-bold leading-tight text-black/85 sm:text-lg">
                                     {view.title}
                                 </h3>
-                                <p className="text-[15px] leading-5.5 text-gray-900 sm:text-[16px] sm:leading-6 md:text-[18px]">
+                                <p className="text-[15px] md:text-[16px] leading-5.5 text-gray-900 sm:text-[16px] sm:leading-6 lg:text-[18px]">
                                     {view.description}
                                 </p>
                             </div>

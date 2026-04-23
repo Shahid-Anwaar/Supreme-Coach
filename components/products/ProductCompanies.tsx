@@ -10,61 +10,61 @@ type HighlightItem = {
 };
 
 const HIGHLIGHT_ITEMS: HighlightItem[] = [
-      {
+    {
         icon: "lucide:dollar-sign",
         label: "$10B+",
         content: "earned by creators on the platform",
-      },
-      {
+    },
+    {
         icon: "mdi:account-school-outline",
         label: "100M+",
         content: "students served worldwide",
-      },
-      {
+    },
+    {
         icon: "mdi:web",
         label: "150+",
         content: "countries reached by creators",
-      },
-      {
+    },
+    {
         icon: "mdi:account-group-outline",
         label: "5M+",
         content: "active learners in communities",
-      },
-      {
+    },
+    {
         icon: "mdi:credit-card-outline",
         label: "1-click",
         content: "checkout and payment experience",
-      },
-      {
+    },
+    {
         icon: "mdi:chart-line",
         label: "High growth",
         content: "tools built to increase revenue",
-      },
-      {
+    },
+    {
         icon: "mdi:book-open-page-variant-outline",
         label: "Courses",
         content: "launch self-paced or cohort-based learning",
-      },
-      {
+    },
+    {
         icon: "mdi:account-multiple-outline",
         label: "Community",
         content: "engage students beyond the course",
-      },
-      {
+    },
+    {
         icon: "mdi:cart-outline",
         label: "Commerce",
         content: "sell products, bundles, and memberships",
-      },
-      {
+    },
+    {
         icon: "mdi:email-outline",
         label: "Built-in",
         content: "email tools for nurturing your audience",
-      },
-      {
+    },
+    {
         icon: "mdi:calendar-check-outline",
         label: "Bookings",
         content: "schedule calls, sessions, and events",
-      },
+    },
     {
         icon: "mdi:chart-box-outline",
         label: "Analytics",

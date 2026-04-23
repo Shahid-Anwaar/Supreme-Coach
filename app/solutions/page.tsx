@@ -57,11 +57,36 @@ const FAQS = [
   },
 ];
 
-export default function ProductsPage() {
+const views = [
+    {
+        title: "Your view",
+        description:
+            "Easily create your products, manage your business, and customize your students' learning experience in one place.",
+        image:
+            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1edeb440ab80fdf439_0eb0b462897381c9122d4546e00aca77_ui-main-hero-tab-2.webp",
+    },
+    {
+        title: "Your student's view",
+        description:
+            "Intuitive, mobile-friendly, and built for your students to seamlessly access and discover your products and offers.",
+        image:
+            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
+    },
+   {
+        title: "Your team's view",
+        description:
+            "Give your team a clear and organized workspace to manage content, track progress, and support your students more efficiently.",
+        image:
+            "/view3.png",
+    },
+];
+
+export default function SolutionsPage() {
   return (
     <main className="bg-white text-black relative">
       <ProductsHeroSection />
-      <ProductsCompaniesSection />
+      <ViewsSection items={views} />
+      {/* <ProductsCompaniesSection /> */}
       <ProductFeaturesSection
         title="Course creation tools for higher student engagement"
         description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
@@ -87,13 +112,14 @@ export default function ProductsPage() {
       />
       {/* <ProductStories /> */}
       <ClientsSection title="Teachable success stories write themselves" />
-      <ProductTools />
+      {/* <ProductTools /> */}
       {/* <ProductSold /> */}
-      <FAQSection faqs={FAQS} />
+      {/* <FAQSection faqs={FAQS} /> */}
 
 
 
       {/* <FeaturedInSection />
+            
             <FacultySection />
             <EmblaCarousel /> */}
 

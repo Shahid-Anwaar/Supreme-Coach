@@ -15,6 +15,8 @@ import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import CoursesCommunity from "@/components/home/CoursesCommunity";
 import { faqs } from "@/data/data";
+import ProductStories from "@/components/products/ProductStories";
+import ProductSold from "@/components/products/ProductSold";
 
 export default function AllPage() {
   return (
@@ -25,11 +27,13 @@ export default function AllPage() {
       <FacultySection />
       <EmblaCarousel />
       <HowItWorksCard />
-  <IntegrationsSection
-                  title="It's your business, your way"
-                  description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
-              />
-      <ClientsSection />
+      <IntegrationsSection
+        title="It's your business, your way"
+        description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
+      />
+      <ClientsSection title="Yar kuch v lakh dy" />
+      <ProductStories />
+      <ProductSold />
       <BookCallSection
         title="15-Day Money-Back Guarantee"
         btnText="Enroll Now"
@@ -59,8 +63,8 @@ export default function AllPage() {
       <TeaserVideoSection />
       <WhyAugmentSection />
       <StudentTestimonialsSection />
-      
-    
+
+
       <BookCallSection
         title="Book a Call with a Program Advisor"
         icon="solar:phone-linear"

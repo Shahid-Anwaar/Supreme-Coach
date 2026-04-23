@@ -31,7 +31,7 @@ export default function Home() {
         title="Your stack, supercharged"
         description="Teachable flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
       />
-      <ClientsSection />
+      <ClientsSection title="Trusted by growing companies" />
       <BookCallSection
         title="15-Day Money-Back Guarantee"
         btnText="Enroll Now"

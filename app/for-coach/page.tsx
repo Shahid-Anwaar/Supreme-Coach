@@ -6,38 +6,68 @@ import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { COURSE_FEATURES, COURSE_FEATURES2, faqs } from "@/data/data";
+import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, faqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
+import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
 
+
 const views = [
-    {
-        title: "Your view",
-        description:
-            "Easily create your products, manage your business, and customize your students' learning experience in one place.",
-        image:
-            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1edeb440ab80fdf439_0eb0b462897381c9122d4546e00aca77_ui-main-hero-tab-2.webp",
-    },
-    {
-        title: "Your student's view",
-        description:
-            "Intuitive, mobile-friendly, and built for your students to seamlessly access and discover your products and offers.",
-        image:
-            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
-    },
-   {
-        title: "Your team's view",
-        description:
-            "Give your team a clear and organized workspace to manage content, track progress, and support your students more efficiently.",
-        image:
-            "/view3.png",
-    },
+  {
+    title: "Your view",
+    description:
+      "Easily create your products, manage your business, and customize your students' learning experience in one place.",
+    image:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1edeb440ab80fdf439_0eb0b462897381c9122d4546e00aca77_ui-main-hero-tab-2.webp",
+  },
+  {
+    title: "Your student's view",
+    description:
+      "Intuitive, mobile-friendly, and built for your students to seamlessly access and discover your products and offers.",
+    image:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
+  },
+  // {
+  //   title: "Your team's view",
+  //   description:
+  //     "Give your team a clear and organized workspace to manage content, track progress, and support your students more efficiently.",
+  //   image:
+  //     "/view3.png",
+  // },
 ];
 
-export default function SolutionsPage() {
+const companyLogos = [
+  {
+    title: "AA",
+    image: "https://www.gogetta.com/home/logo-aa.svg",
+  },
+  {
+    title: "AK",
+    image: "https://www.gogetta.com/home/logo-ak.svg",
+  },
+  {
+    title: "CIET",
+    image: "https://www.gogetta.com/home/logo-ciet.svg",
+  },
+  {
+    title: "Visy",
+    image: "https://www.gogetta.com/home/logo-visy.svg",
+  },
+  {
+    title: "GFS",
+    image: "https://www.gogetta.com/home/logo-gfs.svg",
+  },
+];
+
+export default function CoachesPage() {
   return (
     <main className="bg-white text-black relative">
       <ProductsHeroSection />
+      <p className="section-description mt-0! text-center mx-auto max-w-220 text-black">
+        1,000+ companies trust Augment to deliver measurable change
+      </p>
+      <CompanyLogoCarousel companyLogos={[...companyLogos, ...companyLogos]} />;
+      <div className="py-7"></div>
       <ViewsSection items={views} />
       {/* <ProductsCompaniesSection /> */}
       <ProductFeaturesSection
@@ -64,7 +94,7 @@ export default function SolutionsPage() {
         description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
       />
       {/* <ProductStories /> */}
-      <ClientsSection title="Augment success stories write themselves" />
+      <ClientsSection title="Augment success stories write themselves" isShowCompanies={false} />
       {/* <ProductTools /> */}
       {/* <ProductSold /> */}
       {/* <FAQSection faqs={FAQS} /> */}
@@ -103,7 +133,22 @@ export default function SolutionsPage() {
                 bottomClasses="bg-[#000000]"
             /> */}
       {/* <CoursesCommunity /> */}
-       {/* <FAQSection faqs={faqs} /> */}
+      {/* <BookCallSection
+              title="15-Day Money-Back Guarantee"
+              btnText="Enroll Now"
+              subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
+              topClasses="bg-[#f3f4f6]"
+              bottomClasses="bg-[#f3f4f6]"
+            /> */}
+            <FAQSection faqs={coachesFaqs} />
+            {/* <BookCallSection
+              title="Stand out with the Augment LinkedIn Certificate"
+              btnText="Enroll Now"
+              subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
+              topClasses="bg-[#f3f4f6]"
+              bottomClasses="bg-[#000000]"
+              imgSrc="/certificate.webp"
+            /> */}
       <BookCallSection
         title="Book a Call with a Program Advisor"
         icon="solar:phone-linear"

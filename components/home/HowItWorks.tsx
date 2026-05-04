@@ -41,15 +41,7 @@ export default function HowItWorksCard() {
                                     {String(index + 1).padStart(2, "0")}
                                 </div>
 
-                                <p
-                                    className="
-                                        cursor-pointer text-[15px] leading-[1.15] tracking-[-0.04em] text-[#8f8c89]
-                                        transition-colors duration-200 group-hover:text-black
-                                        sm:text-[18px]
-                                        md:text-[20px]
-                                        lg:text-[24px] lg:leading-none
-                                    "
-                                >
+                                <p className="cursor-pointer transition-colors duration-200 group-hover:text-black custom-para">
                                     {step}
                                 </p>
                             </div>

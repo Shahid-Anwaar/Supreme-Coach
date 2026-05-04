@@ -96,7 +96,7 @@ export default function ViewsSection({ items }: { items?: View[] }) {
                         The future of your education business happens here
                     </h2>
                     <p className="section-description mx-auto max-w-152 text-black">
-                        Whatever your expertise—languages, fitness, or coding—Teachable helps you deliver impactful learning, run a smarter business, and scale worldwide.
+                        Whatever your expertise—languages, fitness, or coding—Augment helps you deliver impactful learning, run a smarter business, and scale worldwide.
                     </p>
                 </div>
 
@@ -117,6 +117,27 @@ export default function ViewsSection({ items }: { items?: View[] }) {
         </div> */}
 
                 <div className="mx-auto mt-10 max-w-330 overflow-hidden rounded-[12px] bg-gray-100 sm:mt-12 sm:rounded-[15px]">
+                    <div className=" flex flex-col px-2 py-2 lg:px-4 lg:py-4 md:mb-5 md:flex-row md:flex-wrap">
+                        {usedItems.map((view, index) => (
+                            <div
+                                key={index}
+                                onClick={() => handleCardClick(index)}
+                                className="w-full cursor-pointer rounded-[12px] px-3 py-2 text-left transition-colors duration-200 md:min-w-0 md:flex-1 md:basis-0 md:rounded-none"
+                            >
+                                
+                                <h3 className="mb-2 text-[17px] font-bold leading-tight text-black/85 sm:text-lg">
+                                    {view.title}
+                                </h3>
+                                <p className="text-[15px] mb-3 md:text-[16px] leading-5.5 text-gray-900 sm:text-[16px] sm:leading-6 lg:text-[18px]">
+                                    {view.description}
+                                </p>
+                                <ProgressBar
+                                    active={activeIndex === index}
+                                    version={progressVersion}
+                                />
+                            </div>
+                        ))}
+                    </div>
                     <div className="relative mb-3 aspect-[4/3] overflow-hidden bg-gray-100 sm:mb-4 sm:aspect-[16/10] md:aspect-[1300/700]">
                         {usedItems.map((view, index) => (
                             <Image
@@ -132,26 +153,7 @@ export default function ViewsSection({ items }: { items?: View[] }) {
                         ))}
                     </div>
 
-                    <div className="mt-8 flex flex-col gap-2 px-2 py-3 sm:mt-10 sm:gap-3 sm:px-3 sm:py-4 md:mt-14 md:flex-row md:flex-wrap md:px-0 md:py-4">
-                        {usedItems.map((view, index) => (
-                            <div
-                                key={index}
-                                onClick={() => handleCardClick(index)}
-                                className="w-full cursor-pointer rounded-[12px] px-4 py-4 text-left transition-colors duration-200 hover:bg-black/[0.03] sm:px-5 md:min-w-0 md:flex-1 md:basis-0 md:rounded-none md:px-6 lg:px-8"
-                            >
-                                <ProgressBar
-                                    active={activeIndex === index}
-                                    version={progressVersion}
-                                />
-                                <h3 className="mb-2 mt-3 text-[17px] font-bold leading-tight text-black/85 sm:text-lg">
-                                    {view.title}
-                                </h3>
-                                <p className="text-[15px] md:text-[16px] leading-5.5 text-gray-900 sm:text-[16px] sm:leading-6 lg:text-[18px]">
-                                    {view.description}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
+                    
                 </div>
 
                 <Link

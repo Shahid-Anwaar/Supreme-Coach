@@ -13,7 +13,7 @@ const SALES_HUB_FEATURES: SalesHubFeatureItem[] = [
     {
         title: "Easy payments",
         description:
-            "Sell with peace of mind using teachable:pay, our built-in checkout. You’ll get fraud protection, tax-inclusive pricing, flexible payout options, and more.",
+            "Sell with peace of mind using Augment:pay, our built-in checkout. You’ll get fraud protection, tax-inclusive pricing, flexible payout options, and more.",
         image:
             "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e311765fa29efc8085f497_943111b162257a8d92b15efa8ad802c4_courses-payments-2.webp",
         imageAlt: "Easy payments preview",

@@ -103,6 +103,10 @@ body {
     @apply text-[16px] font-normal uppercase tracking-[0.02em] text-white/95;
   }
 
+  .custom-para{
+    @apply text-[15px] leading-[1.15] tracking-[-0.04em] text-[#8f8c89] sm:text-[18px] md:text-[20px] lg:text-[24px] lg:leading-none;
+  }
+
   .section-title {
     @apply text-[28px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extralight leading-[1.06] tracking-[-0.055em] text-black;
   }

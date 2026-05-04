@@ -21,39 +21,39 @@ import ProductSold from "@/components/products/ProductSold";
 
 const FAQS = [
   {
-    question: "Why should I sell my courses on Teachable?",
+    question: "Why should I sell my courses on Augment?",
     answer:
-      "Creating and selling online courses on Teachable gives you access to both the most powerful selling tools and the most flexible course builder. You control your content. You control how you get paid. And you control the learning environment for your audience.",
+      "Creating and selling online courses on Augment gives you access to both the most powerful selling tools and the most flexible course builder. You control your content. You control how you get paid. And you control the learning environment for your audience.",
   },
   {
-    question: "How do I make a course on Teachable?",
+    question: "How do I make a course on Augment?",
     answer:
       "It’s easy (and free) to get started with a seven-day free trial. Once logged in, you’ll be prompted to create a product. Select course. From there, you can start building manually. Or, use our AI course starter to draft your curriculum, lesson content, and sales page all at once.",
   },
   {
-    question: "Can I do live courses on Teachable?",
+    question: "Can I do live courses on Augment?",
     answer:
-      "While Teachable is built for self-paced courses by default, it’s easy enough to host live courses using third-party embeds, including YouTube, Vimeo, and Zoom. You can also create a cohort-based learning experience using drip content.",
+      "While Augment is built for self-paced courses by default, it’s easy enough to host live courses using third-party embeds, including YouTube, Vimeo, and Zoom. You can also create a cohort-based learning experience using drip content.",
   },
   {
     question: "Do online courses make money?",
     answer:
-      "Absolutely—in fact, they’re the perfect way to earn ongoing revenue, without ongoing work. Online course creation on Teachable is designed with longevity in mind, meaning once you do the up front work of creating it, you can sell it on a continuous basis with little maintenance. Whatever your expertise or your business, you can translate it into an online course that people will pay for.",
+      "Absolutely—in fact, they’re the perfect way to earn ongoing revenue, without ongoing work. Online course creation on Augment is designed with longevity in mind, meaning once you do the up front work of creating it, you can sell it on a continuous basis with little maintenance. Whatever your expertise or your business, you can translate it into an online course that people will pay for.",
   },
   {
-    question: "How much does Teachable cost per month?",
+    question: "How much does Augment cost per month?",
     answer:
       "Your first seven days are free. After that, we have plans starting at $29 per month, each designed to fit your unique business needs. Browse plans and pricing here.",
   },
   {
-    question: "How many courses can I have on Teachable?",
+    question: "How many courses can I have on Augment?",
     answer:
-      "Believe it or not, on any Teachable plan, you can create an unlimited number of courses. From there, you can sell up to one course on a Starter plan, five courses on a Builder plan, 25 courses on a Growth plan, and 100 courses on an Advanced plan. For more courses, please contact sales.",
+      "Believe it or not, on any Augment plan, you can create an unlimited number of courses. From there, you can sell up to one course on a Starter plan, five courses on a Builder plan, 25 courses on a Growth plan, and 100 courses on an Advanced plan. For more courses, please contact sales.",
   },
   {
-    question: "What else can I create on Teachable?",
+    question: "What else can I create on Augment?",
     answer:
-      "You can build and sell your entire suite of learning products on Teachable, including online coaching sessions, how-to guides, interactive templates, a community space, and more.",
+      "You can build and sell your entire suite of learning products on Augment, including online coaching sessions, how-to guides, interactive templates, a community space, and more.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function ProductsPage() {
         description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
         imgShown="left"
         imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e3117618576ae8098abc7b_b98cb8e56c799a3342711e81f7fb0fce_courses-quiz-1.webp"
-        imgAlt="Teachable course onboarding and quiz preview"
+        imgAlt="Augment course onboarding and quiz preview"
         features={COURSE_FEATURES}
 
       />
@@ -86,12 +86,10 @@ export default function ProductsPage() {
         description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
       />
       {/* <ProductStories /> */}
-      <ClientsSection title="Teachable success stories write themselves" />
+      <ClientsSection title="Augment success stories write themselves" />
       <ProductTools />
       {/* <ProductSold /> */}
       <FAQSection faqs={FAQS} />
-
-
 
       {/* <FeaturedInSection />
             <ViewsSection />

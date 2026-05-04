@@ -13,7 +13,7 @@ export default function ProductStories() {
     <div className="mx-auto max-w-400 px-4 sm:px-6 lg:px-0">
         <div className="relative text-center">
             <h2 className="section-title mx-auto mt-5 max-w-[16ch] text-black sm:max-w-190">
-                Teachable success stories write themselves
+                Augment success stories write themselves
             </h2>
 
             <CustomEmblaCarousel

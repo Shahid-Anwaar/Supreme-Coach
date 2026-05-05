@@ -12,7 +12,6 @@ export default function CommunityPage() {
             <CommunityHero />
             <StudentsTestmonials />
 
-
             <BookCallSection
                 title="15-Day Money-Back Guarantee"
                 btnText="Enroll Now"

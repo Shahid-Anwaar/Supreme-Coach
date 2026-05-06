@@ -4,6 +4,9 @@ import FAQSection from "@/components/home/FaqSection";
 import { coachesFaqs } from "@/data/data";
 import CommunityHero from "@/components/community/CommunityHero";
 import StudentsTestmonials from "@/components/community/StudentsTestmonials";
+import StudentDirectory from "@/components/community/StudentDirectory";
+import StudentsCompaniesBuilt from "@/components/community/StudentCompanies";
+import InPersonEventsSection from "@/components/community/InPersonEvents";
 
 
 export default function CommunityPage() {
@@ -11,7 +14,9 @@ export default function CommunityPage() {
         <main className="bg-white text-black relative">
             <CommunityHero />
             <StudentsTestmonials />
-
+            <StudentDirectory />
+            <StudentsCompaniesBuilt />
+            <InPersonEventsSection />
             <BookCallSection
                 title="15-Day Money-Back Guarantee"
                 btnText="Enroll Now"

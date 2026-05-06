@@ -27,7 +27,9 @@ type EmblaCarouselProps = {
     wrapperClassName?: string;
     CustomButtonWrapper?: (
         onPrevClickChoosed: () => void,
-        onNextClickChoosed: () => void
+        onNextClickChoosed: () => void,
+        onSpecificChoosed: (n: number) => void,
+
     ) => ReactNode;
     isAutoplay?: boolean;
     isContinuousPlay?: boolean;
@@ -98,6 +100,10 @@ export default function CustomEmblaCarousel({
         emblaApi?.scrollPrev();
     }, [emblaApi]);
 
+    const onSpecificChoosed = useCallback((i: number) => {
+        emblaApi?.scrollTo(i);
+    }, [emblaApi]);
+
     const onNextClickChoosed = useCallback(() => {
         emblaApi?.scrollNext();
     }, [emblaApi]);
@@ -140,7 +146,7 @@ export default function CustomEmblaCarousel({
     return (
         <div className="w-full relative text-white">
             <div className="text-white">
-                {CustomButtonWrapper(onPrevClickChoosed, onNextClickChoosed)}
+                {CustomButtonWrapper(onPrevClickChoosed, onNextClickChoosed, onSpecificChoosed)}
             </div>
             <div
                 className={`overflow-hidden bg-black ${wrapperClassName}`}

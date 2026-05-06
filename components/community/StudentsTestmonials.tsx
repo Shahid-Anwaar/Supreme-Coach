@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import CustomEmblaCarousel from '../home/CustomCarosal';
-import { Icon } from '@iconify/react';
+import { useState } from 'react';
 
 const testimonials = [
     {
@@ -34,57 +34,50 @@ const testimonials = [
 ];
 
 export default function StudentsTestmonials() {
+    const [selectedIndex, setSelectedIndex] = useState(1);
     return (
-        <section className='section-container bg-white'>
-            <CustomEmblaCarousel
-                CustomCard={(item, index, firstActiveItemIndex) => {
-                    return (
-                        <div
-                            key={index}
-                            className="box-border min-w-0 shrink-0 grow-0 basis-full px-1 lg:px-24 xl:px-40"
-                        >
-                            {StudentCard(item)}
-                        </div>
-                    );
-                }}
-                isAutoplay={false}
-                items={testimonials}
-                options={{ loop: true, align: "start", skipSnaps: false }}
-                wrapperClassName="mt-20 min-h-0 bg-transparent sm:mt-24 lg:mt-32"
-                CustomButtonWrapper={(onPrevClick, onNextClick) => {
-                    return (
-                        <div className="absolute -top-14 flex w-full items-center justify-center gap-3 sm:-top-16 sm:gap-4 lg:-top-20">
-                            <button
-                                type="button"
-                                onClick={onPrevClick}
-                                aria-label="Previous testimonial"
-                                className="flex h-10 w-10 items-center justify-center rounded-full border border-[#bdb5aa] bg-[#ded8ce] text-black transition-transform duration-300 hover:scale-[1.04] hover:bg-black hover:text-white sm:h-11 sm:w-11"
+        <section className=' bg-[#F3F4F6]'>
+            <div className='section-container py-20!'>
+                <CustomEmblaCarousel
+                    CustomCard={(item, index) => {
+                        return (
+                            <div
+                                key={index}
+                                className="box-border min-w-0 shrink-0 grow-0 basis-full px-3"
                             >
-                                <Icon icon="lucide:arrow-left" className="h-4.5 w-4.5 sm:h-5 sm:w-5" />
-                            </button>
+                                {StudentCard(item)}
+                            </div>
+                        );
+                    }}
+                    isAutoplay={false}
+                    items={testimonials}
+                    options={{ loop: false, align: "start", skipSnaps: false }}
+                    wrapperClassName="min-h-0 bg-transparent"
+                    CustomButtonWrapper={(onPrevClick, onNextClick, onSpecificChoosed) => {
+                        return (
+                            <div className="absolute top-full flex w-full items-center justify-start gap-3 sm:gap-4 ">
+                                <div className='flex gap-3 ms-3 my-3'>
+                                    {testimonials.map((t, i) => {
+                                        return <div key={i} onClick={() => {
+                                            setSelectedIndex(i);
+                                            onSpecificChoosed(i);
+                                        }}
+                                            className={`w-8 h-8 cursor-pointer flex items-center text-[18px] justify-center rounded-full border  
+                                ${i === selectedIndex ? "border-gray-300 text-gray-900 bg-primary-500" : "border-gray-300 text-gray-500 bg-transparent"}`}
+                                        >
+                                            {i + 1}
+                                        </div>
+                                    })}
+                                </div>
+                            </div>
+                        );
+                    }}
+                />
 
-                            <button
-                                type="button"
-                                onClick={onNextClick}
-                                aria-label="Next testimonial"
-                                className="flex h-10 w-10 items-center justify-center rounded-full border border-[#bdb5aa] bg-[#ded8ce] text-black transition-transform duration-300 hover:scale-[1.04] hover:bg-black hover:text-white sm:h-11 sm:w-11"
-                            >
-                                <Icon icon="lucide:arrow-right" className="h-4.5 w-4.5 sm:h-5 sm:w-5" />
-                            </button>
-                        </div>
-                    );
-                }}
-            />
-            <div className='flex gap-5'>
-                {testimonials.map((t, i) => {
-                    return <div key={i} className='w-8 h-8 flex items-center justify-center bg-transparent rounded-full border border-gray-400'>
-                        {i}
-                    </div>
-                })}
-            </div>
-            {/* {testimonials.map((t) => {
+                {/* {testimonials.map((t) => {
                 return StudentCard(t)
             })} */}
+            </div>
         </section>
     )
 }

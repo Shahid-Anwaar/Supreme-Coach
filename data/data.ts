@@ -671,7 +671,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 1,
     quote:
-      "This was a goal I have wanted to accomplish to further my knowledge and understanding as I continue to grow my business and continue my journey as an entrepreneur!",
+      "This was a goal I have wanted to accomplish further my knowledge and understanding as I continue to grow my business and continue my journey as an entrepreneur!",
     name: "Anwar Molette",
     role: "Executive Chef",
     avatar:

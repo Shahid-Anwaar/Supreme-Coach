@@ -7,6 +7,7 @@ import StudentsTestmonials from "@/components/community/StudentsTestmonials";
 import StudentDirectory from "@/components/community/StudentDirectory";
 import StudentsCompaniesBuilt from "@/components/community/StudentCompanies";
 import InPersonEventsSection from "@/components/community/InPersonEvents";
+import EmblaCarousel from "@/components/home/EmblaCarosal";
 
 
 export default function CommunityPage() {
@@ -15,13 +16,15 @@ export default function CommunityPage() {
             <CommunityHero />
             <StudentsTestmonials />
             <StudentDirectory />
+            <EmblaCarousel />
             <StudentsCompaniesBuilt />
             <InPersonEventsSection />
+
             <BookCallSection
                 title="15-Day Money-Back Guarantee"
                 btnText="Enroll Now"
                 subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-                topClasses="bg-[#f3f4f6]"
+                topClasses="bg-black"
                 bottomClasses="bg-[#f3f4f6]"
             />
             <FAQSection faqs={coachesFaqs} />

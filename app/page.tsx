@@ -29,7 +29,7 @@ export default function Home() {
       <HowItWorksCard />
       <IntegrationsSection
         title="Your stack, supercharged"
-        description="Teachable flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
+        description="Augment flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
       />
       <ClientsSection title="Trusted by growing companies" />
       <BookCallSection

@@ -1,67 +1,75 @@
 import BookCallSection from "@/components/home/BookCall";
-import FacultySection from "@/components/home/FacultySection";
-import FAQSection from "@/components/home/FaqSection";
-import FeaturedInSection from "@/components/home/FeaturedIn";
 import Footer from "@/components/home/Footer";
-import MissionComparisonSection from "@/components/home/MissionComparison";
-import EmblaCarousel from "@/components/home/EmblaCarosal";
 import ViewsSection from "@/components/home/ViewsSection";
 import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
-import CoursesCommunity from "@/components/home/CoursesCommunity";
 import ProductsHeroSection from "@/components/products/ProductsHero";
-import ProductsCompaniesSection from "@/components/products/ProductCompanies";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { COURSE_FEATURES, COURSE_FEATURES2 } from "@/data/data";
+import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, faqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
-import ProductStories from "@/components/products/ProductStories";
-import ProductTools from "@/components/products/ProductTools";
-import ProductSold from "@/components/products/ProductSold";
+import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
+import FAQSection from "@/components/home/FaqSection";
 
-const FAQS = [
+
+const views = [
   {
-    question: "Why should I sell my courses on Augment?",
-    answer:
-      "Creating and selling online courses on Augment gives you access to both the most powerful selling tools and the most flexible course builder. You control your content. You control how you get paid. And you control the learning environment for your audience.",
+    title: "Your view",
+    description:
+      "Easily create your products, manage your business, and customize your students' learning experience in one place.",
+    image:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1edeb440ab80fdf439_0eb0b462897381c9122d4546e00aca77_ui-main-hero-tab-2.webp",
   },
   {
-    question: "How do I make a course on Augment?",
-    answer:
-      "It’s easy (and free) to get started with a seven-day free trial. Once logged in, you’ll be prompted to create a product. Select course. From there, you can start building manually. Or, use our AI course starter to draft your curriculum, lesson content, and sales page all at once.",
+    title: "Your student's view",
+    description:
+      "Intuitive, mobile-friendly, and built for your students to seamlessly access and discover your products and offers.",
+    image:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
   },
   {
-    question: "Can I do live courses on Augment?",
-    answer:
-      "While Augment is built for self-paced courses by default, it’s easy enough to host live courses using third-party embeds, including YouTube, Vimeo, and Zoom. You can also create a cohort-based learning experience using drip content.",
-  },
-  {
-    question: "Do online courses make money?",
-    answer:
-      "Absolutely—in fact, they’re the perfect way to earn ongoing revenue, without ongoing work. Online course creation on Augment is designed with longevity in mind, meaning once you do the up front work of creating it, you can sell it on a continuous basis with little maintenance. Whatever your expertise or your business, you can translate it into an online course that people will pay for.",
-  },
-  {
-    question: "How much does Augment cost per month?",
-    answer:
-      "Your first seven days are free. After that, we have plans starting at $29 per month, each designed to fit your unique business needs. Browse plans and pricing here.",
-  },
-  {
-    question: "How many courses can I have on Augment?",
-    answer:
-      "Believe it or not, on any Augment plan, you can create an unlimited number of courses. From there, you can sell up to one course on a Starter plan, five courses on a Builder plan, 25 courses on a Growth plan, and 100 courses on an Advanced plan. For more courses, please contact sales.",
-  },
-  {
-    question: "What else can I create on Augment?",
-    answer:
-      "You can build and sell your entire suite of learning products on Augment, including online coaching sessions, how-to guides, interactive templates, a community space, and more.",
+    title: "Your team's view",
+    description:
+      "Give your team a clear and organized workspace to manage content, track progress, and support your students more efficiently.",
+    image:
+      "/view3.png",
   },
 ];
 
-export default function ProductsPage() {
+const companyLogos = [
+  {
+    title: "AA",
+    image: "https://www.gogetta.com/home/logo-aa.svg",
+  },
+  {
+    title: "AK",
+    image: "https://www.gogetta.com/home/logo-ak.svg",
+  },
+  {
+    title: "CIET",
+    image: "https://www.gogetta.com/home/logo-ciet.svg",
+  },
+  {
+    title: "Visy",
+    image: "https://www.gogetta.com/home/logo-visy.svg",
+  },
+  {
+    title: "GFS",
+    image: "https://www.gogetta.com/home/logo-gfs.svg",
+  },
+];
+
+export default function TeamsPage() {
   return (
     <main className="bg-white text-black relative">
       <ProductsHeroSection />
-      <ProductsCompaniesSection />
+      <p className="section-description mt-0! text-center mx-auto max-w-220 text-black">
+        1,000+ companies trust Augment to deliver measurable change
+      </p>
+      <CompanyLogoCarousel companyLogos={[...companyLogos, ...companyLogos]} />;
+      <div className="py-7"></div>
+      <ViewsSection items={views} />
+      {/* <ProductsCompaniesSection /> */}
       <ProductFeaturesSection
         title="Course creation tools for higher student engagement"
         description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
@@ -85,12 +93,15 @@ export default function ProductsPage() {
         title="It's your business, your way"
         description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
       />
-      <ClientsSection title="Augment success stories write themselves" />
-      <ProductTools />
+      <ClientsSection title="Augment success stories write themselves" isShowCompanies={false} />
+      {/* <ProductTools /> */}
       {/* <ProductSold /> */}
-      <FAQSection faqs={FAQS} />
+      {/* <FAQSection faqs={FAQS} /> */}
+
+
 
       {/* <FeaturedInSection />
+            
             <FacultySection />
             <EmblaCarousel /> */}
 
@@ -121,6 +132,22 @@ export default function ProductsPage() {
                 bottomClasses="bg-[#000000]"
             /> */}
       {/* <CoursesCommunity /> */}
+      {/* <BookCallSection
+              title="15-Day Money-Back Guarantee"
+              btnText="Enroll Now"
+              subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
+              topClasses="bg-[#f3f4f6]"
+              bottomClasses="bg-[#f3f4f6]"
+            /> */}
+            <FAQSection faqs={coachesFaqs} />
+            {/* <BookCallSection
+              title="Stand out with the Augment LinkedIn Certificate"
+              btnText="Enroll Now"
+              subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
+              topClasses="bg-[#f3f4f6]"
+              bottomClasses="bg-[#000000]"
+              imgSrc="/certificate.webp"
+            /> */}
       <BookCallSection
         title="Book a Call with a Program Advisor"
         icon="solar:phone-linear"

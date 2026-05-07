@@ -94,6 +94,308 @@ export type HowItWorksCardItem = {
   }[];
 };
 
+export type Student = {
+  id: number;
+  name: string;
+  role: string;
+  company: string;
+  location: string;
+  image: string;
+  quote: string;
+  classLabel: string;
+};
+
+export const students: Student[] = [
+  {
+    id: 1,
+    name: "Andy Smith",
+    role: "Founder",
+    company: "StrategIQ",
+    location: "London, U.K.",
+    image:
+      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "Augment helped me sharpen my offer and build a stronger network with business owners who think bigger.",
+    classLabel: "Class of March '23",
+  },
+  {
+    id: 2,
+    name: "Janna Lusk",
+    role: "Team Manager",
+    company: "Google",
+    location: "Austin, USA",
+    image:
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "Augment teaches business with the best value proposition for busy professionals like me. I grew alongside my client's needs.",
+    classLabel: "Class of March '23",
+  },
+  {
+    id: 3,
+    name: "Matt Marsh",
+    role: "Founder",
+    company: "Stelacasa",
+    location: "Tennessee, USA",
+    image:
+      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The network I built through Augment opened doors to partnerships I would not have reached alone.",
+    classLabel: "Class of April '23",
+  },
+  {
+    id: 4,
+    name: "Ted Burgess",
+    role: "Director of Psychological Health",
+    company: "Air National Guard",
+    location: "Boise, USA",
+    image:
+      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "This community helped me turn business learning into practical systems I could apply immediately.",
+    classLabel: "Class of April '23",
+  },
+  {
+    id: 5,
+    name: "Jamaal Bethea",
+    role: "Director of Brand & Media",
+    company: "CUA",
+    location: "Los Angeles, USA",
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The mentorship and peer learning made this much more than a course. It felt like a real growth circle.",
+    classLabel: "Class of April '23",
+  },
+  {
+    id: 6,
+    name: "Hester Scotton",
+    role: "CFO",
+    company: "Potter Clarkson",
+    location: "London, U.K.",
+    image:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "I found clear frameworks, a supportive cohort, and business lessons I could use right away.",
+    classLabel: "Class of May '23",
+  },
+  {
+    id: 7,
+    name: "Adediran Adelekun",
+    role: "Founder",
+    company: "NeighborTrailer",
+    location: "Chicago, USA",
+    image:
+      "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "Augment’s instructors simplify business concepts while the supportive community helped me overcome any challenge I faced.",
+    classLabel: "Class of April '23",
+  },
+  {
+    id: 8,
+    name: "Faye Sta. Ana-Corpuz",
+    role: "Country Launcher",
+    company: "Taptap Send",
+    location: "Dubai, UAE",
+    image:
+      "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "I came for the learning, but stayed for the network. The people in this program are exceptional.",
+    classLabel: "Class of May '23",
+  },
+  {
+    id: 9,
+    name: "Gillan Watt",
+    role: "Founder",
+    company: "Thinking Labs",
+    location: "Austin, USA",
+    image:
+      "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The Augment student directory itself became one of the most valuable assets of the experience.",
+    classLabel: "Class of June '23",
+  },
+  {
+    id: 10,
+    name: "Jon-David Hague",
+    role: "Founder",
+    company: "Bountisphere",
+    location: "San Francisco, USA",
+    image:
+      "https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The program gave me better clarity, stronger positioning, and direct access to ambitious operators.",
+    classLabel: "Class of June '23",
+  },
+  {
+    id: 11,
+    name: "Mohit Patel",
+    role: "Founder",
+    company: "Terrifit",
+    location: "Mumbai, India",
+    image:
+      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "What stood out most was how practical and founder-focused everything felt.",
+    classLabel: "Class of June '23",
+  },
+  {
+    id: 12,
+    name: "Eric Luttemoser",
+    role: "Founder",
+    company: "Electrifying Ventures",
+    location: "Miami, USA",
+    image:
+      "https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "I left with more than business insight — I left with genuine connections.",
+    classLabel: "Class of July '23",
+  },
+  {
+    id: 13,
+    name: "Charlie Canard",
+    role: "Founder",
+    company: "Social To Go",
+    location: "New York, USA",
+    image:
+      "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The peer conversations pushed my thinking further than any traditional course ever had.",
+    classLabel: "Class of July '23",
+  },
+  {
+    id: 14,
+    name: "Amanda Squilla",
+    role: "Chief of Staff",
+    company: "H.J. Baker",
+    location: "Chicago, USA",
+    image:
+      "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "Augment gave me both confidence and clarity in how to communicate my business value.",
+    classLabel: "Class of August '23",
+  },
+  {
+    id: 15,
+    name: "Thibault Genouille",
+    role: "Project Lead",
+    company: "BCG",
+    location: "Paris, France",
+    image:
+      "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "I met people from different industries, yet the advice always felt surprisingly relevant.",
+    classLabel: "Class of August '23",
+  },
+  {
+    id: 16,
+    name: "Ed Trafager",
+    role: "CEO & Founder",
+    company: "Greenwave Media",
+    location: "Boston, USA",
+    image:
+      "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The content was strong, but the caliber of the community is what made it memorable.",
+    classLabel: "Class of August '23",
+  },
+  {
+    id: 17,
+    name: "Ashley Davis",
+    role: "Director",
+    company: "Media Ventures",
+    location: "New York, USA",
+    image:
+      "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "Thanks to the flexibility of remote learning, I balanced reserve duty and becoming a parent while having a great experience.",
+    classLabel: "Class of April '24",
+  },
+  {
+    id: 18,
+    name: "Paolo Viale",
+    role: "Senior Manager",
+    company: "PressShop",
+    location: "California, USA",
+    image:
+      "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The structure of the program made every lesson easy to apply and easy to remember.",
+    classLabel: "Class of April '24",
+  },
+  {
+    id: 19,
+    name: "Bahrel Burhan",
+    role: "Business Analyst",
+    company: "Dromotics",
+    location: "Malaysia",
+    image:
+      "https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The experience was practical, high quality, and rich with smart people from across the world.",
+    classLabel: "Class of May '24",
+  },
+  {
+    id: 20,
+    name: "Gerardo Ramirez",
+    role: "Director",
+    company: "Learning Center",
+    location: "Mexico City, Mexico",
+    image:
+      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "It was one of the few programs where I felt every session added real value.",
+    classLabel: "Class of May '24",
+  },
+  {
+    id: 21,
+    name: "Ilona Zablockaja",
+    role: "Dental Nurse",
+    company: "Independent",
+    location: "London, U.K.",
+    image:
+      "https://images.pexels.com/photos/3777568/pexels-photo-3777568.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "I appreciated how welcoming the cohort felt from the very first session.",
+    classLabel: "Class of June '24",
+  },
+  {
+    id: 22,
+    name: "Giovanni Azadi",
+    role: "Senior Engineer",
+    company: "Lava Construction",
+    location: "Washington, USA",
+    image:
+      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The network was real, the lessons were useful, and the experience exceeded expectations.",
+    classLabel: "Class of June '24",
+  },
+  {
+    id: 23,
+    name: "Tom Lambrecht",
+    role: "Business Development",
+    company: "Stratbright",
+    location: "Ghent, Belgium",
+    image:
+      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "I joined for growth and left with a stronger support system than I expected.",
+    classLabel: "Class of June '24",
+  },
+  {
+    id: 24,
+    name: "Sofia Martins",
+    role: "Marketing Manager",
+    company: "BrightPath Studio",
+    location: "Lisbon, Portugal",
+    image:
+      "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=900",
+    quote:
+      "The sessions were practical, the people were inspiring, and I left with ideas I could use immediately.",
+    classLabel: "Class of July '24",
+  },
+];
+
 export const ProductStoriesTestimonials = [
   {
     id: 1,
@@ -102,7 +404,7 @@ export const ProductStoriesTestimonials = [
     name: "Anna Geiger",
     role: "The Science of Reading",
     title:   "Revenue Engine",
-    text: "I’ve been using Teachable since 2017, and it continues to be a major revenue generator for my business. It’s easy to create and upload content, and I never have to worry about tax compliance or payment processing. I’ve tried other platforms—Teachable is hands down the best for me and my students.",
+    text: "I’ve been using Augment since 2017, and it continues to be a major revenue generator for my business. It’s easy to create and upload content, and I never have to worry about tax compliance or payment processing. I’ve tried other platforms—Augment is hands down the best for me and my students.",
     schoolLink: "#",
   },
   {
@@ -112,7 +414,7 @@ export const ProductStoriesTestimonials = [
     name: "Leila Gharani",
     role: "XelPlus Academy",
     title: "Global Reach",
-    text: "With students from 188 countries, tax compliance could have been a nightmare. Teachable handles it all, so instead of drowning in admin work, we can focus on helping our members upgrade their data skills. The platform makes our global reach possible.",
+    text: "With students from 188 countries, tax compliance could have been a nightmare. Augment handles it all, so instead of drowning in admin work, we can focus on helping our members upgrade their data skills. The platform makes our global reach possible.",
     schoolLink: "#",
   },
   {
@@ -122,7 +424,7 @@ export const ProductStoriesTestimonials = [
     name: "Erin Booth",
     role: "Virtual Assistant Coach",
     title: "Get Full Control",
-    text: "You should never have anyone dictating the prices you charge for your content. With Teachable, you get full control—you can talk to your students, match their learning styles, and build real relationships instead of going through third parties.",
+    text: "You should never have anyone dictating the prices you charge for your content. With Augment, you get full control—you can talk to your students, match their learning styles, and build real relationships instead of going through third parties.",
     schoolLink: "#",
   },
   {
@@ -132,7 +434,7 @@ export const ProductStoriesTestimonials = [
     name: "Razvan Ciobanu",
     role: "Voxyde",
     title: "Peace of Mind",
-    text: "Teachable is consistently monitored and delivers excellent uptime. As an instructor, that peace of mind is invaluable. On top of that, Teachable’s built-in tax handling has been a huge advantage, freeing me up to focus more on creating content and supporting my students.",
+    text: "Augment is consistently monitored and delivers excellent uptime. As an instructor, that peace of mind is invaluable. On top of that, Augment’s built-in tax handling has been a huge advantage, freeing me up to focus more on creating content and supporting my students.",
     schoolLink: "#",
   },
   {
@@ -142,7 +444,7 @@ export const ProductStoriesTestimonials = [
     name: "Francesco Cositore",
     role: "Vaporetto Italiano",
     title: "Has Been Essential",
-    text: "Teachable has been essential for the growth of my business and for reaching thousands of students all over the world. It automatically takes care of payments, taxes, and enrollments, freeing me from administrative tasks so I can fully focus on the creative side of my job.",
+    text: "Augment has been essential for the growth of my business and for reaching thousands of students all over the world. It automatically takes care of payments, taxes, and enrollments, freeing me from administrative tasks so I can fully focus on the creative side of my job.",
     schoolLink: "#",
   },
   {
@@ -152,7 +454,7 @@ export const ProductStoriesTestimonials = [
     name: "Dan George",
     role: "FlightInsight",
     title: "10,000+ Students",
-    text: "Teachable gave me the structure to scale beyond the classroom. What started as a few dozen students has grown into 10,000+ pilots worldwide. My courses now run 24/7, serving pilots in every time zone, while I focus on teaching and Teachable handles the technology.",
+    text: "Augment gave me the structure to scale beyond the classroom. What started as a few dozen students has grown into 10,000+ pilots worldwide. My courses now run 24/7, serving pilots in every time zone, while I focus on teaching and Augment handles the technology.",
     schoolLink: "#",
   },
   {
@@ -162,7 +464,7 @@ export const ProductStoriesTestimonials = [
     name: "Huzan R & Nicoleta S",
     role: "Speak Norsk",
     title: "Made Simple",
-    text: "We realized we couldn’t do everything on our own—teaching, managing operations, and course delivery. That’s when Teachable came in. The platform made it simple to create and deliver our programs, and even let us offer a free course so students could get comfortable before enrolling.",
+    text: "We realized we couldn’t do everything on our own—teaching, managing operations, and course delivery. That’s when Augment came in. The platform made it simple to create and deliver our programs, and even let us offer a free course so students could get comfortable before enrolling.",
     schoolLink: "#",
   },
 ];
@@ -671,7 +973,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 1,
     quote:
-      "This was a goal I have wanted to accomplish to further my knowledge and understanding as I continue to grow my business and continue my journey as an entrepreneur!",
+      "This was a goal I have wanted to accomplish further my knowledge and understanding as I continue to grow my business and continue my journey as an entrepreneur!",
     name: "Anwar Molette",
     role: "Executive Chef",
     avatar:
@@ -1260,6 +1562,62 @@ export const faqs: FAQItem[] = [
     question: "What if I already have experience in business?",
     answer:
       "Augment isn’t about basics. It’s about learning the exact strategies billion-dollar founders used to scale and lead at the highest level.",
+  },
+];
+
+
+export const coachesFaqs: FAQItem[] = [
+  {
+    question: "How does coaching through Augment Individual work?",
+    answer:
+      "Coaching through Augment Individual begins with a seamless digital onboarding where each employee is matched with a certified business coach who fits their goals, language and professional context. The experience is designed to be intuitive from the start, giving every coachee immediate access to high quality coaching without operational friction.\n\nEmployees define their development priorities through a self assessment and select focus areas that reflect both their personal goals and the organization’s strategic needs. They schedule sessions at their preferred cadence and work with their coach in flexible, ongoing conversations that drive real behavior change. Progress is visible at every step through built in goal tracking, which helps coachees stay accountable and gives organizations clarity on outcomes.\n\nBetween sessions, employees access Augment Academy, a curated library of resources that reinforces learning and ensures development continues beyond coaching conversations. With Augment Feedback, they can also gather feedback from peers, direct reports or managers to deepen self awareness and uncover areas of improvements.\n\nFor program managers, Augment Individual provides aggregated insights across focus areas and cohorts to measure progress, demonstrate impact and ensure coaching is aligned with broader talent and business priorities.",
+  },
+  {
+    question:
+      "What makes Augment different from other business coaching services?",
+    answer:
+      "Augment stands apart from other business coaching services by delivering a truly scalable, personalized and measurable coaching experience. This is made possible by a global pool of rigorously vetted business coaches, all certified by the International Coaching Federation and equipped with extensive leadership and coaching experience, ensuring consistently high quality across regions and roles.\n\nBuilt-in analytics also provide real-time visibility into progress across focus areas, enabling companies to track behavioral change and link it to business outcomes. For organizations managing large or global workforces, Augment also removes complexity through seamless scheduling, multi language access and GDPR compliant hosting.\n\nTogether, these elements create a coaching solution that combines human expertise, digital scale and measurable results.",
+  },
+  {
+    question: "How does Augment measure coaching success?",
+    answer:
+      "Augment measures coaching success by combining individual progress tracking with clear, data-driven insights at the program level. Each coachee begins by identifying their development focus areas and setting goals with their coach. These goals are tracked in real-time through the platform, allowing employees to see how their skills and behaviors evolve over the course of the program. This creates a transparent view of personal progress and helps sustain motivation and accountability.\n\nTo enrich this picture, Augment Feedback also offers integrated self-assessment and 360° feedback tools. Employees can gather input from peers, managers and direct reports at different moments in their journey, providing a rounded perspective on how their behavior is changing and where improvement is most visible. This feedback loop gives organizations a reliable pulse on the impact of coaching beyond the individual’s own perception.\n\nOn the organizational side, Augment Insights™ consolidates anonymized data to show how employees are progressing collectively. These analytics help program managers understand which capabilities are strengthening, how engagement is evolving and where coaching is driving measurable outcomes. By connecting individual growth to broader trends, companies can clearly demonstrate the value of coaching and ensure it aligns with strategic priorities.",
+  },
+  {
+    question: "Who are Augment’s business coaches?",
+    answer:
+      "Augment’s business coaches are a highly vetted group of seasoned professionals who meet strict standards that go well beyond typical market requirements. Every coach holds at least a PCC level certification from the International Coaching Federation or an equivalent credential.\n\nAll coaches in the Augment network are specialists in business and goal-oriented coaching, bringing both formal training and practical leadership experience. The minimum requirement includes 500 coaching hours, 125 training hours and more than six years of leadership experience, along with a proven track record supporting leaders and teams in top enterprise organizations across industries. This combination of expertise ensures that coaches understand real business challenges and can translate coaching into meaningful workplace outcomes.\n\nTo uphold this standard at scale, Augment applies an intensive selection and onboarding process. Only 5% of applicants are accepted into the global coach pool, reflecting a rigorous evaluation of skills and professionalism. This careful selection, combined with ongoing performance monitoring, leads to a 4.8/5 coachee satisfaction.",
+  },
+  {
+    question: "How does Augment ensure coaching quality?",
+    answer:
+      "Coaching quality is safeguarded through a multi-step vetting process, ongoing supervision and continuous evaluation. Our business coaches participate in professional development and are reviewed based on client feedback and measurable outcomes. This commitment to excellence guarantees consistency across all coaching experiences.",
+  },
+  {
+    question: "What kind of results can I expect from Augment’s coaching?",
+    answer:
+      "Augment’s coaching approach is built around an evidence-based methodology. At the start of each coaching program, program managers select up to 12 focus areas from a library of 29 options. This creates a clear foundation and ensures development is anchored in the capabilities that matter most for the business, whether that means strengthening resilience, improving communication, elevating strategic thinking, or building leadership behaviors such as inclusion and collaboration.\n\nCoachees then choose the focus areas most relevant to their goals, complete assessments and track their progress over time. This approach keeps development highly personalized while staying closely aligned with organizational priorities.\n\nBecause the coaching journey is structured around these focus areas, the impact becomes easy to see and measure. Organizations gain visibility into which capabilities are improving and where behavior change is taking place across cohorts.\n\nThis is exactly what our customers are seeing in practice. For example, at SumUp, 80% of coachees reported improved self awareness and confidence, 70% felt better equipped to overcome challenges and 50% developed new skills in conflict resolution, strategic thinking and communication.",
+  },
+  {
+    question: "Can Augment’s coaching be scaled across our organization?",
+    answer:
+      "Yes, Augment’s coaching is designed to scale seamlessly across organizations of any size. The platform, the coaching network and the customer support model are all built to ensure that companies can expand coaching from a small pilot to a global, enterprise-wide program without losing quality, consistency, or impact.\n\nA key enabler of this scalability is Augment’s global coach pool. With more than 3,500 certified business coaches available worldwide, organizations can offer high quality coaching to employees in every region. Coaches cover 80 languages and operate in more than 90 countries, making it easy to support diverse teams across time zones, cultures and business contexts.\n\nCombined with flexible program design, unified reporting and a digital platform that centralizes the entire coaching journey, Augment makes it simple for companies to roll out coaching broadly while keeping development aligned, measurable and highly qualitative at scale.",
+  },
+  {
+    question: "How does Augment use technology in coaching?",
+    answer:
+      "Augment uses technology to make coaching smarter, more personalized, and easier to scale. AI matching connects each employee with the right coach based on their goals, experience, and preferences.\n\nThroughout the journey, tools like self assessments, 360 degree feedback, goal tracking, and smart nudges support continuous progress and keep coachees engaged. The platform also includes Augment Academy, offering curated learning resources that reinforce what is discussed in coaching sessions.\n\nOn the organizational side, dashboards provide clear visibility into engagement and progress across focus areas, making impact measurable.",
+  },
+  {
+    question: "What is included in the Augment coaching experience?",
+    answer:
+      "Every Augment coaching journey includes one-to-one virtual sessions, progress tracking, goal setting, and access to curated learning resources. Participants work with a dedicated business coach who tailors the experience to their individual goals. This holistic, data-informed approach drives measurable personal and professional growth.",
+  },
+  {
+    question:
+      "Why do global companies choose Augment for business coaching?",
+    answer:
+      "Global companies choose Augment because it delivers high quality, scalable and measurable coaching across regions and business contexts. With a global network of more than 3,500 certified business coaches available in 80 languages and 90+ countries, organizations can offer consistent development to all employees, no matter where they are. This makes it easy to roll out coaching at scale while maintaining the same level of quality worldwide.\n\nCompanies also value Augment’s focus on impact. Coaching is structured around clear focus areas that align with organizational goals, and progress is measured through built-in self-assessments, 360° feedback and aggregated insights. This gives leaders visibility into real behavioral change and helps them demonstrate coaching impact.\n\nIn addition, the digital platform removes operational friction through AI coach matching, seamless scheduling, continuous learning resources and smart nudges that keep employees engaged. Combined with multilingual support from customer success managers, Augment offers a reliable, end-to-end solution that global organizations can trust to develop talent in a scalable, personalized and data driven way.",
   },
 ];
 

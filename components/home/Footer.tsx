@@ -18,15 +18,15 @@ type SocialLink = {
 };
 
 const leftLinks: FooterLink[] = [
-    { label: "Products", href: "/program" },
-    { label: "Solutions", href: "/faculty" },
-    { label: "For Coach", href: "/about-us" },
-    { label: "For Teams", href: "/testimonials" },
+    { label: "Products", href: "/products" },
+    { label: "Solutions", href: "/solutions" },
+    { label: "For Coach", href: "/for-coach" },
+    { label: "For Teams", href: "/for-teams" },
 ];
 
 const rightLinks: FooterLink[] = [
-    { label: "Community", href: "/free-class" },
-    { label: "About", href: "/support" },
+    { label: "Community", href: "/community" },
+    { label: "About", href: "/about" },
     { label: "Blogs", href: "/book-a-call" },
     { label: "Free Resources", href: "/blog" },
 ];
@@ -253,7 +253,7 @@ export default function Footer() {
                         </Link>
                     </div>
                 </div>
-                <Chats />
+                {/* <Chats /> */}
                 <div className="mt-12 flex flex-col items-center gap-4 text-center sm:mt-14 md:mt-16 md:flex-row md:items-center md:gap-7 md:text-left">
                     <span className="text-[18px] font-medium tracking-[-0.03em] text-white sm:text-[20px]">
                         Follow us

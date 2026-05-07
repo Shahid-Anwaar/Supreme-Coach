@@ -39,7 +39,7 @@ function FAQRow({ item, isOpen, onToggle }: FAQRowProps) {
         }`}
       >
         <div className="overflow-hidden">
-          <div className="max-w-full pb-4 pr-2 text-[15px] font-normal leading-[1.5] tracking-[-0.02em] text-black sm:pb-5 sm:pr-6 sm:text-[17px] md:max-w-255 md:pr-8 md:text-[19px] lg:text-[20px]">
+          <div className="max-w-full pb-4 pr-2 text-[13px] font-normal leading-[1.5] tracking-[-0.02em] text-black sm:pb-5 sm:pr-6 sm:text-[14px] md:max-w-255 md:pr-8 md:text-[16px] lg:text-[18px]">
             {item.answer}
           </div>
         </div>
@@ -48,6 +48,7 @@ function FAQRow({ item, isOpen, onToggle }: FAQRowProps) {
   );
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function FAQSection({faqs}: {faqs: any}) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 

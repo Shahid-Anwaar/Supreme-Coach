@@ -32,8 +32,8 @@ type EventItem = {
 //     image:
 //       "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=1200",
 //   },
-  
-  
+
+
 //   {
 //     id: 3,
 //     image:
@@ -54,7 +54,7 @@ type EventItem = {
 //     image:
 //       "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
 //   },
-  
+
 //   {
 //     id: 8,
 //     image:
@@ -249,23 +249,23 @@ const eventImages: EventItem[] = [
   //     "https://images.pexels.com/photos/1181717/pexels-photo-1181717.jpeg?auto=compress&cs=tinysrgb&w=1400",
   // },
 ];
-export default function InPersonEventsSection() {
+export default function InPersonEventsSection({ isShownHeading = true }: { isShownHeading?: boolean }) {
   return (
     <section className="bg-black pt-0">
       <div className="relative top-44 z-1 mx-auto max-w-400 px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        {isShownHeading && <div className="text-center">
           <p className="section-label text-white">
             IN-PERSON EVENTS
           </p>
 
-          <h2 className="mt-4 section-title text-white">
+          <h2 className="mt-3 mb-8 section-title text-white">
             Bringing Students Together
           </h2>
-        </div>
+        </div>}
 
         <CustomMasonry
           items={eventImages}
-          className="mt-10 sm:mt-12 lg:mt-14"
+          className=""
           columnsCountBreakPoints={{
             350: 1,
             640: 2,

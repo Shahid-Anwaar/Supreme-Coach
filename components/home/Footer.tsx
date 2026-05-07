@@ -25,8 +25,8 @@ const leftLinks: FooterLink[] = [
 ];
 
 const rightLinks: FooterLink[] = [
-    { label: "Community", href: "/free-class" },
-    { label: "About", href: "/support" },
+    { label: "Community", href: "/community" },
+    { label: "About", href: "/about" },
     { label: "Blogs", href: "/book-a-call" },
     { label: "Free Resources", href: "/blog" },
 ];

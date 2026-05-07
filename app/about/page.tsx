@@ -19,11 +19,6 @@ import AboutHeroSection from "@/components/about/AboutHeroSection";
 export default function CommunityPage() {
   return (
     <main className="bg-white text-black relative">
-      {/* <CommunityHero />
-      <StudentsTestmonials /> */}
-      {/* <StudentDirectory />
-      <EmblaCarousel />
-      <StudentsCompaniesBuilt /> */}
       <AboutHeroSection />
       <ManifestoSection />
       <StorySection />

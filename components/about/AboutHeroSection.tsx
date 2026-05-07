@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import useEmblaCarousel from "embla-carousel-react";
+import CustomEmblaCarousel from "../home/CustomCarosal";
 
 type HighlightItem = {
   id: number;
@@ -131,87 +132,137 @@ export default function AboutHeroSection() {
             Augment Is the Business School <span className="bg-linear-to-r from-primary-500 to-primary-300"> We Dreamed Of &nbsp;</span>
           </h1>
         </div>
-
-        {/* Label */}
-        <div className="mt-10">
-          <h3 className="text-[20px] font-[600] tracking-[-0.03em] text-[#1f1f1f] sm:text-[22px]">
-            Augment Highlights
-          </h3>
-          <div className="mt-1 h-0.5 w-full bg-black/12" />
-        </div>
       </div>
 
-      {/* Slider */}
-      <div className="mt-8">
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-4 pl-4 sm:pl-6 lg:pl-8">
-            {highlightItems.map((item) => (
-              <div
-                key={item.id}
-                className="min-w-0 flex-[0_0_84%] sm:flex-[0_0_48%] lg:flex-[0_0_24%]"
-              >
-                <article className="group relative h-[430px] overflow-hidden rounded-[24px] border border-black/12 bg-black shadow-[0_10px_30px_rgba(0,0,0,0.12)]">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 640px) 84vw, (max-width: 1024px) 48vw, 24vw"
-                    className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                  />
+      <section className="bg-white">
+        <div className="  section-container py-5">
+          <div className="mb-0">
+            <h3 className="text-[20px] font-[600] tracking-[-0.03em] text-[#1f1f1f] sm:text-[22px]">
+              Augment Highlights
+            </h3>
+            <div className="mt-1 h-0.5 w-full bg-black/12" />
+          </div>
 
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/10" />
+        </div>
+        <div className="mx-auto max-w-400 px-4 sm:px-6 lg:px-0">
+          <div className="relative text-center">
+            <CustomEmblaCarousel
+              CustomCard={(item, index, firstActiveItemIndex) => {
+                return (
+                  <div
+                    key={index}
+                    className="box-border min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 sm:px-1 md:basis-[42%] lg:basis-[22%]"
+                  >
+                    {/* <article
+                      key={item.id}
+                      className="group flex w-full h-full shrink-0 text-start flex-col overflow-hidden rounded-[22px] border border-black/12 bg-white transition duration-300 hover:-translate-y-1"
+                    >
+                      <div className="relative h-[202px] w-full overflow-hidden">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          sizes="386px"
+                          className="object-cover transition duration-500"
+                        />
+                        <div className="absolute left-6 top-6 z-10 flex items-center gap-2 text-white">
+                          <Icon icon={item.logoIcon} className="h-6 w-6 text-white" />
 
-                  {/* Content */}
-                  <div className="absolute inset-x-0 bottom-0 z-10 p-5 sm:p-6">
-                    <p className="text-[15px] font-[400] text-white/80">
-                      {item.category}
-                    </p>
+                          <span className="text-[24px] font-[800] leading-none tracking-[-0.04em] text-white">
+                            {item.logoText}
+                          </span>
+                        </div>
+                      </div>
 
-                    <h4 className="mt-2 max-w-[90%] text-[22px] font-[600] leading-[1.18] tracking-[-0.04em] text-white sm:text-[24px]">
-                      {item.title}
-                    </h4>
+                      <div className="flex flex-1 flex-col justify-end p-5">
+                        <div className="mt-auto">
+                          <p className="text-[13px] font-[400] text-[#686868]">
+                            {item.source}
+                          </p>
 
-                    <div className="mt-5 flex justify-end">
+                          <div className="flex justify-between items-end">
+                            <h3 className="mt-3 flex-1 max-w-[290px] text-[22px] font-[600] leading-[1.18] tracking-[0.5px] text-[#202020]">
+                              {item.title}
+                            </h3>
+                            <button
+                              type="button"
+                              aria-label={`Open article: ${item.title}`}
+                              className="flex h-6 w-6 items-center justify-center rounded-full border border-black/25 bg-transparent text-[#222] transition duration-300 hover:bg-black hover:text-white"
+                            >
+                              <Icon icon="mingcute:right-line" className="h-4 w-4" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </article> */}
+
+                    <article className="group relative h-[480px] w-full overflow-hidden rounded-[26px] border border-black/20 bg-black text-start shadow-[0_2px_10px_rgba(0,0,0,0.12)]">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        sizes="(max-width: 640px) 92vw, (max-width: 1024px) 48vw, 50vw"
+                        className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                      />
+
+                      {/* Dark overlay like screenshot */}
+                      <div className="absolute inset-0 bg-black/20" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+
+                      {/* Content */}
+                      <div className="absolute inset-x-0 bottom-0 z-10 p-7">
+                        <p className="text-[16px] font-[400] leading-none text-white/70">
+                          {item.category}
+                        </p>
+
+                        <h4 className="mt-3 max-w-[82%] text-[20px] font-[800] leading-[1.2] tracking-[-0.035em] text-white sm:text-[21px]">
+                          {item.title}
+                        </h4>
+                      </div>
+
+                      {/* Arrow button */}
                       <button
                         type="button"
                         aria-label={`Open ${item.title}`}
-                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/35 bg-white/10 text-white backdrop-blur-sm transition duration-300 hover:bg-white hover:text-black"
+                        className="absolute bottom-8 right-7 z-20 flex h-[34px] w-[34px] items-center justify-center rounded-full border border-white/45 bg-black/10 text-white backdrop-blur-sm transition duration-300 hover:bg-white hover:text-black"
                       >
-                        <Icon
-                          icon="lucide:arrow-right"
-                          className="h-4.5 w-4.5"
-                        />
+                        <Icon icon="lucide:chevron-right" className="h-[18px] w-[18px]" />
                       </button>
-                    </div>
+                    </article>
                   </div>
-                </article>
-              </div>
-            ))}
+                );
+              }}
+              isAutoplay={false}
+              items={[...highlightItems, ...highlightItems]}
+              options={{ loop: true, align: "center", skipSnaps: false }}
+              wrapperClassName="mt-3 min-h-0 bg-transparent mb-28 pt-2"
+              CustomButtonWrapper={(onPrevClick, onNextClick) => {
+                return (
+                  <div className="absolute -bottom-14 flex w-full items-center justify-center gap-3 sm:-bottom-16 sm:gap-4 lg:-bottom-18">
+                    <button
+                      type="button"
+                      onClick={onPrevClick}
+                      aria-label="Previous slide"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-black/12 bg-[#ededea] text-[#222] transition duration-300 hover:bg-black hover:text-white"
+                    >
+                      <Icon icon="lucide:chevron-left" className="h-5 w-5" />
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={onNextClick}
+                      aria-label="Next slide"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-black/12 bg-[#ededea] text-[#222] transition duration-300 hover:bg-black hover:text-white"
+                    >
+                      <Icon icon="lucide:chevron-right" className="h-5 w-5" />
+                    </button>
+                  </div>
+                );
+              }}
+            />
           </div>
         </div>
-
-        {/* Arrows */}
-        <div className="mt-8 flex items-center justify-center gap-3">
-          <button
-            type="button"
-            onClick={scrollPrev}
-            aria-label="Previous slide"
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-black/12 bg-[#ededea] text-[#222] transition duration-300 hover:bg-black hover:text-white"
-          >
-            <Icon icon="lucide:chevron-left" className="h-5 w-5" />
-          </button>
-
-          <button
-            type="button"
-            onClick={scrollNext}
-            aria-label="Next slide"
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-black/12 bg-[#ededea] text-[#222] transition duration-300 hover:bg-black hover:text-white"
-          >
-            <Icon icon="lucide:chevron-right" className="h-5 w-5" />
-          </button>
-        </div>
-      </div>
+      </section>
     </section>
   );
 }

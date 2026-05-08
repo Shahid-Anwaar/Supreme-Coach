@@ -1,22 +1,15 @@
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 
 export default function ManifestoSection() {
   return (
-    <section className="relative overflow-hidden bg-white section-container">
-      {/* soft abstract background blobs */}
-      {/* <div className="pointer-events-none absolute left-[-120px] top-[40px] h-[240px] w-[240px] rounded-full bg-[#eef0e8] opacity-80 blur-3xl" />
-      <div className="pointer-events-none absolute right-[8%] top-[-30px] h-[220px] w-[220px] rounded-full bg-[#eef0e8] opacity-80 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-[8%] left-[24%] h-[220px] w-[220px] rounded-full bg-[#f0f1ea] opacity-70 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-[-40px] right-[18%] h-[260px] w-[260px] rounded-full bg-[#eef0e8] opacity-70 blur-3xl" /> */}
-
+    <section className="relative overflow-hidden bg-white section-container py-12 sm:py-16 md:py-20 lg:py-0">
       <div className="relative">
-        <div className="max-w-[880px]">
-          <h2 className="section-title">
+        <div className="mx-auto max-w-[880px] text-center lg:mx-0 lg:text-start">
+          <h2 className="section-title leading-[1.1]">
             The Augment Manifesto
           </h2>
 
-          <div className="mt-10 space-y-10 text-[22px] max-w-[820px] font-[400] leading-[1.7] tracking-[-0.03em] text-[#1f1f1f] sm:text-[24px] lg:text-[25px]">
+          <div className="mx-auto mt-6 max-w-[820px] space-y-6 text-[18px] font-[400] leading-[1.55] tracking-[-0.03em] text-[#1f1f1f] sm:mt-8 sm:space-y-8 sm:text-[21px] sm:leading-[1.6] md:text-[23px] md:leading-[1.65] lg:mt-10 lg:space-y-10 lg:text-[25px] lg:leading-[1.7] lg:mx-0">
             <p>
               People often ask why we’re building Augment. The truth is,
               Augment was no spark of genius. We’re building it because we have
@@ -43,30 +36,35 @@ export default function ManifestoSection() {
           </div>
 
           {/* signatures */}
-          <div className="mt-16 flex flex-col gap-10 sm:flex-row sm:gap-20 lg:gap-28">
-            <div>
+          <div className="mx-auto mt-10 flex max-w-[520px] flex-col items-center justify-center gap-8 sm:mt-12 sm:flex-row sm:items-start sm:gap-14 md:mt-14 md:gap-20 lg:mx-0 lg:mt-16 lg:justify-start lg:gap-28">
+            <div className="flex w-full max-w-[230px] flex-col items-center text-center sm:max-w-none lg:items-start lg:text-start">
               <Image
-                src={"https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F65c1b01240b7458a871b8e02e16a0f8c"}
+                src={
+                  "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F65c1b01240b7458a871b8e02e16a0f8c"
+                }
                 width={180}
                 height={100}
                 alt="anything"
-                className="w-48 h-28 object-cover"
+                className="h-24 w-40 object-cover sm:h-26 sm:w-44 md:h-28 md:w-48"
                 unoptimized
               />
-              <p className="mt-1 text-[16px] font-semibold tracking-[-0.03em] text-[#7b7b7b] sm:text-[17px]">
+              <p className="mt-1 text-[14px] font-semibold tracking-[-0.03em] text-[#7b7b7b] sm:text-[16px] md:text-[17px]">
                 Co-Founder/CEO, Augment
               </p>
             </div>
-            <div>
+
+            <div className="flex w-full max-w-[230px] flex-col items-center text-center sm:max-w-none lg:items-start lg:text-start">
               <Image
-                src={"https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F0b7154d10c66468a82d9f38a67cb086e"}
+                src={
+                  "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F0b7154d10c66468a82d9f38a67cb086e"
+                }
                 width={180}
                 height={100}
                 alt="anything"
-                className="w-48 h-28 object-cover"
+                className="h-24 w-40 object-cover sm:h-26 sm:w-44 md:h-28 md:w-48"
                 unoptimized
               />
-              <p className="mt-1 text-[16px] font-semibold tracking-[-0.03em] text-[#7b7b7b] sm:text-[17px]">
+              <p className="mt-1 text-[14px] font-semibold tracking-[-0.03em] text-[#7b7b7b] sm:text-[16px] md:text-[17px]">
                 Co-Founder/COO, Augment
               </p>
             </div>

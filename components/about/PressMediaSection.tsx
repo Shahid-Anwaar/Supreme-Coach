@@ -108,61 +108,69 @@ const pressItems: PressItem[] = [
 export default function PressMediaSection() {
   return (
     <section className="bg-white">
-      <div className="  section-container py-5">
+      <div className="section-container py-4 sm:py-5">
         <div className="mb-0">
-          <h3 className="text-[20px] font-[600] tracking-[-0.03em] text-[#1f1f1f] sm:text-[22px]">
+          <h3 className="text-center text-[18px] font-[600] tracking-[-0.03em] text-[#1f1f1f] sm:text-[20px] md:text-start md:text-[22px]">
             Press & Media
           </h3>
-          <div className="mt-1 h-0.5 w-full bg-black/12" />
+          <div className="mt-2 h-0.5 w-full bg-black/12 sm:mt-1" />
         </div>
-
       </div>
-      <div className="mx-auto max-w-400 px-4 sm:px-6 lg:px-0">
+
+      <div className="mx-auto w-full max-w-400 px-4 sm:px-5 md:px-6 lg:px-0">
         <div className="relative text-center">
           <CustomEmblaCarousel
             CustomCard={(item, index, firstActiveItemIndex) => {
               return (
                 <div
                   key={index}
-                  className="box-border min-w-0 shrink-0 grow-0 basis-full sm:basis-1/2 sm:px-1 md:basis-[42%] lg:basis-[24%]"
+                  className="box-border min-w-0 shrink-0 grow-0 basis-[86%] px-1 sm:basis-[52%] sm:px-1.5 md:basis-[42%] md:px-2 lg:basis-[24%]"
                 >
                   <article
                     key={item.id}
-                    className="group flex w-full h-full shrink-0 text-start flex-col overflow-hidden rounded-[22px] border border-black/12 bg-white transition duration-300 hover:-translate-y-1"
+                    className="group flex h-full w-full shrink-0 flex-col overflow-hidden rounded-[18px] border border-black/12 bg-white text-start transition duration-300 hover:-translate-y-1 sm:rounded-[20px] md:rounded-[22px]"
                   >
-                    <div className="relative h-[202px] w-full overflow-hidden">
+                    <div className="relative h-[170px] w-full overflow-hidden sm:h-[190px] md:h-[202px]">
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
-                        sizes="386px"
+                        sizes="(max-width: 640px) 86vw, (max-width: 1024px) 52vw, 386px"
                         className="object-cover transition duration-500"
                       />
-                      <div className="absolute left-6 top-6 z-10 flex items-center gap-2 text-white">
-                        <Icon icon={item.logoIcon} className="h-6 w-6 text-white" />
 
-                        <span className="text-[24px] font-[800] leading-none tracking-[-0.04em] text-white">
+                      <div className="absolute left-4 top-4 z-10 flex items-center gap-2 text-white sm:left-5 sm:top-5 md:left-6 md:top-6">
+                        <Icon
+                          icon={item.logoIcon}
+                          className="h-5 w-5 text-white sm:h-6 sm:w-6"
+                        />
+
+                        <span className="text-[20px] font-[800] leading-none tracking-[-0.04em] text-white sm:text-[22px] md:text-[24px]">
                           {item.logoText}
                         </span>
                       </div>
                     </div>
 
-                    <div className="flex flex-1 flex-col justify-end p-5">
+                    <div className="flex flex-1 flex-col justify-end p-4 sm:p-5">
                       <div className="mt-auto">
-                        <p className="text-[13px] font-[400] text-[#686868]">
+                        <p className="text-[12px] font-[400] leading-[1.4] text-[#686868] sm:text-[13px]">
                           {item.source}
                         </p>
 
-                        <div className="flex justify-between items-end">
-                          <h3 className="mt-3 flex-1 max-w-[290px] text-[22px] font-[600] leading-[1.18] tracking-[0.5px] text-[#202020]">
+                        <div className="mt-2 flex items-end justify-between gap-3 sm:mt-3">
+                          <h3 className="flex-1 text-[18px] font-[600] leading-[1.2] tracking-[0.2px] text-[#202020] sm:text-[20px] md:max-w-[290px] md:text-[22px] md:leading-[1.18] md:tracking-[0.5px]">
                             {item.title}
                           </h3>
+
                           <button
                             type="button"
                             aria-label={`Open article: ${item.title}`}
-                            className="flex h-6 w-6 items-center justify-center rounded-full border border-black/25 bg-transparent text-[#222] transition duration-300 hover:bg-black hover:text-white"
+                            className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-black/25 bg-transparent text-[#222] transition duration-300 hover:bg-black hover:text-white sm:h-6 sm:w-6"
                           >
-                            <Icon icon="mingcute:right-line" className="h-4 w-4" />
+                            <Icon
+                              icon="mingcute:right-line"
+                              className="h-4 w-4"
+                            />
                           </button>
                         </div>
                       </div>
@@ -174,10 +182,10 @@ export default function PressMediaSection() {
             isAutoplay={false}
             items={[...pressItems, ...pressItems]}
             options={{ loop: true, align: "center", skipSnaps: false }}
-            wrapperClassName="mt-3 min-h-0 bg-transparent mb-28 pt-2"
+            wrapperClassName="mt-2 min-h-0 bg-transparent mb-20 pt-2 sm:mt-3 sm:mb-24 md:mb-28"
             CustomButtonWrapper={(onPrevClick, onNextClick) => {
               return (
-                <div className="absolute -bottom-14 flex w-full items-center justify-center gap-3 sm:-bottom-16 sm:gap-4 lg:-bottom-18">
+                <div className="absolute -bottom-12 flex w-full items-center justify-center gap-3 sm:-bottom-14 sm:gap-4 md:-bottom-16 lg:-bottom-18">
                   <button
                     type="button"
                     onClick={onPrevClick}

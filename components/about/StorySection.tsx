@@ -1,13 +1,8 @@
-import Image from "next/image";
-import { Icon } from "@iconify/react";
+
 
 export default function StorySection() {
   return (
     <section className="relative overflow-hidden bg-white  section-container">
-      {/* Soft background shapes */}
-      {/* <div className="pointer-events-none absolute left-[-80px] top-[-120px] h-[260px] w-[260px] rounded-full bg-[#eef0d9]/70 blur-3xl" />
-      <div className="pointer-events-none absolute right-[12%] top-[-120px] h-[300px] w-[300px] rounded-full bg-[#eef0d9]/70 blur-3xl" /> */}
-
       <div className="relative mx-auto grid items-center gap-12 lg:grid-cols-[0.9fr_1fr] lg:gap-16">
         {/* Left Content */}
         <div>

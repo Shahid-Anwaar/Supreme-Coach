@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import React from "react";
 
 interface CustomMasonryProps<T> {
@@ -249,19 +250,25 @@ const eventImages: EventItem[] = [
   //     "https://images.pexels.com/photos/1181717/pexels-photo-1181717.jpeg?auto=compress&cs=tinysrgb&w=1400",
   // },
 ];
-export default function InPersonEventsSection({ isShownHeading = true }: { isShownHeading?: boolean }) {
+export default function InPersonEventsSection({
+  isShownHeading = true,
+}: {
+  isShownHeading?: boolean;
+}) {
   return (
     <section className="bg-black pt-0">
-      <div className="relative top-44 z-1 mx-auto max-w-400 px-4 sm:px-6 lg:px-8">
-        {isShownHeading && <div className="text-center">
-          <p className="section-label text-white">
-            IN-PERSON EVENTS
-          </p>
+      <div className="relative top-16 z-1 mx-auto max-w-400 px-4 sm:top-24 sm:px-5 md:top-32 md:px-6 lg:top-44 lg:px-8">
+        {isShownHeading && (
+          <div className="text-center">
+            <p className="section-label text-white">
+              IN-PERSON EVENTS
+            </p>
 
-          <h2 className="mt-3 mb-8 section-title text-white">
-            Bringing Students Together
-          </h2>
-        </div>}
+            <h2 className="mt-3 mb-6 section-title text-white sm:mb-7 md:mb-8">
+              Bringing Students Together
+            </h2>
+          </div>
+        )}
 
         <CustomMasonry
           items={eventImages}
@@ -274,19 +281,22 @@ export default function InPersonEventsSection({ isShownHeading = true }: { isSho
             1300: 5,
           }}
           gutterBreakPoints={{
-            350: 12,
-            640: 14,
-            800: 16,
+            350: 10,
+            640: 12,
+            800: 14,
             1000: 18,
             1300: 20,
           }}
           renderItem={(item: EventItem) => (
             <div className="overflow-hidden rounded-md bg-white/5">
-              <img
+              <Image
                 src={item.image}
                 alt="In-person event"
+                width={600}
+                height={800}
+                sizes="(max-width: 640px) 92vw, (max-width: 800px) 46vw, (max-width: 1000px) 31vw, 20vw"
                 className="h-auto w-full object-cover grayscale transition duration-500 hover:scale-[1.03]"
-                loading="lazy"
+                unoptimized
               />
             </div>
           )}

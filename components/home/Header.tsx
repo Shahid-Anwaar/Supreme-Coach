@@ -87,7 +87,17 @@ export default function HeaderSection() {
                   ))}
                 </ul>
               </nav>
-              <PrimaryCta href="#" />
+              <div className="flex h-auto items-center flex-wrap gap-2">
+                <Link
+                  href=""
+                  className={`group closed-btn mx-auto px-4 py-2.5 text-[13px] xl:px-6 xl:text-[14px]`}
+                >
+                  Contact Sales
+                </Link>
+                <PrimaryCta href="#" />
+              </div>
+
+
             </div>
 
             <button
@@ -151,7 +161,13 @@ export default function HeaderSection() {
               </ul>
             </nav>
 
-            <div className="border-t flex justify-center border-white/10 items-center pt-4 sm:pt-5">
+            <div className="border-t flex flex-wrap gap-3 justify-center border-white/10 items-center pt-4 sm:pt-5">
+              <Link
+                href=""
+                className={`group closed-btn inline-flex w-auto px-4 py-2 text-[12px] sm:w-auto sm:px-5 sm:text-[13px]`}
+              >
+                Contact Sales
+              </Link>
               <PrimaryCta href="#" mobile />
             </div>
           </div>
@@ -171,9 +187,9 @@ function PrimaryCta({
   return (
     <Link
       href={href}
-      className={`group contained-btn mx-auto ${mobile
-        ? "inline-flex w-full px-6 py-3 text-[13px] sm:w-auto sm:mx-auto sm:px-8 sm:text-[14px]"
-        : "px-8 py-3 text-[13px] xl:px-10 xl:text-[14px]"
+      className={`group contained-btn  ${mobile
+        ? "inline-flex px-4 py-2 text-[12px] sm:w-auto sm:px-5 sm:text-[13px]"
+        : "mx-auto px-4 py-3 text-[13px] xl:px-6 xl:text-[14px]"
         }`}
     >
       <span className="text-[0.98em] font-semibold uppercase tracking-[0.12em]">

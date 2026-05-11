@@ -64,7 +64,7 @@ body {
 
   /* Primary rounded CTA button */
   .contained-btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-black bg-primary px-[34px] py-[13px] text-[15px] font-bold uppercase leading-none tracking-[0.02em] text-black transition-opacity duration-200 hover:bg-primary-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-black bg-primary px-[34px] py-3 text-[15px] font-bold uppercase leading-none tracking-[0.02em] text-black transition-opacity duration-200 hover:bg-primary-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50;
   }
 
   /* Danger / delete action button */
@@ -79,7 +79,7 @@ body {
 
   /* Neutral close / cancel button */
   .closed-btn {
-    @apply bg-transparent py-3.5 disabled:cursor-not-allowed disabled:opacity-50 inline-flex items-center justify-center rounded-full border border-white px-16 text-[14px] font-semibold uppercase tracking-[0.04em] text-white transition-all duration-200 hover:bg-white hover:text-black;
+    @apply bg-transparent py-3 disabled:cursor-not-allowed disabled:opacity-50 inline-flex items-center justify-center rounded-full border border-white px-16 text-[14px] font-semibold uppercase tracking-[0.04em] text-white transition-all duration-200 hover:bg-white hover:text-black;
   }
 
   .paragraph-text{

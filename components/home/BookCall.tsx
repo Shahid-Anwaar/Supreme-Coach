@@ -18,7 +18,7 @@ export default function BookCallSection({
     title = "",
     subTitle = "",
     imgSrc = "",
-    btnText = "Book a Call",
+    btnText = "Book A Demo",
     btnLink = "/book-a-call",
     icon = "mingcute:arrow-right-fill",
     topClasses = "bg-white",

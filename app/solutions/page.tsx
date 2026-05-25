@@ -6,7 +6,7 @@ import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { COURSE_FEATURES, COURSE_FEATURES2, faqs } from "@/data/data";
+import { COURSE_FEATURES, COURSE_FEATURES2, homeFaqs, solutionsFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import FAQSection from "@/components/home/FaqSection";
 
@@ -102,9 +102,9 @@ export default function SolutionsPage() {
                 bottomClasses="bg-[#000000]"
             /> */}
       {/* <CoursesCommunity /> */}
-       {/* <FAQSection faqs={faqs} /> */}
+       <FAQSection faqs={solutionsFaqs} />
       <BookCallSection
-        title="Book a Call with a Program Advisor"
+        title="Book a Demo with a Program Advisor"
         icon="solar:phone-linear"
         subTitle="Discuss your business goals and find out if Augment is a fit for you."
         topClasses="bg-[#f3f4f6]"

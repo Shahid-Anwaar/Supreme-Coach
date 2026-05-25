@@ -193,7 +193,7 @@ function PrimaryCta({
         }`}
     >
       <span className="text-[0.98em] font-semibold uppercase tracking-[0.12em]">
-        Book a call
+        Book A Demo
       </span>
 
       <Icon

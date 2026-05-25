@@ -14,7 +14,7 @@ import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import CoursesCommunity from "@/components/home/CoursesCommunity";
-import { faqs } from "@/data/data";
+import { homeFaqs } from "@/data/data";
 import ProductStories from "@/components/products/ProductStories";
 import ProductSold from "@/components/products/ProductSold";
 
@@ -41,7 +41,7 @@ export default function AllPage() {
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-[#f3f4f6]"
       />
-      <FAQSection faqs={faqs} />
+      <FAQSection faqs={homeFaqs} />
       <BookCallSection
         title="Stand out with the Augment LinkedIn Certificate"
         btnText="Enroll Now"
@@ -66,7 +66,7 @@ export default function AllPage() {
 
 
       <BookCallSection
-        title="Book a Call with a Program Advisor"
+        title="Book a Demo with a Program Advisor"
         icon="solar:phone-linear"
         subTitle="Discuss your business goals and find out if Augment is a fit for you."
         topClasses="bg-black"

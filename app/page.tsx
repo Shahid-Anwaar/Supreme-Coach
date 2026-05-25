@@ -16,12 +16,24 @@ import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import CoursesCommunity from "@/components/home/CoursesCommunity";
-import { faqs } from "@/data/data";
+import { companyLogos, homeFaqs } from "@/data/data";
+import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 
 export default function Home() {
   return (
     <main className="bg-white text-black relative">
       <AugmentHeroSection />
+      <div className="w-full bg-black pb-7">
+        <div className="max-w-314 bg-white py-4 mx-auto">
+          <div className="mx-auto bg-white px-0">
+            <CompanyLogoCarousel
+              companyLogos={[...companyLogos, ...companyLogos]}
+              wrapperClassName="min-h-0 bg-white"
+            />
+          </div>
+        </div>
+      </div>
+
       <FeaturedInSection />
       <ViewsSection />
       <FacultySection />
@@ -31,7 +43,7 @@ export default function Home() {
         title="Your stack, supercharged"
         description="Augment flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
       />
-      <ClientsSection title="Trusted by growing companies" />
+      <ClientsSection title="Trusted by growing companies" isShowCompanies={false} />
       <BookCallSection
         title="15-Day Money-Back Guarantee"
         btnText="Enroll Now"
@@ -39,7 +51,7 @@ export default function Home() {
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-[#f3f4f6]"
       />
-      <FAQSection faqs={faqs} />
+      <FAQSection faqs={homeFaqs} />
       <BookCallSection
         title="Stand out with the Augment LinkedIn Certificate"
         btnText="Enroll Now"
@@ -79,7 +91,7 @@ export default function Home() {
       />
       <FAQSection /> */}
       <BookCallSection
-        title="Book a Call with a Program Advisor"
+        title="Book A Demo with a Program Advisor"
         icon="solar:phone-linear"
         subTitle="Discuss your business goals and find out if Augment is a fit for you."
         topClasses="bg-black"

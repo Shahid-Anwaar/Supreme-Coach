@@ -6,7 +6,7 @@ import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, homeFaqs, teamFaqs } from "@/data/data";
+import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, homeFaqs, integrationsFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
@@ -27,13 +27,13 @@ const views = [
     image:
       "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
   },
-  {
-    title: "Your team's view",
-    description:
-      "Give your team a clear and organized workspace to manage content, track progress, and support your students more efficiently.",
-    image:
-      "/view3.png",
-  },
+  // {
+  //   title: "Your team's view",
+  //   description:
+  //     "Give your team a clear and organized workspace to manage content, track progress, and support your students more efficiently.",
+  //   image:
+  //     "/view3.png",
+  // },
 ];
 
 const companyLogos = [
@@ -59,7 +59,7 @@ const companyLogos = [
   },
 ];
 
-export default function TeamsPage() {
+export default function ExploreIntegrationPage() {
   return (
     <main className="bg-white text-black relative">
       <ProductsHeroSection />
@@ -68,7 +68,7 @@ export default function TeamsPage() {
       </p>
       <CompanyLogoCarousel companyLogos={[...companyLogos, ...companyLogos]} />;
       <div className="py-7"></div>
-      <ViewsSection items={views} />
+      {/* <ViewsSection items={views} /> */}
       {/* <ProductsCompaniesSection /> */}
       <ProductFeaturesSection
         title="Course creation tools for higher student engagement"
@@ -87,12 +87,29 @@ export default function TeamsPage() {
         features={COURSE_FEATURES2}
         wrapperClassName="bg-white"
       />
+       <ProductFeaturesSection
+        title="Course creation tools for higher student engagement"
+        description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
+        imgShown="left"
+        imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e3117618576ae8098abc7b_b98cb8e56c799a3342711e81f7fb0fce_courses-quiz-1.webp"
+        imgAlt="Augment course onboarding and quiz preview"
+        features={COURSE_FEATURES}
+
+      />
+      <ProductFeaturesSection
+        title="Simple to build—and keep growing"
+        description="When you’re big on ambition and light on time, you need a platform that’s reliable and doesn't limit your creativity."
+        imgShown="right"
+        imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176489d43d06d91c2a4_de40b7dd8f24f29c9f0a8704b2f53a34_courses-quiz-2.webp"
+        features={COURSE_FEATURES2}
+        wrapperClassName="bg-white"
+      />
       <ProductSalesHubSection />
-      <HowItWorksCard />
-      <IntegrationsSection
+      {/* <HowItWorksCard /> */}
+      {/* <IntegrationsSection
         title="It's your business, your way"
         description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
-      />
+      /> */}
       <ClientsSection title="Augment success stories write themselves" isShowCompanies={true} />
       {/* <ProductTools /> */}
       {/* <ProductSold /> */}
@@ -139,7 +156,7 @@ export default function TeamsPage() {
               topClasses="bg-[#f3f4f6]"
               bottomClasses="bg-[#f3f4f6]"
             /> */}
-            <FAQSection faqs={teamFaqs} />
+            <FAQSection faqs={integrationsFaqs} />
             {/* <BookCallSection
               title="Stand out with the Augment LinkedIn Certificate"
               btnText="Enroll Now"

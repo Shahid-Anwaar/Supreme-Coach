@@ -261,19 +261,19 @@ function FramedGrid({ layout }: { layout: GridLayout }) {
 
 export default function IntegrationsSection({title, description}: {title: string, description: string}) {
     return (
-        <section className="bg-white px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-10 lg:py-18">
+        <section className="bg-white px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-10 lg:py-18 xl:py-0">
             <div className="mx-auto max-w-[1500px]">
-                <div className="mx-auto max-w-[900px] text-center">
+                <div className="mx-auto max-w-[900px] text-center xl:relative top-12">
                     <h2 className="section-title text-black">
                         {title}
                     </h2>
 
-                    <p className="section-description mx-auto mt-4 max-w-2xl text-black">
+                    <p className="section-description relative z-20 mx-auto mt-4 max-w-2xl text-black">
                         {description}
                     </p>
                 </div>
 
-                <div className="relative mt-3 overflow-hidden sm:mt-5">
+                <div className="relative overflow-hidden">
                     <div className="block sm:hidden">
                         <FramedGrid layout={SM_LAYOUT} />
                     </div>
@@ -300,9 +300,9 @@ export default function IntegrationsSection({title, description}: {title: string
                     <div className="absolute right-0 top-0 z-10 h-full w-10 bg-linear-to-l from-white via-transparent to-transparent sm:w-14 lg:w-24" />
                 </div>
 
-                <div className="mt-4 flex justify-center lg:mt-0">
+                <div className="mt-3 flex justify-center xl:mt-0 xl:relative xl:bottom-14 z-20">
                     <Link
-                        href="#"
+                        href="/explore-integration"
                         className="outlined-btn px-7 capitalize!"
                     >
                         Explore integrations

@@ -1,7 +1,7 @@
 import BookCallSection from "@/components/home/BookCall";
 import Footer from "@/components/home/Footer";
 import FAQSection from "@/components/home/FaqSection";
-import { coachesFaqs } from "@/data/data";
+import { coachesFaqs, communityFaqs } from "@/data/data";
 import CommunityHero from "@/components/community/CommunityHero";
 import StudentsTestmonials from "@/components/community/StudentsTestmonials";
 import StudentDirectory from "@/components/community/StudentDirectory";
@@ -27,9 +27,9 @@ export default function CommunityPage() {
                 topClasses="bg-black"
                 bottomClasses="bg-[#f3f4f6]"
             />
-            <FAQSection faqs={coachesFaqs} />
+            <FAQSection faqs={communityFaqs} />
             <BookCallSection
-                title="Book a Call with a Program Advisor"
+                title="Book a Demo with a Program Advisor"
                 icon="solar:phone-linear"
                 subTitle="Discuss your business goals and find out if Augment is a fit for you."
                 topClasses="bg-[#f3f4f6]"

@@ -6,7 +6,7 @@ import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, faqs } from "@/data/data";
+import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, homeFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
@@ -93,7 +93,7 @@ export default function CoachesPage() {
         title="It's your business, your way"
         description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
       />
-      <ClientsSection title="Augment success stories write themselves" isShowCompanies={false} />
+      <ClientsSection title="Augment success stories write themselves" isShowCompanies={true} />
       {/* <ProductTools /> */}
       {/* <ProductSold /> */}
       {/* <FAQSection faqs={FAQS} /> */}
@@ -149,7 +149,7 @@ export default function CoachesPage() {
               imgSrc="/certificate.webp"
             /> */}
       <BookCallSection
-        title="Book a Call with a Program Advisor"
+        title="Book a Demo with a Program Advisor"
         icon="solar:phone-linear"
         subTitle="Discuss your business goals and find out if Augment is a fit for you."
         topClasses="bg-[#f3f4f6]"

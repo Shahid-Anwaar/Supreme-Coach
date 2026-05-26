@@ -61,14 +61,14 @@ export default function Home() {
         imgSrc="/certificate.webp"
       />
       <MissionComparisonSection />
-      <BookCallSection
+      {/* <BookCallSection
         title="15-Day Money-Back Guarantee"
         btnText="Enroll Now"
         subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
         topClasses="bg-[#000000]"
         bottomClasses="bg-[#000000]"
-      />
-      <CoursesCommunity />
+      /> */}
+      
 
       {/* <TeaserVideoSection /> */}
       {/* <WhyAugmentSection /> */}
@@ -82,21 +82,9 @@ export default function Home() {
         imgSrc="/certificate.webp"
       />
       <MissionComparisonSection />
-      <BookCallSection
-        title="15-Day Money-Back Guarantee"
-        btnText="Enroll Now"
-        subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-        topClasses="bg-[#000000]"
-        bottomClasses="bg-[#f3f4f6]"
-      />
+      
       <FAQSection /> */}
-      <BookCallSection
-        title="Book A Demo with a Program Advisor"
-        icon="solar:phone-linear"
-        subTitle="Discuss your business goals and find out if Augment is a fit for you."
-        topClasses="bg-black"
-        bottomClasses="bg-black"
-      />
+      
       <Footer />
     </main>
   );

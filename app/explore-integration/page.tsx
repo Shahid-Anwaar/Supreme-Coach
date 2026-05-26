@@ -1,40 +1,12 @@
 import BookCallSection from "@/components/home/BookCall";
 import Footer from "@/components/home/Footer";
-import ViewsSection from "@/components/home/ViewsSection";
-import HowItWorksCard from "@/components/home/HowItWorks";
-import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, homeFaqs, integrationsFaqs } from "@/data/data";
+import { COURSE_FEATURES, COURSE_FEATURES2, homeFaqs, integrationsFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
-
-
-const views = [
-  {
-    title: "Your view",
-    description:
-      "Easily create your products, manage your business, and customize your students' learning experience in one place.",
-    image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1edeb440ab80fdf439_0eb0b462897381c9122d4546e00aca77_ui-main-hero-tab-2.webp",
-  },
-  {
-    title: "Your student's view",
-    description:
-      "Intuitive, mobile-friendly, and built for your students to seamlessly access and discover your products and offers.",
-    image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
-  },
-  // {
-  //   title: "Your team's view",
-  //   description:
-  //     "Give your team a clear and organized workspace to manage content, track progress, and support your students more efficiently.",
-  //   image:
-  //     "/view3.png",
-  // },
-];
 
 const companyLogos = [
   {
@@ -124,13 +96,7 @@ export default function ExploreIntegrationPage() {
 
 
       {/* <ClientsSection /> */}
-      {/* <BookCallSection
-                title="15-Day Money-Back Guarantee"
-                btnText="Enroll Now"
-                subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-                topClasses="bg-[#f3f4f6]"
-                bottomClasses="bg-[#f3f4f6]"
-            /> */}
+      
 
       {/* <BookCallSection
                 title="Stand out with the Augment LinkedIn Certificate"
@@ -141,21 +107,7 @@ export default function ExploreIntegrationPage() {
                 imgSrc="/certificate.webp"
             />
             <MissionComparisonSection /> */}
-      {/* <BookCallSection
-                title="15-Day Money-Back Guarantee"
-                btnText="Enroll Now"
-                subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-                topClasses="bg-[#000000]"
-                bottomClasses="bg-[#000000]"
-            /> */}
-      {/* <CoursesCommunity /> */}
-      {/* <BookCallSection
-              title="15-Day Money-Back Guarantee"
-              btnText="Enroll Now"
-              subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-              topClasses="bg-[#f3f4f6]"
-              bottomClasses="bg-[#f3f4f6]"
-            /> */}
+    
             <FAQSection faqs={integrationsFaqs} />
             {/* <BookCallSection
               title="Stand out with the Augment LinkedIn Certificate"

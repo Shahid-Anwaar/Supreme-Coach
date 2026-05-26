@@ -107,13 +107,7 @@ export default function CoachesPage() {
 
 
       {/* <ClientsSection /> */}
-      {/* <BookCallSection
-                title="15-Day Money-Back Guarantee"
-                btnText="Enroll Now"
-                subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-                topClasses="bg-[#f3f4f6]"
-                bottomClasses="bg-[#f3f4f6]"
-            /> */}
+      
 
       {/* <BookCallSection
                 title="Stand out with the Augment LinkedIn Certificate"
@@ -124,21 +118,7 @@ export default function CoachesPage() {
                 imgSrc="/certificate.webp"
             />
             <MissionComparisonSection /> */}
-      {/* <BookCallSection
-                title="15-Day Money-Back Guarantee"
-                btnText="Enroll Now"
-                subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-                topClasses="bg-[#000000]"
-                bottomClasses="bg-[#000000]"
-            /> */}
-      {/* <CoursesCommunity /> */}
-      {/* <BookCallSection
-              title="15-Day Money-Back Guarantee"
-              btnText="Enroll Now"
-              subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-              topClasses="bg-[#f3f4f6]"
-              bottomClasses="bg-[#f3f4f6]"
-            /> */}
+     
             <FAQSection faqs={coachesFaqs} />
             {/* <BookCallSection
               title="Stand out with the Augment LinkedIn Certificate"

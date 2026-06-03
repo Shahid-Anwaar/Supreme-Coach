@@ -77,7 +77,6 @@ export default function ProductsPage() {
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-black"
       />
-      <Footer />
     </main>
   );
 }

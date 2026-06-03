@@ -84,8 +84,6 @@ export default function Home() {
       <MissionComparisonSection />
       
       <FAQSection /> */}
-      
-      <Footer />
     </main>
   );
 }

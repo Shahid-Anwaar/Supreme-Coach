@@ -58,7 +58,6 @@ export default function AllPage() {
         topClasses="bg-black"
         bottomClasses="bg-black"
       />
-      <Footer />
     </main>
   );
 }

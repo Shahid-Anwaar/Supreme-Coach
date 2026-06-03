@@ -49,7 +49,7 @@ export default function CoursesCommunity() {
                 </div>
                 <TrustBadgesSection />
 
-                <div className="mt-6 grid grid-cols-5 gap-1 sm:mt-7 sm:gap-1.5 lg:mt-8 lg:flex lg:max-w-2xl lg:justify-center lg:gap-3 lg:mx-auto">
+                {/* <div className="mt-6 grid grid-cols-5 gap-1 sm:mt-7 sm:gap-1.5 lg:mt-8 lg:flex lg:max-w-2xl lg:justify-center lg:gap-3 lg:mx-auto">
                     {tempArray.map((item, index) => (
                         <div
                             key={index}
@@ -65,7 +65,7 @@ export default function CoursesCommunity() {
                             />
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </div>
     )

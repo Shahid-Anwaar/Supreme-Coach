@@ -35,7 +35,6 @@ export default function CommunityPage() {
                 topClasses="bg-[#f3f4f6]"
                 bottomClasses="bg-black"
             />
-            <Footer />
         </main>
     );
 }

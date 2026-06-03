@@ -59,7 +59,7 @@ export default function ExploreIntegrationPage() {
         features={COURSE_FEATURES2}
         wrapperClassName="bg-white"
       />
-       <ProductFeaturesSection
+      <ProductFeaturesSection
         title="Course creation tools for higher student engagement"
         description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
         imgShown="left"
@@ -96,7 +96,7 @@ export default function ExploreIntegrationPage() {
 
 
       {/* <ClientsSection /> */}
-      
+
 
       {/* <BookCallSection
                 title="Stand out with the Augment LinkedIn Certificate"
@@ -107,9 +107,9 @@ export default function ExploreIntegrationPage() {
                 imgSrc="/certificate.webp"
             />
             <MissionComparisonSection /> */}
-    
-            <FAQSection faqs={integrationsFaqs} />
-            {/* <BookCallSection
+
+      <FAQSection faqs={integrationsFaqs} />
+      {/* <BookCallSection
               title="Stand out with the Augment LinkedIn Certificate"
               btnText="Enroll Now"
               subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
@@ -124,7 +124,6 @@ export default function ExploreIntegrationPage() {
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-black"
       />
-      <Footer />
     </main>
   );
 }

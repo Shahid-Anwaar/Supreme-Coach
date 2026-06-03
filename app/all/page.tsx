@@ -14,7 +14,7 @@ import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import CoursesCommunity from "@/components/home/CoursesCommunity";
-import { faqs } from "@/data/data";
+import { homeFaqs } from "@/data/data";
 import ProductStories from "@/components/products/ProductStories";
 import ProductSold from "@/components/products/ProductSold";
 
@@ -34,14 +34,8 @@ export default function AllPage() {
       <ClientsSection title="Yar kuch v lakh dy" />
       <ProductStories />
       <ProductSold />
-      <BookCallSection
-        title="15-Day Money-Back Guarantee"
-        btnText="Enroll Now"
-        subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-        topClasses="bg-[#f3f4f6]"
-        bottomClasses="bg-[#f3f4f6]"
-      />
-      <FAQSection faqs={faqs} />
+     
+      <FAQSection faqs={homeFaqs} />
       <BookCallSection
         title="Stand out with the Augment LinkedIn Certificate"
         btnText="Enroll Now"
@@ -51,14 +45,6 @@ export default function AllPage() {
         imgSrc="/certificate.webp"
       />
       <MissionComparisonSection />
-      <BookCallSection
-        title="15-Day Money-Back Guarantee"
-        btnText="Enroll Now"
-        subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-        topClasses="bg-[#000000]"
-        bottomClasses="bg-[#000000]"
-      />
-      <CoursesCommunity />
 
       <TeaserVideoSection />
       <WhyAugmentSection />
@@ -66,13 +52,12 @@ export default function AllPage() {
 
 
       <BookCallSection
-        title="Book a Call with a Program Advisor"
+        title="Book a Demo with a Program Advisor"
         icon="solar:phone-linear"
         subTitle="Discuss your business goals and find out if Augment is a fit for you."
         topClasses="bg-black"
         bottomClasses="bg-black"
       />
-      <Footer />
     </main>
   );
 }

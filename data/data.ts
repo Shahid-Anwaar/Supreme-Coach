@@ -469,6 +469,29 @@ export const ProductStoriesTestimonials = [
   },
 ];
 
+export const companyLogos = [
+  {
+    title: "AA",
+    image: "https://www.gogetta.com/home/logo-aa.svg",
+  },
+  {
+    title: "AK",
+    image: "https://www.gogetta.com/home/logo-ak.svg",
+  },
+  {
+    title: "CIET",
+    image: "https://www.gogetta.com/home/logo-ciet.svg",
+  },
+  {
+    title: "Visy",
+    image: "https://www.gogetta.com/home/logo-visy.svg",
+  },
+  {
+    title: "GFS",
+    image: "https://www.gogetta.com/home/logo-gfs.svg",
+  },
+];
+
 export const HOW_IT_WORKS_CARDS: HowItWorksCardItem[] = [
   {
     id: 1,
@@ -1522,46 +1545,184 @@ export type FAQItem = {
   answer: string;
 };
 
-export const faqs: FAQItem[] = [
+export const homeFaqs: FAQItem[] = [
   {
     question: "What is Augment?",
     answer:
-      "Augment is a Business School for entrepreneurs. We offer practical, real-world courses led by world-class founders & executives. Beyond content, you’ll join a vibrant community and connect with like-minded individuals from around the globe.",
+      "Augment is a modern business school for entrepreneurs, founders, and professionals who want practical business education without the traditional MBA limits.",
   },
   {
-    question: "Will this actually help me grow my business?",
+    question: "Who is Augment made for?",
     answer:
-      "Yes. Over 2,000 entrepreneurs and executives have used Augment to scale businesses, land investments, and lead with confidence.",
+      "Augment is made for entrepreneurs, startup founders, operators, executives, and ambitious professionals who want to learn real business skills from experienced leaders.",
   },
   {
-    question: "An MBA for $2,450. What's the catch?",
+    question: "How is Augment different from a traditional MBA?",
     answer:
-      "Our independence from traditional academic institutions and accreditation bodies means we have much more flexibility than traditional MBA programs. Our mission is to make premium business education accessible by making it as affordable as possible.",
+      "Augment focuses on practical lessons, real-world examples, founder-led learning, and flexible online access instead of long academic theory.",
   },
   {
-    question: "I don't have time for this.",
+    question: "How much time do I need each day?",
     answer:
-      "Learn in just 15 minutes a day. No fluff, no wasted hours, on your schedule.",
+      "You can learn at your own pace. Most lessons are designed to be easy to follow, so you can make progress even with a busy schedule.",
   },
   {
     question: "Is there a refund policy?",
     answer:
-      "Yes. Try Augment risk-free for 15 days. If you don’t find value, we’ll refund you. Just send us an email at finance@augment.org.",
+      "Yes. You can try Augment risk-free for 15 days. If it is not the right fit, you can contact finance@augment.org for refund support.",
+  },
+];
+
+export const productsFaqs: FAQItem[] = [
+  {
+      question: "Why should I sell my courses on Augment?",
+      answer:
+        "Creating and selling online courses on Augment gives you access to both the most powerful selling tools and the most flexible course builder. You control your content. You control how you get paid. And you control the learning environment for your audience.",
+    },
+    {
+      question: "How do I make a course on Augment?",
+      answer:
+        "It’s easy (and free) to get started with a seven-day free trial. Once logged in, you’ll be prompted to create a product. Select course. From there, you can start building manually. Or, use our AI course starter to draft your curriculum, lesson content, and sales page all at once.",
+    },
+    {
+      question: "Can I do live courses on Augment?",
+      answer:
+        "While Augment is built for self-paced courses by default, it’s easy enough to host live courses using third-party embeds, including YouTube, Vimeo, and Zoom. You can also create a cohort-based learning experience using drip content.",
+    },
+    {
+      question: "Do online courses make money?",
+      answer:
+        "Absolutely—in fact, they’re the perfect way to earn ongoing revenue, without ongoing work. Online course creation on Augment is designed with longevity in mind, meaning once you do the up front work of creating it, you can sell it on a continuous basis with little maintenance. Whatever your expertise or your business, you can translate it into an online course that people will pay for.",
+    },
+    {
+      question: "How much does Augment cost per month?",
+      answer:
+        "Your first seven days are free. After that, we have plans starting at $29 per month, each designed to fit your unique business needs. Browse plans and pricing here.",
+    },
+    {
+      question: "How many courses can I have on Augment?",
+      answer:
+        "Believe it or not, on any Augment plan, you can create an unlimited number of courses. From there, you can sell up to one course on a Starter plan, five courses on a Builder plan, 25 courses on a Growth plan, and 100 courses on an Advanced plan. For more courses, please contact sales.",
+    },
+    {
+      question: "What else can I create on Augment?",
+      answer:
+        "You can build and sell your entire suite of learning products on Augment, including online coaching sessions, how-to guides, interactive templates, a community space, and more.",
+    },
+];
+
+export const aboutFaqs: FAQItem[] = [
+  {
+    question: "Why was Augment created?",
+    answer:
+      "Augment was created to make high-quality business education more practical, flexible, and accessible for entrepreneurs and professionals.",
   },
   {
-    question: "Is this just video lessons?",
+    question: "Who teaches at Augment?",
     answer:
-      "No. You’ll get live Q&A sessions, in-person meetups and private networking.",
+      "Augment courses are taught by experienced founders, executives, and business leaders who have built and scaled real companies.",
   },
   {
-    question: "Can I expense this through my company?",
+    question: "Is Augment an accredited university?",
     answer:
-      "Yes. Many students expense Augment as professional development. We can provide documentation upon request.",
+      "Augment is not a traditional university. It is built to provide practical business learning outside the limitations of traditional academic programs.",
   },
   {
-    question: "What if I already have experience in business?",
+    question: "What makes Augment trusted?",
     answer:
-      "Augment isn’t about basics. It’s about learning the exact strategies billion-dollar founders used to scale and lead at the highest level.",
+      "Augment focuses on real business experience, practical frameworks, and learning from people who have worked at a high level in business.",
+  },
+];
+
+export const communityFaqs: FAQItem[] = [
+  {
+    question: "What is included in the Augment community?",
+    answer:
+      "The community gives members a place to connect with entrepreneurs, professionals, and learners who are also building and growing businesses.",
+  },
+  {
+    question: "Can I network with other founders?",
+    answer:
+      "Yes. Augment gives you opportunities to connect with like-minded founders, operators, and professionals from different backgrounds.",
+  },
+  {
+    question: "Are there live sessions or meetups?",
+    answer:
+      "Depending on your program, Augment may include live Q&A sessions, networking events, and selected in-person meetups.",
+  },
+  {
+    question: "Is the community useful after completing the course?",
+    answer:
+      "Yes. The community can help you keep learning, ask questions, share progress, and build long-term professional connections.",
+  },
+];
+
+export const integrationsFaqs: FAQItem[] = [
+  {
+    question: "Can I access Augment from different devices?",
+    answer:
+      "Yes. You can access Augment online from your laptop, tablet, or mobile device depending on the platform access available.",
+  },
+  {
+    question: "Does Augment work with my existing workflow?",
+    answer:
+      "Yes. Augment is designed for busy professionals, so you can learn alongside your work, business, or team responsibilities.",
+  },
+  {
+    question: "Can teams use Augment together?",
+    answer:
+      "Yes. Teams can use Augment to build shared business knowledge, improve leadership skills, and create a common learning system.",
+  },
+  {
+    question: "Do I need any special software?",
+    answer:
+      "No special setup is usually required. You only need internet access and the login details provided after enrollment.",
+  },
+];
+
+export const teamFaqs: FAQItem[] = [
+  {
+    question: "Can my team join Augment?",
+    answer:
+      "Yes. Augment can be useful for teams that want to improve business thinking, leadership, growth, and decision-making skills.",
+  },
+  {
+    question: "Is Augment good for employee training?",
+    answer:
+      "Yes. Companies can use Augment as professional development for team members, managers, operators, and future leaders.",
+  },
+  {
+    question: "Can we expense Augment through our company?",
+    answer:
+      "Yes. Many students expense Augment as professional development. Documentation can be provided upon request.",
+  },
+  {
+    question: "Do teams get different pricing?",
+    answer:
+      "Team pricing may depend on the number of members and the selected program. You can contact Augment for team enrollment details.",
+  },
+];
+
+export const solutionsFaqs: FAQItem[] = [
+  {
+    question: "What business problems does Augment help solve?",
+    answer:
+      "Augment helps with business strategy, leadership, growth, decision-making, entrepreneurship, and building stronger business skills.",
+  },
+  {
+    question: "Is Augment useful for startup founders?",
+    answer:
+      "Yes. Startup founders can learn practical lessons about scaling, fundraising, leadership, product thinking, and business growth.",
+  },
+  {
+    question: "Can Augment help experienced professionals?",
+    answer:
+      "Yes. Augment is not only for beginners. It is also useful for experienced professionals who want sharper business thinking.",
+  },
+  {
+    question: "How fast can I start learning?",
+    answer:
+      "You can start learning after enrollment and access setup. The lessons are flexible, so you can begin at your own pace.",
   },
 ];
 

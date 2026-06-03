@@ -145,7 +145,7 @@ export default function ViewsSection({ items }: { items?: View[] }) {
                                 src={view.image}
                                 alt={view.title}
                                 fill
-                                className={`object-cover transition-opacity duration-1000 ${activeIndex === index ? "opacity-100" : "opacity-0"
+                                className={`object-fill transition-opacity duration-1000 ${activeIndex === index ? "opacity-100" : "opacity-0"
                                     }`}
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1600px"
                                 priority={index === 0}

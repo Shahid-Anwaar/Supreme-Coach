@@ -13,49 +13,11 @@ import CoursesCommunity from "@/components/home/CoursesCommunity";
 import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductsCompaniesSection from "@/components/products/ProductCompanies";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { COURSE_FEATURES, COURSE_FEATURES2 } from "@/data/data";
+import { COURSE_FEATURES, COURSE_FEATURES2, productsFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import ProductStories from "@/components/products/ProductStories";
 import ProductTools from "@/components/products/ProductTools";
 import ProductSold from "@/components/products/ProductSold";
-
-const FAQS = [
-  {
-    question: "Why should I sell my courses on Augment?",
-    answer:
-      "Creating and selling online courses on Augment gives you access to both the most powerful selling tools and the most flexible course builder. You control your content. You control how you get paid. And you control the learning environment for your audience.",
-  },
-  {
-    question: "How do I make a course on Augment?",
-    answer:
-      "It’s easy (and free) to get started with a seven-day free trial. Once logged in, you’ll be prompted to create a product. Select course. From there, you can start building manually. Or, use our AI course starter to draft your curriculum, lesson content, and sales page all at once.",
-  },
-  {
-    question: "Can I do live courses on Augment?",
-    answer:
-      "While Augment is built for self-paced courses by default, it’s easy enough to host live courses using third-party embeds, including YouTube, Vimeo, and Zoom. You can also create a cohort-based learning experience using drip content.",
-  },
-  {
-    question: "Do online courses make money?",
-    answer:
-      "Absolutely—in fact, they’re the perfect way to earn ongoing revenue, without ongoing work. Online course creation on Augment is designed with longevity in mind, meaning once you do the up front work of creating it, you can sell it on a continuous basis with little maintenance. Whatever your expertise or your business, you can translate it into an online course that people will pay for.",
-  },
-  {
-    question: "How much does Augment cost per month?",
-    answer:
-      "Your first seven days are free. After that, we have plans starting at $29 per month, each designed to fit your unique business needs. Browse plans and pricing here.",
-  },
-  {
-    question: "How many courses can I have on Augment?",
-    answer:
-      "Believe it or not, on any Augment plan, you can create an unlimited number of courses. From there, you can sell up to one course on a Starter plan, five courses on a Builder plan, 25 courses on a Growth plan, and 100 courses on an Advanced plan. For more courses, please contact sales.",
-  },
-  {
-    question: "What else can I create on Augment?",
-    answer:
-      "You can build and sell your entire suite of learning products on Augment, including online coaching sessions, how-to guides, interactive templates, a community space, and more.",
-  },
-];
 
 export default function ProductsPage() {
   return (
@@ -88,7 +50,7 @@ export default function ProductsPage() {
       <ClientsSection title="Augment success stories write themselves" />
       <ProductTools />
       {/* <ProductSold /> */}
-      <FAQSection faqs={FAQS} />
+      <FAQSection faqs={productsFaqs} />
 
       {/* <FeaturedInSection />
             <FacultySection />
@@ -96,13 +58,7 @@ export default function ProductsPage() {
 
 
       {/* <ClientsSection /> */}
-      {/* <BookCallSection
-                title="15-Day Money-Back Guarantee"
-                btnText="Enroll Now"
-                subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-                topClasses="bg-[#f3f4f6]"
-                bottomClasses="bg-[#f3f4f6]"
-            /> */}
+     
 
       {/* <BookCallSection
                 title="Stand out with the Augment LinkedIn Certificate"
@@ -113,22 +69,13 @@ export default function ProductsPage() {
                 imgSrc="/certificate.webp"
             />
             <MissionComparisonSection /> */}
-      {/* <BookCallSection
-                title="15-Day Money-Back Guarantee"
-                btnText="Enroll Now"
-                subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-                topClasses="bg-[#000000]"
-                bottomClasses="bg-[#000000]"
-            /> */}
-      {/* <CoursesCommunity /> */}
       <BookCallSection
-        title="Book a Call with a Program Advisor"
+        title="Book a Demo with a Program Advisor"
         icon="solar:phone-linear"
         subTitle="Discuss your business goals and find out if Augment is a fit for you."
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-black"
       />
-      <Footer />
     </main>
   );
 }

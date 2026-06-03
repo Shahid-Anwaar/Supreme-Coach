@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import { useState } from "react";
 import CustomEmblaCarousel from "./CustomCarosal";
 import CompanyLogoCarousel from "./CompaniesSlider";
+import { companyLogos } from "@/data/data";
 
 export type TestimonialItem = {
   id: number;
@@ -15,29 +16,6 @@ export type TestimonialItem = {
   company: string;
   logo?: string;
 };
-
-const companyLogos = [
-  {
-    title: "AA",
-    image: "https://www.gogetta.com/home/logo-aa.svg",
-  },
-  {
-    title: "AK",
-    image: "https://www.gogetta.com/home/logo-ak.svg",
-  },
-  {
-    title: "CIET",
-    image: "https://www.gogetta.com/home/logo-ciet.svg",
-  },
-  {
-    title: "Visy",
-    image: "https://www.gogetta.com/home/logo-visy.svg",
-  },
-  {
-    title: "GFS",
-    image: "https://www.gogetta.com/home/logo-gfs.svg",
-  },
-];
 
 const TESTIMONIALS: TestimonialItem[] = [
   {

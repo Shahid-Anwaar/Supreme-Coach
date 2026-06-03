@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import BookCallSection from "./BookCall";
 import Chats from "./Chats";
+import CoursesCommunity from "./CoursesCommunity";
 
 type FooterLink = {
     label: string;
@@ -208,96 +209,106 @@ function FooterColumn({ links }: { links: FooterLink[] }) {
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white overflow-hidden">
+        <>
+            <CoursesCommunity />
+            <BookCallSection
+                title="Book A Demo with a Program Advisor"
+                icon="solar:phone-linear"
+                subTitle="Discuss your business goals and find out if Augment is a fit for you."
+                topClasses="bg-black"
+                bottomClasses="bg-black"
+            />
+            <footer className="bg-black text-white overflow-hidden">
 
-            <div className="section-container pb-8 pt-10 sm:pb-10 sm:pt-12 md:pb-12 md:pt-20 lg:pt-28">
-                <div className="grid grid-cols-2 gap-y-10 sm:gap-y-12 md:grid-cols-[1.08fr_0.7fr_0.7fr_1.3fr] md:gap-x-8 lg:grid-cols-[1fr_0.9fr_0.9fr_1.1fr] xl:grid-cols-[1.1fr_0.9fr_0.9fr_1fr] lg:gap-x-14">
-                    <div className="text-center col-span-2 order-1 md:col-span-1 md:text-left">
-                        <Link
-                            href="/"
-                            className="inline-flex"
-                            aria-label="Augment Business School"
-                        >
-                            <Image
-                                src="/footer-logo.svg"
-                                alt="Augment Business School"
-                                width={240}
-                                height={72}
-                                className="h-auto w-[150px] sm:w-[175px] md:w-[228px]"
-                            />
-                        </Link>
-                    </div>
-
-                    <div className="text-center order-3 md:text-left  md:order-2">
-                        <FooterColumn links={leftLinks} />
-                    </div>
-
-                    <div className="text-center order-4 md:text-left md:order-3">
-                        <FooterColumn links={rightLinks} />
-                    </div>
-
-                    <div className="mx-auto max-w-[290px] col-span-2 order-2 md:order-4 text-center md:col-span-1 md:mx-0 md:max-w-[360px] md:text-end lg:col-span-1 lg:ml-auto lg:text-end">
-                        <h3 className="text-[20px] font-medium leading-[1.08] tracking-[-0.04em] text-white sm:text-[21px] md:text-[23px] lg:text-[24px]">
-                            Still have questions?
-                        </h3>
-
-                        <p className="mt-2 text-[15px] font-medium leading-[1.35] tracking-[-0.025em] text-white sm:text-[16px] md:text-[17px]">
-                            Use the contact form below.
-                        </p>
-
-                        <Link
-                            href="/contact"
-                            className="contained-btn mt-6 inline-flex w-full max-w-[220px] items-center justify-center rounded-full bg-[#D9F52B] px-8 py-3 text-[14px] sm:mt-7 sm:w-auto sm:px-12 sm:py-4 sm:text-[15px]"
-                        >
-                            Contact Us
-                        </Link>
-                    </div>
-                </div>
-                {/* <Chats /> */}
-                <div className="mt-12 flex flex-col items-center gap-4 text-center sm:mt-14 md:mt-16 md:flex-row md:items-center md:gap-7 md:text-left">
-                    <span className="text-[18px] font-medium tracking-[-0.03em] text-white sm:text-[20px]">
-                        Follow us
-                    </span>
-
-                    <div className="flex items-center gap-4 sm:gap-[18px] md:gap-[24px]">
-                        {socialLinks.map((item) => (
+                <div className="section-container pb-8 pt-10 sm:pb-10 sm:pt-12 md:pb-12 md:pt-20 lg:pt-28">
+                    <div className="grid grid-cols-2 gap-y-10 sm:gap-y-12 md:grid-cols-[1.08fr_0.7fr_0.7fr_1.3fr] md:gap-x-8 lg:grid-cols-[1fr_0.9fr_0.9fr_1.1fr] xl:grid-cols-[1.1fr_0.9fr_0.9fr_1fr] lg:gap-x-14">
+                        <div className="text-center col-span-2 order-1 md:col-span-1 md:text-left">
                             <Link
-                                key={item.label}
-                                href={item.href}
-                                aria-label={item.label}
-                                className="inline-flex items-center justify-center transition-all duration-200 hover:scale-125 hover:opacity-85"
+                                href="/"
+                                className="inline-flex"
+                                aria-label="Augment Business School"
                             >
-                                <Icon
-                                    icon={item.icon}
-                                    className={item.className ?? ""}
-                                    width={item.size ?? 20}
-                                    height={item.size ?? 20}
+                                <Image
+                                    src="/footer-logo.svg"
+                                    alt="Augment Business School"
+                                    width={240}
+                                    height={72}
+                                    className="h-auto w-[150px] sm:w-[175px] md:w-[228px]"
                                 />
                             </Link>
-                        ))}
-                    </div>
-                </div>
+                        </div>
 
-                <div className="mt-7 sm:mt-8 h-px w-full bg-white/40" />
+                        <div className="text-center order-3 md:text-left  md:order-2">
+                            <FooterColumn links={leftLinks} />
+                        </div>
 
-                <div className="mt-6 flex flex-col items-center gap-4 text-center md:mt-7 md:flex-row md:items-center md:justify-between md:text-left">
-                    <p className="text-[11px] font-normal uppercase tracking-[-0.015em] text-white/75 sm:text-[12px] md:text-[14px]">
-                        Fundamental Education
-                    </p>
+                        <div className="text-center order-4 md:text-left md:order-3">
+                            <FooterColumn links={rightLinks} />
+                        </div>
 
-                    <div className="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8 md:justify-end md:gap-14">
-                        {legalLinks.map((item) => (
+                        <div className="mx-auto max-w-[290px] col-span-2 order-2 md:order-4 text-center md:col-span-1 md:mx-0 md:max-w-[360px] md:text-end lg:col-span-1 lg:ml-auto lg:text-end">
+                            <h3 className="text-[20px] font-medium leading-[1.08] tracking-[-0.04em] text-white sm:text-[21px] md:text-[23px] lg:text-[24px]">
+                                Still have questions?
+                            </h3>
+
+                            <p className="mt-2 text-[15px] font-medium leading-[1.35] tracking-[-0.025em] text-white sm:text-[16px] md:text-[17px]">
+                                Use the contact form below.
+                            </p>
+
                             <Link
-                                key={item.label}
-                                href={item.href}
-                                className="cursor-pointer text-[11px] font-medium tracking-[-0.02em] text-white/75 transition-opacity duration-200 hover:text-primary sm:text-[12px] md:text-[14px]"
+                                href="/contact"
+                                className="contained-btn mt-6 inline-flex w-full max-w-[220px] items-center justify-center rounded-full bg-[#D9F52B] px-8 py-3 text-[14px] sm:mt-7 sm:w-auto sm:px-12 sm:py-4 sm:text-[15px]"
                             >
-                                {item.label}
+                                Contact Us
                             </Link>
-                        ))}
+                        </div>
+                    </div>
+                    {/* <Chats /> */}
+                    <div className="mt-12 flex flex-col items-center gap-4 text-center sm:mt-14 md:mt-16 md:flex-row md:items-center md:gap-7 md:text-left">
+                        <span className="text-[18px] font-medium tracking-[-0.03em] text-white sm:text-[20px]">
+                            Follow us
+                        </span>
+
+                        <div className="flex items-center gap-4 sm:gap-[18px] md:gap-[24px]">
+                            {socialLinks.map((item) => (
+                                <Link
+                                    key={item.label}
+                                    href={item.href}
+                                    aria-label={item.label}
+                                    className="inline-flex items-center justify-center transition-all duration-200 hover:scale-125 hover:opacity-85"
+                                >
+                                    <Icon
+                                        icon={item.icon}
+                                        className={item.className ?? ""}
+                                        width={item.size ?? 20}
+                                        height={item.size ?? 20}
+                                    />
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="mt-7 sm:mt-8 h-px w-full bg-white/40" />
+
+                    <div className="mt-6 flex flex-col items-center gap-4 text-center md:mt-7 md:flex-row md:items-center md:justify-between md:text-left">
+                        <p className="text-[11px] font-normal uppercase tracking-[-0.015em] text-white/75 sm:text-[12px] md:text-[14px]">
+                            Fundamental Education
+                        </p>
+
+                        <div className="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8 md:justify-end md:gap-14">
+                            {legalLinks.map((item) => (
+                                <Link
+                                    key={item.label}
+                                    href={item.href}
+                                    className="cursor-pointer text-[11px] font-medium tracking-[-0.02em] text-white/75 transition-opacity duration-200 hover:text-primary sm:text-[12px] md:text-[14px]"
+                                >
+                                    {item.label}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </>
     );
 }

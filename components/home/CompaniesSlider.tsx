@@ -10,9 +10,10 @@ type CompanyLogo = {
 
 type CompanyLogoCarouselProps = {
   companyLogos: CompanyLogo[];
+  wrapperClassName?: string;
 };
 
-const CompanyLogoCarousel = ({ companyLogos }: CompanyLogoCarouselProps) => {
+const CompanyLogoCarousel = ({ companyLogos, wrapperClassName = "mt-6 min-h-0 bg-transparent sm:mt-7" }: CompanyLogoCarouselProps) => {
   return (
     <div className="mx-auto mt-0 max-w-[92%] w-full">
       <CustomEmblaCarousel
@@ -46,7 +47,7 @@ const CompanyLogoCarousel = ({ companyLogos }: CompanyLogoCarouselProps) => {
           align: "start",
           skipSnaps: false,
         }}
-        wrapperClassName="mt-6 min-h-0 bg-transparent sm:mt-7"
+        wrapperClassName={`${wrapperClassName}`}
       />
     </div>
   );

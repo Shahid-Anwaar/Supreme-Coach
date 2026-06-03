@@ -41,7 +41,7 @@ export default function AugmentHeroSection() {
                             href="https://augment.school/sHK7SoG?"
                             className="group flex w-full items-center justify-center px-6 contained-btn sm:w-auto sm:min-w-65"
                         >
-                            Enroll Now
+                            Book A Demo
                             <Icon
                                 icon={"mingcute:arrow-right-fill"}
                                 width="19"
@@ -54,7 +54,7 @@ export default function AugmentHeroSection() {
                             href="https://s13rwwhxhl9.typeform.com/to/lmPnaKUF?utm_source=website&"
                             className="flex w-full items-center justify-center px-6 closed-btn sm:w-auto sm:min-w-65"
                         >
-                            Watch Free Class
+                            Contact Sales
                         </Link>
                     </div>
                 </div>

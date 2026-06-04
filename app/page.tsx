@@ -24,7 +24,7 @@ export default function Home() {
     <main className="bg-white text-black relative">
       <AugmentHeroSection />
       <div className="w-full bg-black pb-7">
-        <div className="max-w-314 bg-white py-4 mx-auto">
+        <div className="max-w-full bg-white py-4 mx-auto">
           <div className="mx-auto bg-white px-0">
             <CompanyLogoCarousel
               companyLogos={[...companyLogos, ...companyLogos]}
@@ -43,7 +43,7 @@ export default function Home() {
         title="Your stack, supercharged"
         description="Augment flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
       />
-      <ClientsSection title="Trusted by growing companies" isShowCompanies={false} />
+      <ClientsSection title="Trusted by growing companies" isShowCompanies={true} />
       <BookCallSection
         title="15-Day Money-Back Guarantee"
         btnText="Enroll Now"

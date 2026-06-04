@@ -14,11 +14,12 @@ type NavItem = {
 const DESKTOP_NAV_ITEMS: readonly NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products" },
-  { label: "Solutions", href: "/solutions" },
+  // { label: "Solutions", href: "/solutions" },
   { label: "For Coach", href: "/for-coach" },
-  { label: "For Teams", href: "/for-teams" },
-  { label: "Community", href: "/community" },
-  { label: "About", href: "/about" },
+  { label: "For Forms", href: "/for-forms" },
+  // { label: "Community", href: "/community" },
+  // { label: "About", href: "/about" },
+  { label: "Pricing", href: "/pricing" },
   // { label: "Log in", href: "#" },
 ] as const;
 

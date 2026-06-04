@@ -14,6 +14,11 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
+    path: "/pricing",
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
     path: "/community",
     priority: 0.8,
     changeFrequency: "monthly",
@@ -29,7 +34,7 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
-    path: "/for-teams",
+    path: "/for-forms",
     priority: 0.9,
     changeFrequency: "monthly",
   },

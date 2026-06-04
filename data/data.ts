@@ -1573,6 +1573,39 @@ export const homeFaqs: FAQItem[] = [
   },
 ];
 
+export const pricingFaqs: FAQItem[] = [
+  {
+    question: "Which plan is right for me?",
+    answer:
+      "You can choose the plan based on your learning needs. If you are starting, a basic plan is good. If you want full access and deeper learning, choose the higher plan.",
+  },
+  {
+    question: "Can I cancel my plan anytime?",
+    answer:
+      "Yes. You can cancel your plan anytime. After cancellation, your access will continue until the end of your current billing period.",
+  },
+  {
+    question: "Is there a free trial or refund policy?",
+    answer:
+      "Yes. Augment offers a 15-day risk-free refund policy. If it is not the right fit, you can contact finance@augment.org for refund support.",
+  },
+  {
+    question: "What is included in the paid plan?",
+    answer:
+      "The paid plan includes access to business lessons, practical learning content, expert insights, and resources designed for entrepreneurs and professionals.",
+  },
+  {
+    question: "Do I need to pay every month?",
+    answer:
+      "It depends on the plan you choose. Some plans may be billed monthly, while others may offer yearly access at a better value.",
+  },
+  {
+    question: "Can teams or companies join Augment?",
+    answer:
+      "Yes. Augment can be useful for teams, founders, operators, and professionals who want to improve business knowledge together.",
+  },
+];
+
 export const productsFaqs: FAQItem[] = [
   {
       question: "Why should I sell my courses on Augment?",
@@ -1684,7 +1717,7 @@ export const teamFaqs: FAQItem[] = [
   {
     question: "Can my team join Augment?",
     answer:
-      "Yes. Augment can be useful for teams that want to improve business thinking, leadership, growth, and decision-making skills.",
+      "Yes. Augment can be useful For Forms that want to improve business thinking, leadership, growth, and decision-making skills.",
   },
   {
     question: "Is Augment good for employee training?",

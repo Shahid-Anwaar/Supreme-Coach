@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FeaturedInSection() {
   return (
-    <section className="bg-black px-4 pb-12 pt-4 sm:px-6 sm:pb-16 sm:pt-6 md:px-8 md:pb-20 lg:px-10 lg:pb-24">
+    <section className="bg-black px-4 pb-12 pt-4 sm:px-6 sm:pt-6 md:px-8 lg:px-10 ">
       <div className="mx-auto max-w-[1268px]">
         <div className="overflow-hidden rounded-[22px] bg-[linear-gradient(90deg,#151515_0%,#171717_50%,#141414_100%)] px-4 py-7 sm:rounded-[28px] sm:px-8 sm:py-10 md:rounded-[32px] md:px-12 md:py-12 lg:px-[72px] lg:py-[30px]">
           <p className="text-center text-[10px] font-semibold uppercase tracking-[0.12em] text-white/60 sm:text-[12px]">

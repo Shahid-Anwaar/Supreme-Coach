@@ -20,14 +20,14 @@ type SocialLink = {
 
 const leftLinks: FooterLink[] = [
     { label: "Products", href: "/products" },
-    { label: "Solutions", href: "/solutions" },
+    // { label: "Solutions", href: "/solutions" },
     { label: "For Coach", href: "/for-coach" },
-    { label: "For Teams", href: "/for-teams" },
+    { label: "For Forms", href: "/for-forms" },
 ];
 
 const rightLinks: FooterLink[] = [
-    { label: "Community", href: "/community" },
-    { label: "About", href: "/about" },
+    // { label: "Community", href: "/community" },
+    // { label: "About", href: "/about" },
     { label: "Blogs", href: "/book-a-call" },
     { label: "Free Resources", href: "/blog" },
 ];

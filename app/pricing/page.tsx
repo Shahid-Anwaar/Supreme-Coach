@@ -27,7 +27,7 @@ export default function PricingPage() {
     <main className="bg-white text-black relative">
       <PricingSection />
       <TrustAndSecuritySection />
-      <ClientsSection title="Trusted by growing companies" isShowCompanies={true} />
+      <ClientsSection title="Augment success stories write themselves" isShowCompanies={true} />
       <BookCallSection
         title="15-Day Money-Back Guarantee"
         btnText="Enroll Now"

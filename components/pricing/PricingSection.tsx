@@ -208,7 +208,7 @@ export default function PricingSection() {
                                 <div className="mt-6">
                                     {plan.oldPrice && (
                                         <p className="text-[22px] text-black/40 line-through">
-                                            ฿{plan.oldPrice}
+                                            £{plan.oldPrice}
                                         </p>
                                     )}
 
@@ -218,7 +218,7 @@ export default function PricingSection() {
                                         </p>
                                     ) : (
                                         <p className="mt-2 text-[42px] font-bold leading-none text-black md:text-[48px]">
-                                            ฿{plan.price}
+                                            £{plan.price}
                                         </p>
                                     )}
 

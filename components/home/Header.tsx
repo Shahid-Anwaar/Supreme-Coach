@@ -16,7 +16,7 @@ const DESKTOP_NAV_ITEMS: readonly NavItem[] = [
   { label: "Products", href: "/products" },
   // { label: "Solutions", href: "/solutions" },
   { label: "For Coach", href: "/for-coach" },
-  { label: "For Forms", href: "/for-forms" },
+  { label: "For Firms", href: "/for-firms" },
   // { label: "Community", href: "/community" },
   // { label: "About", href: "/about" },
   { label: "Pricing", href: "/pricing" },
@@ -44,11 +44,11 @@ export default function HeaderSection() {
             <Link
               href="/"
               className="hidden min-[1280px]:inline-flex"
-              aria-label="Augment Business School"
+              aria-label="Supreme Coach Business School"
             >
               <Image
-                src="/header-logo.svg"
-                alt="Augment Business School"
+                src="/logos/s coach logo.svg"
+                alt="Supreme Coach Business School"
                 width={240}
                 height={72}
                 className="h-auto w-[105px] sm:w-[120px] md:w-[158px]"
@@ -58,14 +58,14 @@ export default function HeaderSection() {
             <Link
               href="/"
               className="inline-flex min-[1280px]:hidden"
-              aria-label="Augment Business School"
+              aria-label="Supreme Coach Business School"
             >
               <Image
-                src="/logo2.webp"
-                alt="Augment Business School"
+                src="/logos/s coach fav.svg"
+                alt="Supreme Coach Business School"
                 width={80}
                 height={70}
-                className="h-auto w-[48px] sm:w-[55px] md:w-[60px]"
+                className="w-[48px] sm:w-[55px] md:w-[60px] h-[34px] sm:h-[40px]"
               />
             </Link>
 
@@ -90,7 +90,7 @@ export default function HeaderSection() {
               </nav>
               <div className="flex h-auto items-center flex-wrap gap-2">
                 <Link
-                  href=""
+                  href="/contact-sales"
                   className={`group closed-btn mx-auto px-4 py-2.5 text-[13px] xl:px-6 xl:text-[14px]`}
                 >
                   Contact Sales
@@ -121,12 +121,12 @@ export default function HeaderSection() {
               <Link
                 href="/"
                 className="inline-flex min-[1280px]:hidden"
-                aria-label="Augment Business School"
+                aria-label="Supreme Coach Business School"
                 onClick={() => setMenuOpen(false)}
               >
                 <Image
                   src="/logo2.webp"
-                  alt="Augment Business School"
+                  alt="Supreme Coach Business School"
                   width={80}
                   height={70}
                   className="h-auto w-[48px] sm:w-[55px] md:w-[60px]"
@@ -164,7 +164,7 @@ export default function HeaderSection() {
 
             <div className="border-t flex flex-wrap gap-3 justify-center border-white/10 items-center pt-4 sm:pt-5">
               <Link
-                href=""
+                href="/contact-sales"
                 className={`group closed-btn inline-flex w-auto px-4 py-2 text-[12px] sm:w-auto sm:px-5 sm:text-[13px]`}
               >
                 Contact Sales

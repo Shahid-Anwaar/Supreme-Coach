@@ -110,8 +110,7 @@ export default function TrustAndSecuritySection() {
               </h2>
 
               <p className="mt-4 text-[18px] leading-[1.45] tracking-[-0.03em] text-black sm:text-[20px]">
-                We ensure Teachable meets the highest standards of security and
-                confidentiality.{" "}
+                We ensure Supreme Coach meets the highest standards of security and confidentiality.{" "}
                 {/* <Link href="/security" className="underline underline-offset-2"> */}
                   Learn more.
                 {/* </Link> */}

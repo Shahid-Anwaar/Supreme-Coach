@@ -6,13 +6,13 @@ export default function ManifestoSection() {
       <div className="relative">
         <div className="mx-auto max-w-[880px] text-center lg:mx-0 lg:text-start">
           <h2 className="section-title leading-[1.1]">
-            The Augment Manifesto
+            The Supreme Coach Manifesto
           </h2>
 
           <div className="mx-auto mt-6 max-w-[820px] space-y-6 text-[18px] font-[400] leading-[1.55] tracking-[-0.03em] text-[#1f1f1f] sm:mt-8 sm:space-y-8 sm:text-[21px] sm:leading-[1.6] md:text-[23px] md:leading-[1.65] lg:mt-10 lg:space-y-10 lg:text-[25px] lg:leading-[1.7] lg:mx-0">
             <p>
-              People often ask why we’re building Augment. The truth is,
-              Augment was no spark of genius. We’re building it because we have
+              People often ask why we’re building Supreme Coach. The truth is,
+              Supreme Coach was no spark of genius. We’re building it because we have
               to.
             </p>
 
@@ -49,7 +49,7 @@ export default function ManifestoSection() {
                 unoptimized
               />
               <p className="mt-1 text-[14px] font-semibold tracking-[-0.03em] text-[#7b7b7b] sm:text-[16px] md:text-[17px]">
-                Co-Founder/CEO, Augment
+                Co-Founder/CEO, Supreme Coach
               </p>
             </div>
 
@@ -65,7 +65,7 @@ export default function ManifestoSection() {
                 unoptimized
               />
               <p className="mt-1 text-[14px] font-semibold tracking-[-0.03em] text-[#7b7b7b] sm:text-[16px] md:text-[17px]">
-                Co-Founder/COO, Augment
+                Co-Founder/COO, Supreme Coach
               </p>
             </div>
           </div>

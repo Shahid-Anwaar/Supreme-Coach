@@ -34,7 +34,7 @@ const routes = [
     changeFrequency: "monthly",
   },
   {
-    path: "/for-forms",
+    path: "/for-firms",
     priority: 0.9,
     changeFrequency: "monthly",
   },

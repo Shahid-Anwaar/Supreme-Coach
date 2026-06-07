@@ -1,5 +1,5 @@
 import BookCallSection from "@/components/home/BookCall";
-import FacultySection from "@/components/home/FacultySection";
+import FeaturesSection from "@/components/home/FacultySection";
 import FAQSection from "@/components/home/FaqSection";
 import FeaturedInSection from "@/components/home/FeaturedIn";
 import Footer from "@/components/home/Footer";
@@ -27,15 +27,8 @@ export default function PricingPage() {
     <main className="bg-white text-black relative">
       <PricingSection />
       <TrustAndSecuritySection />
-      <ClientsSection title="Augment success stories write themselves" isShowCompanies={true} />
-      <BookCallSection
-        title="15-Day Money-Back Guarantee"
-        btnText="Enroll Now"
-        subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-        topClasses="bg-[#f3f4f6]"
-        bottomClasses="bg-[#f3f4f6]"
-      />
       <ProductTools />
+      <ClientsSection title="Supreme Coach success stories write themselves" isShowCompanies={true} />
       <FAQSection faqs={pricingFaqs} />
     </main>
   );

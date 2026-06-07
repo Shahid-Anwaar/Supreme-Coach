@@ -79,6 +79,7 @@ export type HeroSlide = {
   role: string;
   image: string;
   video?: string;
+  description: string;
 };
 
 export type HowItWorksCardItem = {
@@ -115,7 +116,7 @@ export const students: Student[] = [
     image:
       "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=900",
     quote:
-      "Augment helped me sharpen my offer and build a stronger network with business owners who think bigger.",
+      "Supreme Coach helped me sharpen my offer and build a stronger network with business owners who think bigger.",
     classLabel: "Class of March '23",
   },
   {
@@ -127,7 +128,7 @@ export const students: Student[] = [
     image:
       "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=900",
     quote:
-      "Augment teaches business with the best value proposition for busy professionals like me. I grew alongside my client's needs.",
+      "Supreme Coach teaches business with the best value proposition for busy professionals like me. I grew alongside my client's needs.",
     classLabel: "Class of March '23",
   },
   {
@@ -139,7 +140,7 @@ export const students: Student[] = [
     image:
       "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=900",
     quote:
-      "The network I built through Augment opened doors to partnerships I would not have reached alone.",
+      "The network I built through Supreme Coach opened doors to partnerships I would not have reached alone.",
     classLabel: "Class of April '23",
   },
   {
@@ -187,7 +188,7 @@ export const students: Student[] = [
     image:
       "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=900",
     quote:
-      "Augment’s instructors simplify business concepts while the supportive community helped me overcome any challenge I faced.",
+      "Supreme Coach’s instructors simplify business concepts while the supportive community helped me overcome any challenge I faced.",
     classLabel: "Class of April '23",
   },
   {
@@ -211,7 +212,7 @@ export const students: Student[] = [
     image:
       "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=900",
     quote:
-      "The Augment student directory itself became one of the most valuable assets of the experience.",
+      "The Supreme Coach student directory itself became one of the most valuable assets of the experience.",
     classLabel: "Class of June '23",
   },
   {
@@ -271,7 +272,7 @@ export const students: Student[] = [
     image:
       "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=900",
     quote:
-      "Augment gave me both confidence and clarity in how to communicate my business value.",
+      "Supreme Coach gave me both confidence and clarity in how to communicate my business value.",
     classLabel: "Class of August '23",
   },
   {
@@ -404,7 +405,7 @@ export const ProductStoriesTestimonials = [
     name: "Anna Geiger",
     role: "The Science of Reading",
     title:   "Revenue Engine",
-    text: "I’ve been using Augment since 2017, and it continues to be a major revenue generator for my business. It’s easy to create and upload content, and I never have to worry about tax compliance or payment processing. I’ve tried other platforms—Augment is hands down the best for me and my students.",
+    text: "I’ve been using Supreme Coach since 2017, and it continues to be a major revenue generator for my business. It’s easy to create and upload content, and I never have to worry about tax compliance or payment processing. I’ve tried other platforms—Supreme Coach is hands down the best for me and my students.",
     schoolLink: "#",
   },
   {
@@ -414,7 +415,7 @@ export const ProductStoriesTestimonials = [
     name: "Leila Gharani",
     role: "XelPlus Academy",
     title: "Global Reach",
-    text: "With students from 188 countries, tax compliance could have been a nightmare. Augment handles it all, so instead of drowning in admin work, we can focus on helping our members upgrade their data skills. The platform makes our global reach possible.",
+    text: "With students from 188 countries, tax compliance could have been a nightmare. Supreme Coach handles it all, so instead of drowning in admin work, we can focus on helping our members upgrade their data skills. The platform makes our global reach possible.",
     schoolLink: "#",
   },
   {
@@ -424,7 +425,7 @@ export const ProductStoriesTestimonials = [
     name: "Erin Booth",
     role: "Virtual Assistant Coach",
     title: "Get Full Control",
-    text: "You should never have anyone dictating the prices you charge for your content. With Augment, you get full control—you can talk to your students, match their learning styles, and build real relationships instead of going through third parties.",
+    text: "You should never have anyone dictating the prices you charge for your content. With Supreme Coach, you get full control—you can talk to your students, match their learning styles, and build real relationships instead of going through third parties.",
     schoolLink: "#",
   },
   {
@@ -434,7 +435,7 @@ export const ProductStoriesTestimonials = [
     name: "Razvan Ciobanu",
     role: "Voxyde",
     title: "Peace of Mind",
-    text: "Augment is consistently monitored and delivers excellent uptime. As an instructor, that peace of mind is invaluable. On top of that, Augment’s built-in tax handling has been a huge advantage, freeing me up to focus more on creating content and supporting my students.",
+    text: "Supreme Coach is consistently monitored and delivers excellent uptime. As an instructor, that peace of mind is invaluable. On top of that, Supreme Coach’s built-in tax handling has been a huge advantage, freeing me up to focus more on creating content and supporting my students.",
     schoolLink: "#",
   },
   {
@@ -444,7 +445,7 @@ export const ProductStoriesTestimonials = [
     name: "Francesco Cositore",
     role: "Vaporetto Italiano",
     title: "Has Been Essential",
-    text: "Augment has been essential for the growth of my business and for reaching thousands of students all over the world. It automatically takes care of payments, taxes, and enrollments, freeing me from administrative tasks so I can fully focus on the creative side of my job.",
+    text: "Supreme Coach has been essential for the growth of my business and for reaching thousands of students all over the world. It automatically takes care of payments, taxes, and enrollments, freeing me from administrative tasks so I can fully focus on the creative side of my job.",
     schoolLink: "#",
   },
   {
@@ -454,7 +455,7 @@ export const ProductStoriesTestimonials = [
     name: "Dan George",
     role: "FlightInsight",
     title: "10,000+ Students",
-    text: "Augment gave me the structure to scale beyond the classroom. What started as a few dozen students has grown into 10,000+ pilots worldwide. My courses now run 24/7, serving pilots in every time zone, while I focus on teaching and Augment handles the technology.",
+    text: "Supreme Coach gave me the structure to scale beyond the classroom. What started as a few dozen students has grown into 10,000+ pilots worldwide. My courses now run 24/7, serving pilots in every time zone, while I focus on teaching and Supreme Coach handles the technology.",
     schoolLink: "#",
   },
   {
@@ -464,7 +465,7 @@ export const ProductStoriesTestimonials = [
     name: "Huzan R & Nicoleta S",
     role: "Speak Norsk",
     title: "Made Simple",
-    text: "We realized we couldn’t do everything on our own—teaching, managing operations, and course delivery. That’s when Augment came in. The platform made it simple to create and deliver our programs, and even let us offer a free course so students could get comfortable before enrolling.",
+    text: "We realized we couldn’t do everything on our own—teaching, managing operations, and course delivery. That’s when Supreme Coach came in. The platform made it simple to create and deliver our programs, and even let us offer a free course so students could get comfortable before enrolling.",
     schoolLink: "#",
   },
 ];
@@ -621,6 +622,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F234946f583ab4a7e98dd9bba047775d2",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F52f0105d32714e168307b5da0a27b4fc%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=52f0105d32714e168307b5da0a27b4fc&alt=media&optimized=true",
+    description:
+      "Learn how Jimmy Wales turned a simple idea into one of the world’s most trusted knowledge platforms and built a community-driven product at global scale.",
   },
   {
     id: 2,
@@ -632,6 +635,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F7835a8f882ef450b84d1c16324fc8d75",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F7cfe202a016644adb4552d366932c01c%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=7cfe202a016644adb4552d366932c01c&alt=media&optimized=true",
+    description:
+      "Discover practical lessons on AI, prompt thinking, and how founders can use emerging technology to make smarter product and business decisions.",
   },
   {
     id: 3,
@@ -643,6 +648,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F47dbb563aed44486b28b4631c8833235",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F509807a034044fd0b3aff3c3a6c3266a%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=509807a034044fd0b3aff3c3a6c3266a&alt=media&optimized=true",
+    description:
+      "Learn from Steve Chen’s journey of building YouTube, understanding user behavior, scaling fast, and creating a product people use every day.",
   },
   {
     id: 4,
@@ -654,6 +661,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F513af209523041388c737f66336e62e5",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F7c887e35c3a54751a8b7d63c2eb59f28%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=7c887e35c3a54751a8b7d63c2eb59f28&alt=media&optimized=true",
+    description:
+      "Get go-to-market insights from Zack Kass on positioning, adoption, AI opportunity, and how founders can bring powerful products to the market.",
   },
   {
     id: 5,
@@ -665,6 +674,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F03323b1302d94d50a9bba04594d829ac",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fbc1c38b516ad4255bfb4cbfd2e6a0627%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=bc1c38b516ad4255bfb4cbfd2e6a0627&alt=media&optimized=true",
+    description:
+      "Understand leadership, execution, and high-performance team habits from Ann Hiatt’s experience working close to some of the world’s top leaders.",
   },
   {
     id: 6,
@@ -676,6 +687,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F2e7ee683820648d9ab0ded82e21402de",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F4d37000288bc4898afba44b5568d0d7c%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=4d37000288bc4898afba44b5568d0d7c&alt=media&optimized=true",
+    description:
+      "Learn how global product, partnerships, and growth teams think about scale, market expansion, and building strong business relationships.",
   },
   {
     id: 7,
@@ -686,6 +699,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fb4bfaa5158ac467ebda01fc7802240d8",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F92eef86c59e44cb9bf88943ee46097eb%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=92eef86c59e44cb9bf88943ee46097eb&alt=media&optimized=true",
+    description:
+      "Explore how Chris Barton built Shazam by solving a real user problem, staying persistent, and turning a complex idea into a simple product experience.",
   },
   {
     id: 8,
@@ -697,6 +712,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fc115f60499c24833971a20af6d253375",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F734172ad92114e84ab3a068f9722cdfa%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=734172ad92114e84ab3a068f9722cdfa&alt=media&optimized=true",
+    description:
+      "Get founder lessons on building mobility products, scaling operations, understanding cities, and creating a business that solves everyday problems.",
   },
   {
     id: 9,
@@ -708,6 +725,8 @@ export const HERO_SLIDES: HeroSlide[] = [
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F3c1232896777476e9b5704d580aec96f",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fe9701219a7e743408c14fa27cc8edd3a%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=e9701219a7e743408c14fa27cc8edd3a&alt=media&optimized=true",
+    description:
+      "Learn how Uri Levine approaches problem-solving, product-market fit, and building user-focused companies that grow through real-world value.",
   },
   {
     id: 10,
@@ -718,7 +737,92 @@ export const HERO_SLIDES: HeroSlide[] = [
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F27cc610e575c4478bc245cc94889dc15",
     video:
-      "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F80aee6543c4946ec854dc7c019eaf8c8%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=80aee6543c4946ec854dc7c019eaf8c8&alt=media&optimized=true",
+      "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F80aee6543c4946ec854dc7c019eaf8c8%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=80aee6543c4946ec854dc7c019eaf8c8%2F80aee6543c4946ec854dc7c019eaf8c8&alt=media&optimized=true",
+    description:
+      "Gain practical insight on trust, decision-making, ethics, and business responsibility from Kelly Richmond Pope’s experience as an author and educator.",
+  },
+];
+
+export type FeaturedItem = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  href: string;
+};
+
+export const featuredItems: FeaturedItem[] = [
+  {
+    id: 1,
+    title: "Coaching",
+    description:
+      "Offer one-on-one or group sessions with easy scheduling and payment management.",
+    image:
+      "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/coaching",
+  },
+  {
+    id: 2,
+    title: "Courses",
+    description:
+      "Create online courses with lessons, videos, modules, and student progress tracking.",
+    image:
+      "https://images.pexels.com/photos/4144224/pexels-photo-4144224.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/courses",
+  },
+  {
+    id: 3,
+    title: "Community",
+    description:
+      "Build a private space where your members can connect, learn, and stay engaged.",
+    image:
+      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/community",
+  },
+  {
+    id: 4,
+    title: "Memberships",
+    description:
+      "Sell paid memberships with exclusive content, member access, and recurring plans.",
+    image:
+      "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/memberships",
+  },
+  {
+    id: 5,
+    title: "Live Sessions",
+    description:
+      "Host live classes, workshops, webinars, and group sessions from one simple platform.",
+    image:
+      "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/live-sessions",
+  },
+  {
+    id: 6,
+    title: "Digital Products",
+    description:
+      "Sell downloads, templates, guides, and digital resources directly to your audience.",
+    image:
+      "https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/digital-products",
+  },
+  {
+    id: 7,
+    title: "Booking",
+    description:
+      "Let users book calls, consultations, and sessions with simple availability controls.",
+    image:
+      "https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/booking",
+  },
+  {
+    id: 8,
+    title: "Payments",
+    description:
+      "Accept payments for coaching, courses, memberships, and products with easy checkout.",
+    image:
+      "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/payments",
   },
 ];
 
@@ -920,10 +1024,10 @@ export const instructors: InstructorItem[] = [
 export const whyAugmentSlides: WhyAugmentSlide[] = [
   {
     id: 1,
-    eyebrow: "Why Augment?",
+    eyebrow: "Why Supreme Coach?",
     title: "Real-World Startup\nInsights",
     description:
-      "Gain hands-on experience and actionable skills. Augment provides real-world tactics and frameworks, taught by business legends.",
+      "Gain hands-on experience and actionable skills. Supreme Coach provides real-world tactics and frameworks, taught by business legends.",
     buttonLabel: "Explore Courses",
     buttonHref: "/courses",
     image: "/step1.webp",
@@ -932,19 +1036,19 @@ export const whyAugmentSlides: WhyAugmentSlide[] = [
   },
   {
     id: 2,
-    eyebrow: "Why Augment?",
+    eyebrow: "Why Supreme Coach?",
     title: "Learn On Your Own\nTime",
     description:
       "Flexible, self-paced education for entrepreneurs. Access the best alternative MBA—anywhere, anytime, on any device.",
     buttonLabel: "Explore Courses",
     buttonHref: "/courses",
     image: "/step2.webp",
-    imageAlt: "Augment dashboard preview",
+    imageAlt: "Supreme Coach dashboard preview",
     layout: "left-dashboard",
   },
   {
     id: 3,
-    eyebrow: "Why Augment?",
+    eyebrow: "Why Supreme Coach?",
     title: "Connect With Fellow\nFounders",
     description:
       "Get support from your peers through online masterminds and real-world networking events.",
@@ -1005,7 +1109,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 2,
     quote:
-      "Augment is the future of learning for business-minded people looking to gain real, practical knowledge about starting a business and developing in a successful way.",
+      "Supreme Coach is the future of learning for business-minded people looking to gain real, practical knowledge about starting a business and developing in a successful way.",
     name: "Simon Lee Maryiah",
     role: "Founder",
     avatar:
@@ -1014,7 +1118,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 3,
     quote:
-      "I think Augment is a game changer. It's a brilliant concept and the contents, program and interface are just great. As soon as you start a module it becomes hard to stop. Also there is a human contact and great support from the orientation to graduation.",
+      "I think Supreme Coach is a game changer. It's a brilliant concept and the contents, program and interface are just great. As soon as you start a module it becomes hard to stop. Also there is a human contact and great support from the orientation to graduation.",
     name: "Ivan Nappo",
     role: "Financial Regulation Specialist",
     avatar:
@@ -1032,7 +1136,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 5,
     quote:
-      "The instructors incorporating their own experiences in the lesson made learning very easy on my part as it kept my interest level high. I wish Augment will continue adding more lectures as these are all gold!",
+      "The instructors incorporating their own experiences in the lesson made learning very easy on my part as it kept my interest level high. I wish Supreme Coach will continue adding more lectures as these are all gold!",
     name: "Delise Mutuc",
     role: "Sales & Marketing Strategist",
     avatar:
@@ -1068,7 +1172,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 9,
     quote:
-      "Flexibility, incredible resources, and inspiring live classes, I loved the Augment MBA Program. It taught me so much about the industry, helped me understand key things I’d never considered, and gave me the freedom to learn on my own time.",
+      "Flexibility, incredible resources, and inspiring live classes, I loved the Supreme Coach MBA Program. It taught me so much about the industry, helped me understand key things I’d never considered, and gave me the freedom to learn on my own time.",
     name: "Daisy White",
     role: "Senior Talent Manager",
     avatar:
@@ -1104,7 +1208,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 13,
     quote:
-      "The idea behind Augment is one I truly stand for. I LOVED this course and its structure. I’ll definitely keep coming back to its content because it’s that valuable.",
+      "The idea behind Supreme Coach is one I truly stand for. I LOVED this course and its structure. I’ll definitely keep coming back to its content because it’s that valuable.",
     name: "Mikhail Sieni",
     role: "Sales Director",
     avatar:
@@ -1113,7 +1217,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 14,
     quote:
-      "The course touches on a lot of key areas most classes don't discuss that are paramount to success in business. I found the Augment program very accommodating to busy schedules.",
+      "The course touches on a lot of key areas most classes don't discuss that are paramount to success in business. I found the Supreme Coach program very accommodating to busy schedules.",
     name: "June Burton",
     role: "Financial Services Advisor",
     avatar:
@@ -1122,7 +1226,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 15,
     quote:
-      "Augment is not just another program; it’s built by founders, for founders, designed to give entrepreneurs the practical insights, network, and mindset they need to scale.",
+      "Supreme Coach is not just another program; it’s built by founders, for founders, designed to give entrepreneurs the practical insights, network, and mindset they need to scale.",
     name: "Oren Broshi",
     role: "Entrepreneur | Founder of Stealth Mode Startup",
     avatar:
@@ -1140,7 +1244,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 17,
     quote:
-      "In a world where traditional MBA teachings often revolve around academic research, Augment.org offers a modern and innovative approach to business education.",
+      "In a world where traditional MBA teachings often revolve around academic research, Supreme Coach offers a modern and innovative approach to business education.",
     name: "Mubarak AlBahar",
     role: "Trade Relations Officer at The C Holding",
     avatar:
@@ -1149,7 +1253,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 18,
     quote:
-      "Last year, I decided to give Augment.org MBA a try. It's a new way of learning at your own pace and at an affordable price.",
+      "Last year, I decided to give Supreme Coach MBA a try. It's a new way of learning at your own pace and at an affordable price.",
     name: "Shkumbin Mustafa",
     role: "Branding & Digital Marketing",
     avatar:
@@ -1167,7 +1271,7 @@ export const reviews: ReviewItem[] = [
   {
     id: 20,
     quote:
-      "Augment is democratizing access to education against the traditional school systems that are for profit.",
+      "Supreme Coach is democratizing access to education against the traditional school systems that are for profit.",
     name: "Jamaal Bethea",
     role: "Business Owner",
     avatar:
@@ -1195,21 +1299,21 @@ export const testimonials: TestimonialItem[] = [
     name: "Janene Nadolny-Jimenez",
     role: "Business Owner",
     avatar: "https://cdn.senja.io/public/media/727b3e2e-aab0-4a17-9e76-8fdccbc42f87_08553bdc-a032-487e-95b7-71b41efe2dc9_1756077942174.jpeg?width=63&height=63&format=webp",
-    text: "My experience with Augment completely changed how I approach my business, my work, and my rest. It gave me a fresh perspective on old ideas and pushed me to face the hard parts instead of avoiding them. One chapter in particular made me realize I had to ‘fire’ the old version of myself, to stop playing small and start running a real, scalable company. The teachers were authentic, the content was current and practical, and the course was worth every penny.",
+    text: "My experience with Supreme Coach completely changed how I approach my business, my work, and my rest. It gave me a fresh perspective on old ideas and pushed me to face the hard parts instead of avoiding them. One chapter in particular made me realize I had to ‘fire’ the old version of myself, to stop playing small and start running a real, scalable company. The teachers were authentic, the content was current and practical, and the course was worth every penny.",
   },
   {
     id: 4,
     name: "Ivan Nappo",
     role: "Financial Regulation Specialist",
     avatar: "https://cdn.senja.io/public/media/1e94f3b8-6b05-4c30-bba2-18b801d2f71b_35706b17-b7fb-459c-95e1-7a7df87795e9_1721121911975.jpeg?width=63&height=63&format=webp",
-    text: "I think Augment is a game changer. It's a brilliant concept and the contents, program and interface are just great. As soon as you start a module it becomes hard to stop. Also there is a human contact and great support from the orientation to graduation. I highly recommend it.",
+    text: "I think Supreme Coach is a game changer. It's a brilliant concept and the contents, program and interface are just great. As soon as you start a module it becomes hard to stop. Also there is a human contact and great support from the orientation to graduation. I highly recommend it.",
   },
   {
     id: 5,
     name: "Hester Scotton",
     role: "Strategic CFO",
     avatar: "https://cdn.senja.io/public/media/3a33864d-9dc8-4424-a092-c7614df9e489_avatar.png?width=63&height=63&format=webp",
-    text: "When I started this course, I got asked the question ‘how are you going to fit it in? You have a full time job as a CFO, you have two children, you are training for a marathon…’. The truthful answer was that I wasn’t sure. However, what I’ve found is that it’s easy to fit the learning into my life. The modules are all short and easy to digest. The content is enjoyable and engaging so I often do some of it as my lunch break or first thing in the morning. If you want to learn more about business but are worried you don’t have the time then I would highly recommend you look at Augment.",
+    text: "When I started this course, I got asked the question ‘how are you going to fit it in? You have a full time job as a CFO, you have two children, you are training for a marathon…’. The truthful answer was that I wasn’t sure. However, what I’ve found is that it’s easy to fit the learning into my life. The modules are all short and easy to digest. The content is enjoyable and engaging so I often do some of it as my lunch break or first thing in the morning. If you want to learn more about business but are worried you don’t have the time then I would highly recommend you look at Supreme Coach.",
     linkedin: true,
   },
   {
@@ -1224,28 +1328,28 @@ export const testimonials: TestimonialItem[] = [
     name: "Daisy White",
     role: "Senior Talent Manager",
     avatar: "https://cdn.senja.io/public/media/ec11df5f-a26f-4bf0-8e0d-20899d34aa1b_c736df24-6a01-49b5-bb1a-d4e184c44de5_1719262805462.jpeg?width=63&height=63&format=webp",
-    text: "Flexibility, incredible resources, and inspiring live classes, I loved the Augment MBA Program. It taught me so much about the industry, helped me understand key things I’d never considered, and gave me the freedom to learn on my own time. The support from the network was invaluable, and I couldn’t be more grateful or proud of what I’ve achieved.",
+    text: "Flexibility, incredible resources, and inspiring live classes, I loved the Supreme Coach MBA Program. It taught me so much about the industry, helped me understand key things I’d never considered, and gave me the freedom to learn on my own time. The support from the network was invaluable, and I couldn’t be more grateful or proud of what I’ve achieved.",
   },
   {
     id: 8,
     name: "Mikhail Sieni",
     role: "Sales Director",
     avatar: "https://cdn.senja.io/public/media/4a407c0b-0a42-471e-a997-3ed9aaa8bbd3_8de82ba6-2e69-47b7-8586-7296435440e2_1756214871399.jpeg?width=63&height=63&format=webp",
-    text: "The idea behind Augment is one I truly stand for. I LOVED this course and its structure. I’ll definitely keep coming back to its content because it’s that valuable.",
+    text: "The idea behind Supreme Coach is one I truly stand for. I LOVED this course and its structure. I’ll definitely keep coming back to its content because it’s that valuable.",
   },
   {
     id: 9,
     name: "June Burton",
     role: "Financial Services Advisor",
     avatar: "https://cdn.senja.io/public/media/e06ce752-5618-4418-b7ea-bd9d705d455d_85ef1206-d9a6-4445-93fe-e4d051b9fcbf_1707946558049.jpeg?width=63&height=63&format=webp",
-    text: "The course touches on a lot of key areas most classes don't discuss that are paramount to success in business. I found the Augment program very accommodating to busy schedules.",
+    text: "The course touches on a lot of key areas most classes don't discuss that are paramount to success in business. I found the Supreme Coach program very accommodating to busy schedules.",
   },
   {
     id: 10,
     name: "Oren Broshi",
     role: "Entrepreneur | Founder of Stealth Mode Startup",
     avatar: "https://cdn.senja.io/public/media/KpWRnRxiS7skl0e6yOfcO0VV.jpeg?width=63&height=63&format=webp",
-    text: "Augment is not just another program; it’s built by founders, for founders, designed to give entrepreneurs the practical insights, network, and mindset they need to scale. Grateful to be part of it and highly recommend it to every entrepreneur who’s serious about leveling up",
+    text: "Supreme Coach is not just another program; it’s built by founders, for founders, designed to give entrepreneurs the practical insights, network, and mindset they need to scale. Grateful to be part of it and highly recommend it to every entrepreneur who’s serious about leveling up",
     linkedin: true,
   },
   {
@@ -1253,7 +1357,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Gary Lamach II",
     role: "Director @ AICPA",
     avatar: "https://cdn.senja.io/public/media/37691754-9e62-4885-a7d8-c2d13dbfd448_640eb926-bfce-4154-9728-837745e75c68_Screenshot%202023-11-20%20at%2012.27.48.png?width=63&height=63&format=webp",
-    text: "From developing a deep understanding of emerging technologies to exploring new business models, the program equipped me with the skills and knowledge necessary to take on new challenges in the industry. Thank you, Augment.org , for this amazing opportunity!",
+    text: "From developing a deep understanding of emerging technologies to exploring new business models, the program equipped me with the skills and knowledge necessary to take on new challenges in the industry. Thank you, Supreme Coach , for this amazing opportunity!",
     linkedin: true,
   },
   {
@@ -1261,7 +1365,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Mubarak AlBahar",
     role: "Trade Relations Officer at The C Holding",
     avatar: "https://cdn.senja.io/public/media/lNTQ2RuqGaYj2tw98bAM0TAz.jpeg?width=63&height=63&format=webp",
-    text: "In a world where traditional MBA teachings often revolve around academic research, Augment.org offers a modern and innovative approach to business education, emphasizing real-world insights directly from renowned entrepreneurial leaders. Augment's curriculum, characterized by its practical, founder-driven approach, has enriched my understanding of contemporary business practices grounded in genuine experiences.",
+    text: "In a world where traditional MBA teachings often revolve around academic research, Supreme Coach offers a modern and innovative approach to business education, emphasizing real-world insights directly from renowned entrepreneurial leaders. Supreme Coach's curriculum, characterized by its practical, founder-driven approach, has enriched my understanding of contemporary business practices grounded in genuine experiences.",
     linkedin: true,
   },
   {
@@ -1269,7 +1373,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Shkumbin Mustafa",
     role: "Branding & Digital Marketing",
     avatar: "https://cdn.senja.io/public/media/zmwDBMlEeR6ME5ZNVqx6HfnQ.jpeg?width=63&height=63&format=webp",
-    text: "Last year, I decided to give Augment.org MBA a try. It's a new way of learning at your own pace and at an affordable price. The program offers direct advice from some of the smartest people in business, including the founders of Wikipedia, Waze, Shazam, and Lime. It’s a straightforward, fast, and affordable way to gain the skills and confidence needed to succeed in business. If you’re looking to learn how the best in the business made it and you want to start your own venture, I highly recommend giving Augment MBA a try.",
+    text: "Last year, I decided to give Supreme Coach.org MBA a try. It's a new way of learning at your own pace and at an affordable price. The program offers direct advice from some of the smartest people in business, including the founders of Wikipedia, Waze, Shazam, and Lime. It’s a straightforward, fast, and affordable way to gain the skills and confidence needed to succeed in business. If you’re looking to learn how the best in the business made it and you want to start your own venture, I highly recommend giving Supreme Coach MBA a try.",
     linkedin: true,
   },
   {
@@ -1277,7 +1381,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Patricia Paisis-Oakwell",
     role: "Certified Health Coach",
     avatar: "https://cdn.senja.io/public/media/afdccf8f-2d59-4ea5-87c2-b1bef06b2141_avatar.png?width=63&height=63&format=webp",
-    text: "What happens when you take the advice of a marketing and personal branding expert? On Thursday, I had the pleasure of attending an inspiring masterclass led by Tobi Oluwole on Marketing and Personal Branding, hosted by Ariel Renous and Elyssa Goldberg from Augment.org . The insights I gained were invaluable! Tonight, while reviewing my stats, I was excited to see that my post impressions increased by 90% in just one day. It’s amazing to see how quickly effective strategies can make an impact!",
+    text: "What happens when you take the advice of a marketing and personal branding expert? On Thursday, I had the pleasure of attending an inspiring masterclass led by Tobi Oluwole on Marketing and Personal Branding, hosted by Ariel Renous and Elyssa Goldberg from Supreme Coach.org . The insights I gained were invaluable! Tonight, while reviewing my stats, I was excited to see that my post impressions increased by 90% in just one day. It’s amazing to see how quickly effective strategies can make an impact!",
     linkedin: true,
   },
   {
@@ -1292,7 +1396,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Jamaal Bethea",
     role: "Business Owner",
     avatar: "https://cdn.senja.io/public/media/db143e9b-0cc1-4ae7-af3a-7124a4491063_2d6fc2a4-ee81-4cc9-8a1e-e1f13ddcf46e_e3b213ae-8bec-4fdb-af91-8eacb9f32aa6_ab2bc69e-ef2a-4d0e-8b40-82ce701c04a9_1732653211541.webp?width=63&height=63&format=webp",
-    text: "Augment is democratizing access to education against the traditional school systems that are for profit. These systems are archaic and don’t represent the needs of many communities that don’t have access to economic resources or connections.",
+    text: "Supreme Coach is democratizing access to education against the traditional school systems that are for profit. These systems are archaic and don’t represent the needs of many communities that don’t have access to economic resources or connections.",
   },
   {
     id: 17,
@@ -1327,21 +1431,21 @@ export const testimonials: TestimonialItem[] = [
     name: "Jason Doubt",
     role: "Co-Founder",
     avatar: "https://cdn.senja.io/public/media/ec6125f7-9d10-46de-a317-64f3e96b868c_34b2cbbe-7c3e-46f4-8087-bb72952ed5c7_1744816316399.jpeg?width=63&height=63&format=webp",
-    text: "Augment is the future of learning for business-minded people looking to gain real, practical knowledge about starting a business and developing in a successful way.",
+    text: "Supreme Coach is the future of learning for business-minded people looking to gain real, practical knowledge about starting a business and developing in a successful way.",
   },
   {
     id: 22,
     name: "Muzammil Kamran",
     role: "Writer",
     avatar: "https://ik.imagekit.io/senja/tr:f-jpeg/Avatars/avatar_aOgsMJ-eZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1657796891741",
-    text: "This is the best entrepreneurship course out there which distinguishes itself from traditional business education which teaches ages old theories and frameworks leaving you in no place to start your own venture. Augment not only teaches practical concepts but a comprehensive understanding which enables you to start your own venture. When do you get a chance to learn from founders of Youtube, Shazam, Waze and Wikipedia etc? The course gave me an insight into the mindset of people who made the magic happen and changed the world.",
+    text: "This is the best entrepreneurship course out there which distinguishes itself from traditional business education which teaches ages old theories and frameworks leaving you in no place to start your own venture. Supreme Coach not only teaches practical concepts but a comprehensive understanding which enables you to start your own venture. When do you get a chance to learn from founders of Youtube, Shazam, Waze and Wikipedia etc? The course gave me an insight into the mindset of people who made the magic happen and changed the world.",
   },
   {
     id: 23,
     name: "Denise Mutuc",
     role: "Sales & Marketing Strategist",
     avatar: "https://cdn.senja.io/public/media/6302d82b-4d1e-405d-9e5a-7e2e5a7db96e_e761f846-19ea-40f6-95bc-15593eb0758c_1645047645371.jpeg?width=63&height=63&format=webp",
-    text: "The instructors incorporating their own experiences in the lesson made learning very easy on my part as it kept my interest level high.I'm happy to have access to the lessons along with the downloadable PDF files as I would love to come back and revisit every now and then. I wish Augment will continue adding more lectures as these are all gold!",
+    text: "The instructors incorporating their own experiences in the lesson made learning very easy on my part as it kept my interest level high.I'm happy to have access to the lessons along with the downloadable PDF files as I would love to come back and revisit every now and then. I wish Supreme Coach will continue adding more lectures as these are all gold!",
   },
   {
     id: 24,
@@ -1369,14 +1473,14 @@ export const testimonials: TestimonialItem[] = [
     name: "Victory Oluwagbemiga",
     role: "Business Owner",
     avatar: "https://ik.imagekit.io/senja/tr:f-jpeg/Avatars/avatar_aOgsMJ-eZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1657796891741",
-    text: "I still remember my first Augment trial with Ann Hiatt, I thought, ‘There’s no way I’m going to let this go.’ I felt like I found gold!. Joining Augment to get coached by some of the best minds in the world has been a major milestone in my professional career. Meeting the Augment team in London was amazing and I will never forget it, thank you for such a powerful experience!",
+    text: "I still remember my first Supreme Coach trial with Ann Hiatt, I thought, ‘There’s no way I’m going to let this go.’ I felt like I found gold!. Joining Supreme Coach to get coached by some of the best minds in the world has been a major milestone in my professional career. Meeting the Supreme Coach team in London was amazing and I will never forget it, thank you for such a powerful experience!",
   },
   {
     id: 28,
     name: "Amit Bhundhoo, CPA",
     role: "Cloud Accounting | Tax | Strategy | Financial Management  Tax Planning | Fractional SMB Support",
     avatar: "https://cdn.senja.io/public/media/G7vjrwnP4JicDZ8S6OSebuQH.jpeg?width=63&height=63&format=webp",
-    text: "I’ve officially graduated from the Augment.org MBA. A new-age program built for entrepreneurs, innovators, and modern business leaders. Unlike traditional MBAs, Augment is practical, immersive, and refreshingly honest about what it takes to grow a sustainable business today. It has sharpened how I think strategically about business, finance, and leadership; lessons I’m already applying in my own work.",
+    text: "I’ve officially graduated from the Supreme Coach.org MBA. A new-age program built for entrepreneurs, innovators, and modern business leaders. Unlike traditional MBAs, Supreme Coach is practical, immersive, and refreshingly honest about what it takes to grow a sustainable business today. It has sharpened how I think strategically about business, finance, and leadership; lessons I’m already applying in my own work.",
     linkedin: true,
   },
   {
@@ -1384,7 +1488,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Mohit Patel",
     role: "Founder of TruText | Building a Better Way to Connect | Ex-Mathnasium Owner",
     avatar: "https://cdn.senja.io/public/media/jyG5asuSIPH3uhev0YxM0YKq.jpeg?width=63&height=63&format=webp",
-    text: "Last week, I officially completed the Augment Business School MBA course—but the real learning is just beginning. Augment Business School is not a normal MBA course. You get real advice from real entrepreneurs who have been through every struggle you can think of. It’s not just theory—it’s real-world strategies, lessons from failures, and insights you won’t find in a textbook. One of the biggest takeaways? You don’t have to figure it all out alone. Building a business can feel isolating, but surrounding yourself with the right people changes everything. Hearing from founders who have been in the same trenches—solving the same problems—gave me perspectives I never would’ve considered on my own. I also love how Augment is always adding new material and new resources for students. Can't wait to see what 2025 has in store! 📌 Lesson learned: The best investment you can make is in learning from others. A huge thanks to the Augment team and the incredible entrepreneurs in the program. Now, it’s time to apply what I’ve learned! For all the business owners out there—what’s the best piece of advice you’ve ever received? Drop it in the comments!",
+    text: "Last week, I officially completed the Supreme Coach Business School MBA course—but the real learning is just beginning. Supreme Coach Business School is not a normal MBA course. You get real advice from real entrepreneurs who have been through every struggle you can think of. It’s not just theory—it’s real-world strategies, lessons from failures, and insights you won’t find in a textbook. One of the biggest takeaways? You don’t have to figure it all out alone. Building a business can feel isolating, but surrounding yourself with the right people changes everything. Hearing from founders who have been in the same trenches—solving the same problems—gave me perspectives I never would’ve considered on my own. I also love how Supreme Coach is always adding new material and new resources for students. Can't wait to see what 2025 has in store! 📌 Lesson learned: The best investment you can make is in learning from others. A huge thanks to the Supreme Coach team and the incredible entrepreneurs in the program. Now, it’s time to apply what I’ve learned! For all the business owners out there—what’s the best piece of advice you’ve ever received? Drop it in the comments!",
     linkedin: true,
   },
   {
@@ -1392,7 +1496,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Christopher Mensah",
     role: "Solution Consultant Digital Assets, Web3, Board Advisor, Digital Assets Educator: Bridging the gap from web2 to web3",
     avatar: "https://cdn.senja.io/public/media/6b21fd33-874d-4698-84a9-373d1835b606_57ed6256-060c-4c90-b891-f0aab8b800a7_Christopher%20Mensah.jpeg?width=63&height=63&format=webp",
-    text: "When you decide to upgrade your knowledge, I recommend studying business. Augment's alternative MBA was invaluable in its content and its insights were exactly what I was looking for, I was able to apply the principles immediately. Entrepreneurship, intrapreneurship or solopreneurship is accessible to all when you understand the principles and applications of business. If you were thinking of a course to upgrade your knowledge, check Augment.org",
+    text: "When you decide to upgrade your knowledge, I recommend studying business. Supreme Coach's alternative MBA was invaluable in its content and its insights were exactly what I was looking for, I was able to apply the principles immediately. Entrepreneurship, intrapreneurship or solopreneurship is accessible to all when you understand the principles and applications of business. If you were thinking of a course to upgrade your knowledge, check Supreme Coach.org",
     linkedin: true,
   },
   {
@@ -1408,7 +1512,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Aidan Kaye",
     role: "Servant Leader | Entrepreneur",
     avatar: "https://cdn.senja.io/public/media/Xbnj0kZS7jU4j2CMmv7MMuLC.jpeg?width=63&height=63&format=webp",
-    text: "Happy to have completed the Augment MBA program. I loved the course, as it filled gaps in my knowledge of my business skills, including leadership, business strategy, entrepreneurship, and financial accounting. I'm excited to put these skills to use!",
+    text: "Happy to have completed the Supreme Coach MBA program. I loved the course, as it filled gaps in my knowledge of my business skills, including leadership, business strategy, entrepreneurship, and financial accounting. I'm excited to put these skills to use!",
     linkedin: true,
   },
   {
@@ -1416,7 +1520,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Gregory T. Lande",
     role: "Award-Winning Sales Leader",
     avatar: "https://cdn.senja.io/public/media/e5a5830a-7aa4-4b37-a7fe-7a245294e745_avatar.png?width=63&height=63&format=webp",
-    text: "I recently completed my MBA program with The #Augment Business School; it was an incredibly educational and rewarding experience. The support and guidance from #Augment's faculty was invaluable...from Joaquim Berryer convincing me that at this stage of my career #Augment was undoubtedly the right choice, to Joceline Perrot continually communicating with me ensuring that the modules. I couldn't be happier with the choice I made with #Augment...you have added to my life in multiple ways, and I couldn't be more grateful.",
+    text: "I recently completed my MBA program with The #Supreme Coach Business School; it was an incredibly educational and rewarding experience. The support and guidance from #Supreme Coach's faculty was invaluable...from Joaquim Berryer convincing me that at this stage of my career #Supreme Coach was undoubtedly the right choice, to Joceline Perrot continually communicating with me ensuring that the modules. I couldn't be happier with the choice I made with #Supreme Coach...you have added to my life in multiple ways, and I couldn't be more grateful.",
     linkedin: true,
   },
   {
@@ -1432,7 +1536,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Kelvin Alaneme",
     role: "CEO Mindhelpa",
     avatar: "https://cdn.senja.io/public/media/SMqW64grLFL5ww0wzuH3hYc3.jpeg?width=63&height=63&format=webp",
-    text: "If you are a startup founder and there is just one book to read, I will recommend Uri Levine’s masterpiece - 'Fall in Love with the Problem, Not the Solution'. Uri is the Co-Founder of Waze and Moovit - 2 unicorns (private companies valued at over $1 billion). I encountered him during my Augment.org MBA program and he spits gems after gems.",
+    text: "If you are a startup founder and there is just one book to read, I will recommend Uri Levine’s masterpiece - 'Fall in Love with the Problem, Not the Solution'. Uri is the Co-Founder of Waze and Moovit - 2 unicorns (private companies valued at over $1 billion). I encountered him during my Supreme Coach.org MBA program and he spits gems after gems.",
     linkedin: true,
   },
   {
@@ -1440,7 +1544,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Carl Morris",
     role: "Experienced EdTech Founder",
     avatar: "https://cdn.senja.io/public/media/7d3d1476-2946-452f-95b9-b776a79702ed_96342f07-3720-4291-af72-a230ab8e69d6_Carl%20Morris.jpeg?width=63&height=63&format=webp",
-    text: "Huge thanks for the mention in the latest Augment.org community update. 🙏 Calling all aspiring entrepreneurs! If you're looking to level up your skills, this course is a game-changer. Packed with invaluable insights and advice from seasoned innovators. 💡💪",
+    text: "Huge thanks for the mention in the latest Supreme Coach.org community update. 🙏 Calling all aspiring entrepreneurs! If you're looking to level up your skills, this course is a game-changer. Packed with invaluable insights and advice from seasoned innovators. 💡💪",
     linkedin: true,
   },
   {
@@ -1448,7 +1552,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Kevin Creery",
     role: "Planning Analyst @ Resort Municipality Of Whistler | Community Planning | Policy Planning | Bylaw Enforcement",
     avatar: "https://cdn.senja.io/public/media/05jOlcp3Wzqf6bGHJKw1O2VV.jpeg?width=63&height=63&format=webp",
-    text: "Augment offers great insights from tech founders and CEOs about how they started their businesses. Augment fits my needs to grow my business and tech expertise with real-world examples from successful tech founders. Augment enables me to learn the modules as I go and handbooks provide more background and context. As a lifelong learner who embraces innovation, Augment provides me with many skills and the knowledge necessary to advance my career and enhance opportunities.",
+    text: "Supreme Coach offers great insights from tech founders and CEOs about how they started their businesses. Supreme Coach fits my needs to grow my business and tech expertise with real-world examples from successful tech founders. Supreme Coach enables me to learn the modules as I go and handbooks provide more background and context. As a lifelong learner who embraces innovation, Supreme Coach provides me with many skills and the knowledge necessary to advance my career and enhance opportunities.",
     linkedin: true,
   },
   {
@@ -1472,7 +1576,7 @@ export const testimonials: TestimonialItem[] = [
     name: "Jean Boutros",
     role: "Data Engineering and Analytics Lead at PwC UK",
     avatar: "https://cdn.senja.io/public/media/5tD266xB8DBfi0rcpxt0MASg.jpeg?width=63&height=63&format=webp",
-    text: "I have studied at 6 different universities, some of which I graduated with a degree, others I didn't. While I still have a special place for academia in my life, and while I'm still planning to pursue my PhD in social sciences, there's a reality that keeps striking me every time I think back about my academic journeys. I can describe my academic journeys as enriching and eye-opening, but also economically straining and socially exclusionist. I can also confidently say that classic education still got a long way before it becomes aligned with real-life and market skills. I am delighted to share that I’ve started my Master of Business Administration - MBA at Augment. Augment's mission is to democratise business education, enabling access to a wider audience, away from systemic selectivism that is strengthened by socio-economic factors. Augment's objective is also to form people with market-ready skills and a growth make-it-happen mindset. #business #education #mba #growth #augmentmba Voir la traduction",
+    text: "I have studied at 6 different universities, some of which I graduated with a degree, others I didn't. While I still have a special place for academia in my life, and while I'm still planning to pursue my PhD in social sciences, there's a reality that keeps striking me every time I think back about my academic journeys. I can describe my academic journeys as enriching and eye-opening, but also economically straining and socially exclusionist. I can also confidently say that classic education still got a long way before it becomes aligned with real-life and market skills. I am delighted to share that I’ve started my Master of Business Administration - MBA at Supreme Coach. Supreme Coach's mission is to democratise business education, enabling access to a wider audience, away from systemic selectivism that is strengthened by socio-economic factors. Supreme Coach's objective is also to form people with market-ready skills and a growth make-it-happen mindset. #business #education #mba #growth #Supreme Coachmba Voir la traduction",
     linkedin: true,
   },
 ];
@@ -1540,26 +1644,61 @@ export const comparisonRows: ComparisonRow[] = [
   ["Outcome", "Immediate application", "Longer-term theory"],
 ];
 
+type SecurityItem = {
+  name: string;
+  src: string;
+  width: number;
+  height: number;
+};
+
+export const securityItems: SecurityItem[] = [
+  {
+    name: "SOC 2",
+    src: "/security (1).svg",
+    width: 56,
+    height: 56,
+  },
+  {
+    name: "PCI DSS",
+    src: "/security (2).svg",
+    width: 56,
+    height: 56,
+  },
+  {
+    name: "GDPR",
+    src: "/security (3).svg",
+    width: 56,
+    height: 56,
+  },
+  {
+    name: "CCPA",
+    src: "/security (4).svg",
+    width: 56,
+    height: 56,
+  },
+];
+
 export type FAQItem = {
   question: string;
   answer: string;
 };
 
+
 export const homeFaqs: FAQItem[] = [
   {
-    question: "What is Augment?",
+    question: "What is Supreme Coach?",
     answer:
-      "Augment is a modern business school for entrepreneurs, founders, and professionals who want practical business education without the traditional MBA limits.",
+      "Supreme Coach is a modern business school for entrepreneurs, founders, and professionals who want practical business education without the traditional MBA limits.",
   },
   {
-    question: "Who is Augment made for?",
+    question: "Who is Supreme Coach made for?",
     answer:
-      "Augment is made for entrepreneurs, startup founders, operators, executives, and ambitious professionals who want to learn real business skills from experienced leaders.",
+      "Supreme Coach is made for entrepreneurs, startup founders, operators, executives, and ambitious professionals who want to learn real business skills from experienced leaders.",
   },
   {
-    question: "How is Augment different from a traditional MBA?",
+    question: "How is Supreme Coach different from a traditional MBA?",
     answer:
-      "Augment focuses on practical lessons, real-world examples, founder-led learning, and flexible online access instead of long academic theory.",
+      "Supreme Coach focuses on practical lessons, real-world examples, founder-led learning, and flexible online access instead of long academic theory.",
   },
   {
     question: "How much time do I need each day?",
@@ -1569,7 +1708,7 @@ export const homeFaqs: FAQItem[] = [
   {
     question: "Is there a refund policy?",
     answer:
-      "Yes. You can try Augment risk-free for 15 days. If it is not the right fit, you can contact finance@augment.org for refund support.",
+      "Yes. You can try Supreme Coach risk-free for 15 days. If it is not the right fit, you can contact finance@Supreme Coach.org for refund support.",
   },
 ];
 
@@ -1587,7 +1726,7 @@ export const pricingFaqs: FAQItem[] = [
   {
     question: "Is there a free trial or refund policy?",
     answer:
-      "Yes. Augment offers a 15-day risk-free refund policy. If it is not the right fit, you can contact finance@augment.org for refund support.",
+      "Yes. Supreme Coach offers a 15-day risk-free refund policy. If it is not the right fit, you can contact finance@Supreme Coach.org for refund support.",
   },
   {
     question: "What is included in the paid plan?",
@@ -1600,88 +1739,88 @@ export const pricingFaqs: FAQItem[] = [
       "It depends on the plan you choose. Some plans may be billed monthly, while others may offer yearly access at a better value.",
   },
   {
-    question: "Can teams or companies join Augment?",
+    question: "Can teams or companies join Supreme Coach?",
     answer:
-      "Yes. Augment can be useful for teams, founders, operators, and professionals who want to improve business knowledge together.",
+      "Yes. Supreme Coach can be useful for teams, founders, operators, and professionals who want to improve business knowledge together.",
   },
 ];
 
 export const productsFaqs: FAQItem[] = [
   {
-      question: "Why should I sell my courses on Augment?",
+      question: "Why should I sell my courses on Supreme Coach?",
       answer:
-        "Creating and selling online courses on Augment gives you access to both the most powerful selling tools and the most flexible course builder. You control your content. You control how you get paid. And you control the learning environment for your audience.",
+        "Creating and selling online courses on Supreme Coach gives you access to both the most powerful selling tools and the most flexible course builder. You control your content. You control how you get paid. And you control the learning environment for your audience.",
     },
     {
-      question: "How do I make a course on Augment?",
+      question: "How do I make a course on Supreme Coach?",
       answer:
         "It’s easy (and free) to get started with a seven-day free trial. Once logged in, you’ll be prompted to create a product. Select course. From there, you can start building manually. Or, use our AI course starter to draft your curriculum, lesson content, and sales page all at once.",
     },
     {
-      question: "Can I do live courses on Augment?",
+      question: "Can I do live courses on Supreme Coach?",
       answer:
-        "While Augment is built for self-paced courses by default, it’s easy enough to host live courses using third-party embeds, including YouTube, Vimeo, and Zoom. You can also create a cohort-based learning experience using drip content.",
+        "While Supreme Coach is built for self-paced courses by default, it’s easy enough to host live courses using third-party embeds, including YouTube, Vimeo, and Zoom. You can also create a cohort-based learning experience using drip content.",
     },
     {
       question: "Do online courses make money?",
       answer:
-        "Absolutely—in fact, they’re the perfect way to earn ongoing revenue, without ongoing work. Online course creation on Augment is designed with longevity in mind, meaning once you do the up front work of creating it, you can sell it on a continuous basis with little maintenance. Whatever your expertise or your business, you can translate it into an online course that people will pay for.",
+        "Absolutely—in fact, they’re the perfect way to earn ongoing revenue, without ongoing work. Online course creation on Supreme Coach is designed with longevity in mind, meaning once you do the up front work of creating it, you can sell it on a continuous basis with little maintenance. Whatever your expertise or your business, you can translate it into an online course that people will pay for.",
     },
     {
-      question: "How much does Augment cost per month?",
+      question: "How much does Supreme Coach cost per month?",
       answer:
         "Your first seven days are free. After that, we have plans starting at $29 per month, each designed to fit your unique business needs. Browse plans and pricing here.",
     },
     {
-      question: "How many courses can I have on Augment?",
+      question: "How many courses can I have on Supreme Coach?",
       answer:
-        "Believe it or not, on any Augment plan, you can create an unlimited number of courses. From there, you can sell up to one course on a Starter plan, five courses on a Builder plan, 25 courses on a Growth plan, and 100 courses on an Advanced plan. For more courses, please contact sales.",
+        "Believe it or not, on any Supreme Coach plan, you can create an unlimited number of courses. From there, you can sell up to one course on a Starter plan, five courses on a Builder plan, 25 courses on a Growth plan, and 100 courses on an Advanced plan. For more courses, please contact sales.",
     },
     {
-      question: "What else can I create on Augment?",
+      question: "What else can I create on Supreme Coach?",
       answer:
-        "You can build and sell your entire suite of learning products on Augment, including online coaching sessions, how-to guides, interactive templates, a community space, and more.",
+        "You can build and sell your entire suite of learning products on Supreme Coach, including online coaching sessions, how-to guides, interactive templates, a community space, and more.",
     },
 ];
 
 export const aboutFaqs: FAQItem[] = [
   {
-    question: "Why was Augment created?",
+    question: "Why was Supreme Coach created?",
     answer:
-      "Augment was created to make high-quality business education more practical, flexible, and accessible for entrepreneurs and professionals.",
+      "Supreme Coach was created to make high-quality business education more practical, flexible, and accessible for entrepreneurs and professionals.",
   },
   {
-    question: "Who teaches at Augment?",
+    question: "Who teaches at Supreme Coach?",
     answer:
-      "Augment courses are taught by experienced founders, executives, and business leaders who have built and scaled real companies.",
+      "Supreme Coach courses are taught by experienced founders, executives, and business leaders who have built and scaled real companies.",
   },
   {
-    question: "Is Augment an accredited university?",
+    question: "Is Supreme Coach an accredited university?",
     answer:
-      "Augment is not a traditional university. It is built to provide practical business learning outside the limitations of traditional academic programs.",
+      "Supreme Coach is not a traditional university. It is built to provide practical business learning outside the limitations of traditional academic programs.",
   },
   {
-    question: "What makes Augment trusted?",
+    question: "What makes Supreme Coach trusted?",
     answer:
-      "Augment focuses on real business experience, practical frameworks, and learning from people who have worked at a high level in business.",
+      "Supreme Coach focuses on real business experience, practical frameworks, and learning from people who have worked at a high level in business.",
   },
 ];
 
 export const communityFaqs: FAQItem[] = [
   {
-    question: "What is included in the Augment community?",
+    question: "What is included in the Supreme Coach community?",
     answer:
       "The community gives members a place to connect with entrepreneurs, professionals, and learners who are also building and growing businesses.",
   },
   {
     question: "Can I network with other founders?",
     answer:
-      "Yes. Augment gives you opportunities to connect with like-minded founders, operators, and professionals from different backgrounds.",
+      "Yes. Supreme Coach gives you opportunities to connect with like-minded founders, operators, and professionals from different backgrounds.",
   },
   {
     question: "Are there live sessions or meetups?",
     answer:
-      "Depending on your program, Augment may include live Q&A sessions, networking events, and selected in-person meetups.",
+      "Depending on your program, Supreme Coach may include live Q&A sessions, networking events, and selected in-person meetups.",
   },
   {
     question: "Is the community useful after completing the course?",
@@ -1692,19 +1831,19 @@ export const communityFaqs: FAQItem[] = [
 
 export const integrationsFaqs: FAQItem[] = [
   {
-    question: "Can I access Augment from different devices?",
+    question: "Can I access Supreme Coach from different devices?",
     answer:
-      "Yes. You can access Augment online from your laptop, tablet, or mobile device depending on the platform access available.",
+      "Yes. You can access Supreme Coach online from your laptop, tablet, or mobile device depending on the platform access available.",
   },
   {
-    question: "Does Augment work with my existing workflow?",
+    question: "Does Supreme Coach work with my existing workflow?",
     answer:
-      "Yes. Augment is designed for busy professionals, so you can learn alongside your work, business, or team responsibilities.",
+      "Yes. Supreme Coach is designed for busy professionals, so you can learn alongside your work, business, or team responsibilities.",
   },
   {
-    question: "Can teams use Augment together?",
+    question: "Can teams use Supreme Coach together?",
     answer:
-      "Yes. Teams can use Augment to build shared business knowledge, improve leadership skills, and create a common learning system.",
+      "Yes. Teams can use Supreme Coach to build shared business knowledge, improve leadership skills, and create a common learning system.",
   },
   {
     question: "Do I need any special software?",
@@ -1715,42 +1854,42 @@ export const integrationsFaqs: FAQItem[] = [
 
 export const teamFaqs: FAQItem[] = [
   {
-    question: "Can my team join Augment?",
+    question: "Can my team join Supreme Coach?",
     answer:
-      "Yes. Augment can be useful For Forms that want to improve business thinking, leadership, growth, and decision-making skills.",
+      "Yes. Supreme Coach can be useful For Firms that want to improve business thinking, leadership, growth, and decision-making skills.",
   },
   {
-    question: "Is Augment good for employee training?",
+    question: "Is Supreme Coach good for employee training?",
     answer:
-      "Yes. Companies can use Augment as professional development for team members, managers, operators, and future leaders.",
+      "Yes. Companies can use Supreme Coach as professional development for team members, managers, operators, and future leaders.",
   },
   {
-    question: "Can we expense Augment through our company?",
+    question: "Can we expense Supreme Coach through our company?",
     answer:
-      "Yes. Many students expense Augment as professional development. Documentation can be provided upon request.",
+      "Yes. Many students expense Supreme Coach as professional development. Documentation can be provided upon request.",
   },
   {
     question: "Do teams get different pricing?",
     answer:
-      "Team pricing may depend on the number of members and the selected program. You can contact Augment for team enrollment details.",
+      "Team pricing may depend on the number of members and the selected program. You can contact Supreme Coach for team enrollment details.",
   },
 ];
 
 export const solutionsFaqs: FAQItem[] = [
   {
-    question: "What business problems does Augment help solve?",
+    question: "What business problems does Supreme Coach help solve?",
     answer:
-      "Augment helps with business strategy, leadership, growth, decision-making, entrepreneurship, and building stronger business skills.",
+      "Supreme Coach helps with business strategy, leadership, growth, decision-making, entrepreneurship, and building stronger business skills.",
   },
   {
-    question: "Is Augment useful for startup founders?",
+    question: "Is Supreme Coach useful for startup founders?",
     answer:
       "Yes. Startup founders can learn practical lessons about scaling, fundraising, leadership, product thinking, and business growth.",
   },
   {
-    question: "Can Augment help experienced professionals?",
+    question: "Can Supreme Coach help experienced professionals?",
     answer:
-      "Yes. Augment is not only for beginners. It is also useful for experienced professionals who want sharper business thinking.",
+      "Yes. Supreme Coach is not only for beginners. It is also useful for experienced professionals who want sharper business thinking.",
   },
   {
     question: "How fast can I start learning?",
@@ -1762,56 +1901,56 @@ export const solutionsFaqs: FAQItem[] = [
 
 export const coachesFaqs: FAQItem[] = [
   {
-    question: "How does coaching through Augment Individual work?",
+    question: "How does coaching through Supreme Coach Individual work?",
     answer:
-      "Coaching through Augment Individual begins with a seamless digital onboarding where each employee is matched with a certified business coach who fits their goals, language and professional context. The experience is designed to be intuitive from the start, giving every coachee immediate access to high quality coaching without operational friction.\n\nEmployees define their development priorities through a self assessment and select focus areas that reflect both their personal goals and the organization’s strategic needs. They schedule sessions at their preferred cadence and work with their coach in flexible, ongoing conversations that drive real behavior change. Progress is visible at every step through built in goal tracking, which helps coachees stay accountable and gives organizations clarity on outcomes.\n\nBetween sessions, employees access Augment Academy, a curated library of resources that reinforces learning and ensures development continues beyond coaching conversations. With Augment Feedback, they can also gather feedback from peers, direct reports or managers to deepen self awareness and uncover areas of improvements.\n\nFor program managers, Augment Individual provides aggregated insights across focus areas and cohorts to measure progress, demonstrate impact and ensure coaching is aligned with broader talent and business priorities.",
+      "Coaching through Supreme Coach Individual begins with a seamless digital onboarding where each employee is matched with a certified business coach who fits their goals, language and professional context. The experience is designed to be intuitive from the start, giving every coachee immediate access to high quality coaching without operational friction.\n\nEmployees define their development priorities through a self assessment and select focus areas that reflect both their personal goals and the organization’s strategic needs. They schedule sessions at their preferred cadence and work with their coach in flexible, ongoing conversations that drive real behavior change. Progress is visible at every step through built in goal tracking, which helps coachees stay accountable and gives organizations clarity on outcomes.\n\nBetween sessions, employees access Supreme Coach Academy, a curated library of resources that reinforces learning and ensures development continues beyond coaching conversations. With Supreme Coach Feedback, they can also gather feedback from peers, direct reports or managers to deepen self awareness and uncover areas of improvements.\n\nFor program managers, Supreme Coach Individual provides aggregated insights across focus areas and cohorts to measure progress, demonstrate impact and ensure coaching is aligned with broader talent and business priorities.",
   },
   {
     question:
-      "What makes Augment different from other business coaching services?",
+      "What makes Supreme Coach different from other business coaching services?",
     answer:
-      "Augment stands apart from other business coaching services by delivering a truly scalable, personalized and measurable coaching experience. This is made possible by a global pool of rigorously vetted business coaches, all certified by the International Coaching Federation and equipped with extensive leadership and coaching experience, ensuring consistently high quality across regions and roles.\n\nBuilt-in analytics also provide real-time visibility into progress across focus areas, enabling companies to track behavioral change and link it to business outcomes. For organizations managing large or global workforces, Augment also removes complexity through seamless scheduling, multi language access and GDPR compliant hosting.\n\nTogether, these elements create a coaching solution that combines human expertise, digital scale and measurable results.",
+      "Supreme Coach stands apart from other business coaching services by delivering a truly scalable, personalized and measurable coaching experience. This is made possible by a global pool of rigorously vetted business coaches, all certified by the International Coaching Federation and equipped with extensive leadership and coaching experience, ensuring consistently high quality across regions and roles.\n\nBuilt-in analytics also provide real-time visibility into progress across focus areas, enabling companies to track behavioral change and link it to business outcomes. For organizations managing large or global workforces, Supreme Coach also removes complexity through seamless scheduling, multi language access and GDPR compliant hosting.\n\nTogether, these elements create a coaching solution that combines human expertise, digital scale and measurable results.",
   },
   {
-    question: "How does Augment measure coaching success?",
+    question: "How does Supreme Coach measure coaching success?",
     answer:
-      "Augment measures coaching success by combining individual progress tracking with clear, data-driven insights at the program level. Each coachee begins by identifying their development focus areas and setting goals with their coach. These goals are tracked in real-time through the platform, allowing employees to see how their skills and behaviors evolve over the course of the program. This creates a transparent view of personal progress and helps sustain motivation and accountability.\n\nTo enrich this picture, Augment Feedback also offers integrated self-assessment and 360° feedback tools. Employees can gather input from peers, managers and direct reports at different moments in their journey, providing a rounded perspective on how their behavior is changing and where improvement is most visible. This feedback loop gives organizations a reliable pulse on the impact of coaching beyond the individual’s own perception.\n\nOn the organizational side, Augment Insights™ consolidates anonymized data to show how employees are progressing collectively. These analytics help program managers understand which capabilities are strengthening, how engagement is evolving and where coaching is driving measurable outcomes. By connecting individual growth to broader trends, companies can clearly demonstrate the value of coaching and ensure it aligns with strategic priorities.",
+      "Supreme Coach measures coaching success by combining individual progress tracking with clear, data-driven insights at the program level. Each coachee begins by identifying their development focus areas and setting goals with their coach. These goals are tracked in real-time through the platform, allowing employees to see how their skills and behaviors evolve over the course of the program. This creates a transparent view of personal progress and helps sustain motivation and accountability.\n\nTo enrich this picture, Supreme Coach Feedback also offers integrated self-assessment and 360° feedback tools. Employees can gather input from peers, managers and direct reports at different moments in their journey, providing a rounded perspective on how their behavior is changing and where improvement is most visible. This feedback loop gives organizations a reliable pulse on the impact of coaching beyond the individual’s own perception.\n\nOn the organizational side, Supreme Coach Insights™ consolidates anonymized data to show how employees are progressing collectively. These analytics help program managers understand which capabilities are strengthening, how engagement is evolving and where coaching is driving measurable outcomes. By connecting individual growth to broader trends, companies can clearly demonstrate the value of coaching and ensure it aligns with strategic priorities.",
   },
   {
-    question: "Who are Augment’s business coaches?",
+    question: "Who are Supreme Coach’s business coaches?",
     answer:
-      "Augment’s business coaches are a highly vetted group of seasoned professionals who meet strict standards that go well beyond typical market requirements. Every coach holds at least a PCC level certification from the International Coaching Federation or an equivalent credential.\n\nAll coaches in the Augment network are specialists in business and goal-oriented coaching, bringing both formal training and practical leadership experience. The minimum requirement includes 500 coaching hours, 125 training hours and more than six years of leadership experience, along with a proven track record supporting leaders and teams in top enterprise organizations across industries. This combination of expertise ensures that coaches understand real business challenges and can translate coaching into meaningful workplace outcomes.\n\nTo uphold this standard at scale, Augment applies an intensive selection and onboarding process. Only 5% of applicants are accepted into the global coach pool, reflecting a rigorous evaluation of skills and professionalism. This careful selection, combined with ongoing performance monitoring, leads to a 4.8/5 coachee satisfaction.",
+      "Supreme Coach’s business coaches are a highly vetted group of seasoned professionals who meet strict standards that go well beyond typical market requirements. Every coach holds at least a PCC level certification from the International Coaching Federation or an equivalent credential.\n\nAll coaches in the Supreme Coach network are specialists in business and goal-oriented coaching, bringing both formal training and practical leadership experience. The minimum requirement includes 500 coaching hours, 125 training hours and more than six years of leadership experience, along with a proven track record supporting leaders and teams in top enterprise organizations across industries. This combination of expertise ensures that coaches understand real business challenges and can translate coaching into meaningful workplace outcomes.\n\nTo uphold this standard at scale, Supreme Coach applies an intensive selection and onboarding process. Only 5% of applicants are accepted into the global coach pool, reflecting a rigorous evaluation of skills and professionalism. This careful selection, combined with ongoing performance monitoring, leads to a 4.8/5 coachee satisfaction.",
   },
   {
-    question: "How does Augment ensure coaching quality?",
+    question: "How does Supreme Coach ensure coaching quality?",
     answer:
       "Coaching quality is safeguarded through a multi-step vetting process, ongoing supervision and continuous evaluation. Our business coaches participate in professional development and are reviewed based on client feedback and measurable outcomes. This commitment to excellence guarantees consistency across all coaching experiences.",
   },
   {
-    question: "What kind of results can I expect from Augment’s coaching?",
+    question: "What kind of results can I expect from Supreme Coach’s coaching?",
     answer:
-      "Augment’s coaching approach is built around an evidence-based methodology. At the start of each coaching program, program managers select up to 12 focus areas from a library of 29 options. This creates a clear foundation and ensures development is anchored in the capabilities that matter most for the business, whether that means strengthening resilience, improving communication, elevating strategic thinking, or building leadership behaviors such as inclusion and collaboration.\n\nCoachees then choose the focus areas most relevant to their goals, complete assessments and track their progress over time. This approach keeps development highly personalized while staying closely aligned with organizational priorities.\n\nBecause the coaching journey is structured around these focus areas, the impact becomes easy to see and measure. Organizations gain visibility into which capabilities are improving and where behavior change is taking place across cohorts.\n\nThis is exactly what our customers are seeing in practice. For example, at SumUp, 80% of coachees reported improved self awareness and confidence, 70% felt better equipped to overcome challenges and 50% developed new skills in conflict resolution, strategic thinking and communication.",
+      "Supreme Coach’s coaching approach is built around an evidence-based methodology. At the start of each coaching program, program managers select up to 12 focus areas from a library of 29 options. This creates a clear foundation and ensures development is anchored in the capabilities that matter most for the business, whether that means strengthening resilience, improving communication, elevating strategic thinking, or building leadership behaviors such as inclusion and collaboration.\n\nCoachees then choose the focus areas most relevant to their goals, complete assessments and track their progress over time. This approach keeps development highly personalized while staying closely aligned with organizational priorities.\n\nBecause the coaching journey is structured around these focus areas, the impact becomes easy to see and measure. Organizations gain visibility into which capabilities are improving and where behavior change is taking place across cohorts.\n\nThis is exactly what our customers are seeing in practice. For example, at SumUp, 80% of coachees reported improved self awareness and confidence, 70% felt better equipped to overcome challenges and 50% developed new skills in conflict resolution, strategic thinking and communication.",
   },
   {
-    question: "Can Augment’s coaching be scaled across our organization?",
+    question: "Can Supreme Coach’s coaching be scaled across our organization?",
     answer:
-      "Yes, Augment’s coaching is designed to scale seamlessly across organizations of any size. The platform, the coaching network and the customer support model are all built to ensure that companies can expand coaching from a small pilot to a global, enterprise-wide program without losing quality, consistency, or impact.\n\nA key enabler of this scalability is Augment’s global coach pool. With more than 3,500 certified business coaches available worldwide, organizations can offer high quality coaching to employees in every region. Coaches cover 80 languages and operate in more than 90 countries, making it easy to support diverse teams across time zones, cultures and business contexts.\n\nCombined with flexible program design, unified reporting and a digital platform that centralizes the entire coaching journey, Augment makes it simple for companies to roll out coaching broadly while keeping development aligned, measurable and highly qualitative at scale.",
+      "Yes, Supreme Coach’s coaching is designed to scale seamlessly across organizations of any size. The platform, the coaching network and the customer support model are all built to ensure that companies can expand coaching from a small pilot to a global, enterprise-wide program without losing quality, consistency, or impact.\n\nA key enabler of this scalability is Supreme Coach’s global coach pool. With more than 3,500 certified business coaches available worldwide, organizations can offer high quality coaching to employees in every region. Coaches cover 80 languages and operate in more than 90 countries, making it easy to support diverse teams across time zones, cultures and business contexts.\n\nCombined with flexible program design, unified reporting and a digital platform that centralizes the entire coaching journey, Supreme Coach makes it simple for companies to roll out coaching broadly while keeping development aligned, measurable and highly qualitative at scale.",
   },
   {
-    question: "How does Augment use technology in coaching?",
+    question: "How does Supreme Coach use technology in coaching?",
     answer:
-      "Augment uses technology to make coaching smarter, more personalized, and easier to scale. AI matching connects each employee with the right coach based on their goals, experience, and preferences.\n\nThroughout the journey, tools like self assessments, 360 degree feedback, goal tracking, and smart nudges support continuous progress and keep coachees engaged. The platform also includes Augment Academy, offering curated learning resources that reinforce what is discussed in coaching sessions.\n\nOn the organizational side, dashboards provide clear visibility into engagement and progress across focus areas, making impact measurable.",
+      "Supreme Coach uses technology to make coaching smarter, more personalized, and easier to scale. AI matching connects each employee with the right coach based on their goals, experience, and preferences.\n\nThroughout the journey, tools like self assessments, 360 degree feedback, goal tracking, and smart nudges support continuous progress and keep coachees engaged. The platform also includes Supreme Coach Academy, offering curated learning resources that reinforce what is discussed in coaching sessions.\n\nOn the organizational side, dashboards provide clear visibility into engagement and progress across focus areas, making impact measurable.",
   },
   {
-    question: "What is included in the Augment coaching experience?",
+    question: "What is included in the Supreme Coach coaching experience?",
     answer:
-      "Every Augment coaching journey includes one-to-one virtual sessions, progress tracking, goal setting, and access to curated learning resources. Participants work with a dedicated business coach who tailors the experience to their individual goals. This holistic, data-informed approach drives measurable personal and professional growth.",
+      "Every Supreme Coach coaching journey includes one-to-one virtual sessions, progress tracking, goal setting, and access to curated learning resources. Participants work with a dedicated business coach who tailors the experience to their individual goals. This holistic, data-informed approach drives measurable personal and professional growth.",
   },
   {
     question:
-      "Why do global companies choose Augment for business coaching?",
+      "Why do global companies choose Supreme Coach for business coaching?",
     answer:
-      "Global companies choose Augment because it delivers high quality, scalable and measurable coaching across regions and business contexts. With a global network of more than 3,500 certified business coaches available in 80 languages and 90+ countries, organizations can offer consistent development to all employees, no matter where they are. This makes it easy to roll out coaching at scale while maintaining the same level of quality worldwide.\n\nCompanies also value Augment’s focus on impact. Coaching is structured around clear focus areas that align with organizational goals, and progress is measured through built-in self-assessments, 360° feedback and aggregated insights. This gives leaders visibility into real behavioral change and helps them demonstrate coaching impact.\n\nIn addition, the digital platform removes operational friction through AI coach matching, seamless scheduling, continuous learning resources and smart nudges that keep employees engaged. Combined with multilingual support from customer success managers, Augment offers a reliable, end-to-end solution that global organizations can trust to develop talent in a scalable, personalized and data driven way.",
+      "Global companies choose Supreme Coach because it delivers high quality, scalable and measurable coaching across regions and business contexts. With a global network of more than 3,500 certified business coaches available in 80 languages and 90+ countries, organizations can offer consistent development to all employees, no matter where they are. This makes it easy to roll out coaching at scale while maintaining the same level of quality worldwide.\n\nCompanies also value Supreme Coach’s focus on impact. Coaching is structured around clear focus areas that align with organizational goals, and progress is measured through built-in self-assessments, 360° feedback and aggregated insights. This gives leaders visibility into real behavioral change and helps them demonstrate coaching impact.\n\nIn addition, the digital platform removes operational friction through AI coach matching, seamless scheduling, continuous learning resources and smart nudges that keep employees engaged. Combined with multilingual support from customer success managers, Supreme Coach offers a reliable, end-to-end solution that global organizations can trust to develop talent in a scalable, personalized and data driven way.",
   },
 ];
 

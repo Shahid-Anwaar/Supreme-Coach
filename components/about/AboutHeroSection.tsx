@@ -16,7 +16,7 @@ const highlightItems: HighlightItem[] = [
   {
     id: 1,
     category: "Scenes",
-    title: "Augment: An MBA for entrepreneurs",
+    title: "Supreme Coach: An MBA for entrepreneurs",
     image:
       "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
@@ -44,7 +44,7 @@ const highlightItems: HighlightItem[] = [
   {
     id: 5,
     category: "In-Person Event",
-    title: "Gathering Augment Students In San Francisco",
+    title: "Gathering Supreme Coach Students In San Francisco",
     image:
       "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
@@ -120,7 +120,7 @@ export default function AboutHeroSection() {
         {/* Heading */}
         <div className="mx-auto max-w-[980px] text-center lg:mx-0 lg:text-start">
           <h1 className="section-title hero-title mx-auto max-w-[11ch] sm:max-w-[13ch] md:max-w-[15ch] tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] leading-[1.15] sm:leading-[1.22] md:leading-[1.3] lg:mx-0 lg:max-w-195">
-            Augment Is the Business School{" "}
+            Supreme Coach Is the Business School{" "}
             <span className="bg-linear-to-r from-primary-500 to-primary-300">
               We Dreamed Of &nbsp;
             </span>
@@ -132,7 +132,7 @@ export default function AboutHeroSection() {
         <div className="section-container py-4 sm:py-5">
           <div className="mb-0">
             <h3 className="text-center text-[18px] font-[600] tracking-[-0.03em] text-[#1f1f1f] sm:text-[20px] md:text-start md:text-[22px]">
-              Augment Highlights
+              Supreme Coach Highlights
             </h3>
             <div className="mt-2 h-0.5 w-full bg-black/12 sm:mt-1" />
           </div>

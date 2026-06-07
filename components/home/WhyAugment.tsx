@@ -181,7 +181,7 @@ export default function WhyAugmentSection() {
             <div className="section-container pb-0">
                 <div className="text-center">
                     <p className="section-label text-black">
-                        Why Augment?
+                        Why Supreme Coach?
                     </p>
                     <h2 className="mt-4 text-black section-title">
                         The Essentials of <br />Entrepreneurship

@@ -80,7 +80,7 @@ export default function StudentsCompaniesBuilt() {
     <section className="bg-black pt-12 sm:pt-16 lg:pt-20">
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <p className="section-label text-center">
-          BUILDING WITH AUGMENT
+          BUILDING WITH Supreme Coach
         </p>
 
         <h2 className="section-title mx-auto text-center text-white mt-3">

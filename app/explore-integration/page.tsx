@@ -36,7 +36,7 @@ export default function ExploreIntegrationPage() {
     <main className="bg-white text-black relative">
       <ProductsHeroSection />
       <p className="section-description mt-0! text-center mx-auto max-w-220 text-black">
-        1,000+ companies trust Augment to deliver measurable change
+        1,000+ companies trust Supreme Coach to deliver measurable change
       </p>
       <CompanyLogoCarousel companyLogos={[...companyLogos, ...companyLogos]} />;
       <div className="py-7"></div>
@@ -47,7 +47,7 @@ export default function ExploreIntegrationPage() {
         description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
         imgShown="left"
         imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e3117618576ae8098abc7b_b98cb8e56c799a3342711e81f7fb0fce_courses-quiz-1.webp"
-        imgAlt="Augment course onboarding and quiz preview"
+        imgAlt="Supreme Coach course onboarding and quiz preview"
         features={COURSE_FEATURES}
 
       />
@@ -64,7 +64,7 @@ export default function ExploreIntegrationPage() {
         description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
         imgShown="left"
         imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e3117618576ae8098abc7b_b98cb8e56c799a3342711e81f7fb0fce_courses-quiz-1.webp"
-        imgAlt="Augment course onboarding and quiz preview"
+        imgAlt="Supreme Coach course onboarding and quiz preview"
         features={COURSE_FEATURES}
 
       />
@@ -82,7 +82,7 @@ export default function ExploreIntegrationPage() {
         title="It's your business, your way"
         description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
       /> */}
-      <ClientsSection title="Augment success stories write themselves" isShowCompanies={true} />
+      <ClientsSection title="Supreme Coach success stories write themselves" isShowCompanies={true} />
       {/* <ProductTools /> */}
       {/* <ProductSold /> */}
       {/* <FAQSection faqs={FAQS} /> */}
@@ -99,7 +99,7 @@ export default function ExploreIntegrationPage() {
 
 
       {/* <BookCallSection
-                title="Stand out with the Augment LinkedIn Certificate"
+                title="Stand out with the Supreme Coach LinkedIn Certificate"
                 btnText="Enroll Now"
                 subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
                 topClasses="bg-[#f3f4f6]"
@@ -110,7 +110,7 @@ export default function ExploreIntegrationPage() {
 
       <FAQSection faqs={integrationsFaqs} />
       {/* <BookCallSection
-              title="Stand out with the Augment LinkedIn Certificate"
+              title="Stand out with the Supreme Coach LinkedIn Certificate"
               btnText="Enroll Now"
               subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
               topClasses="bg-[#f3f4f6]"
@@ -120,7 +120,7 @@ export default function ExploreIntegrationPage() {
       <BookCallSection
         title="Book a Demo with a Program Advisor"
         icon="solar:phone-linear"
-        subTitle="Discuss your business goals and find out if Augment is a fit for you."
+        subTitle="Discuss your business goals and find out if Supreme Coach is a fit for you."
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-black"
       />

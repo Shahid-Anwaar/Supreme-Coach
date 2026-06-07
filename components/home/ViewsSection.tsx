@@ -96,7 +96,7 @@ export default function ViewsSection({ items }: { items?: View[] }) {
                         The future of your education business happens here
                     </h2>
                     <p className="section-description mx-auto max-w-152 text-black">
-                        Whatever your expertise—languages, fitness, or coding—Augment helps you deliver impactful learning, run a smarter business, and scale worldwide.
+                        Whatever your expertise—languages, fitness, or coding—Supreme Coach helps you deliver impactful learning, run a smarter business, and scale worldwide.
                     </p>
                 </div>
 

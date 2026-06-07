@@ -90,6 +90,7 @@ const pricingData: Record<PricingTab, PricingPlan[]> = {
             description: "Expand your forms system with advanced management and SSO.",
             price: "1,200,000",
             buttonText: "Start now",
+            popular: true,
             features: [
                 "Everything in Core",
                 "Single Sign-On",
@@ -129,7 +130,7 @@ const tabs: {
             icon: "mdi:account",
         },
         {
-            label: "For Forms",
+            label: "For Firms",
             value: "forms",
             icon: "mdi:file-document-outline",
         },
@@ -234,7 +235,7 @@ export default function PricingSection() {
                                     className={`mt-6 w-full ${plan.custom ? "closed-btn"
                                             : plan.popular
                                                 ? "contained-btn"
-                                                : "outlined-btn"
+                                                : "outlined-btn hover:bg-primary"
                                         }`}
                                 >
                                     {plan.buttonText}

@@ -16,7 +16,7 @@ const testimonials = [
     {
         id: 2,
         quote:
-            "Augment is amazing and easy to digest. The lessons are perfect for progressing every day—even if you're busy.",
+            "Supreme Coach is amazing and easy to digest. The lessons are perfect for progressing every day—even if you're busy.",
         name: "Hester Scotton",
         role: "CFO",
         company: "Potter Clarkson",

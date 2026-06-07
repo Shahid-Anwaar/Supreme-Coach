@@ -27,7 +27,7 @@ const pressItems: PressItem[] = [
     source: "Maddyness",
     logoIcon: "mdi:newspaper-variant-outline",
     logoText: "Maddyness",
-    title: "Augment is providing the missing pieces of the puzzle",
+    title: "Supreme Coach is providing the missing pieces of the puzzle",
     image:
       "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
@@ -45,7 +45,7 @@ const pressItems: PressItem[] = [
     source: "Poets & Quants",
     logoIcon: "mdi:school-outline",
     logoText: "Poets & Quants",
-    title: "Augment Business School Provides A MasterClass-Like MBA",
+    title: "Supreme Coach Business School Provides A MasterClass-Like MBA",
     image:
       "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },

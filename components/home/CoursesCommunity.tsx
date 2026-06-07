@@ -41,7 +41,7 @@ export default function CoursesCommunity() {
                     </Link>
 
                     <Link
-                        href="#"
+                        href="/contact-sales"
                         className="closed-btn inline-flex w-full max-w-[260px] justify-center px-7 py-3 sm:w-auto sm:max-w-none"
                     >
                         Contact Sales

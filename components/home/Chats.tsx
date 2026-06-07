@@ -37,7 +37,7 @@ export default function Chats() {
                             <input
                                 type='text'
                                 // placeholder={inView ? "In view" : "Not in view"}
-                                placeholder='Ask anything about Augment'
+                                placeholder='Ask anything about Supreme Coach'
                                 className='w-full h-full focus:outline-none '
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}

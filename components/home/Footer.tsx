@@ -22,7 +22,7 @@ const leftLinks: FooterLink[] = [
     { label: "Products", href: "/products" },
     // { label: "Solutions", href: "/solutions" },
     { label: "For Coach", href: "/for-coach" },
-    { label: "For Forms", href: "/for-forms" },
+    { label: "For Forms", href: "/for-firms" },
 ];
 
 const rightLinks: FooterLink[] = [
@@ -104,11 +104,11 @@ const legalLinks: FooterLink[] = [
 //                             <Link
 //                                 href="/"
 //                                 className="inline-flex"
-//                                 aria-label="Augment Business School"
+//                                 aria-label="Supreme Coach Business School"
 //                             >
 //                                 <Image
 //                                     src="/footer-logo.svg"
-//                                     alt="Augment Business School"
+//                                     alt="Supreme Coach Business School"
 //                                     width={240}
 //                                     height={72}
 //                                     className="h-auto w-[175px] sm:w-[190px] md:w-[228px]"
@@ -214,7 +214,7 @@ export default function Footer() {
             <BookCallSection
                 title="Book A Demo with a Program Advisor"
                 icon="solar:phone-linear"
-                subTitle="Discuss your business goals and find out if Augment is a fit for you."
+                subTitle="Discuss your business goals and find out if Supreme Coach is a fit for you."
                 topClasses="bg-black"
                 bottomClasses="bg-black"
             />
@@ -226,11 +226,11 @@ export default function Footer() {
                             <Link
                                 href="/"
                                 className="inline-flex"
-                                aria-label="Augment Business School"
+                                aria-label="Supreme Coach Business School"
                             >
                                 <Image
-                                    src="/footer-logo.svg"
-                                    alt="Augment Business School"
+                                    src="/logos/s coach logo.svg"
+                                    alt="Supreme Coach Business School"
                                     width={240}
                                     height={72}
                                     className="h-auto w-[150px] sm:w-[175px] md:w-[228px]"
@@ -257,7 +257,7 @@ export default function Footer() {
 
                             <Link
                                 href="/contact"
-                                className="contained-btn mt-6 inline-flex w-full max-w-[220px] items-center justify-center rounded-full bg-[#D9F52B] px-8 py-3 text-[14px] sm:mt-7 sm:w-auto sm:px-12 sm:py-4 sm:text-[15px]"
+                                className="contained-btn mt-6 w-full max-w-[220px] px-8 sm:mt-7 sm:w-auto sm:px-12"
                             >
                                 Contact Us
                             </Link>

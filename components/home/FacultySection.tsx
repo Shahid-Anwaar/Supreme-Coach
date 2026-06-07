@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { instructors, type InstructorItem } from "@/data/data";
+import { FeaturedItem, featuredItems, instructors, type InstructorItem } from "@/data/data";
 
 const CARD_WIDTH = 292;
 const CARD_GAP = 24;
@@ -40,7 +40,7 @@ function InstructorCard({
   item,
   cardWidth,
 }: {
-  item: InstructorItem;
+  item: FeaturedItem;
   cardWidth: number;
 }) {
   return (
@@ -50,7 +50,7 @@ function InstructorCard({
     >
       <Image
         src={item.image}
-        alt={item.name}
+        alt={item.title}
         fill
         sizes="(max-width: 639px) 240px, (max-width: 767px) 260px, (max-width: 1023px) 280px, 292px"
         className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -58,23 +58,24 @@ function InstructorCard({
 
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.0)_0%,rgba(23,23,23,0.0)_32%,rgba(23,23,23,1)_80%)]" />
 
-      {item.badge ? (
+      {/* {item.badge ? (
         <div className="absolute left-3 right-3 top-3 rounded-lg border border-white/15 bg-black/35 px-3 py-2 text-center text-[11px] font-medium uppercase tracking-[0.06em] text-white/95 backdrop-blur-md sm:left-4 sm:right-4 sm:top-4 sm:rounded-xl sm:px-4 sm:text-[13px] lg:text-[14px]">
           {item.badge}
         </div>
-      ) : null}
+      ) : null} */}
 
       <div className="absolute inset-x-0 bottom-0 px-3 pb-4 sm:px-4 sm:pb-5">
-        <InstructorLogo logoIcon={item.logoIcon} company={item.company} />
+        <h3 className="font-serif text-[29px] font-normal leading-[1.1] tracking-[-0.04em] text-white sm:text-[32px]">
+          {item.title}
+          <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </h3>
         <div className="divider my-2.5 bg-white/40 sm:my-3"></div>
 
         <div>
-          <h3 className="line-clamp-2 text-[19px] font-medium leading-[1.08] tracking-[-0.04em] text-white sm:text-[21px] lg:text-[22px]">
-            {item.name}
-          </h3>
-
-          <p className="mt-2 line-clamp-2 text-[11px] font-semibold uppercase leading-[1.2] tracking-[0.04em] text-white sm:text-[12px]">
-            {item.role}
+          <p className="mt-2 text-[12px] font-semibold leading-[1.2] tracking-[0.04em] text-white sm:text-[14px]">
+            {item.description}
           </p>
         </div>
       </div>
@@ -106,10 +107,10 @@ function ArrowButton({
   );
 }
 
-export default function FacultySection() {
-  const total = instructors.length;
+export default function FeaturesSection({ isShowBtn = true }: { isShowBtn?: boolean }) {
+  const total = featuredItems.length;
   const loopedItems = useMemo(
-    () => [...instructors, ...instructors, ...instructors],
+    () => [...featuredItems, ...featuredItems, ...featuredItems],
     []
   );
 
@@ -219,10 +220,10 @@ export default function FacultySection() {
     <section className="overflow-hidden bg-black">
       <div className="mx-auto w-full max-w-400 px-0 pb-14 pt-10 sm:pb-16 sm:pt-12 md:pb-20 md:pt-16">
         <div className="px-4 text-center">
-          <p className="section-label">FACULTY</p>
+          <p className="section-label">FEATURES</p>
 
           <h2 className="section-title mt-5 text-white sm:mt-6">
-            Meet Your Instructors
+            Everything You Need to Grow
           </h2>
         </div>
 
@@ -265,14 +266,14 @@ export default function FacultySection() {
           </div>
         </div>
 
-        <div className="mt-10 flex justify-center sm:mt-12 md:mt-14">
+        {isShowBtn && <div className="mt-10 flex justify-center sm:mt-12 md:mt-14">
           <Link
-            href="/faculty"
+            href="/products"
             className="closed-btn mx-auto inline-flex w-full max-w-[220px] items-center justify-center px-8 sm:w-auto sm:max-w-none sm:px-14 lg:px-20"
           >
             Learn More
           </Link>
-        </div>
+        </div>}
       </div>
     </section>
   );

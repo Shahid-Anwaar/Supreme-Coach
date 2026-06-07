@@ -23,7 +23,7 @@ export default function CommunityPage() {
             <BookCallSection
                 title="15-Day Money-Back Guarantee"
                 btnText="Enroll Now"
-                subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
+                subTitle="Try Supreme Coach for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
                 topClasses="bg-black"
                 bottomClasses="bg-[#f3f4f6]"
             />
@@ -31,7 +31,7 @@ export default function CommunityPage() {
             <BookCallSection
                 title="Book a Demo with a Program Advisor"
                 icon="solar:phone-linear"
-                subTitle="Discuss your business goals and find out if Augment is a fit for you."
+                subTitle="Discuss your business goals and find out if Supreme Coach is a fit for you."
                 topClasses="bg-[#f3f4f6]"
                 bottomClasses="bg-black"
             />

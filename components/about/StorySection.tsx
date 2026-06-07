@@ -7,7 +7,7 @@ export default function StorySection() {
         {/* Left Content */}
         <div>
           <h2 className="section-title tracking-[1.5px]">
-            The Augment Business School Story
+            The Supreme Coach Business School Story
           </h2>
 
           <p className="mt-9 max-w-[620px] text-[20px] font-[400] leading-[1.55] tracking-[-0.02em] text-black/90 sm:text-[22px]">

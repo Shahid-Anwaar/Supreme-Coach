@@ -1,5 +1,5 @@
 import BookCallSection from "@/components/home/BookCall";
-import FacultySection from "@/components/home/FacultySection";
+import FeaturesSection from "@/components/home/FacultySection";
 import FAQSection from "@/components/home/FaqSection";
 import FeaturedInSection from "@/components/home/FeaturedIn";
 import Footer from "@/components/home/Footer";
@@ -24,7 +24,7 @@ export default function AllPage() {
       <AugmentHeroSection />
       <FeaturedInSection />
       <ViewsSection />
-      <FacultySection />
+      <FeaturesSection />
       <EmblaCarousel />
       <HowItWorksCard />
       <IntegrationsSection
@@ -37,7 +37,7 @@ export default function AllPage() {
      
       <FAQSection faqs={homeFaqs} />
       <BookCallSection
-        title="Stand out with the Augment LinkedIn Certificate"
+        title="Stand out with the Supreme Coach LinkedIn Certificate"
         btnText="Enroll Now"
         subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
         topClasses="bg-[#f3f4f6]"
@@ -54,7 +54,7 @@ export default function AllPage() {
       <BookCallSection
         title="Book a Demo with a Program Advisor"
         icon="solar:phone-linear"
-        subTitle="Discuss your business goals and find out if Augment is a fit for you."
+        subTitle="Discuss your business goals and find out if Supreme Coach is a fit for you."
         topClasses="bg-black"
         bottomClasses="bg-black"
       />

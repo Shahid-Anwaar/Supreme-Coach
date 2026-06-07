@@ -127,7 +127,7 @@ export default function MissionComparisonSection() {
           />
 
           <ComparisonCard
-            title="The Augment MBA"
+            title="The Supreme Coach MBA"
             items={augmentMbaItems}
             variant="light"
             ctaHref="/enroll"

@@ -1,5 +1,5 @@
 import BookCallSection from "@/components/home/BookCall";
-import FacultySection from "@/components/home/FacultySection";
+import FeaturesSection from "@/components/home/FacultySection";
 import FAQSection from "@/components/home/FaqSection";
 import FeaturedInSection from "@/components/home/FeaturedIn";
 import Footer from "@/components/home/Footer";
@@ -36,24 +36,24 @@ export default function Home() {
 
       <FeaturedInSection />
       <ViewsSection />
-      <FacultySection />
+      <FeaturesSection />
       <EmblaCarousel />
       <HowItWorksCard />
       <IntegrationsSection
         title="Your stack, supercharged"
-        description="Augment flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
+        description="Supreme Coach flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
       />
       <ClientsSection title="Trusted by growing companies" isShowCompanies={true} />
       <BookCallSection
         title="15-Day Money-Back Guarantee"
         btnText="Enroll Now"
-        subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
+        subTitle="Try Supreme Coach for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-[#f3f4f6]"
       />
       <FAQSection faqs={homeFaqs} />
       <BookCallSection
-        title="Stand out with the Augment LinkedIn Certificate"
+        title="Stand out with the Supreme Coach LinkedIn Certificate"
         btnText="Enroll Now"
         subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
         topClasses="bg-[#f3f4f6]"
@@ -64,7 +64,7 @@ export default function Home() {
       {/* <BookCallSection
         title="15-Day Money-Back Guarantee"
         btnText="Enroll Now"
-        subTitle="Try Augment for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
+        subTitle="Try Supreme Coach for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
         topClasses="bg-[#000000]"
         bottomClasses="bg-[#000000]"
       /> */}
@@ -74,7 +74,7 @@ export default function Home() {
       {/* <WhyAugmentSection /> */}
       {/* <StudentTestimonialsSection /> */}
       {/* <BookCallSection
-        title="Stand out with the Augment LinkedIn Certificate"
+        title="Stand out with the Supreme Coach LinkedIn Certificate"
         btnText="Enroll Now"
         subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
         topClasses="bg-[#f3f4f6]"

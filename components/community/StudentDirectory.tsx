@@ -18,7 +18,7 @@ export default function StudentDirectory() {
     <section className="bg-[#F3F4F6] py-8 sm:py-10 md:py-12 lg:py-14">
       <div className="mx-auto max-w-[1320px] px-4 sm:px-6 lg:px-8">
 
-        <span className="section-label inline-flex w-full justify-center mx-auto text-center text-black">THE AUGMENT STUDENT DIRECTORY</span>
+        <span className="section-label inline-flex w-full justify-center mx-auto text-center text-black">THE Supreme Coach STUDENT DIRECTORY</span>
 
         <h2 className="mt-3 section-title mx-auto text-center text-black">
           Develop Your Business Network

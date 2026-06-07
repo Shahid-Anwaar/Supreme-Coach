@@ -31,7 +31,7 @@ export default function AlumniStatsSection() {
 
           {/* Heading */}
           <h1 className="section-title hero-title text-white stylish-family mx-auto max-w-[12ch] text-center tracking-[1px] leading-[1.08] sm:max-w-[13ch] sm:tracking-[1.5px] md:max-w-[15ch] md:tracking-[2px] lg:mx-0 lg:max-w-245 lg:text-start">
-            Augment has{" "}
+            Supreme Coach has{" "}
             <span className="bg-linear-to-r from-primary-500 to-primary-300">
               over 10,000 alumni &nbsp;
             </span>{" "}

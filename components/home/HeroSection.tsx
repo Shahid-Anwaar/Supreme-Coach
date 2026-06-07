@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { FEATURES, HERO_SLIDES, HeroSlide } from "@/data/data";
+import { FEATURES, HERO_SLIDES, HeroSlide, securityItems } from "@/data/data";
 import CustomEmblaCarousel from "./CustomCarosal";
 
 export default function AugmentHeroSection() {
@@ -51,11 +51,30 @@ export default function AugmentHeroSection() {
                         </Link>
 
                         <Link
-                            href="https://s13rwwhxhl9.typeform.com/to/lmPnaKUF?utm_source=website&"
+                            href="/contact-sales"
                             className="flex w-full items-center justify-center px-6 closed-btn sm:w-auto sm:min-w-65"
                         >
                             Contact Sales
                         </Link>
+                    </div>
+                    <div className="flex mt-8 gap-x-10">
+                        {securityItems.map((item) => (
+                            <div
+                                key={item.name}
+                                className="flex flex-col items-center justify-center text-center"
+                            >
+                                <img
+                                    src={item.src}
+                                    alt={item.name}
+                                    width={item.width}
+                                    height={item.height}
+                                    className="h-12 w-12"
+                                />
+                                <p className="mt-1 text-[18px] font-normal tracking-[-0.03em] text-white">
+                                    {item.name}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                 </div>
 

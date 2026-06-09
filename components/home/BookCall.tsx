@@ -20,7 +20,7 @@ export default function BookCallSection({
     imgSrc = "",
     btnText = "Book A Demo",
     btnLink = "/book-a-call",
-    icon = "mingcute:arrow-right-fill",
+    icon = "solar:phone-linear",
     topClasses = "bg-white",
     bottomClasses = "bg-black",
     cardClasses = "py-10",

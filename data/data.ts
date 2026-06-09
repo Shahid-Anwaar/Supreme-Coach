@@ -1676,6 +1676,12 @@ export const securityItems: SecurityItem[] = [
     width: 56,
     height: 56,
   },
+  {
+    name: "AICPA",
+    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/6953d5310fcdb2da81b8b4d5_soc2-badge-teachable.svg",
+    width: 56,
+    height: 56,
+  },
 ];
 
 export type FAQItem = {

@@ -145,86 +145,88 @@ export default function PricingSection() {
         <section className="section-spacing pb-5">
             <div className="section-container">
                 <div className="section-title-wrap">
-                    <h2 className="section-title stylish-family text-[44px] md:text-[58px]">
+                    <h2 className="section-title stylish-family text-[36px] leading-[1.05] sm:text-[44px] md:text-[58px]">
                         Plans and pricing
                     </h2>
 
-                    <div className="mt-8 inline-flex rounded-full border border-black bg-white p-1">
-                        {tabs.map((tab) => (
-                            <button
-                                key={tab.value}
-                                type="button"
-                                onClick={() => setActiveTab(tab.value)}
-                                className={`inline-flex items-center gap-2 rounded-full px-5 py-3 text-[14px] font-bold uppercase transition ${activeTab === tab.value
-                                        ? "bg-black text-white"
-                                        : "text-black hover:bg-gray-100"
-                                    }`}
-                            >
-                                <Icon icon={tab.icon} className="h-4 w-4" />
-                                {tab.label}
-                            </button>
-                        ))}
+                    <div className="mt-6 w-full overflow-x-auto sm:mt-8">
+                        <div className="mx-auto inline-flex min-w-max rounded-full border border-black bg-white p-1">
+                            {tabs.map((tab) => (
+                                <button
+                                    key={tab.value}
+                                    type="button"
+                                    onClick={() => setActiveTab(tab.value)}
+                                    className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-[11px] font-bold uppercase transition sm:gap-2 sm:px-5 sm:py-3 sm:text-[13px] md:text-[14px] ${activeTab === tab.value
+                                            ? "bg-black text-white"
+                                            : "text-black hover:bg-gray-100"
+                                        }`}
+                                >
+                                    <Icon icon={tab.icon} className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                                    {tab.label}
+                                </button>
+                            ))}
+                        </div>
                     </div>
 
-                    <p className="paragraph-text mx-auto mt-8 max-w-[760px]">
+                    <p className="paragraph-text mx-auto mt-5 max-w-[680px] px-2 text-[15px] leading-[1.45] sm:mt-7 sm:text-[16px] md:mt-8 md:max-w-[760px]">
                         One-time plans built to launch, sell, and scale your online
                         business.
                     </p>
                 </div>
 
-                <div className="grid gap-4 md:grid-cols-3">
+                <div className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
                     {plans.map((plan) => (
                         <div
                             key={plan.name}
-                            className={`section-card relative flex min-h-[560px] flex-col border p-7 ${plan.popular ? "border-secondary-800" : "border-black/10"
+                            className={`section-card relative flex min-h-0 flex-col border p-5 sm:p-6 lg:min-h-[560px] lg:p-7 ${plan.popular ? "border-secondary-800" : "border-black/10"
                                 } ${plan.custom ? "bg-gray-50" : "bg-white"}`}
                         >
                             {plan.popular && (
-                                <div className="absolute left-0 top-0 w-full rounded-t-3xl bg-black py-2 text-center text-[12px] font-bold uppercase text-white">
+                                <div className="absolute left-0 top-0 w-full rounded-t-3xl bg-black py-1.5 text-center text-[10px] font-bold uppercase text-white sm:py-2 sm:text-[12px]">
                                     Popular
                                 </div>
                             )}
 
-                            <div className={plan.popular ? "pt-8" : ""}>
+                            <div className={plan.popular ? "pt-7 sm:pt-8" : ""}>
                                 {plan.badge && !plan.popular && (
-                                    <span className="mb-4 inline-block rounded bg-secondary-50 px-3 py-1 text-[12px] font-bold uppercase text-black">
+                                    <span className="mb-3 inline-block rounded bg-secondary-50 px-2.5 py-1 text-[10px] font-bold uppercase text-black sm:mb-4 sm:px-3 sm:text-[12px]">
                                         {plan.badge}
                                     </span>
                                 )}
 
                                 {plan.custom && (
-                                    <span className="mb-4 inline-block text-[13px] font-bold uppercase tracking-wide text-black">
+                                    <span className="mb-3 inline-block text-[11px] font-bold uppercase tracking-wide text-black sm:mb-4 sm:text-[13px]">
                                         Custom Plan
                                     </span>
                                 )}
 
-                                <h3 className="text-[28px] font-bold leading-tight text-black">
+                                <h3 className="text-[24px] font-bold leading-tight text-black sm:text-[26px] lg:text-[28px]">
                                     {plan.name}
                                 </h3>
 
-                                <p className="mt-4 min-h-[54px] text-[15px] leading-[1.35] text-black">
+                                <p className="mt-3 min-h-0 text-[14px] leading-[1.4] text-black sm:mt-4 sm:min-h-[54px] sm:text-[15px]">
                                     {plan.description}
                                 </p>
 
-                                <div className="mt-6">
+                                <div className="mt-5 sm:mt-6">
                                     {plan.oldPrice && (
-                                        <p className="text-[22px] text-black/40 line-through">
+                                        <p className="text-[18px] text-black/40 line-through sm:text-[20px] lg:text-[22px]">
                                             £{plan.oldPrice}
                                         </p>
                                     )}
 
                                     {plan.price === "Custom" ? (
-                                        <p className="mt-2 text-[42px] font-bold leading-none text-black">
+                                        <p className="mt-2 text-[34px] font-bold leading-none text-black sm:text-[38px] lg:text-[42px]">
                                             Custom
                                         </p>
                                     ) : (
-                                        <p className="mt-2 text-[42px] font-bold leading-none text-black md:text-[48px]">
+                                        <p className="mt-2 text-[34px] font-bold leading-none text-black sm:text-[40px] lg:text-[48px]">
                                             £{plan.price}
                                         </p>
                                     )}
 
                                     {plan.price !== "Custom" && (
-                                        <p className="mt-3 text-[14px] text-black">
+                                        <p className="mt-2 text-[12px] text-black sm:mt-3 sm:text-[14px]">
                                             One-time payment
                                         </p>
                                     )}
@@ -232,7 +234,8 @@ export default function PricingSection() {
 
                                 <button
                                     type="button"
-                                    className={`mt-6 w-full ${plan.custom ? "closed-btn"
+                                    className={`mt-5 w-full sm:mt-6 ${plan.custom
+                                            ? "closed-btn"
                                             : plan.popular
                                                 ? "contained-btn"
                                                 : "outlined-btn hover:bg-primary"
@@ -241,15 +244,15 @@ export default function PricingSection() {
                                     {plan.buttonText}
                                 </button>
 
-                                <ul className="mt-8 space-y-4">
+                                <ul className="mt-6 space-y-3 sm:mt-8 sm:space-y-4">
                                     {plan.features.map((feature) => (
                                         <li
                                             key={feature}
-                                            className="flex items-start gap-2 text-[14px] leading-[1.35] text-black"
+                                            className="flex items-start gap-2 text-[13px] leading-[1.4] text-black sm:text-[14px]"
                                         >
                                             <Icon
                                                 icon="mdi:check"
-                                                className="mt-[2px] h-4 w-4 shrink-0 text-black"
+                                                className="mt-[2px] h-3.5 w-3.5 shrink-0 text-black sm:h-4 sm:w-4"
                                             />
                                             <span>{feature}</span>
                                         </li>
@@ -260,7 +263,7 @@ export default function PricingSection() {
                             {!plan.custom && (
                                 <button
                                     type="button"
-                                    className="mt-auto pt-10 text-[14px] font-medium text-secondary-800 underline"
+                                    className="mt-8 text-[13px] font-medium text-secondary-800 underline sm:mt-auto sm:pt-10 sm:text-[14px]"
                                 >
                                     Compare all features
                                 </button>

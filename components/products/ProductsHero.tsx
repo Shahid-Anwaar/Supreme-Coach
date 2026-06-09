@@ -27,9 +27,9 @@ export default function ProductsHeroSection() {
                                 href="/"
                                 className="contained-btn max-w-55 px-6 py-3 capitalize!"
                             >
-                                <span>Start for free</span>
+                                <span>Book A Demo</span>
                                 <Icon
-                                    icon="mingcute:arrow-right-fill"
+                                    icon="solar:phone-linear"
                                     width="19"
                                     height="19"
                                     className="shrink-0"

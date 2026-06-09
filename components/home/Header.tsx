@@ -47,11 +47,11 @@ export default function HeaderSection() {
               aria-label="Supreme Coach Business School"
             >
               <Image
-                src="/logos/s coach logo.svg"
+                src="/logos/s coach logo full c.svg"
                 alt="Supreme Coach Business School"
                 width={240}
-                height={72}
-                className="h-auto w-[105px] sm:w-[120px] md:w-[158px]"
+                height={92}
+                className="h-auto w-[105px] sm:w-[120px] md:w-[158px] scale-110"
               />
             </Link>
 
@@ -68,26 +68,25 @@ export default function HeaderSection() {
                 className="w-[48px] sm:w-[55px] md:w-[60px] h-[34px] sm:h-[40px]"
               />
             </Link>
-
-            <div className="hidden items-center justify-end gap-x-8 min-[1280px]:flex">
-              <nav aria-label="Primary navigation" className="mt-3">
-                <ul className="flex items-center gap-6 xl:gap-8">
-                  {DESKTOP_NAV_ITEMS.map((item, index) => (
-                    <li key={item.label}>
-                      <Link
-                        href={item.href}
-                        className="group inline-flex flex-col items-start text-[15px] font-medium tracking-[-0.02em] text-white/96 transition-colors duration-200 text-nowrap hover:text-white xl:text-[16px]"
-                      >
-                        <span className="group-hover:text-primary">{item.label}</span>
-                        <span
-                          className={`mt-1.5 h-px rounded-full bg-primary transition-all duration-300 ${item.href === pathname ? "w-full opacity-100" : "w-0 opacity-0"
-                            }`}
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+            <nav aria-label="Primary navigation" className="mt-3 hidden min-[1280px]:flex">
+              <ul className="flex items-center gap-6 xl:gap-8">
+                {DESKTOP_NAV_ITEMS.map((item, index) => (
+                  <li key={item.label}>
+                    <Link
+                      href={item.href}
+                      className="group inline-flex flex-col items-start text-[15px] font-medium tracking-[-0.02em] text-white/96 transition-colors duration-200 text-nowrap hover:text-white xl:text-[16px]"
+                    >
+                      <span className="group-hover:text-primary">{item.label}</span>
+                      <span
+                        className={`mt-1.5 h-px rounded-full bg-primary transition-all duration-300 ${item.href === pathname ? "w-full opacity-100" : "w-0 opacity-0"
+                          }`}
+                      />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="hidden items-center gap-x-8 min-[1280px]:flex">
               <div className="flex h-auto items-center flex-wrap gap-2">
                 <Link
                   href="/contact-sales"
@@ -97,8 +96,6 @@ export default function HeaderSection() {
                 </Link>
                 <PrimaryCta href="#" />
               </div>
-
-
             </div>
 
             <button
@@ -198,7 +195,7 @@ function PrimaryCta({
       </span>
 
       <Icon
-        icon={"mingcute:arrow-right-fill"}
+        icon={"solar:phone-linear"}
         width="19"
         height="19"
         className="shrink-0"

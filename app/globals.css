@@ -64,25 +64,25 @@ body {
 
   /* Primary rounded CTA button */
   .contained-btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-black bg-primary px-[34px] py-3 text-[15px] font-bold uppercase  text-black transition-opacity duration-200 hover:bg-primary-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply inline-flex items-center justify-center gap-1.5 rounded-full border border-black bg-primary px-5 py-2.5 text-[12px] font-bold uppercase text-black transition-opacity duration-200 hover:bg-primary-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 sm:gap-2 sm:px-7 sm:py-3 sm:text-[14px] lg:px-[34px] lg:text-[15px];
   }
 
   /* Danger / delete action button */
   .deleted-btn {
-    @apply inline-flex items-center justify-center rounded-lg bg-red-700 px-4 py-2 font-semibold text-white transition-colors hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply inline-flex items-center justify-center rounded-lg bg-red-700 px-3 py-2 text-[13px] font-semibold text-white transition-colors hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50 sm:px-4 sm:text-[14px] lg:text-[16px];
   }
 
   /* Secondary outlined action button */
   .outlined-btn {
-    @apply inline-flex rounded-full items-center uppercase text-[15px] justify-center border border-black px-4 py-3 font-semibold text-black transition-colors bg-white hover:bg-gray-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply inline-flex items-center justify-center rounded-full border border-black bg-white px-4 py-2.5 text-[12px] font-semibold uppercase text-black transition-colors hover:bg-gray-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 sm:px-5 sm:py-3 sm:text-[14px] lg:text-[15px];
   }
 
   /* Neutral close / cancel button */
   .closed-btn {
-    @apply bg-black py-3 disabled:cursor-not-allowed disabled:opacity-50 inline-flex items-center justify-center rounded-full border border-white hover:border-black px-16 text-[14px] font-semibold uppercase tracking-[0.04em] text-white transition-all duration-200 hover:bg-white hover:text-black;
+    @apply inline-flex items-center justify-center rounded-full border border-white bg-black px-8 py-2.5 text-[12px] font-semibold uppercase tracking-[0.04em] text-white transition-all duration-200 hover:border-black hover:bg-white hover:text-black disabled:cursor-not-allowed disabled:opacity-50 sm:px-12 sm:py-3 sm:text-[13px] lg:px-16 lg:text-[14px];
   }
 
-  .paragraph-text{
+  .paragraph-text {
     @apply text-[18px] font-normal leading-[1.4] tracking-[-0.03em] text-black sm:text-[20px] md:text-[21px];
   }
 
@@ -103,7 +103,7 @@ body {
     @apply text-[16px] font-normal uppercase tracking-[0.02em] text-white/95;
   }
 
-  .custom-para{
+  .custom-para {
     @apply text-[15px] leading-[1.15] tracking-[-0.04em] text-[#8f8c89] sm:text-[18px] md:text-[20px] lg:text-[24px] lg:leading-none;
   }
 

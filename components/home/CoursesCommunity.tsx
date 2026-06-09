@@ -33,7 +33,7 @@ export default function CoursesCommunity() {
                         </span>
 
                         <Icon
-                            icon={"mingcute:arrow-right-fill"}
+                            icon={"solar:phone-linear"}
                             width="19"
                             height="19"
                             className="shrink-0"

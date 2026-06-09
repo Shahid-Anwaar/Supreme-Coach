@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import BookCallSection from "./BookCall";
 import Chats from "./Chats";
 import CoursesCommunity from "./CoursesCommunity";
+import { securityItems } from "@/data/data";
 
 type FooterLink = {
     label: string;
@@ -19,17 +20,18 @@ type SocialLink = {
 };
 
 const leftLinks: FooterLink[] = [
-    { label: "Products", href: "/products" },
+    { label: "Pricing", href: "/pricing" },
+    // { label: "Products", href: "/products" },
     // { label: "Solutions", href: "/solutions" },
     { label: "For Coach", href: "/for-coach" },
-    { label: "For Forms", href: "/for-firms" },
+    { label: "For Firms", href: "/for-firms" },
 ];
 
 const rightLinks: FooterLink[] = [
-    // { label: "Community", href: "/community" },
-    // { label: "About", href: "/about" },
-    { label: "Blogs", href: "/book-a-call" },
-    { label: "Free Resources", href: "/blog" },
+    { label: "Community", href: "/community" },
+    { label: "About Us", href: "/about" },
+    // { label: "Blogs", href: "/book-a-call" },
+    // { label: "Free Resources", href: "/blog" },
 ];
 
 const socialLinks: SocialLink[] = [
@@ -78,132 +80,24 @@ const legalLinks: FooterLink[] = [
     { label: "Terms and conditions", href: "/terms-of-service" },
 ];
 
-// function FooterColumn({ links }: { links: FooterLink[] }) {
-//     return (
-//         <ul className="space-y-[20px] md:space-y-[22px]">
-//             {links.map((item) => (
-//                 <li key={item.label}>
-//                     <Link
-//                         href={item.href}
-//                         className="inline-block text-[18px] font-medium leading-none tracking-[-0.03em] text-white transition-opacity duration-200 hover:text-primary md:text-[19px] lg:text-[20px]"
-//                     >
-//                         {item.label}
-//                     </Link>
-//                 </li>
-//             ))}
-//         </ul>
-//     );
-// }
-
-// export default function Footer() {
-//     return (
-//             <footer className=" bg-black text-white ">
-//                 <div className="section-container pb-8 pt-12 md:pb-12 md:pt-28">
-//                     <div className="grid grid-cols-1 gap-y-12 md:grid-cols-[1.08fr_0.95fr_0.95fr] md:gap-x-10 lg:grid-cols-[1.1fr_0.9fr_0.9fr_1fr] lg:gap-x-14">
-//                         <div>
-//                             <Link
-//                                 href="/"
-//                                 className="inline-flex"
-//                                 aria-label="Supreme Coach Business School"
-//                             >
-//                                 <Image
-//                                     src="/footer-logo.svg"
-//                                     alt="Supreme Coach Business School"
-//                                     width={240}
-//                                     height={72}
-//                                     className="h-auto w-[175px] sm:w-[190px] md:w-[228px]"
-//                                 />
-//                             </Link>
-//                         </div>
-
-//                         <div>
-//                             <FooterColumn links={leftLinks} />
-//                         </div>
-
-//                         <div>
-//                             <FooterColumn links={rightLinks} />
-//                         </div>
-
-//                         <div className="max-w-[290px] text-end">
-//                             <h3 className="text-[22px] font-medium leading-[1.08] tracking-[-0.04em] text-white md:text-[23px] lg:text-[24px]">
-//                                 Still have questions?
-//                             </h3>
-
-//                             <p className="mt-2 text-[17px] font-medium leading-[1.35] tracking-[-0.025em] text-white">
-//                                 Use the contact form below.
-//                             </p>
-
-//                             <Link
-//                                 href="/contact"
-//                                 className="mt-7 inline-flex  items-center justify-center rounded-full bg-[#D9F52B] px-12 py-4 text-[15px] contained-btn"
-//                             >
-//                                 Contact Us
-//                             </Link>
-//                         </div>
-//                     </div>
-
-//                     <div className="mt-14 flex flex-col gap-4 md:mt-16 md:flex-row md:items-center md:gap-7">
-//                         <span className="text-[20px] font-medium tracking-[-0.03em] text-white">
-//                             Follow us
-//                         </span>
-
-//                         <div className="flex items-center gap-[18px] md:gap-[24px]">
-//                             {socialLinks.map((item) => (
-//                                 <Link
-//                                     key={item.label}
-//                                     href={item.href}
-//                                     aria-label={item.label}
-//                                     className="inline-flex items-center justify-center transition-all duration-200 hover:scale-125 hover:opacity-85"
-//                                 >
-//                                     <Icon
-//                                         icon={item.icon}
-//                                         className={item.className ?? ""}
-//                                         width={item.size ?? 20}
-//                                         height={item.size ?? 20}
-//                                     />
-//                                 </Link>
-//                             ))}
-//                         </div>
-//                     </div>
-
-//                     <div className="mt-8 h-px w-full bg-white/40" />
-
-//                     <div className="mt-7 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-//                         <p className="text-[12px] font-normal uppercase tracking-[-0.015em] text-white/75 md:text-[14px]">
-//                             Fundamental Education
-//                         </p>
-
-//                         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-14 md:justify-end">
-//                             {legalLinks.map((item) => (
-//                                 <Link
-//                                     key={item.label}
-//                                     href={item.href}
-//                                     className="text-[12px] cursor-pointer font-medium tracking-[-0.02em] text-white/75 transition-opacity duration-200 hover:text-primary md:text-[14px]"
-//                                 >
-//                                     {item.label}
-//                                 </Link>
-//                             ))}
-//                         </div>
-//                     </div>
-//                 </div>
-//             </footer>
-//     );
-// }
-
-function FooterColumn({ links }: { links: FooterLink[] }) {
+function FooterColumn({ links, title }: { links: FooterLink[], title: string }) {
     return (
-        <ul className="space-y-4 sm:space-y-[18px] md:space-y-[22px]">
-            {links.map((item) => (
-                <li key={item.label}>
-                    <Link
-                        href={item.href}
-                        className="inline-block text-[16px] font-medium leading-none tracking-[-0.03em] text-white transition-opacity duration-200 hover:text-primary sm:text-[17px] md:text-[19px] lg:text-[20px]"
-                    >
-                        {item.label}
-                    </Link>
-                </li>
-            ))}
-        </ul>
+        <>
+            <p className="mb-7 text-[16px] font-semibold leading-none tracking-[-0.03em] text-white sm:text-[17px] md:text-[18px] lg:text-[22px]">{title}</p>
+            <ul className="space-y-2 sm:space-y-3 md:space-y-3">
+
+                {links.map((item) => (
+                    <li key={item.label}>
+                        <Link
+                            href={item.href}
+                            className="inline-block text-[15px] font-medium leading-none tracking-[-0.03em] text-white/80 transition-opacity duration-200 hover:text-primary sm:text-[16px] md:text-[17px] lg:text-[18px]"
+                        >
+                            {item.label}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </>
     );
 }
 
@@ -219,7 +113,6 @@ export default function Footer() {
                 bottomClasses="bg-black"
             />
             <footer className="bg-black text-white overflow-hidden">
-
                 <div className="section-container pb-8 pt-10 sm:pb-10 sm:pt-12 md:pb-12 md:pt-20 lg:pt-28">
                     <div className="grid grid-cols-2 gap-y-10 sm:gap-y-12 md:grid-cols-[1.08fr_0.7fr_0.7fr_1.3fr] md:gap-x-8 lg:grid-cols-[1fr_0.9fr_0.9fr_1.1fr] xl:grid-cols-[1.1fr_0.9fr_0.9fr_1fr] lg:gap-x-14">
                         <div className="text-center col-span-2 order-1 md:col-span-1 md:text-left">
@@ -229,21 +122,24 @@ export default function Footer() {
                                 aria-label="Supreme Coach Business School"
                             >
                                 <Image
-                                    src="/logos/s coach logo.svg"
+                                    src="/logos/s coach logo full c.svg"
                                     alt="Supreme Coach Business School"
                                     width={240}
                                     height={72}
                                     className="h-auto w-[150px] sm:w-[175px] md:w-[228px]"
                                 />
                             </Link>
+                            <p className="mt-2 text-[14px] font-medium leading-[1.35] tracking-[-0.025em] text-white/90 sm:text-[15px] md:text-[16px]">
+                                Supreme Coach helps coaches and firms launch courses, build communities, and sell from one simple platform.
+                            </p>
                         </div>
 
                         <div className="text-center order-3 md:text-left  md:order-2">
-                            <FooterColumn links={leftLinks} />
+                            <FooterColumn title="Explore" links={leftLinks} />
                         </div>
 
                         <div className="text-center order-4 md:text-left md:order-3">
-                            <FooterColumn links={rightLinks} />
+                            <FooterColumn title="Company" links={rightLinks} />
                         </div>
 
                         <div className="mx-auto max-w-[290px] col-span-2 order-2 md:order-4 text-center md:col-span-1 md:mx-0 md:max-w-[360px] md:text-end lg:col-span-1 lg:ml-auto lg:text-end">
@@ -256,43 +152,63 @@ export default function Footer() {
                             </p>
 
                             <Link
-                                href="/contact"
-                                className="contained-btn mt-6 w-full max-w-[220px] px-8 sm:mt-7 sm:w-auto sm:px-12"
+                                href="/contact-sales"
+                                className="contained-btn mt-6 w-full max-w-[220px] px-4 sm:mt-7 sm:w-auto sm:px-8"
                             >
-                                Contact Us
+                                Contact Sales
                             </Link>
                         </div>
                     </div>
                     {/* <Chats /> */}
-                    <div className="mt-12 flex flex-col items-center gap-4 text-center sm:mt-14 md:mt-16 md:flex-row md:items-center md:gap-7 md:text-left">
-                        <span className="text-[18px] font-medium tracking-[-0.03em] text-white sm:text-[20px]">
-                            Follow us
-                        </span>
 
-                        <div className="flex items-center gap-4 sm:gap-[18px] md:gap-[24px]">
-                            {socialLinks.map((item) => (
-                                <Link
-                                    key={item.label}
-                                    href={item.href}
-                                    aria-label={item.label}
-                                    className="inline-flex items-center justify-center transition-all duration-200 hover:scale-125 hover:opacity-85"
+                    <div className="mt-7 flex flex-col items-center justify-center gap-7 sm:mt-8 md:mt-10 lg:flex-row lg:items-end lg:justify-between">
+                        <div className="flex flex-col items-center gap-3 text-center sm:gap-4 md:flex-row md:gap-6 md:text-left">
+                            <span className="text-[15px] font-medium tracking-[-0.03em] text-white sm:text-[17px] md:text-[18px] lg:text-[20px]">
+                                Follow us
+                            </span>
+
+                            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+                                {socialLinks.map((item) => (
+                                    <Link
+                                        key={item.label}
+                                        href={item.href}
+                                        aria-label={item.label}
+                                        className="inline-flex items-center justify-center transition-all duration-200 hover:scale-125 hover:opacity-85"
+                                    >
+                                        <Icon
+                                            icon={item.icon}
+                                            className={item.className ?? ""}
+                                            width={item.size ?? 18}
+                                            height={item.size ?? 18}
+                                        />
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="flex gap-x-4 gap-y-4 sm:gap-x-5 md:gap-x-6 lg:gap-x-5">
+                            {securityItems.map((item, i) => (
+                                <div
+                                    key={item.name}
+                                    className="flex flex-col items-center justify-center text-center"
                                 >
-                                    <Icon
-                                        icon={item.icon}
-                                        className={item.className ?? ""}
-                                        width={item.size ?? 20}
-                                        height={item.size ?? 20}
+                                    <img
+                                        src={item.src}
+                                        alt={item.name}
+                                        width={item.width}
+                                        height={item.height}
+                                        className={`h-7 w-7 object-contain sm:h-8 sm:w-8 md:h-9 md:w-9 lg:h-10 lg:w-10 ${i !== 4 ? "opacity-[0.6]" : ""
+                                            }`}
                                     />
-                                </Link>
+                                </div>
                             ))}
                         </div>
                     </div>
-
                     <div className="mt-7 sm:mt-8 h-px w-full bg-white/40" />
 
                     <div className="mt-6 flex flex-col items-center gap-4 text-center md:mt-7 md:flex-row md:items-center md:justify-between md:text-left">
-                        <p className="text-[11px] font-normal uppercase tracking-[-0.015em] text-white/75 sm:text-[12px] md:text-[14px]">
-                            Fundamental Education
+                        <p className="text-[11px] font-normal tracking-[-0.015em] text-white/75 sm:text-[12px] md:text-[14px]">
+                            Copyright 2026 © Supreme Coach, Inc. All rights reserved.
                         </p>
 
                         <div className="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8 md:justify-end md:gap-14">

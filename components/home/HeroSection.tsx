@@ -43,7 +43,7 @@ export default function AugmentHeroSection() {
                         >
                             Book A Demo
                             <Icon
-                                icon={"mingcute:arrow-right-fill"}
+                                icon={"solar:phone-linear"}
                                 width="19"
                                 height="19"
                                 className="shrink-0"
@@ -57,8 +57,9 @@ export default function AugmentHeroSection() {
                             Contact Sales
                         </Link>
                     </div>
-                    <div className="flex mt-8 gap-x-10">
-                        {securityItems.map((item) => (
+                    <div className="flex mt-8 gap-x-4 justify-center lg:justify-start md:gap-x-10">
+                        
+                        {securityItems.slice(0, 4).map((item) => (
                             <div
                                 key={item.name}
                                 className="flex flex-col items-center justify-center text-center"
@@ -68,14 +69,16 @@ export default function AugmentHeroSection() {
                                     alt={item.name}
                                     width={item.width}
                                     height={item.height}
-                                    className="h-12 w-12"
+                                    className="h-9 w-9 object-contain sm:h-10 sm:w-10 lg:h-12 lg:w-12"
                                 />
-                                <p className="mt-1 text-[18px] font-normal tracking-[-0.03em] text-white">
+
+                                <p className="mt-1 text-[13px] font-normal leading-tight tracking-[-0.03em] text-white sm:text-[15px] lg:text-[18px]">
                                     {item.name}
                                 </p>
                             </div>
                         ))}
                     </div>
+
                 </div>
 
                 <div className="relative flex w-full justify-end">

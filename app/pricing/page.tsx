@@ -5,6 +5,7 @@ import ProductTools from "@/components/products/ProductTools";
 import PricingSection from "@/components/pricing/PricingSection";
 import TrustAndSecuritySection from "@/components/pricing/TrustAndSecurity";
 import { createMetadata } from "@/lib/seo";
+import WhatToInclude from "@/components/products/WhatInclude";
 
 export const metadata = createMetadata({
   title:
@@ -27,6 +28,7 @@ export default function PricingPage() {
       <PricingSection />
       <TrustAndSecuritySection />
       <ProductTools />
+      <WhatToInclude />
       <ClientsSection title="Supreme Coach success stories write themselves" isShowCompanies={true} />
       <FAQSection faqs={pricingFaqs} />
     </main>

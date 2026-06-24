@@ -9,6 +9,7 @@ import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
 import AugmentHeroSection from "@/components/home/HeroSection";
+import FirmHeroSection from "@/components/for-firms/FirmHero";
 
 const views = [
   {
@@ -61,22 +62,7 @@ const companyLogos = [
 export default function FirmsPage() {
   return (
     <main className="bg-white text-black relative">
-      <AugmentHeroSection
-        title="We Build the Operating Infrastructure That Scales Your Coaching Firm."
-        //  Deployed on Your Servers. Owned by Your Organisation."
-        description=" Coaching firms face infrastructure challenges that individual coach tools were never designed to solve. Multiple coaches, multiple client organisations, corporate reporting requirements, white label delivery, team permissions, enterprise billing — these require a different class of infrastructure entirely. Supreme Coach builds that infrastructure for your firm, deploys it on your own servers, and protects it with a signed NDA. You get enterprise capability at a fraction of enterprise platform costs — owned permanently, not rented monthly."
-        primaryButtonText="Book an Enterprise Strategy Call"
-        secondaryButtonText="See the Business Build Components"
-        secondaryButtonHref="/products"
-        features={[
-          { label: "Coaching Firms", icon: "ph:buildings-fill" },
-          { label: "Executive Coaching Practices", icon: "ph:briefcase-fill" },
-          { label: "Leadership Consultancies", icon: "ph:users-three-fill" },
-          { label: "Corporate Training Organisations", icon: "ph:graduation-cap-fill" },
-          { label: "Coaching Agencies", icon: "ph:network-fill" },
-          { label: "ICF Accredited Training Providers", icon: "ph:certificate-fill" },
-        ]}
-      />
+      <FirmHeroSection />
       {/* <ProductsHeroSection /> */}
       {/* <p className="section-description mt-0! text-center mx-auto max-w-220 text-black">
         1,000+ companies trust Supreme Coach to deliver measurable change

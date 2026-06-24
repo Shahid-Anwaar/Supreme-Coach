@@ -1,25 +1,17 @@
 import BookCallSection from "@/components/home/BookCall";
 import FeaturesSection from "@/components/home/FacultySection";
 import FAQSection from "@/components/home/FaqSection";
-import FeaturedInSection from "@/components/home/FeaturedIn";
-import Footer from "@/components/home/Footer";
-import MissionComparisonSection from "@/components/home/MissionComparison";
-import EmblaCarousel from "@/components/home/EmblaCarosal";
-import ViewsSection from "@/components/home/ViewsSection";
 import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
-import CoursesCommunity from "@/components/home/CoursesCommunity";
 import ProductsHeroSection from "@/components/products/ProductsHero";
-import ProductsCompaniesSection from "@/components/products/ProductCompanies";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
 import { companyLogos, COURSE_FEATURES, COURSE_FEATURES2, productFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
-import ProductStories from "@/components/products/ProductStories";
 import ProductTools from "@/components/products/ProductTools";
-import ProductSold from "@/components/products/ProductSold";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import { createMetadata } from "@/lib/seo";
+import WhatToInclude from "@/components/products/WhatInclude";
 
 export const metadata = createMetadata({
   title: "What We Build | Supreme Coach — Custom Coaching Business Infrastructure",
@@ -76,6 +68,7 @@ export default function ProductsPage() {
       />
       <ClientsSection title="Supreme Coach success stories write themselves" />
       <ProductTools />
+      <WhatToInclude />
       {/* <ProductSold /> */}
       <FAQSection faqs={productFaqs} />
 

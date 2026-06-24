@@ -23,7 +23,7 @@ const leftLinks: FooterLink[] = [
     { label: "Pricing", href: "/pricing" },
     // { label: "Products", href: "/products" },
     // { label: "Solutions", href: "/solutions" },
-    { label: "For Coach", href: "/for-coach" },
+    { label: "For Coaches", href: "/for-coaches" },
     { label: "For Firms", href: "/for-firms" },
 ];
 

@@ -2,23 +2,33 @@
 
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { FEATURES, HERO_SLIDES, HeroSlide, securityItems } from "@/data/data";
+import { FeatureItem, HERO_SLIDES, HeroSlide, securityItems } from "@/data/data";
 import CustomEmblaCarousel from "../home/CustomCarosal";
+
+const FEATURES: FeatureItem[] = [
+  { label: "ACC Coaches", icon: "ph:certificate-fill" },
+          { label: "PCC Coaches", icon: "ph:certificate-fill" },
+          { label: "MCC Coaches", icon: "ph:certificate-fill" },
+          { label: "Executive Coaches", icon: "ph:briefcase-fill" },
+          { label: "Business Coaches", icon: "ph:chart-line-up-fill" },
+          { label: "Leadership Coaches", icon: "ph:users-three-fill" },
+          { label: "Life Coaches", icon: "ph:heart-fill" },
+          { label: "Career Coaches", icon: "ph:ladder-fill" },
+];
 
 export default function FirmHeroSection() {
     return (
         <section className="hero-carousel relative z-1 overflow-hidden bg-black">
-            <div className="relative mx-auto flex max-w-full flex-col bg-black px-4 pb-10 pt-14 sm:px-6 sm:pt-28 lg:px-8 2xl:max-w-400">
+            <div className="relative mx-auto flex max-w-full flex-col bg-black px-4 pb-10 pt-14 sm:px-6 sm:pt-32 lg:px-8 2xl:max-w-400">
 
                 {/* Top Center Content */}
                 <div className="relative z-30 mx-auto flex w-full max-w-5xl flex-col items-center text-center text-white">
-                    <h1 className="section-title hero-title mx-auto max-w-[13ch] text-white sm:max-w-[15ch] lg:max-w-[17ch]">
-                        The MBA for Entrepreneurs
+                    <h1 className="section-title hero-title mx-auto max-w-full text-white sm:max-w-220 lg:max-w-240">
+                        We Build Your Coaching Business Infrastructure. You Focus on Coaching.
                     </h1>
 
-                    <p className="section-description mx-auto mt-4 max-w-3xl text-sm leading-6 sm:mt-5 sm:text-base">
-                        Join the Business School for Entrepreneurs. Built by the founders
-                        of YouTube, Waze, Siri and Wikipedia. For the founders of tomorrow.
+                    <p className="section-description mx-auto mt-4 max-w-4xl text-sm leading-6 sm:mt-5 sm:text-base">
+                        You became a coach because you are exceptional at creating transformation. But building a professional coaching business means doing everything else too — the website, the lead generation, the client systems, the programme delivery, the automations. Supreme Coach does all of that for you. We design and build your complete coaching infrastructure, deploy it on your own servers, and hand it over to you — owned permanently, protected by contract, running without us.
                     </p>
 
                     <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2.5 sm:mt-8 sm:gap-y-3 md:gap-x-5">
@@ -40,7 +50,7 @@ export default function FirmHeroSection() {
                             href="https://augment.school/sHK7SoG?"
                             className="group flex w-full items-center justify-center px-6 contained-btn sm:w-auto sm:min-w-65"
                         >
-                            Book A Demo
+                            Book My Strategy Call
                             <Icon
                                 icon={"solar:phone-linear"}
                                 width="19"
@@ -50,10 +60,10 @@ export default function FirmHeroSection() {
                         </Link>
 
                         <Link
-                            href="/contact-sales"
+                            href="/products"
                             className="flex w-full items-center justify-center px-6 closed-btn sm:w-auto sm:min-w-65"
                         >
-                            Contact Sales
+                            See What We Build  
                         </Link>
                     </div>
 

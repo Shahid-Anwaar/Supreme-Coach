@@ -20,6 +20,8 @@ type ContinuousPlayConfig = {
     stopOnMouseEnter?: boolean;
 };
 
+type MoveTo = "top" | "bottom" | "right" | "left";
+
 type EmblaCarouselProps = {
     options?: EmblaOptionsType;
     CustomCard?: (item: any, index: number, firstActiveItemIndex: number) => ReactNode;
@@ -35,6 +37,7 @@ type EmblaCarouselProps = {
     isContinuousPlay?: boolean;
     autoplayConfig?: AutoplayConfig;
     continuousPlayConfig?: ContinuousPlayConfig;
+    moveTo?: MoveTo;
 };
 
 export default function CustomEmblaCarousel({
@@ -47,8 +50,24 @@ export default function CustomEmblaCarousel({
     isContinuousPlay = false,
     autoplayConfig = {},
     continuousPlayConfig = {},
+    moveTo,
 }: EmblaCarouselProps) {
     const [selectedSnap, setSelectedSnap] = useState(0);
+
+    const resolvedMoveTo = moveTo ?? "left";
+
+    const isVertical = resolvedMoveTo === "top" || resolvedMoveTo === "bottom";
+
+    const moveToDirection: "forward" | "backward" =
+        resolvedMoveTo === "right" || resolvedMoveTo === "bottom"
+            ? "backward"
+            : "forward";
+
+    const shouldUseReverseAutoplay =
+        isAutoplay &&
+        !isContinuousPlay &&
+        moveTo &&
+        (resolvedMoveTo === "right" || resolvedMoveTo === "bottom");
 
     const mergedAutoplayConfig: Required<AutoplayConfig> = {
         delay: 2500,
@@ -64,6 +83,7 @@ export default function CustomEmblaCarousel({
         stopOnInteraction: false,
         stopOnMouseEnter: true,
         ...continuousPlayConfig,
+        ...(moveTo ? { direction: moveToDirection } : {}),
     };
 
     const plugins = useMemo(() => {
@@ -73,7 +93,7 @@ export default function CustomEmblaCarousel({
             ];
         }
 
-        if (isAutoplay) {
+        if (isAutoplay && !shouldUseReverseAutoplay) {
             return [
                 Autoplay(mergedAutoplayConfig),
             ];
@@ -83,6 +103,7 @@ export default function CustomEmblaCarousel({
     }, [
         isAutoplay,
         isContinuousPlay,
+        shouldUseReverseAutoplay,
         mergedAutoplayConfig,
         mergedContinuousPlayConfig,
     ]);
@@ -92,6 +113,7 @@ export default function CustomEmblaCarousel({
             loop: true,
             align: "center",
             ...options,
+            ...(isVertical ? { axis: "y" as const } : {}),
         },
         plugins
     );
@@ -113,21 +135,44 @@ export default function CustomEmblaCarousel({
         setSelectedSnap(emblaApi.selectedScrollSnap());
     }, [emblaApi]);
 
-    // const RunContinuosly = useCallback(() => {
-    //     const autoScroll = emblaApi?.plugins()?.autoScroll
-    //     if (!autoScroll) return
-
-    //     const playOrStop = autoScroll.isPlaying()
-    //         ? autoScroll.stop
-    //         : autoScroll.play
-    //     playOrStop()
-    // }, [emblaApi])
-
     useEffect(() => {
         if (!emblaApi || !isContinuousPlay) return;
         emblaApi.plugins()?.autoScroll?.play();
     }, [emblaApi, isContinuousPlay]);
 
+    useEffect(() => {
+        if (!emblaApi || !shouldUseReverseAutoplay) return;
+
+        let autoplayInterval: ReturnType<typeof setInterval>;
+
+        const playReverseAutoplay = () => {
+            autoplayInterval = setInterval(() => {
+                emblaApi.scrollPrev();
+            }, mergedAutoplayConfig.delay);
+        };
+
+        const stopReverseAutoplay = () => {
+            clearInterval(autoplayInterval);
+        };
+
+        playReverseAutoplay();
+
+        const rootNode = emblaApi.rootNode();
+
+        if (mergedAutoplayConfig.stopOnMouseEnter) {
+            rootNode.addEventListener("mouseenter", stopReverseAutoplay);
+            rootNode.addEventListener("mouseleave", playReverseAutoplay);
+        }
+
+        return () => {
+            stopReverseAutoplay();
+
+            if (mergedAutoplayConfig.stopOnMouseEnter) {
+                rootNode.removeEventListener("mouseenter", stopReverseAutoplay);
+                rootNode.removeEventListener("mouseleave", playReverseAutoplay);
+            }
+        };
+    }, [emblaApi, shouldUseReverseAutoplay, mergedAutoplayConfig.delay]);
 
     useEffect(() => {
         if (!emblaApi) return;
@@ -144,7 +189,7 @@ export default function CustomEmblaCarousel({
     }, [emblaApi, updateIndexes]);
 
     return (
-        <div className="w-full relative text-white">
+        <div className={`w-full relative text-white ${isVertical ? "h-full min-h-0" : ""}`}>
             <div className="text-white">
                 {CustomButtonWrapper(onPrevClickChoosed, onNextClickChoosed, onSpecificChoosed)}
             </div>
@@ -152,7 +197,7 @@ export default function CustomEmblaCarousel({
                 className={`overflow-hidden bg-black ${wrapperClassName}`}
                 ref={emblaRef}
             >
-                <div className="flex h-full cursor-grab">
+                <div className={`flex h-full cursor-grab ${isVertical ? "flex-col" : ""}`}>
                     {items.map((review, index) =>
                         CustomCard(review, index, selectedSnap)
                     )}

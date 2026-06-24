@@ -67,9 +67,9 @@ export type FeatureItem = {
 };
 
 export const FEATURES: FeatureItem[] = [
-  { label: "Online", icon: "ph:play-circle-fill" },
-  { label: "Bite-Sized Lessons", icon: "ph:clock-fill" },
-  { label: "Certificate", icon: "ph:certificate-fill" },
+  { label: "Built by coaching business insiders", icon: "ph:users-three-fill" },
+  { label: "Deployed on your servers", icon: "ph:hard-drives-fill" },
+  { label: "NDA-protected infrastructure", icon: "ph:shield-check-fill" },
 ];
 
 export type HeroSlide = {
@@ -404,7 +404,7 @@ export const ProductStoriesTestimonials = [
       "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472413569b297952cca46_913afd2f27884db7e271d63afae0dc26_AnnaGeiger.webp",
     name: "Anna Geiger",
     role: "The Science of Reading",
-    title:   "Revenue Engine",
+    title: "Revenue Engine",
     text: "I’ve been using Supreme Coach since 2017, and it continues to be a major revenue generator for my business. It’s easy to create and upload content, and I never have to worry about tax compliance or payment processing. I’ve tried other platforms—Supreme Coach is hands down the best for me and my students.",
     schoolLink: "#",
   },
@@ -1061,21 +1061,21 @@ export const whyAugmentSlides: WhyAugmentSlide[] = [
 ];
 
 export const COURSE_FEATURES = [
-    {
-        title: "On-the-go learning",
-        description:
-            "It’s your course, anywhere. Let students take it to go, with offline access on our top-rated iOS and Android mobile apps.",
-    },
-    {
-        title: "Meaningful engagement",
-        description:
-            "Motivate your students and drive their progress with graded quizzes, certificates, drip content, and more.",
-    },
-    {
-        title: "Conversion boosters",
-        description:
-            "Reach the right people (and make more sales) using marketing features like student referrals and upsells.",
-    },
+  {
+    title: "On-the-go learning",
+    description:
+      "It’s your course, anywhere. Let students take it to go, with offline access on our top-rated iOS and Android mobile apps.",
+  },
+  {
+    title: "Meaningful engagement",
+    description:
+      "Motivate your students and drive their progress with graded quizzes, certificates, drip content, and more.",
+  },
+  {
+    title: "Conversion boosters",
+    description:
+      "Reach the right people (and make more sales) using marketing features like student referrals and upsells.",
+  },
 ];
 
 export const COURSE_FEATURES2 = [
@@ -1644,7 +1644,7 @@ export const comparisonRows: ComparisonRow[] = [
   ["Outcome", "Immediate application", "Longer-term theory"],
 ];
 
-type SecurityItem = {
+export type SecurityItem = {
   name: string;
   src: string;
   width: number;
@@ -1659,14 +1659,14 @@ export const securityItems: SecurityItem[] = [
     height: 56,
   },
   {
-    name: "PCI DSS",
-    src: "/security (2).svg",
+    name: "GDPR",
+    src: "/security (3).svg",
     width: 56,
     height: 56,
   },
   {
-    name: "GDPR",
-    src: "/security (3).svg",
+    name: "PCI DSS",
+    src: "/security (2).svg",
     width: 56,
     height: 56,
   },
@@ -1692,101 +1692,120 @@ export type FAQItem = {
 
 export const homeFaqs: FAQItem[] = [
   {
-    question: "What is Supreme Coach?",
+    question: "What exactly do you deliver at the end of a project?",
     answer:
-      "Supreme Coach is a modern business school for entrepreneurs, founders, and professionals who want practical business education without the traditional MBA limits.",
+      "We deliver a fully functional, fully deployed coaching business infrastructure running on your own server or hosting account. This includes your website, your lead generation system, your client portal and CRM, your programme delivery system, and all configured integrations — depending on your plan. You receive full admin access, complete documentation, and a training session. After delivery, you own and control everything.",
   },
   {
-    question: "Who is Supreme Coach made for?",
+    question: "Do I need to have my own server or hosting?",
     answer:
-      "Supreme Coach is made for entrepreneurs, startup founders, operators, executives, and ambitious professionals who want to learn real business skills from experienced leaders.",
+      "We assist with server setup and configuration as part of the project. If you do not have existing hosting, we will recommend suitable options for your build and help you set up the account. The hosting remains in your name and under your payment — we do not resell hosting.",
   },
   {
-    question: "How is Supreme Coach different from a traditional MBA?",
+    question: "What does the NDA actually protect?",
     answer:
-      "Supreme Coach focuses on practical lessons, real-world examples, founder-led learning, and flexible online access instead of long academic theory.",
+      "The mutual non-disclosure agreement protects the specific architecture, configuration, and proprietary components of your coaching infrastructure. We commit to never sharing, replicating, or disclosing the specifics of your build to other coaching businesses, particularly competitors in your niche. The agreement is signed before project completion and remains in effect permanently.",
   },
   {
-    question: "How much time do I need each day?",
+    question: "How long does a build take?",
     answer:
-      "You can learn at your own pace. Most lessons are designed to be easy to follow, so you can make progress even with a busy schedule.",
+      "Basic builds typically complete in 10–14 business days from onboarding. Growth builds take 14–21 business days. Business builds are scoped individually but typically run 3–5 weeks from onboarding. Timeline depends on the speed of asset provision from your side — copy, branding assets, photography.",
   },
   {
-    question: "Is there a refund policy?",
+    question: "What if I want to change something after delivery?",
     answer:
-      "Yes. You can try Supreme Coach risk-free for 15 days. If it is not the right fit, you can contact finance@Supreme Coach.org for refund support.",
+      "You have full admin access to your infrastructure and can make most changes independently. For more significant changes — new features, additional integrations, or expansion builds — our team is available for ongoing project work. There is no mandatory support retainer.",
+  },
+  {
+    question:
+      "Is Supreme Coach's infrastructure based on existing technology, or built from scratch?",
+    answer:
+      "We use proven, industry-standard open technology — no proprietary languages or frameworks that would create future dependency. What is proprietary is our architecture logic, our coaching-specific configurations, and our build methodology. The underlying technologies are widely supported and maintainable by any competent development team.",
+  },
+];
+
+export const contactFaqs: FAQItem[] = [
+  {
+    question: "What should I prepare before the strategy call?",
+    answer:
+      "Nothing formal. If you can briefly describe your coaching model, your ideal client, and what you want your coaching business to accomplish — that is enough to have a productive first call. We will ask the right questions to get to a clear project scope.",
+  },
+  {
+    question: "What if I am not sure which build level I need?",
+    answer:
+      "That is exactly what the strategy call resolves. We will assess your situation honestly — including recommending a smaller build if that is what your current stage needs — and give you a clear recommendation with our reasoning.",
+  },
+  {
+    question: "Is there a non-disclosure agreement for the strategy call itself?",
+    answer:
+      "If you have concerns about sharing your coaching methodology or business details before a formal NDA is in place, let us know when you request the call. We are happy to sign a call-level NDA before the session begins.",
+  },
+  {
+    question: "How long from strategy call to delivery?",
+    answer:
+      "Basic builds: 10–14 business days. Growth builds: 14–21 business days. Business builds: 3–5 weeks, scoped individually. All timelines assume timely provision of required assets from your side — brand guidelines, copy brief, photography.",
+  },
+  {
+    question: "Do you work with coaches and firms outside the UK?",
+    answer:
+      "Yes. We work with coaching professionals globally. Project pricing is in GBP. Calls are conducted via Zoom across all time zones. Data residency for server deployment can be configured to your jurisdiction's requirements.",
   },
 ];
 
 export const pricingFaqs: FAQItem[] = [
   {
-    question: "Which plan is right for me?",
+    question: "These look expensive. How do I justify this to myself?",
     answer:
-      "You can choose the plan based on your learning needs. If you are starting, a basic plan is good. If you want full access and deeper learning, choose the higher plan.",
+      "Run the numbers for your coaching business. If you currently spend £200/month on tools — website, CRM, email, booking, course platform — you spend £2,400 every year, indefinitely. Supreme Coach Basic at £7,000 breaks even in under 3 years on tool savings alone. After that, every year costs you nothing in platform fees. And unlike subscription tools, your investment produces an asset you own — a professional coaching business infrastructure that compounds in value as your reputation and client base grow.",
   },
   {
-    question: "Can I cancel my plan anytime?",
+    question: "Are payment plans available?",
     answer:
-      "Yes. You can cancel your plan anytime. After cancellation, your access will continue until the end of your current billing period.",
+      "Yes. We can structure the project investment across instalments. Speak to our team to arrange a payment schedule that works for your cash flow. Typically we agree a build commencement payment and a completion payment, with flexibility on timelines.",
   },
   {
-    question: "Is there a free trial or refund policy?",
+    question: "What is the difference between 'Build' and a subscription plan?",
     answer:
-      "Yes. Supreme Coach offers a 15-day risk-free refund policy. If it is not the right fit, you can contact finance@Supreme Coach.org for refund support.",
+      "A subscription plan gives you access to someone else's platform for as long as you keep paying. A Supreme Coach Build is a custom project — we design, build, and deploy infrastructure on your servers, and it belongs to you permanently. There is no ongoing access fee because you are not accessing our platform. You are running your own.",
   },
   {
-    question: "What is included in the paid plan?",
+    question: "Can I start with Basic and expand later?",
     answer:
-      "The paid plan includes access to business lessons, practical learning content, expert insights, and resources designed for entrepreneurs and professionals.",
+      "Yes. Coaches typically start with Basic, build their client base, and then commission a Growth build when they are ready to systematise client management and programme delivery. You pay the project fee for each build phase — there is no penalty for staging your investment.",
   },
   {
-    question: "Do I need to pay every month?",
+    question: "What are my hosting costs after the build?",
     answer:
-      "It depends on the plan you choose. Some plans may be billed monthly, while others may offer yearly access at a better value.",
+      "Hosting costs depend on the infrastructure scale of your build. For most individual coaches, quality managed hosting runs £15–40/month. For firm-level builds, hosting requirements vary. We recommend specific hosting configurations for each build and help you set up the account — the cost is transparent before we begin.",
   },
   {
-    question: "Can teams or companies join Supreme Coach?",
+    question: "Do you take a percentage of my coaching revenue?",
     answer:
-      "Yes. Supreme Coach can be useful for teams, founders, operators, and professionals who want to improve business knowledge together.",
+      "No. Zero. What you earn from your coaching business is entirely yours. Supreme Coach's compensation ends at project delivery.",
   },
 ];
 
-export const productsFaqs: FAQItem[] = [
+export const productFaqs: FAQItem[] = [
   {
-      question: "Why should I sell my courses on Supreme Coach?",
-      answer:
-        "Creating and selling online courses on Supreme Coach gives you access to both the most powerful selling tools and the most flexible course builder. You control your content. You control how you get paid. And you control the learning environment for your audience.",
-    },
-    {
-      question: "How do I make a course on Supreme Coach?",
-      answer:
-        "It’s easy (and free) to get started with a seven-day free trial. Once logged in, you’ll be prompted to create a product. Select course. From there, you can start building manually. Or, use our AI course starter to draft your curriculum, lesson content, and sales page all at once.",
-    },
-    {
-      question: "Can I do live courses on Supreme Coach?",
-      answer:
-        "While Supreme Coach is built for self-paced courses by default, it’s easy enough to host live courses using third-party embeds, including YouTube, Vimeo, and Zoom. You can also create a cohort-based learning experience using drip content.",
-    },
-    {
-      question: "Do online courses make money?",
-      answer:
-        "Absolutely—in fact, they’re the perfect way to earn ongoing revenue, without ongoing work. Online course creation on Supreme Coach is designed with longevity in mind, meaning once you do the up front work of creating it, you can sell it on a continuous basis with little maintenance. Whatever your expertise or your business, you can translate it into an online course that people will pay for.",
-    },
-    {
-      question: "How much does Supreme Coach cost per month?",
-      answer:
-        "Your first seven days are free. After that, we have plans starting at $29 per month, each designed to fit your unique business needs. Browse plans and pricing here.",
-    },
-    {
-      question: "How many courses can I have on Supreme Coach?",
-      answer:
-        "Believe it or not, on any Supreme Coach plan, you can create an unlimited number of courses. From there, you can sell up to one course on a Starter plan, five courses on a Builder plan, 25 courses on a Growth plan, and 100 courses on an Advanced plan. For more courses, please contact sales.",
-    },
-    {
-      question: "What else can I create on Supreme Coach?",
-      answer:
-        "You can build and sell your entire suite of learning products on Supreme Coach, including online coaching sessions, how-to guides, interactive templates, a community space, and more.",
-    },
+    question: "Are these 'ready-made' solutions or truly custom?",
+    answer:
+      "Both, in a specific way. We use proven frameworks — infrastructure patterns we have developed and tested across many coaching businesses — as the foundation for every build. These frameworks eliminate the inefficiency of starting from scratch and incorporate years of refinement. On top of these foundations, we customise every component to your brand, your methodology, your programmes, and your audience. The result looks and functions as a fully custom build because, from your perspective and your clients' perspective, it is.",
+  },
+  {
+    question: "What technology is the infrastructure built on?",
+    answer:
+      "We use industry-standard, widely supported web technologies — not proprietary frameworks that create dependency on our team. After delivery, any competent web development professional can maintain and extend your infrastructure. We will discuss the specific technology stack in detail during your strategy call — we are transparent about every component.",
+  },
+  {
+    question: "Can I extend the build later?",
+    answer:
+      "Yes. Your infrastructure is designed to be extensible. Future projects can add new components, new integrations, or expanded capability. Because everything runs on your servers, there is no platform restriction on what can be added.",
+  },
+  {
+    question: "What if something breaks after delivery?",
+    answer:
+      "We provide structured handover documentation and admin training so your team can handle routine maintenance independently. For anything beyond routine maintenance, our team is available for ongoing support as a separate project or retainer arrangement.",
+  },
 ];
 
 export const aboutFaqs: FAQItem[] = [
@@ -1860,24 +1879,34 @@ export const integrationsFaqs: FAQItem[] = [
 
 export const teamFaqs: FAQItem[] = [
   {
-    question: "Can my team join Supreme Coach?",
+    question:
+      "We have 15 coaches in our team. Can the infrastructure handle this scale?",
     answer:
-      "Yes. Supreme Coach can be useful For Firms that want to improve business thinking, leadership, growth, and decision-making skills.",
+      "Yes. The Business build is engineered for multi-coach firm operations. Role-based access controls, team assignment management, and aggregated reporting are all configured specifically for your team size and structure.",
   },
   {
-    question: "Is Supreme Coach good for employee training?",
+    question:
+      "Our corporate clients require GDPR-compliant data handling. How does this work?",
     answer:
-      "Yes. Companies can use Supreme Coach as professional development for team members, managers, operators, and future leaders.",
+      "When your infrastructure is deployed on your own servers, you have complete control over data handling. We configure the build to GDPR standards — data residency, encryption, consent management, data subject rights — and provide documentation for your compliance officer.",
   },
   {
-    question: "Can we expense Supreme Coach through our company?",
+    question:
+      "We currently use a mix of platforms. How disruptive is the migration?",
     answer:
-      "Yes. Many students expense Supreme Coach as professional development. Documentation can be provided upon request.",
+      "We manage migration as a structured project workstream, not an afterthought. Client data, programme content, and email lists are migrated with full validation before the old infrastructure is decommissioned. Your clients typically experience no disruption — they simply find a significantly improved environment.",
   },
   {
-    question: "Do teams get different pricing?",
+    question:
+      "We have proprietary coaching frameworks and methodology. How is this protected?",
     answer:
-      "Team pricing may depend on the number of members and the selected program. You can contact Supreme Coach for team enrollment details.",
+      "Your methodology, programme architecture, and proprietary frameworks are covered by the NDA we sign before delivery. Beyond the legal protection, because your infrastructure is deployed on your servers, there is no third-party access to your content — unlike SaaS platforms where your content sits on their servers.",
+  },
+  {
+    question:
+      "Can we commission additional development after the initial build?",
+    answer:
+      "Yes. As your firm grows and requirements change, our team is available for additional development projects — new programme types, additional integrations, expanded features, or entirely new infrastructure components. There is no lock-in to using Supreme Coach for maintenance, but most firms continue working with us because we understand their infrastructure intimately.",
   },
 ];
 
@@ -1907,56 +1936,29 @@ export const solutionsFaqs: FAQItem[] = [
 
 export const coachesFaqs: FAQItem[] = [
   {
-    question: "How does coaching through Supreme Coach Individual work?",
+    question: "I am a solo coach — is this too much infrastructure for my stage?",
     answer:
-      "Coaching through Supreme Coach Individual begins with a seamless digital onboarding where each employee is matched with a certified business coach who fits their goals, language and professional context. The experience is designed to be intuitive from the start, giving every coachee immediate access to high quality coaching without operational friction.\n\nEmployees define their development priorities through a self assessment and select focus areas that reflect both their personal goals and the organization’s strategic needs. They schedule sessions at their preferred cadence and work with their coach in flexible, ongoing conversations that drive real behavior change. Progress is visible at every step through built in goal tracking, which helps coachees stay accountable and gives organizations clarity on outcomes.\n\nBetween sessions, employees access Supreme Coach Academy, a curated library of resources that reinforces learning and ensures development continues beyond coaching conversations. With Supreme Coach Feedback, they can also gather feedback from peers, direct reports or managers to deepen self awareness and uncover areas of improvements.\n\nFor program managers, Supreme Coach Individual provides aggregated insights across focus areas and cohorts to measure progress, demonstrate impact and ensure coaching is aligned with broader talent and business priorities.",
+      "Our Basic build is specifically sized for solo coaches at any stage. It gives you everything you need to operate as a professional coaching business — website, lead generation, email, booking, and payment infrastructure — without the complexity of enterprise features you do not need yet. As your practice grows, you can commission Growth or Business builds.",
   },
   {
-    question:
-      "What makes Supreme Coach different from other business coaching services?",
+    question: "Do I need to find my own hosting before we start?",
     answer:
-      "Supreme Coach stands apart from other business coaching services by delivering a truly scalable, personalized and measurable coaching experience. This is made possible by a global pool of rigorously vetted business coaches, all certified by the International Coaching Federation and equipped with extensive leadership and coaching experience, ensuring consistently high quality across regions and roles.\n\nBuilt-in analytics also provide real-time visibility into progress across focus areas, enabling companies to track behavioral change and link it to business outcomes. For organizations managing large or global workforces, Supreme Coach also removes complexity through seamless scheduling, multi language access and GDPR compliant hosting.\n\nTogether, these elements create a coaching solution that combines human expertise, digital scale and measurable results.",
+      "No. We help you set up appropriate hosting as part of the project. We will recommend options that match your technical comfort level — from managed hosting that requires very little technical knowledge to maintain, through to more developer-friendly infrastructure for coaches who want full technical control. The hosting is in your name and under your payment from day one.",
   },
   {
-    question: "How does Supreme Coach measure coaching success?",
+    question: "What happens to my existing website and client base?",
     answer:
-      "Supreme Coach measures coaching success by combining individual progress tracking with clear, data-driven insights at the program level. Each coachee begins by identifying their development focus areas and setting goals with their coach. These goals are tracked in real-time through the platform, allowing employees to see how their skills and behaviors evolve over the course of the program. This creates a transparent view of personal progress and helps sustain motivation and accountability.\n\nTo enrich this picture, Supreme Coach Feedback also offers integrated self-assessment and 360° feedback tools. Employees can gather input from peers, managers and direct reports at different moments in their journey, providing a rounded perspective on how their behavior is changing and where improvement is most visible. This feedback loop gives organizations a reliable pulse on the impact of coaching beyond the individual’s own perception.\n\nOn the organizational side, Supreme Coach Insights™ consolidates anonymized data to show how employees are progressing collectively. These analytics help program managers understand which capabilities are strengthening, how engagement is evolving and where coaching is driving measurable outcomes. By connecting individual growth to broader trends, companies can clearly demonstrate the value of coaching and ensure it aligns with strategic priorities.",
+      "We coordinate migration of your existing content, client contact lists, and email subscribers as part of the project handover. Your existing clients experience minimal disruption, and in most cases the transition is invisible to them — they simply find their portal and programmes in a significantly better environment than before.",
   },
   {
-    question: "Who are Supreme Coach’s business coaches?",
+    question: "Can I manage the website content myself after delivery?",
     answer:
-      "Supreme Coach’s business coaches are a highly vetted group of seasoned professionals who meet strict standards that go well beyond typical market requirements. Every coach holds at least a PCC level certification from the International Coaching Federation or an equivalent credential.\n\nAll coaches in the Supreme Coach network are specialists in business and goal-oriented coaching, bringing both formal training and practical leadership experience. The minimum requirement includes 500 coaching hours, 125 training hours and more than six years of leadership experience, along with a proven track record supporting leaders and teams in top enterprise organizations across industries. This combination of expertise ensures that coaches understand real business challenges and can translate coaching into meaningful workplace outcomes.\n\nTo uphold this standard at scale, Supreme Coach applies an intensive selection and onboarding process. Only 5% of applicants are accepted into the global coach pool, reflecting a rigorous evaluation of skills and professionalism. This careful selection, combined with ongoing performance monitoring, leads to a 4.8/5 coachee satisfaction.",
+      "Yes. Your website is built with a content management system that allows you to update copy, add blog posts, change images, and edit page content without technical skills. We provide training on the CMS as part of the handover.",
   },
   {
-    question: "How does Supreme Coach ensure coaching quality?",
+    question: "Will this work if I serve clients internationally?",
     answer:
-      "Coaching quality is safeguarded through a multi-step vetting process, ongoing supervision and continuous evaluation. Our business coaches participate in professional development and are reviewed based on client feedback and measurable outcomes. This commitment to excellence guarantees consistency across all coaching experiences.",
-  },
-  {
-    question: "What kind of results can I expect from Supreme Coach’s coaching?",
-    answer:
-      "Supreme Coach’s coaching approach is built around an evidence-based methodology. At the start of each coaching program, program managers select up to 12 focus areas from a library of 29 options. This creates a clear foundation and ensures development is anchored in the capabilities that matter most for the business, whether that means strengthening resilience, improving communication, elevating strategic thinking, or building leadership behaviors such as inclusion and collaboration.\n\nCoachees then choose the focus areas most relevant to their goals, complete assessments and track their progress over time. This approach keeps development highly personalized while staying closely aligned with organizational priorities.\n\nBecause the coaching journey is structured around these focus areas, the impact becomes easy to see and measure. Organizations gain visibility into which capabilities are improving and where behavior change is taking place across cohorts.\n\nThis is exactly what our customers are seeing in practice. For example, at SumUp, 80% of coachees reported improved self awareness and confidence, 70% felt better equipped to overcome challenges and 50% developed new skills in conflict resolution, strategic thinking and communication.",
-  },
-  {
-    question: "Can Supreme Coach’s coaching be scaled across our organization?",
-    answer:
-      "Yes, Supreme Coach’s coaching is designed to scale seamlessly across organizations of any size. The platform, the coaching network and the customer support model are all built to ensure that companies can expand coaching from a small pilot to a global, enterprise-wide program without losing quality, consistency, or impact.\n\nA key enabler of this scalability is Supreme Coach’s global coach pool. With more than 3,500 certified business coaches available worldwide, organizations can offer high quality coaching to employees in every region. Coaches cover 80 languages and operate in more than 90 countries, making it easy to support diverse teams across time zones, cultures and business contexts.\n\nCombined with flexible program design, unified reporting and a digital platform that centralizes the entire coaching journey, Supreme Coach makes it simple for companies to roll out coaching broadly while keeping development aligned, measurable and highly qualitative at scale.",
-  },
-  {
-    question: "How does Supreme Coach use technology in coaching?",
-    answer:
-      "Supreme Coach uses technology to make coaching smarter, more personalized, and easier to scale. AI matching connects each employee with the right coach based on their goals, experience, and preferences.\n\nThroughout the journey, tools like self assessments, 360 degree feedback, goal tracking, and smart nudges support continuous progress and keep coachees engaged. The platform also includes Supreme Coach Academy, offering curated learning resources that reinforce what is discussed in coaching sessions.\n\nOn the organizational side, dashboards provide clear visibility into engagement and progress across focus areas, making impact measurable.",
-  },
-  {
-    question: "What is included in the Supreme Coach coaching experience?",
-    answer:
-      "Every Supreme Coach coaching journey includes one-to-one virtual sessions, progress tracking, goal setting, and access to curated learning resources. Participants work with a dedicated business coach who tailors the experience to their individual goals. This holistic, data-informed approach drives measurable personal and professional growth.",
-  },
-  {
-    question:
-      "Why do global companies choose Supreme Coach for business coaching?",
-    answer:
-      "Global companies choose Supreme Coach because it delivers high quality, scalable and measurable coaching across regions and business contexts. With a global network of more than 3,500 certified business coaches available in 80 languages and 90+ countries, organizations can offer consistent development to all employees, no matter where they are. This makes it easy to roll out coaching at scale while maintaining the same level of quality worldwide.\n\nCompanies also value Supreme Coach’s focus on impact. Coaching is structured around clear focus areas that align with organizational goals, and progress is measured through built-in self-assessments, 360° feedback and aggregated insights. This gives leaders visibility into real behavioral change and helps them demonstrate coaching impact.\n\nIn addition, the digital platform removes operational friction through AI coach matching, seamless scheduling, continuous learning resources and smart nudges that keep employees engaged. Combined with multilingual support from customer success managers, Supreme Coach offers a reliable, end-to-end solution that global organizations can trust to develop talent in a scalable, personalized and data driven way.",
+      "Yes. Your infrastructure can be configured for international delivery — Stripe supports 135+ currencies, your portal and website are accessible globally, and your email marketing can be segmented by geography. The only consideration for some coaches is data sovereignty — if your clients are in the EU, we can ensure your server infrastructure meets GDPR requirements.",
   },
 ];
 

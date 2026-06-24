@@ -12,10 +12,10 @@ type NavItem = {
 };
 
 const DESKTOP_NAV_ITEMS: readonly NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "Products", href: "/products" },
+  // { label: "Home", href: "/" },
+  { label: "What We Build", href: "/products" },
   // { label: "Solutions", href: "/solutions" },
-  { label: "For Coach", href: "/for-coach" },
+  { label: "For Coaches", href: "/for-coaches" },
   { label: "For Firms", href: "/for-firms" },
   // { label: "Community", href: "/community" },
   // { label: "About", href: "/about" },
@@ -190,10 +190,7 @@ function PrimaryCta({
         : "mx-auto px-4 py-3 text-[13px] xl:px-6 xl:text-[14px]"
         }`}
     >
-      <span className="text-[0.98em] font-semibold uppercase tracking-[0.12em]">
-        Book A Demo
-      </span>
-
+        Book A Strategy Call  
       <Icon
         icon={"solar:phone-linear"}
         width="19"

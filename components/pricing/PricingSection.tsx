@@ -146,8 +146,10 @@ export default function PricingSection() {
             <div className="section-container">
                 <div className="section-title-wrap">
                     <h2 className="section-title stylish-family text-[36px] leading-[1.05] sm:text-[44px] md:text-[58px]">
-                        Plans and pricing
+                        Project Investment Levels. One-Time. You Own Everything. Forever.
                     </h2>
+                    <p className="section-description text-black mx-auto mt-4 max-w-4xl text-sm leading-6 sm:mt-5 sm:text-base">
+                    Supreme Coach is not a subscription service. These are not monthly plan prices. When you work with Supreme Coach, you are commissioning a custom build project — and your investment is made once. After delivery, your coaching infrastructure belongs to you, runs on your servers, and costs nothing monthly. Ever.</p>
 
                     <div className="mt-6 w-full overflow-x-auto sm:mt-8">
                         <div className="mx-auto inline-flex min-w-max rounded-full border border-black bg-white p-1">

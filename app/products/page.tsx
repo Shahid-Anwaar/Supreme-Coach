@@ -13,12 +13,27 @@ import CoursesCommunity from "@/components/home/CoursesCommunity";
 import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductsCompaniesSection from "@/components/products/ProductCompanies";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { companyLogos, COURSE_FEATURES, COURSE_FEATURES2, productsFaqs } from "@/data/data";
+import { companyLogos, COURSE_FEATURES, COURSE_FEATURES2, productFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import ProductStories from "@/components/products/ProductStories";
 import ProductTools from "@/components/products/ProductTools";
 import ProductSold from "@/components/products/ProductSold";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "What We Build | Supreme Coach — Custom Coaching Business Infrastructure",
+  description: "Supreme Coach builds 8 custom coaching infrastructure components — website, CRM, client portal, programme delivery, funnels, AI, community, and payments — deployed on your own servers, owned by you.",
+  keywords: [
+    "done-for-you coaching business infrastructure", 
+    "coaching website design service UK", 
+    "custom coaching platform build", 
+    "coaching CRM setup service", 
+    "coaching business setup", 
+    "coaching programme delivery system"
+  ],
+  path: "/products",
+});
 
 export default function ProductsPage() {
   return (
@@ -62,7 +77,7 @@ export default function ProductsPage() {
       <ClientsSection title="Supreme Coach success stories write themselves" />
       <ProductTools />
       {/* <ProductSold /> */}
-      <FAQSection faqs={productsFaqs} />
+      <FAQSection faqs={productFaqs} />
 
       {/* <FeaturedInSection />
             <ViewsSection />

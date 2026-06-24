@@ -13,21 +13,19 @@ export default function ProductsHeroSection() {
                         </p>
 
                         <h1 className="section-title hero-title mt-5 text-black lg:mt-6 lg:max-w-130">
-                            Online courses by you. Powered by Supreme Coach.
+                            Eight Components. One Custom Build. Deployed on Your Servers. Owned by You.
                         </h1>
 
                         <p className="section-description mx-auto mt-5 max-w-2xl text-black lg:mx-0 lg:mt-6 lg:max-w-130">
-                            Create and sell online courses that captivate students, scale
-                            revenue, and move your business forward—without the tech
-                            headache.
+                            Supreme Coach is not software you subscribe to. We are a specialist build-and-deploy service for coaching businesses. We take our proven coaching infrastructure frameworks — refined across years of working inside coaching businesses — customise every component for your brand, audience, and methodology, and deploy everything on your own servers. You get battle-tested foundations with full custom precision. And you own all of it permanently.
                         </p>
 
                         <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:mt-8 lg:justify-start">
                             <Link
                                 href="/"
-                                className="contained-btn max-w-55 px-6 py-3 capitalize!"
+                                className="contained-btn px-6 py-3 capitalize!"
                             >
-                                <span>Book A Demo</span>
+                                Book A Strategy Call  
                                 <Icon
                                     icon="solar:phone-linear"
                                     width="19"
@@ -37,10 +35,10 @@ export default function ProductsHeroSection() {
                             </Link>
 
                             <Link
-                                href="/"
-                                className="outlined-btn max-w-55 px-6 py-3 capitalize!"
+                                href="/pricing"
+                                className="outlined-btn px-6 py-3 capitalize!"
                             >
-                                Explore our plans
+                                See Our Project Investment Levels  
                             </Link>
                         </div>
                     </div>

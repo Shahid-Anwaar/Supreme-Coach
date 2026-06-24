@@ -2,139 +2,209 @@
 
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { FEATURES, HERO_SLIDES, HeroSlide, securityItems } from "@/data/data";
+import { FEATURES, HERO_SLIDES, HeroSlide, SecurityItem } from "@/data/data";
 import CustomEmblaCarousel from "./CustomCarosal";
 
-export default function AugmentHeroSection() {
-    return (
-        <section className="hero-carousel relative z-1 overflow-hidden bg-black">
-            <div className="relative mx-auto flex max-w-full flex-col bg-black sm:pt-16 pt-14 lg:flex-row lg:items-center pb-2 2xl:max-w-400">
-                <div className="relative z-30 mx-auto w-full px-4 pb-6 pt-4 text-center text-white sm:px-6 sm:pb-8 lg:absolute lg:left-0 lg:w-[50%] lg:px-0 lg:pb-4 lg:pl-8 lg:pr-0 lg:text-left xl:mx-16 xl:max-w-116 xl:pl-0">
-                    <h1 className="section-title hero-title mx-auto max-w-[11ch] text-white sm:max-w-[13ch] md:max-w-[15ch] lg:mx-0 lg:max-w-125 ">
-                        The MBA for Entrepreneurs
-                    </h1>
+export const heroSecurityItems: SecurityItem[] = [
+  {
+    name: "SOC 2",
+    src: "/security (1).svg",
+    width: 56,
+    height: 56,
+  },
+  {
+    name: "GDPR",
+    src: "/security (3).svg",
+    width: 56,
+    height: 56,
+  },
+  {
+    name: "PCI DSS",
+    src: "/security (2).svg",
+    width: 56,
+    height: 56,
+  },
+//   {
+//     name: "CCPA",
+//     src: "/security (4).svg",
+//     width: 56,
+//     height: 56,
+//   },
+//   {
+//     name: "AICPA",
+//     src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/6953d5310fcdb2da81b8b4d5_soc2-badge-teachable.svg",
+//     width: 56,
+//     height: 56,
+//   },
+];
 
-                    <p className="section-description mx-auto mt-4 max-w-[32rem] text-sm leading-6 sm:mt-5 sm:text-base lg:mx-0 lg:max-w-112.5 lg:text-start">
-                        Join the Business School for Entrepreneurs. Built by the founders
-                        of YouTube, Waze, Siri and Wikipedia. For the founders of tomorrow.
-                    </p>
+type HeroFeature = {
+  label: string;
+  icon: string;
+};
 
-                    <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2.5 sm:mt-8 sm:gap-y-3 md:gap-x-5 lg:mt-10.5 lg:justify-start">
-                        {FEATURES.map((item) => (
-                            <li
-                                key={item.label}
-                                className="flex items-center gap-1.5 sm:gap-2"
-                            >
-                                <Icon
-                                    icon={item.icon}
-                                    className="h-4 w-4 shrink-0 text-white sm:h-4.5 sm:w-4.5"
-                                />
-                                <span className="text-center text-[11px] font-normal leading-4 uppercase tracking-[0.02em] text-white sm:whitespace-nowrap sm:text-[14px] md:text-[16px]">
-                                    {item.label}
-                                </span>
-                            </li>
-                        ))}
-                    </ul>
+type HeroSecurityItem = {
+  name: string;
+  src: string;
+  width: number;
+  height: number;
+};
 
-                    <div className="mx-auto mt-7 flex w-full max-w-88 flex-col items-center gap-3 sm:mt-8 sm:max-w-none lg:mx-0 lg:mt-10.5 lg:items-start">
-                        <Link
-                            href="https://augment.school/sHK7SoG?"
-                            className="group flex w-full items-center justify-center px-6 contained-btn sm:w-auto sm:min-w-65"
-                        >
-                            Book A Demo
-                            <Icon
-                                icon={"solar:phone-linear"}
-                                width="19"
-                                height="19"
-                                className="shrink-0"
-                            />
-                        </Link>
+type AugmentHeroSectionProps = {
+  title?: string;
+  description?: string;
+  features?: HeroFeature[];
+  primaryButtonText?: string;
+  primaryButtonHref?: string;
+  primaryButtonIcon?: string;
+  secondaryButtonText?: string;
+  secondaryButtonHref?: string;
+  securityItems?: HeroSecurityItem[];
+  slides?: typeof HERO_SLIDES;
+  sectionClassName?: string;
+};
 
-                        <Link
-                            href="/contact-sales"
-                            className="flex w-full items-center justify-center px-6 closed-btn sm:w-auto sm:min-w-65"
-                        >
-                            Contact Sales
-                        </Link>
+const defaultHeroTitle =
+  "We Build the Infrastructure That Runs Your Coaching Business. You Own It. For Life.";
+
+const defaultHeroDescription =
+  "Supreme Coach designs and builds custom coaching business infrastructure — your website, your CRM, your client portal, your programme delivery system, your funnels, your automations — and deploys everything on your own servers. No platform dependency. No monthly fees. No competitor ever sees your setup. You own the code, the data, and the infrastructure. Permanently.";
+
+export default function AugmentHeroSection({
+  title = defaultHeroTitle,
+  description = defaultHeroDescription,
+  features = FEATURES,
+  primaryButtonText = "Book a Strategy Call",
+  primaryButtonHref = "https://augment.school/sHK7SoG?",
+  primaryButtonIcon = "solar:phone-linear",
+  secondaryButtonText = "See What We Build",
+  secondaryButtonHref = "/contact-sales",
+  securityItems = heroSecurityItems,
+  slides = HERO_SLIDES,
+  sectionClassName = "",
+}: AugmentHeroSectionProps) {
+  return (
+    <section
+      className={`hero-carousel relative z-1 overflow-hidden bg-black ${sectionClassName}`}
+    >
+      <div className="relative mx-auto flex max-w-full flex-col bg-black sm:pt-16 pt-14 lg:flex-row lg:items-center pb-2 2xl:max-w-400">
+        <div className="relative z-30 mx-auto w-full px-4 pb-6 pt-4 text-center text-white sm:px-6 sm:pb-8 lg:absolute lg:left-0 lg:w-[50%] lg:px-0 lg:pb-4 lg:pl-8 lg:pr-0 lg:text-left xl:mx-16 xl:max-w-145 xl:pl-0">
+          <h1 className="section-title hero-title mx-auto max-w-[11ch] text-white sm:max-w-[13ch] md:max-w-[15ch] lg:mx-0 lg:max-w-160">
+            {title}
+          </h1>
+
+          <p className="section-description mx-auto mt-3 max-w-[32rem] text-sm leading-6 sm:mt-4 lg:mt-5 sm:text-base lg:mx-0 lg:max-w-140.5 lg:text-start">
+            {description}
+          </p>
+
+          <ul className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-2.5 sm:mt-4 sm:gap-y-3 md:gap-x-5 lg:mt-5 lg:justify-start">
+            {features.map((item) => (
+              <li key={item.label} className="flex items-center gap-1.5 sm:gap-2">
+                <Icon
+                  icon={item.icon}
+                  className="h-4 w-4 shrink-0 text-white sm:h-4.5 sm:w-4.5"
+                />
+                <span className="text-center text-[11px] font-normal leading-4 uppercase tracking-[0.02em] text-white sm:whitespace-nowrap sm:text-[14px] md:text-[16px]">
+                  {item.label}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mx-auto mt-3 flex w-full max-w-88 flex-col items-center gap-3 sm:mt-4 sm:max-w-none lg:mx-0 lg:mt-5 lg:items-start">
+            <Link
+              href={primaryButtonHref}
+              className="group flex w-full items-center justify-center px-6 contained-btn sm:w-auto sm:min-w-65"
+            >
+              {primaryButtonText}
+              <Icon
+                icon={primaryButtonIcon}
+                width="19"
+                height="19"
+                className="shrink-0"
+              />
+            </Link>
+
+            <Link
+              href={secondaryButtonHref}
+              className="flex w-full items-center justify-center px-6 closed-btn sm:w-auto sm:min-w-65"
+            >
+              {secondaryButtonText}
+            </Link>
+          </div>
+
+          <div className="flex mt-4 lg:mt-5 gap-x-5 justify-center lg:justify-start md:gap-x-7">
+            {securityItems.map((item) => (
+              <div
+                key={item.name}
+                className="flex flex-col items-center justify-center text-center"
+              >
+                <img
+                  src={item.src}
+                  alt={item.name}
+                  width={item.width}
+                  height={item.height}
+                  className="h-8 w-8 object-contain sm:h-9 sm:w-9 lg:h-10 lg:w-10"
+                />
+
+                <p className="mt-1 text-[13px] font-normal leading-tight tracking-[-0.03em] text-white sm:text-[15px] lg:text-[16px]">
+                  {item.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="relative flex w-full justify-end">
+          <div className="w-full lg:max-w-180 xl:max-w-255">
+            <div className="relative mt-6 block w-full overflow-hidden px-4 sm:mt-8 sm:px-6 lg:hidden">
+              <div className="pointer-events-none absolute inset-y-0 left-4 z-10 w-8 bg-linear-to-r from-black/70 via-black/20 to-transparent sm:left-6 sm:w-10" />
+              <div className="pointer-events-none absolute inset-y-0 right-4 z-10 w-8 bg-linear-to-l from-black/70 via-black/20 to-transparent sm:right-6 sm:w-10" />
+
+              <CustomEmblaCarousel
+                CustomCard={(item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="min-h-[360px] min-w-0 shrink-0 grow-0 basis-full p-2 sm:min-h-[430px] sm:basis-1/2 md:min-h-[520px]"
+                    >
+                      <HeroCard key={`${item.id}-${index}`} slide={item} />
                     </div>
-                    <div className="flex mt-8 gap-x-4 justify-center lg:justify-start md:gap-x-10">
-                        
-                        {securityItems.slice(0, 4).map((item) => (
-                            <div
-                                key={item.name}
-                                className="flex flex-col items-center justify-center text-center"
-                            >
-                                <img
-                                    src={item.src}
-                                    alt={item.name}
-                                    width={item.width}
-                                    height={item.height}
-                                    className="h-9 w-9 object-contain sm:h-10 sm:w-10 lg:h-12 lg:w-12"
-                                />
-
-                                <p className="mt-1 text-[13px] font-normal leading-tight tracking-[-0.03em] text-white sm:text-[15px] lg:text-[18px]">
-                                    {item.name}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-
-                </div>
-
-                <div className="relative flex w-full justify-end">
-                    <div className="w-full lg:max-w-180 xl:max-w-255">
-                        <div className="relative mt-6 block w-full overflow-hidden px-4 sm:mt-8 sm:px-6 lg:hidden">
-                            <div className="pointer-events-none absolute inset-y-0 left-4 z-10 w-8 bg-linear-to-r from-black/70 via-black/20 to-transparent sm:left-6 sm:w-10" />
-                            <div className="pointer-events-none absolute inset-y-0 right-4 z-10 w-8 bg-linear-to-l from-black/70 via-black/20 to-transparent sm:right-6 sm:w-10" />
-
-                            <CustomEmblaCarousel
-                                CustomCard={(item, index, firstItemIndex) => {
-                                    return (
-                                        <div
-                                            key={index}
-                                            className="min-h-[360px] min-w-0 shrink-0 grow-0 basis-full p-2 sm:min-h-[430px] sm:basis-1/2 md:min-h-[520px]"
-                                        >
-                                            <HeroCard
-                                                key={`${item.id}-${index}`}
-                                                slide={item}
-                                            />
-                                        </div>
-                                    );
-                                }}
-                                isAutoplay={true}
-                                items={HERO_SLIDES}
-                                options={{ loop: true, align: "start", skipSnaps: false }}
-                                wrapperClassName="min-h-[360px] sm:min-h-[430px] md:min-h-[520px]"
-                            />
-                        </div>
-
-                        <div className="relative hidden w-full overflow-hidden lg:block">
-                            <div className="pointer-events-none absolute right-0 z-10 h-full w-full bg-linear-to-r from-black/55 via-transparent to-transparent" />
-                            <CustomEmblaCarousel
-                                isAutoplay={true}
-                                CustomCard={(item, index, firstItemIndex) => {
-                                    return (
-                                        <div
-                                            key={index}
-                                            className="min-h-105 min-w-0 shrink-0 grow-0 basis-full p-2 sm:min-h-130 sm:basis-1/2 lg:min-h-170 lg:basis-1/2 xl:basis-1/3"
-                                        >
-                                            <HeroCard
-                                                key={`${item.id}-${index}`}
-                                                slide={item}
-                                            />
-                                        </div>
-                                    );
-                                }}
-                                items={HERO_SLIDES}
-                                options={{ loop: true, align: "start", skipSnaps: false }}
-                                wrapperClassName="mt-16 min-h-180 lg:mr-14"
-                            />
-                        </div>
-                    </div>
-                </div>
+                  );
+                }}
+                isAutoplay={true}
+                items={slides}
+                options={{ loop: true, align: "start", skipSnaps: false }}
+                wrapperClassName="min-h-[360px] sm:min-h-[430px] md:min-h-[520px]"
+              />
             </div>
-        </section>
-    );
+
+            <div className="relative hidden w-full overflow-hidden lg:block">
+              <div className="pointer-events-none absolute right-0 z-10 h-full w-full bg-linear-to-r from-black/55 via-transparent to-transparent" />
+
+              <CustomEmblaCarousel
+                isAutoplay={true}
+                moveTo="left"
+                CustomCard={(item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="min-h-105 min-w-0 shrink-0 grow-0 basis-full p-2 sm:min-h-130 sm:basis-1/2 lg:min-h-170 lg:basis-1/2 xl:basis-1/3"
+                    >
+                      <HeroCard key={`${item.id}-${index}`} slide={item} />
+                    </div>
+                  );
+                }}
+                items={slides}
+                options={{ loop: true, align: "start", skipSnaps: false }}
+                wrapperClassName="mt-16 min-h-180 lg:mr-14"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 function HeroCard({ slide }: { slide: HeroSlide }) {

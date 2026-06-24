@@ -1,17 +1,14 @@
 import BookCallSection from "@/components/home/BookCall";
-import Footer from "@/components/home/Footer";
 import ViewsSection from "@/components/home/ViewsSection";
 import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
-import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, homeFaqs, teamFaqs } from "@/data/data";
+import { COURSE_FEATURES, COURSE_FEATURES2, teamFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
-import FirmHeroSection from "@/components/for-firms/FirmHero";
-
+import AugmentHeroSection from "@/components/home/HeroSection";
 
 const views = [
   {
@@ -60,10 +57,26 @@ const companyLogos = [
   },
 ];
 
-export default function TeamsPage() {
+
+export default function FirmsPage() {
   return (
     <main className="bg-white text-black relative">
-      <FirmHeroSection />
+      <AugmentHeroSection
+        title="We Build the Operating Infrastructure That Scales Your Coaching Firm."
+        //  Deployed on Your Servers. Owned by Your Organisation."
+        description=" Coaching firms face infrastructure challenges that individual coach tools were never designed to solve. Multiple coaches, multiple client organisations, corporate reporting requirements, white label delivery, team permissions, enterprise billing — these require a different class of infrastructure entirely. Supreme Coach builds that infrastructure for your firm, deploys it on your own servers, and protects it with a signed NDA. You get enterprise capability at a fraction of enterprise platform costs — owned permanently, not rented monthly."
+        primaryButtonText="Book an Enterprise Strategy Call"
+        secondaryButtonText="See the Business Build Components"
+        secondaryButtonHref="/products"
+        features={[
+          { label: "Coaching Firms", icon: "ph:buildings-fill" },
+          { label: "Executive Coaching Practices", icon: "ph:briefcase-fill" },
+          { label: "Leadership Consultancies", icon: "ph:users-three-fill" },
+          { label: "Corporate Training Organisations", icon: "ph:graduation-cap-fill" },
+          { label: "Coaching Agencies", icon: "ph:network-fill" },
+          { label: "ICF Accredited Training Providers", icon: "ph:certificate-fill" },
+        ]}
+      />
       {/* <ProductsHeroSection /> */}
       {/* <p className="section-description mt-0! text-center mx-auto max-w-220 text-black">
         1,000+ companies trust Supreme Coach to deliver measurable change
@@ -109,7 +122,7 @@ export default function TeamsPage() {
 
 
       {/* <ClientsSection /> */}
-   
+
 
       {/* <BookCallSection
                 title="Stand out with the Supreme Coach LinkedIn Certificate"
@@ -120,10 +133,10 @@ export default function TeamsPage() {
                 imgSrc="/certificate.webp"
             />
             <MissionComparisonSection /> */}
-    
-     
-            <FAQSection faqs={teamFaqs} />
-            {/* <BookCallSection
+
+
+      <FAQSection faqs={teamFaqs} />
+      {/* <BookCallSection
               title="Stand out with the Supreme Coach LinkedIn Certificate"
               btnText="Enroll Now"
               subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."

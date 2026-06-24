@@ -1,17 +1,15 @@
 import BookCallSection from "@/components/home/BookCall";
-import Footer from "@/components/home/Footer";
 import ViewsSection from "@/components/home/ViewsSection";
 import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
-import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, homeFaqs } from "@/data/data";
+import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2 } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
-import AugmentHeroSection from "@/components/home/HeroSection";
-
+import { createMetadata } from "@/lib/seo";
+import CoachHeroSection from "@/components/for-coach/CoachHero";
 
 const views = [
   {
@@ -60,10 +58,27 @@ const companyLogos = [
   },
 ];
 
+export const metadata = createMetadata({
+  title:
+    "Custom Coaching Business Infrastructure for Professional Coaches | Supreme Coach",
+  description:
+    "Supreme Coach builds custom coaching websites, client portals, CRM systems, and programme delivery — deployed on your own servers. For ACC, PCC, and MCC coaches. One-time investment, lifetime ownership.",
+  keywords: [
+    "done-for-you coaching business setup",
+    "coaching website design for coaches",
+    "ICF coach website",
+    "coaching CRM setup",
+    "coaching client portal",
+    "professional coach infrastructure",
+    "coaching business build",
+  ],
+  path: "/for-coaches",
+});
+
 export default function CoachesPage() {
   return (
     <main className="bg-white text-black relative">
-      <AugmentHeroSection />
+      <CoachHeroSection />
       <div className="w-full bg-white pb-7">
         <div className="max-w-full bg-white py-4 mx-auto">
           <div className="mx-auto bg-white px-0">
@@ -74,12 +89,7 @@ export default function CoachesPage() {
           </div>
         </div>
       </div>
-      {/* <ProductsHeroSection /> */}
-      
-      {/* <CompanyLogoCarousel companyLogos={[...companyLogos, ...companyLogos]} />; */}
-      {/* <div className="py-7"></div> */}
       <ViewsSection items={views} />
-      {/* <ProductsCompaniesSection /> */}
       <ProductFeaturesSection
         title="Course creation tools for higher student engagement"
         description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
@@ -104,40 +114,7 @@ export default function CoachesPage() {
         description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
       />
       <ClientsSection title="Supreme Coach success stories write themselves" isShowCompanies={true} />
-      {/* <ProductTools /> */}
-      {/* <ProductSold /> */}
-      {/* <FAQSection faqs={FAQS} /> */}
-
-
-
-      {/* <FeaturedInSection />
-            
-            <FacultySection />
-            <EmblaCarousel /> */}
-
-
-      {/* <ClientsSection /> */}
-
-
-      {/* <BookCallSection
-                title="Stand out with the Supreme Coach LinkedIn Certificate"
-                btnText="Enroll Now"
-                subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
-                topClasses="bg-[#f3f4f6]"
-                bottomClasses="bg-[#000000]"
-                imgSrc="/certificate.webp"
-            />
-            <MissionComparisonSection /> */}
-
       <FAQSection faqs={coachesFaqs} />
-      {/* <BookCallSection
-              title="Stand out with the Supreme Coach LinkedIn Certificate"
-              btnText="Enroll Now"
-              subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
-              topClasses="bg-[#f3f4f6]"
-              bottomClasses="bg-[#000000]"
-              imgSrc="/certificate.webp"
-            /> */}
       <BookCallSection
         title="Book a Demo with a Program Advisor"
         icon="solar:phone-linear"

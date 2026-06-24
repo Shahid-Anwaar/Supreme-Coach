@@ -1,26 +1,26 @@
-import BookCallSection from "@/components/home/BookCall";
-import FeaturesSection from "@/components/home/FacultySection";
 import FAQSection from "@/components/home/FaqSection";
-import FeaturedInSection from "@/components/home/FeaturedIn";
-import Footer from "@/components/home/Footer";
-import MissionComparisonSection from "@/components/home/MissionComparison";
-import HeaderSection from "@/components/home/Header";
-import TeaserVideoSection from "@/components/home/TeaserVideo";
-import StudentTestimonialsSection from "@/components/home/TestmonialSection";
-import WhyAugmentSection from "@/components/home/WhyAugment";
-import Chats from "@/components/home/Chats";
-import EmblaCarousel from "@/components/home/EmblaCarosal";
-import AugmentHeroSection from "@/components/home/HeroSection";
-import ViewsSection from "@/components/home/ViewsSection";
-import HowItWorksCard from "@/components/home/HowItWorks";
-import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
-import CoursesCommunity from "@/components/home/CoursesCommunity";
-import { companyLogos, homeFaqs, pricingFaqs } from "@/data/data";
-import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
+import { pricingFaqs } from "@/data/data";
 import ProductTools from "@/components/products/ProductTools";
 import PricingSection from "@/components/pricing/PricingSection";
 import TrustAndSecuritySection from "@/components/pricing/TrustAndSecurity";
+import { createMetadata } from "@/lib/seo";
+import WhatToInclude from "@/components/products/WhatInclude";
+
+export const metadata = createMetadata({
+  title:
+    "Project Investment | Supreme Coach — Custom Coaching Infrastructure. No Monthly Fees.",
+  description:
+    "Supreme Coach pricing: Basic £7,000 · Growth £10,000 · Business £20,000. One-time custom build project. Deployed on your servers. You own everything. No monthly fees, no subscriptions, ever.",
+  keywords: [
+    "coaching business setup cost",
+    "coaching website design pricing",
+    "done-for-you coaching platform cost",
+    "coaching infrastructure build price",
+    "coaching business setup service UK",
+  ],
+  path: "/pricing",
+});
 
 export default function PricingPage() {
   return (
@@ -28,6 +28,7 @@ export default function PricingPage() {
       <PricingSection />
       <TrustAndSecuritySection />
       <ProductTools />
+      <WhatToInclude />
       <ClientsSection title="Supreme Coach success stories write themselves" isShowCompanies={true} />
       <FAQSection faqs={pricingFaqs} />
     </main>

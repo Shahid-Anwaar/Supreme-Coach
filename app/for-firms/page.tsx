@@ -1,17 +1,15 @@
 import BookCallSection from "@/components/home/BookCall";
-import Footer from "@/components/home/Footer";
 import ViewsSection from "@/components/home/ViewsSection";
 import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
-import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { coachesFaqs, COURSE_FEATURES, COURSE_FEATURES2, homeFaqs, teamFaqs } from "@/data/data";
+import { COURSE_FEATURES, COURSE_FEATURES2, teamFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
+import AugmentHeroSection from "@/components/home/HeroSection";
 import FirmHeroSection from "@/components/for-firms/FirmHero";
-
 
 const views = [
   {
@@ -60,7 +58,8 @@ const companyLogos = [
   },
 ];
 
-export default function TeamsPage() {
+
+export default function FirmsPage() {
   return (
     <main className="bg-white text-black relative">
       <FirmHeroSection />
@@ -109,7 +108,7 @@ export default function TeamsPage() {
 
 
       {/* <ClientsSection /> */}
-   
+
 
       {/* <BookCallSection
                 title="Stand out with the Supreme Coach LinkedIn Certificate"
@@ -120,10 +119,10 @@ export default function TeamsPage() {
                 imgSrc="/certificate.webp"
             />
             <MissionComparisonSection /> */}
-    
-     
-            <FAQSection faqs={teamFaqs} />
-            {/* <BookCallSection
+
+
+      <FAQSection faqs={teamFaqs} />
+      {/* <BookCallSection
               title="Stand out with the Supreme Coach LinkedIn Certificate"
               btnText="Enroll Now"
               subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."

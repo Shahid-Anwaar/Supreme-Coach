@@ -129,9 +129,9 @@ body {
   }
 
   /* Hero main heading */
-  .hero-title {
-    @apply text-[34px] font-normal leading-[1.02] tracking-tight sm:text-[46px] md:text-[58px] lg:text-[66px];
-  }
+ .hero-title {
+  @apply text-[22px] font-medium leading-[1.08] tracking-tight sm:text-[28px] md:text-[38px] lg:text-[48px];
+}
 
   /* Hero supporting text */
   .hero-description {

@@ -11,45 +11,16 @@ type IntegrationItem = {
 
 const INTEGRATIONS: IntegrationItem[] = [
     {
-        name: "Stripe",
-        icon: "simple-icons:stripe",
-        iconColor: "#635BFF",
-        tileClassName: "bg-white",
-    },
-    {
         name: "Zapier",
         icon: "simple-icons:zapier",
         iconColor: "#FF5A00",
         tileClassName: "bg-white",
     },
-    {
-        name: "Google Analytics",
-        icon: "simple-icons:googleanalytics",
-        iconColor: "#E37400",
-        tileClassName: "bg-white",
-    },
-    {
-        name: "Mailchimp",
-        icon: "simple-icons:mailchimp",
-        iconColor: "#111111",
-        tileClassName: "bg-[#f3d540]",
-    },
+    
     {
         name: "Jira",
         icon: "simple-icons:jira",
         iconColor: "#4C8BF5",
-        tileClassName: "bg-white",
-    },
-    {
-        name: "Zoom",
-        icon: "simple-icons:zoom",
-        iconColor: "#ffffff",
-        tileClassName: "bg-[#1d5cff]",
-    },
-    {
-        name: "Calendly",
-        icon: "simple-icons:calendly",
-        iconColor: "#2E69FF",
         tileClassName: "bg-white",
     },
     {
@@ -63,12 +34,6 @@ const INTEGRATIONS: IntegrationItem[] = [
         icon: "simple-icons:udemy",
         iconColor: "#ffffff",
         tileClassName: "bg-black",
-    },
-    {
-        name: "PayPal",
-        icon: "simple-icons:paypal",
-        iconColor: "#003087",
-        tileClassName: "bg-white",
     },
     {
         name: "OneDrive",
@@ -95,12 +60,6 @@ const INTEGRATIONS: IntegrationItem[] = [
         tileClassName: "bg-white",
     },
     {
-        name: "Meta",
-        icon: "simple-icons:meta",
-        iconColor: "#1B74E4",
-        tileClassName: "bg-white",
-    },
-    {
         name: "Dropbox",
         icon: "simple-icons:dropbox",
         iconColor: "#ffffff",
@@ -116,6 +75,107 @@ const INTEGRATIONS: IntegrationItem[] = [
         name: "Circle",
         icon: "simple-icons:circle",
         iconColor: "#155EEF",
+        tileClassName: "bg-white",
+    },
+
+
+    // Video & Conferencing
+    {
+        name: "Zoom",
+        icon: "simple-icons:zoom",
+        iconColor: "#ffffff",
+        tileClassName: "bg-[#1d5cff]",
+    },
+
+    // Scheduling & Calendar
+    {
+        name: "Calendly",
+        icon: "simple-icons:calendly",
+        iconColor: "#2E69FF",
+        tileClassName: "bg-white",
+    },
+    {
+        name: "Cal.com",
+        icon: "simple-icons:caldotcom",
+        iconColor: "#ffffff",
+        tileClassName: "bg-black",
+    },
+    {
+        name: "Google Calendar",
+        icon: "simple-icons:googlecalendar",
+        iconColor: "#4285F4",
+        tileClassName: "bg-white",
+    },
+    {
+        name: "Apple Calendar",
+        icon: "simple-icons:apple",
+        iconColor: "#ffffff",
+        tileClassName: "bg-black",
+    },
+
+    // Email Marketing
+    {
+        name: "Mailchimp",
+        icon: "simple-icons:mailchimp",
+        iconColor: "#111111",
+        tileClassName: "bg-[#f3d540]",
+    },
+    {
+        name: "ActiveCampaign",
+        icon: "logos:active-campaign-icon",
+        iconColor: "#004CFF",
+        tileClassName: "bg-white",
+    },
+    {
+        name: "Brevo",
+        icon: "simple-icons:brevo",
+        iconColor: "#0B996E",
+        tileClassName: "bg-white",
+    },
+
+    // Payments
+    {
+        name: "Stripe",
+        icon: "simple-icons:stripe",
+        iconColor: "#635BFF",
+        tileClassName: "bg-white",
+    },
+    {
+        name: "PayPal",
+        icon: "simple-icons:paypal",
+        iconColor: "#003087",
+        tileClassName: "bg-white",
+    },
+    {
+        name: "Google Pay",
+        icon: "simple-icons:googlepay",
+        iconColor: "#4285F4",
+        tileClassName: "bg-white",
+    },
+    {
+        name: "Apple Pay",
+        icon: "simple-icons:applepay",
+        iconColor: "#ffffff",
+        tileClassName: "bg-black",
+    },
+
+    // Analytics & Tracking
+    {
+        name: "Google Analytics",
+        icon: "simple-icons:googleanalytics",
+        iconColor: "#E37400",
+        tileClassName: "bg-white",
+    },
+    {
+        name: "Meta Pixel",
+        icon: "simple-icons:meta",
+        iconColor: "#1B74E4",
+        tileClassName: "bg-white",
+    },
+    {
+        name: "Firebase",
+        icon: "simple-icons:firebase",
+        iconColor: "#FFCA28",
         tileClassName: "bg-white",
     },
 ];
@@ -141,7 +201,7 @@ const SM_LAYOUT: GridLayout = {
         { row: 2, cols: [1, 2, 3, 4] },
         { row: 3, cols: [1, 2, 3, 4] },
         { row: 4, cols: [1, 2, 3, 4] },
-        { row: 5, cols: [ 2, 3,] },
+        { row: 5, cols: [2, 3,] },
     ],
     tileBoxClassName: "h-[40px] w-[40px]",
     iconClassName: "h-5.5 w-5.5",
@@ -174,11 +234,12 @@ const LG_LAYOUT: GridLayout = {
 
 const XL_LAYOUT: GridLayout = {
     cols: 11,
-    rows: 4,
+    rows: 5,
     colsClassName: "grid-cols-11",
     placements: [
         { row: 1, cols: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
         { row: 2, cols: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
+        { row: 3, cols: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
     ],
     tileBoxClassName: "h-[64px] w-[64px]",
     iconClassName: "h-8 w-8",
@@ -259,7 +320,7 @@ function FramedGrid({ layout }: { layout: GridLayout }) {
     );
 }
 
-export default function IntegrationsSection({title, description}: {title: string, description: string}) {
+export default function IntegrationsSection({ title, description }: { title: string, description: string }) {
     return (
         <section className="bg-white px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-10 lg:py-18 xl:py-0">
             <div className="mx-auto max-w-[1500px]">
@@ -302,7 +363,7 @@ export default function IntegrationsSection({title, description}: {title: string
 
                 <div className="mt-3 flex justify-center xl:mt-0 xl:relative xl:bottom-14 z-20">
                     <Link
-                        href="/explore-integration"
+                        href="/products#what-included"
                         className="outlined-btn px-7 capitalize!"
                     >
                         Explore integrations

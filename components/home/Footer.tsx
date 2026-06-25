@@ -106,9 +106,9 @@ export default function Footer() {
         <>
             <CoursesCommunity />
             <BookCallSection
-                title="Book A Demo with a Program Advisor"
+                title="Book a Discovery Call With Our Team"
                 icon="solar:phone-linear"
-                subTitle="Discuss your business goals and find out if Supreme Coach is a fit for you."
+                subTitle="Tell us where your business is right now and where you're trying to take it. We'll show you exactly what Supreme Coach looks like in practice and give you an honest answer on whether it's the right fit."
                 topClasses="bg-black"
                 bottomClasses="bg-black"
             />

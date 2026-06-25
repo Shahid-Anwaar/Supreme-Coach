@@ -61,17 +61,6 @@ export type ReviewItem = {
   role: string;
 };
 
-export type FeatureItem = {
-  label: string;
-  icon: string;
-};
-
-export const FEATURES: FeatureItem[] = [
-  { label: "Built by coaching business insiders", icon: "ph:users-three-fill" },
-  { label: "Deployed on your servers", icon: "ph:hard-drives-fill" },
-  { label: "NDA-protected infrastructure", icon: "ph:shield-check-fill" },
-];
-
 export type HeroSlide = {
   id: number;
   name: string;
@@ -89,6 +78,7 @@ export type HowItWorksCardItem = {
   title: string;
   description: string;
   image: string;
+  cta?: string;
   points: {
     icon: string;
     text: string;
@@ -497,115 +487,140 @@ export const HOW_IT_WORKS_CARDS: HowItWorksCardItem[] = [
   {
     id: 1,
     step: "01",
-    label: "SET GOALS",
-    title: "We don't begin with a job ad, we begin with your business.",
+    label: "CAPTURE",
+    title: "Get the right clients in the door before they've spoken to you",
     description:
-      "We'll unpack your hiring challenges, skill gaps and goals, then build a bespoke recruitment marketing plan designed to reach the exact people you need.",
+      "Your 7-page website funnel, lead magnets, and assessments attract qualified prospects and filter out the wrong ones around the clock, without you involved.",
     image: "/hiw-img2.webp",
+    cta: "Book a Discovery Call",
     points: [
       {
-        icon: "lucide:search",
-        text: "Market mapping to understand the real talent pool",
+        icon: "lucide:layout-template",
+        text: "7-page website funnel and lead magnet built for your niche",
       },
       {
-        icon: "lucide:target",
-        text: "Goal-oriented planning that works back from the outcome you want",
+        icon: "lucide:clipboard-check",
+        text: "Client assessment that qualifies leads before any call is booked",
       },
       {
-        icon: "lucide:play",
-        text: "Clear timeline and metrics so you know what success will look like",
+        icon: "lucide:search-check",
+        text: "Built-in SEO so you appear when the right clients are searching",
+      },
+      {
+        icon: "lucide:circle-play",
+        text: "Standalone funnels for every programme with a free lesson preview built in",
       },
     ],
   },
   {
     id: 2,
     step: "02",
-    label: "BUILD CAMPAIGNS",
-    title: "We don't just list jobs, we launch them.",
+    label: "NURTURE",
+    title: "Stay front of mind until they're ready automatically",
     description:
-      "We design custom campaigns around your brand so your business is impossible to ignore. How this looks is unique for every business and their goals but includes:",
+      "Most coaches lose potential clients not because they said no, but because nobody followed up. Supreme Coach builds the sequences, journeys, and community spaces that keep you present without manual effort.",
     image: "/hiw-img1.webp",
+    cta: "Book a Discovery Call",
     points: [
       {
-        icon: "lucide:image",
-        text: "Creative content: multimedia creative that bring your workplace & roles alive.",
+        icon: "lucide:mail-check",
+        text: "Email marketing setup with automated welcome and nurture sequences",
       },
       {
-        icon: "lucide:radio-tower",
-        text: "Connect with top candidates via digital, social, OOH, and radio channels.",
+        icon: "lucide:bell-ring",
+        text: "Notification journeys triggered by behaviour not by you checking in manually",
       },
       {
-        icon: "lucide:users",
-        text: "Smart strategic placement that gets in front of candidates, wherever they are.",
+        icon: "lucide:users-round",
+        text: "Free community as a low-commitment space for leads not ready to buy yet",
+      },
+      {
+        icon: "lucide:refresh-cw",
+        text: "Re-engagement workflows that bring quiet leads back without a single manual message",
       },
     ],
   },
   {
     id: 3,
     step: "03",
-    label: "FIND TALENT",
-    title: "We get the hard-to-getters.",
+    label: "CONVERT",
+    title: "Turn interest into signed clients without the back and forth",
     description:
-      "Using a mix of virtual shoulder tapping and personal outreach, we find and engage high-quality candidates, including those not actively job hunting.",
+      "Booking, pipeline tracking, payment, and onboarding are all connected. A lead books a call, attends, pays, and is onboarded without you managing a single step manually.",
     image: "/hiw-img3.webp",
+    cta: "Book a Discovery Call",
     points: [
       {
-        icon: "lucide:hand",
-        text: "Digital shoulder tapping through clever advertising",
+        icon: "lucide:calendar-check",
+        text: "Book-a-call page integrated with Calendly, Cal.com, and Zoom",
       },
       {
-        icon: "lucide:shield-check",
-        text: "Direct, personal outreach to high-value candidates",
+        icon: "lucide:kanban",
+        text: "Sales pipeline tracking every prospect from first enquiry to signed client",
       },
       {
-        icon: "lucide:brain",
-        text: "Smart targeting to avoid wasting time in the wrong talent pools",
+        icon: "lucide:credit-card",
+        text: "Stripe, PayPal, Google Pay, and Apple Pay all native, no third-party checkout",
+      },
+      {
+        icon: "lucide:badge-check",
+        text: "Payment plans attached to every offer clients invest once, you own the system for life",
       },
     ],
   },
   {
     id: 4,
     step: "04",
-    label: "HUMAN SCREENING",
-    title: "Your shortcut to the shortlist.",
+    label: "DELIVER",
+    title: "An experience so good, clients don't want to leave",
     description:
-      "Every candidate is personally vetted by experienced recruiters, ensuring shortlists are built for fit and readiness, not just keyword matches. The result: faster hires, fewer wasted interviews, and stronger long-term retention.",
+      "From the moment a client enrols, they step into a branded, professional environment built around their transformation programmes, goals, sessions, and community in one place.",
     image: "/hiw-img4.webp",
+    cta: "Book a Discovery Call",
     points: [
       {
-        icon: "lucide:sparkles",
-        text: "Every candidate personally reviewed by experienced recruiters",
+        icon: "lucide:monitor-smartphone",
+        text: "Branded client portal with unlimited programmes, modules, and delivery formats",
       },
       {
-        icon: "lucide:clipboard-check",
-        text: "Shortlists built for genuine fit and job readiness, not algorithms",
+        icon: "lucide:target",
+        text: "Goal tracking, milestone management, and client timeline every step recorded automatically",
       },
       {
-        icon: "lucide:clock-3",
-        text: "Quicker hires, fewer time-wasters, and stronger long-term retention",
+        icon: "lucide:video",
+        text: "Live sessions, group bookings, and broadcast events managed inside Supreme Coach",
+      },
+      {
+        icon: "lucide:activity",
+        text: "Engagement tools habit trackers, journals, quizzes, and challenges built into every programme",
       },
     ],
   },
   {
     id: 5,
     step: "05",
-    label: "SUPPORT",
-    title: "With you from search to success.",
+    label: "RETAIN",
+    title: "Build a business that renews and refers without asking",
     description:
-      "When your campaign goes live, we're hands-on until the right person signs.",
+      "The most expensive thing in coaching is a client who leaves quietly. Supreme Coach builds the retention infrastructure that keeps clients engaged, delivers visible results, and makes the case for staying without you having to.",
     image: "/hiw-img5.webp",
+    cta: "Book a Discovery Call",
     points: [
       {
-        icon: "lucide:hourglass",
-        text: "Real-time campaign optimisation",
+        icon: "lucide:trophy",
+        text: "Paid and free communities with gamification, badges, and leaderboards that reward consistency",
       },
       {
-        icon: "lucide:clipboard-list",
-        text: "Transparent reporting on reach and candidate quality",
+        icon: "lucide:repeat",
+        text: "Automated renewal flows triggered before a programme ends",
       },
       {
-        icon: "lucide:user-round-plus",
-        text: "Support closing the offer so you don't lose great talent late in the game",
+        icon: "lucide:bar-chart-3",
+        text: "Progress scorecards and outcome reports that make results undeniable to the client and to you",
+      },
+      {
+        icon: "lucide:file-chart-column",
+        text: "Corporate reporting that shows L&D teams ROI across their team the report that renews contracts",
       },
     ],
   },
@@ -754,75 +769,138 @@ export type FeaturedItem = {
 export const featuredItems: FeaturedItem[] = [
   {
     id: 1,
-    title: "Coaching",
+    title: "Programmes",
     description:
-      "Offer one-on-one or group sessions with easy scheduling and payment management.",
+      "Build once. Enrol forever. Video, audio, lessons, and free previews with a built-in funnel and payment plan attached from the start.",
     image:
       "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=800",
     href: "/features/coaching",
   },
   {
     id: 2,
-    title: "Courses",
+    title: "Communities",
     description:
-      "Create online courses with lessons, videos, modules, and student progress tracking.",
+      "Free or paid. Attached to a programme or standalone. A private space where your clients connect, stay engaged, and go further together.",
     image:
       "https://images.pexels.com/photos/4144224/pexels-photo-4144224.jpeg?auto=compress&cs=tinysrgb&w=800",
     href: "/features/courses",
   },
   {
     id: 3,
-    title: "Community",
+    title: "Sessions",
     description:
-      "Build a private space where your members can connect, learn, and stay engaged.",
+      "1-on-1 and group bookings, automated reminders, and session notes stored on the client profile. Your calendar, finally under control.",
     image:
       "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
     href: "/features/community",
   },
   {
     id: 4,
-    title: "Memberships",
+    title: "Client Portal",
     description:
-      "Sell paid memberships with exclusive content, member access, and recurring plans.",
+      "A fully branded space where clients access their programmes, track goals, message you, and see exactly how far they've come.",
     image:
       "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
     href: "/features/memberships",
   },
   {
     id: 5,
-    title: "Live Sessions",
+    title: "Goal Tracking",
     description:
-      "Host live classes, workshops, webinars, and group sessions from one simple platform.",
+      "Set goals. Break them into milestones. Track every step. Clients who can see their progress stay longer and this makes progress impossible to miss.",
     image:
       "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=800",
     href: "/features/live-sessions",
   },
   {
     id: 6,
-    title: "Digital Products",
+    title: "Engagement Tools",
     description:
-      "Sell downloads, templates, guides, and digital resources directly to your audience.",
+      "Habit trackers, workbooks, journals, quizzes, challenges, scorecards, and accountability partners everything that keeps clients active between sessions.",
     image:
       "https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=800",
     href: "/features/digital-products",
   },
   {
     id: 7,
-    title: "Booking",
+    title: "Client Timeline",
     description:
-      "Let users book calls, consultations, and sessions with simple availability controls.",
+      "Every session, payment, message, and milestone logged automatically in chronological order. Open a client profile and know the full story instantly.",
     image:
       "https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&w=800",
     href: "/features/booking",
   },
   {
     id: 8,
-    title: "Payments",
+    title: "Funnels & Pages",
     description:
-      "Accept payments for coaching, courses, memberships, and products with easy checkout.",
+      "Sales pages, landing pages, and opt-in funnels built inside Supreme Coach. Launch a programme and the funnel goes live with it no separate setup.",
     image:
       "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&w=800",
     href: "/features/payments",
+  },
+  {
+    id: 9,
+    title: "Payments & Invoicing",
+    description:
+      "One-time, instalment, or subscription. Stripe, PayPal, Google Pay, and Apple Pay. Automated invoices. Zero manual chasing.",
+    image:
+      "https://images.pexels.com/photos/29502370/pexels-photo-29502370.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/payments",
+  },
+  {
+    id: 10,
+    title: "Sales Pipeline",
+    description:
+      "Track every prospect from first enquiry to signed client with ICP profiling, pipeline value, and forecasting built in.",
+    image:
+      "https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/sales-pipeline",
+  },
+  {
+    id: 11,
+    title: "Automation & Workflows",
+    description:
+      "Connect every part of your business and remove every recurring manual task permanently. Build the workflow once. It runs forever.",
+    image:
+      "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/automation-workflows",
+  },
+  {
+    id: 12,
+    title: "Chat & Messaging",
+    description:
+      "Coach-to-client, group channels, and internal team messaging all inside Supreme Coach. Not WhatsApp. Not email threads.",
+    image:
+      "https://images.pexels.com/photos/5053765/pexels-photo-5053765.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/chat-messaging",
+  },
+  {
+    id: 13,
+    title: "Integrations",
+    description:
+      "Zoom, Calendly, Stripe, Mailchimp, ActiveCampaign, Google Analytics, Meta Pixel, and more configured and live before we hand over the keys.",
+    image:
+      "https://images.pexels.com/photos/8284729/pexels-photo-8284729.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/integrations",
+  },
+  {
+    id: 14,
+    title: "Analytics",
+    description:
+      "Programme performance, client engagement, funnel conversions, and revenue every number that matters, in one place.",
+    image:
+      "https://images.pexels.com/photos/7947996/pexels-photo-7947996.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/analytics",
+  },
+  {
+    id: 15,
+    title: "White Label",
+    description:
+      "Your name. Your brand. Your domain. Client portal, coach portal, team portal every touchpoint carries your identity, not ours.",
+    image:
+      "https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=800",
+    href: "/features/white-label",
   },
 ];
 
@@ -1582,23 +1660,23 @@ export const testimonials: TestimonialItem[] = [
 ];
 
 export const traditionalMbaItems: ComparisonItem[] = [
-  { text: "$100,000 tuition, on average" },
-  { text: "Inflexible learning" },
-  { text: "No refund policy" },
-  { text: "2 year time commitment" },
-  { text: "Academic instructors" },
-  { text: "Outdated, rigid curriculum" },
-  { text: "Tedious admission process" },
+  { text: "Monthly subscriptions forever, for tools you never fully own" },
+  { text: "Five platforms stitched together and hoping they sync" },
+  { text: "DIY setup you're handed software and a help centre" },
+  { text: "Generic tools adapted for coaching as an afterthought" },
+  { text: "A new developer needed every time something breaks" },
+  { text: "Your business stops the moment you stop" },
+  { text: "Paying more every year for the same broken infrastructure" },
 ];
 
 export const augmentMbaItems: ComparisonItem[] = [
-  { text: "$2450, with payment plans available" },
-  { text: "Anywhere, anytime, on any device" },
-  { text: "15-day money-back guarantee" },
-  { text: "15-minute / day" },
-  { text: "Taught by recognized founders" },
-  { text: "Constantly updated curriculum" },
-  { text: "Open education" },
+  { text: "One investment. Own it for life under your personal licence" },
+  { text: "One complete ecosystem built, configured, and handed over" },
+  { text: "Done-for-you we build it, you run it" },
+  { text: "Built exclusively for coaches and coaching firms. Nothing else." },
+  { text: "Lifetime website admin updates handled by our team, forever" },
+  { text: "A system that runs whether you show up this week or not" },
+  { text: "Payment plans available spread the investment, own the result" },
 ];
 
 export const navLinks: NavLink[] = [

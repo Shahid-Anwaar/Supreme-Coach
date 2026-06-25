@@ -14,13 +14,12 @@ export default function CoursesCommunity() {
     return (
         <div className="overflow-hidden bg-black text-white">
             <div className="section-container section-spacing text-center">
-                <h2 className="section-title mx-auto max-w-88 text-white sm:max-w-[32rem] lg:max-w-150">
-                    Courses. Community. Commerce. We do them better.
+                <h2 className="section-title mx-auto max-w-88 text-white sm:max-w-[32rem] lg:max-w-200">
+                    Better Client Relationships. Data Backed Results. Predictable Business Growth.
                 </h2>
 
                 <p className="section-description mx-auto max-w-[36rem] text-white/90 sm:max-w-[42rem] lg:max-w-200">
-                    We can help you launch and sell online learning experiences that drive revenue and retention.
-                    Talk to one of our team members today.
+                   Supreme Coach designs and builds the complete infrastructure behind your coaching practice  so you attract the right clients, deliver an exceptional experience, and grow a business that runs without you holding it together.
                 </p>
 
                 <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
@@ -29,7 +28,7 @@ export default function CoursesCommunity() {
                         className="group contained-btn inline-flex w-full max-w-[260px] justify-center px-8 text-[14px] sm:w-auto sm:max-w-none sm:px-10"
                     >
                         <span className="text-[0.98em] font-semibold uppercase tracking-[0.12em]">
-                            Book a Demo
+                            Book a Discovery Call
                         </span>
 
                         <Icon
@@ -44,7 +43,7 @@ export default function CoursesCommunity() {
                         href="/contact-sales"
                         className="closed-btn inline-flex w-full max-w-[260px] justify-center px-7 py-3 sm:w-auto sm:max-w-none"
                     >
-                        Contact Sales
+                        Talk to Our Team
                     </Link>
                 </div>
                 <TrustBadgesSection />

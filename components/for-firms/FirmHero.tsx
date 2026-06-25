@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { FEATURES, HERO_SLIDES, HeroSlide, securityItems } from "@/data/data";
+import { HERO_SLIDES, HeroSlide, securityItems } from "@/data/data";
 import CustomEmblaCarousel from "../home/CustomCarosal";
+import { FEATURES, heroSecurityItems } from "@/data/home";
 
 export default function FirmHeroSection() {
     return (
@@ -58,7 +59,7 @@ export default function FirmHeroSection() {
                     </div>
 
                     <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-5 sm:gap-x-10">
-                        {securityItems.map((item) => (
+                        {heroSecurityItems.map((item) => (
                             <div
                                 key={item.name}
                                 className="flex flex-col items-center justify-center text-center"

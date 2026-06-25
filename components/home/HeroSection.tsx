@@ -2,41 +2,9 @@
 
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { FEATURES, HERO_SLIDES, HeroSlide, SecurityItem } from "@/data/data";
+import { HERO_SLIDES, HeroSlide} from "@/data/data";
 import CustomEmblaCarousel from "./CustomCarosal";
-
-export const heroSecurityItems: SecurityItem[] = [
-  {
-    name: "SOC 2",
-    src: "/security (1).svg",
-    width: 56,
-    height: 56,
-  },
-  {
-    name: "GDPR",
-    src: "/security (3).svg",
-    width: 56,
-    height: 56,
-  },
-  {
-    name: "PCI DSS",
-    src: "/security (2).svg",
-    width: 56,
-    height: 56,
-  },
-//   {
-//     name: "CCPA",
-//     src: "/security (4).svg",
-//     width: 56,
-//     height: 56,
-//   },
-//   {
-//     name: "AICPA",
-//     src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/6953d5310fcdb2da81b8b4d5_soc2-badge-teachable.svg",
-//     width: 56,
-//     height: 56,
-//   },
-];
+import { FEATURES, heroSecurityItems } from "@/data/home";
 
 type HeroFeature = {
   label: string;
@@ -65,10 +33,10 @@ type AugmentHeroSectionProps = {
 };
 
 const defaultHeroTitle =
-  "We Build the Infrastructure That Runs Your Coaching Business. You Own It. For Life.";
+  "The Intelligent Growth Partner";
 
 const defaultHeroDescription =
-  "Supreme Coach designs and builds custom coaching business infrastructure — your website, your CRM, your client portal, your programme delivery system, your funnels, your automations — and deploys everything on your own servers. No platform dependency. No monthly fees. No competitor ever sees your setup. You own the code, the data, and the infrastructure. Permanently.";
+  "Built for the coaches and firms of tomorrow who want stronger businesses, deeper client relationships, and practices built to last.";
 
 export default function AugmentHeroSection({
   title = defaultHeroTitle,
@@ -93,7 +61,7 @@ export default function AugmentHeroSection({
             {title}
           </h1>
 
-          <p className="section-description mx-auto mt-3 max-w-[32rem] text-sm leading-6 sm:mt-4 lg:mt-5 sm:text-base lg:mx-0 lg:max-w-140.5 lg:text-start">
+          <p className="section-description mx-auto mt-3 max-w-[32rem] text-sm leading-6 sm:mt-4 lg:mt-5 sm:text-base lg:mx-0 lg:max-w-120.5 lg:text-start">
             {description}
           </p>
 

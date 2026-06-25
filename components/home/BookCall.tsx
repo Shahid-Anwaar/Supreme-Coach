@@ -18,7 +18,7 @@ export default function BookCallSection({
     title = "",
     subTitle = "",
     imgSrc = "",
-    btnText = "Book A Demo",
+    btnText = "Book a Discovery Call",
     btnLink = "/book-a-call",
     icon = "solar:phone-linear",
     topClasses = "bg-white",
@@ -43,7 +43,7 @@ export default function BookCallSection({
                                     {title}
                                 </h2>
 
-                                <p className="mt-4 max-w-full text-[17px] font-normal leading-[1.4] tracking-[-0.03em] text-black sm:mt-5 sm:max-w-140 sm:text-[20px] md:text-[22px] lg:text-[21px]">
+                                <p className="mt-4 max-w-full text-[17px] font-normal leading-[1.4] tracking-[-0.03em] text-black sm:mt-5 sm:text-[20px] md:text-[22px] lg:text-[21px]">
                                     {subTitle}
                                 </p>
 
@@ -90,7 +90,7 @@ export default function BookCallSection({
 
                                 <Link
                                     href={btnLink}
-                                    className="contained-btn mt-6 inline-flex w-full justify-center px-8 text-[15px] font-bold sm:w-auto sm:max-w-65 sm:px-10 sm:text-[16px] md:mt-8 lg:mt-10.5"
+                                    className="contained-btn mt-4 inline-flex w-full justify-center px-8 text-[15px] font-bold sm:w-auto sm:max-w-80 sm:px-10 sm:text-[16px] md:mt-5 lg:mt-6"
                                 >
                                     <span>{btnText}</span>
                                     <Icon

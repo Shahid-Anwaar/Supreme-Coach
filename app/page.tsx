@@ -33,29 +33,28 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <FeaturedInSection />
       <ViewsSection />
       <FeaturesSection />
       <EmblaCarousel />
-      <HowItWorksCard />
+      <HowItWorksCard classes="pt-0" />
       <IntegrationsSection
-        title="Your stack, supercharged"
-        description="Supreme Coach flexes to fit your workflow, integrating with the apps you love while powering them into a system for growth."
+        title="Your stack, connected. Configured on delivery not figured out later."
+        description="Every integration Supreme Coach supports is set up, tested, and live before we hand over the keys. No documentation to follow. No API keys to paste. No hoping two platforms will finally sync. You open your business and everything already works."
       />
       <ClientsSection title="Trusted by growing companies" isShowCompanies={true} />
       <BookCallSection
-        title="15-Day Money-Back Guarantee"
-        btnText="Enroll Now"
-        subTitle="Try Supreme Coach for 15 days and if you are not completely satisfied, you can claim a full refund - no questions asked."
-        topClasses="bg-[#f3f4f6]"
-        bottomClasses="bg-[#f3f4f6]"
+        title="Book a Discovery Call With Our Team"
+        icon="solar:phone-linear"
+        subTitle="Tell us where your business is right now and where you're trying to take it. We'll show you exactly what Supreme Coach looks like in practice and give you an honest answer on whether it's the right fit."
+                topClasses="bg-[#f3f4f6]"
+                bottomClasses="bg-[#f3f4f6]"
       />
       <FAQSection faqs={homeFaqs} />
       <BookCallSection
-        title="Stand out with the Supreme Coach LinkedIn Certificate"
-        btnText="Enroll Now"
-        subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
+        title="Your Business. Your Licence. Your Infrastructure For Life."
+        btnText="Book a Discovery Call"
+        subTitle="Every Supreme Coach client receives a personal lifetime licence not a subscription, not a rental, not access that expires when you stop paying. Your licence gives you full legal ownership of the infrastructure we build for your practice. Your website, your portal, your system, your platform owned outright, under your name, for the life of your business."
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-[#000000]"
         imgSrc="/certificate.webp"
@@ -68,7 +67,7 @@ export default function Home() {
         topClasses="bg-[#000000]"
         bottomClasses="bg-[#000000]"
       /> */}
-      
+
 
       {/* <TeaserVideoSection /> */}
       {/* <WhyAugmentSection /> */}

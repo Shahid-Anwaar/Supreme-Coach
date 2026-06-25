@@ -8,16 +8,16 @@ type View = { title: string; description: string; image: string };
 
 const views: View[] = [
     {
-        title: "Your view",
+        title: "Coach view",
         description:
-            "Easily create your products, manage your business, and customize your students' learning experience in one place.",
+            "Easily create programs, manage sessions, run communities, track progress, manage your business, and personalize client experiences all in one place.",
         image:
             "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1edeb440ab80fdf439_0eb0b462897381c9122d4546e00aca77_ui-main-hero-tab-2.webp",
     },
     {
-        title: "Your student's view",
+        title: "Your client's view",
         description:
-            "Intuitive, mobile-friendly, and built for your students to seamlessly access and discover your products and offers.",
+            "Your client’s view is intuitive, mobile-friendly, and designed for seamless access to their programs, content, progress and experience.",
         image:
             "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
     },
@@ -93,10 +93,10 @@ export default function ViewsSection({ items }: { items?: View[] }) {
             <div className="mx-auto max-w-8xl text-center">
                 <div className="text-center">
                     <h2 className="section-title mx-auto mb-5 max-w-88 text-black sm:mb-6 sm:max-w-xl">
-                        The future of your education business happens here
+                        The future of your coaching business happens here
                     </h2>
                     <p className="section-description mx-auto max-w-152 text-black">
-                        Whatever your expertise—languages, fitness, or coding—Supreme Coach helps you deliver impactful learning, run a smarter business, and scale worldwide.
+                        Whatever your coaching niche, expertise, or language, Supreme Coach helps you deliver impactful coaching, strengthen client relationships, run a smarter business, and scale globally.
                     </p>
                 </div>
 

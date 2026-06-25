@@ -223,7 +223,7 @@ export default function FeaturesSection({ isShowBtn = true }: { isShowBtn?: bool
           <p className="section-label">FEATURES</p>
 
           <h2 className="section-title mt-5 text-white sm:mt-6">
-            Everything You Need to Grow
+            Everything Your Coaching Business Needs. Nothing It Doesn't.
           </h2>
         </div>
 
@@ -271,7 +271,7 @@ export default function FeaturesSection({ isShowBtn = true }: { isShowBtn?: bool
             href="/products"
             className="closed-btn mx-auto inline-flex w-full max-w-[220px] items-center justify-center px-8 sm:w-auto sm:max-w-none sm:px-14 lg:px-20"
           >
-            Learn More
+            Explore More
           </Link>
         </div>}
       </div>

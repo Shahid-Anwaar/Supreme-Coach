@@ -2,41 +2,9 @@
 
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { FEATURES, HERO_SLIDES, HeroSlide, SecurityItem } from "@/data/data";
+import { HERO_SLIDES, HeroSlide } from "@/data/data";
 import CustomEmblaCarousel from "../home/CustomCarosal";
-
-export const heroSecurityItems: SecurityItem[] = [
-    {
-        name: "SOC 2",
-        src: "/security (1).svg",
-        width: 56,
-        height: 56,
-    },
-    {
-        name: "GDPR",
-        src: "/security (3).svg",
-        width: 56,
-        height: 56,
-    },
-    {
-        name: "PCI DSS",
-        src: "/security (2).svg",
-        width: 56,
-        height: 56,
-    },
-    //   {
-    //     name: "CCPA",
-    //     src: "/security (4).svg",
-    //     width: 56,
-    //     height: 56,
-    //   },
-    //   {
-    //     name: "AICPA",
-    //     src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/6953d5310fcdb2da81b8b4d5_soc2-badge-teachable.svg",
-    //     width: 56,
-    //     height: 56,
-    //   },
-];
+import { FEATURES, heroSecurityItems } from "@/data/home";
 
 type HeroFeature = {
     label: string;

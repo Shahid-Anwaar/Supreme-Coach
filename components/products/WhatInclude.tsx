@@ -143,7 +143,7 @@ const includedRows: IncludedRow[] = [
 
 export default function WhatToInclude() {
     return (
-        <section className="section-spacing pt-0 bg-white">
+        <section id="what-included" className="section-spacing pt-0 bg-white">
             <div className="section-container pt-0">
                 <div className="overflow-hidden rounded-[18px] bg-[#03101d] px-3 py-7 sm:px-6 sm:py-8 lg:px-9 lg:py-10">
                     <h2 className="section-title text-white text-center">

@@ -5,23 +5,7 @@ import { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-
-type NavItem = {
-  label: string;
-  href: string;
-};
-
-const DESKTOP_NAV_ITEMS: readonly NavItem[] = [
-  // { label: "Home", href: "/" },
-  { label: "What We Build", href: "/products" },
-  // { label: "Solutions", href: "/solutions" },
-  { label: "For Coaches", href: "/for-coaches" },
-  { label: "For Firms", href: "/for-firms" },
-  // { label: "Community", href: "/community" },
-  // { label: "About", href: "/about" },
-  { label: "Pricing", href: "/pricing" },
-  // { label: "Log in", href: "#" },
-] as const;
+import { DESKTOP_NAV_ITEMS } from "@/data/home";
 
 export default function HeaderSection() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -190,7 +174,7 @@ function PrimaryCta({
         : "mx-auto px-4 py-3 text-[13px] xl:px-6 xl:text-[14px]"
         }`}
     >
-        Book A Strategy Call  
+        Book A Call  
       <Icon
         icon={"solar:phone-linear"}
         width="19"

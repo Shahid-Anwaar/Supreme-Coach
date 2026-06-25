@@ -10,6 +10,7 @@ import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
 import { createMetadata } from "@/lib/seo";
 import CoachHeroSection from "@/components/for-coach/CoachHero";
+import FeaturesSection from "@/components/home/FacultySection";
 
 const views = [
   {
@@ -108,6 +109,7 @@ export default function CoachesPage() {
         wrapperClassName="bg-white"
       />
       <ProductSalesHubSection />
+      <FeaturesSection />
       <HowItWorksCard />
       <IntegrationsSection
         title="It's your business, your way"

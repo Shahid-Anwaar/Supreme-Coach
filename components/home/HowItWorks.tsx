@@ -4,15 +4,9 @@ import { HOW_IT_WORKS_CARDS } from "@/data/data";
 import WorksCard from "./WorkCard";
 import { useEffect, useRef, useState } from "react";
 
-const steps = [
-  "Set Goals",
-  "Build Campaigns",
-  "Find Talent",
-  "Human Screening",
-  "Support",
-];
+const steps = ["Capture", "Nurture", "Convert", "Deliver", "Retain"];
 
-export default function HowItWorksCard() {
+export default function HowItWorksCard({ classes }: { classes?: string }) {
   const [activeStep, setActiveStep] = useState(0);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -66,18 +60,20 @@ export default function HowItWorksCard() {
   }, []);
 
   return (
-    <section className="w-full bg-[#f3f4f6] px-4 pt-8 pb-10 sm:px-6 sm:pt-10 sm:pb-12 md:px-8 md:pt-12 md:pb-16 lg:px-10 lg:pt-14 lg:pb-20">
+    <section className={`w-full bg-[#f3f4f6] px-4 pb-10 sm:px-6 sm:pb-12 md:px-8 md:pb-16 lg:px-10 lg:pb-20 ${classes ? classes : "  pt-8 sm:pt-10 md:pt-12 lg:pt-14"}`}>
       <div className="mx-auto flex max-w-7xl flex-col gap-10 lg:flex-row lg:items-start lg:gap-10">
-        <div className="w-full lg:sticky lg:top-16 lg:max-w-[430px] lg:self-start xl:max-w-[470px] pt-5 md:pt-8 lg:pt-20">
+        <div className="w-full lg:sticky lg:top-16 lg:max-w-[430px] lg:self-start xl:max-w-[470px] pt-10">
           <div className="mb-4 sm:mb-5">
-            <span className="section-label text-black">How It Works</span>
+            <span className="section-label text-black">Everything inside Supreme</span>
           </div>
 
           <h2 className="section-title max-w-[20rem] text-black sm:max-w-[28rem] lg:max-w-none">
-            Great talent isn't always looking, but we find them
+            The complete coaching business ecosystem built, owned, and running for life
           </h2>
 
-          <div className="mt-6 space-y-3 sm:mt-8 sm:space-y-4 md:mt-10 lg:mt-14 lg:space-y-6">
+          <p className="section-description text-black/85">Every stage of your client journey, handled by one system. From the first lead to the long-term relationship nothing falls through the gaps and nothing needs a separate tool.</p>
+
+          <div className="mt-4 space-y-3 sm:mt-5 sm:space-y-4 md:mt-6 lg:space-y-6">
             {steps.map((step, index) => (
               <div
                 key={step}
@@ -92,19 +88,18 @@ export default function HowItWorksCard() {
                 className="group flex cursor-pointer items-start gap-3 sm:gap-4 lg:gap-5"
               >
                 <div
-                  className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-[6px] text-[12px] font-semibold transition-colors duration-300 sm:h-7 sm:w-7 sm:text-[14px] ${
-                    activeStep === index
+                  className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-[6px] text-[12px] font-semibold transition-colors duration-300 sm:h-7 sm:w-7 sm:text-[14px] ${activeStep === index
                       ? "bg-primary text-black"
                       : "bg-[#ddd5ca] text-black"
-                  }`}
+                    }`}
                 >
                   {String(index + 1).padStart(2, "0")}
                 </div>
 
                 <p className={`cursor-pointer transition-colors duration-200 group-hover:text-black custom-para
                 ${activeStep === index
-                      ? " text-black/80"
-                      : ""
+                    ? " text-black/80"
+                    : ""
                   }
                     `}>
                   {step}
@@ -123,7 +118,7 @@ export default function HowItWorksCard() {
                 cardRefs.current[index] = el;
               }}
             >
-              <WorksCard item={item} />
+              <WorksCard item={item} className={index === 0 ? " mt-0! sm:mt-0! lg:mt-0!" : ""} />
             </div>
           ))}
         </div>

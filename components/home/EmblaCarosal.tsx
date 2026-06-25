@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Icon } from "@iconify/react";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
@@ -185,8 +185,39 @@ export default function EmblaCarousel({
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
 
+    const autoplayRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+    const stopAutoplay = useCallback(() => {
+        if (autoplayRef.current) {
+            clearInterval(autoplayRef.current);
+            autoplayRef.current = null;
+        }
+    }, []);
+
+    const startAutoplay = useCallback(() => {
+        if (!emblaApi) return;
+
+        stopAutoplay();
+
+        autoplayRef.current = setInterval(() => {
+            emblaApi.scrollNext();
+        }, 4000);
+    }, [emblaApi, stopAutoplay]);
+
+    useEffect(() => {
+        startAutoplay();
+
+        return () => {
+            stopAutoplay();
+        };
+    }, [startAutoplay, stopAutoplay]);
+
     return (
-        <div className="relative w-full">
+        <div
+            className="relative w-full"
+            onMouseEnter={stopAutoplay}
+            onMouseLeave={startAutoplay}
+        >
             <div
                 className="overflow-hidden bg-[#f3f4f6] py-12 sm:py-16 md:py-18 lg:py-20"
                 ref={emblaRef}
@@ -209,5 +240,5 @@ export default function EmblaCarousel({
                 disabled={nextBtnDisabled}
             />
         </div>
-    );
+    )
 }

@@ -10,6 +10,7 @@ import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
 import AugmentHeroSection from "@/components/home/HeroSection";
 import FirmHeroSection from "@/components/for-firms/FirmHero";
+import FeaturesSection from "@/components/home/FacultySection";
 
 const views = [
   {
@@ -70,6 +71,7 @@ export default function FirmsPage() {
       <CompanyLogoCarousel companyLogos={[...companyLogos, ...companyLogos]} />;
       <div className="py-7"></div>
       <ViewsSection items={views} />
+      <FeaturesSection />
       {/* <ProductsCompaniesSection /> */}
       <ProductFeaturesSection
         title="Course creation tools for higher student engagement"

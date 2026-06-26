@@ -53,7 +53,7 @@ function ProgressBar({
     }, [active, version]);
 
     return (
-        <div className="mb-3 h-0.5 w-full rounded-3xl bg-gray-300/40">
+        <div className="mb-3 mt-auto h-1 w-full rounded-3xl bg-gray-300/40">
             <div
                 className={`h-full rounded-3xl bg-black transition-[width] ease-linear ${active ? "opacity-100" : "opacity-0"
                     }`}
@@ -66,7 +66,13 @@ function ProgressBar({
     );
 }
 
-export default function ViewsSection({ items }: { items?: View[] }) {
+export default function ViewsSection(
+    {
+        items,
+        title = "The future of your coaching business happens here",
+        subtitle = "Whatever your coaching niche, expertise, or language, Supreme Coach helps you deliver impactful coaching, strengthen client relationships, run a smarter business, and scale globally."
+    }
+        : { items?: View[], title?: string; subtitle?: string }) {
     const [activeIndex, setActiveIndex] = useState(0);
     const [progressVersion, setProgressVersion] = useState(0);
 
@@ -74,7 +80,11 @@ export default function ViewsSection({ items }: { items?: View[] }) {
 
     useEffect(() => {
         const interval = window.setInterval(() => {
-            setActiveIndex((prev) => (prev + 1) % usedItems.length);
+
+            setActiveIndex((prev) => {
+                console.log("used: ", usedItems.length, " activeIndex: ", prev);
+                return (prev + 1) % usedItems.length
+            })
             setProgressVersion((prev) => prev + 1);
         }, 5000);
 
@@ -93,10 +103,10 @@ export default function ViewsSection({ items }: { items?: View[] }) {
             <div className="mx-auto max-w-8xl text-center">
                 <div className="text-center">
                     <h2 className="section-title mx-auto mb-5 max-w-88 text-black sm:mb-6 sm:max-w-xl">
-                        The future of your coaching business happens here
+                        {title}
                     </h2>
                     <p className="section-description mx-auto max-w-152 text-black">
-                        Whatever your coaching niche, expertise, or language, Supreme Coach helps you deliver impactful coaching, strengthen client relationships, run a smarter business, and scale globally.
+                        {subtitle}
                     </p>
                 </div>
 
@@ -117,20 +127,22 @@ export default function ViewsSection({ items }: { items?: View[] }) {
         </div> */}
 
                 <div className="mx-auto mt-10 max-w-330 overflow-hidden rounded-[12px] bg-gray-100 sm:mt-12 sm:rounded-[15px]">
-                    <div className=" flex flex-col px-2 py-2 lg:px-4 lg:py-4 md:mb-5 md:flex-row md:flex-wrap">
+                    <div className=" flex flex-col px-2 py-2 lg:px-4 lg:py-4 md:mb-5 md:flex-row md:flex-wrap items-stretch justify-items-stretch">
                         {usedItems.map((view, index) => (
                             <div
                                 key={index}
                                 onClick={() => handleCardClick(index)}
-                                className="w-full cursor-pointer rounded-[12px] px-3 py-2 text-left transition-colors duration-200 md:min-w-0 md:flex-1 md:basis-0 md:rounded-none"
+                                className="w-full flex-1 cursor-pointer rounded-[12px] px-3 py-2 text-left transition-colors duration-200 md:min-w-0 md:flex-1 md:basis-0 md:rounded-none"
                             >
-                                
-                                <h3 className="mb-2 text-[17px] font-bold leading-tight text-black/85 sm:text-lg">
-                                    {view.title}
-                                </h3>
-                                <p className="text-[15px] mb-3 md:text-[16px] leading-5.5 text-gray-900 sm:text-[16px] sm:leading-6 lg:text-[18px]">
-                                    {view.description}
-                                </p>
+
+                                <div className="flex flex-col flex-1 h-full">
+                                    <h3 className={`mb-2 text-[17px] font-bold leading-tight text-black/85 ${usedItems.length > 3 ? "  sm:text-base" : " sm:text-lg"}`}>
+                                        {view.title}
+                                    </h3>
+                                    <p className={`text-[15px] mb-0 md:text-[16px] leading-5.5 text-gray-900 sm:text-[16px] sm:leading-6 ${usedItems.length > 3 ? " lg:text-[16px]" : " lg:text-[18px]"}`}>
+                                        {view.description}
+                                    </p>
+                                </div>
                                 <ProgressBar
                                     active={activeIndex === index}
                                     version={progressVersion}
@@ -141,7 +153,7 @@ export default function ViewsSection({ items }: { items?: View[] }) {
                     <div className="relative mb-3 aspect-[4/3] overflow-hidden bg-gray-100 sm:mb-4 sm:aspect-[16/10] md:aspect-[1300/700]">
                         {usedItems.map((view, index) => (
                             <Image
-                                key={view.image}
+                                key={index}
                                 src={view.image}
                                 alt={view.title}
                                 fill
@@ -153,7 +165,7 @@ export default function ViewsSection({ items }: { items?: View[] }) {
                         ))}
                     </div>
 
-                    
+
                 </div>
 
                 <Link

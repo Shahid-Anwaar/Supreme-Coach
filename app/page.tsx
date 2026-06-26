@@ -54,7 +54,7 @@ export default function Home() {
       <BookCallSection
         title="Your Business. Your Licence. Your Infrastructure For Life."
         btnText="Book a Discovery Call"
-        subTitle="Every Supreme Coach client receives a personal lifetime licence not a subscription, not a rental, not access that expires when you stop paying. Your licence gives you full legal ownership of the infrastructure we build for your practice. Your website, your portal, your system, your platform owned outright, under your name, for the life of your business."
+        subTitle="Every Supreme Coach client receives a personal lifetime licence not a subscription, not a rental, not access that expires when you stop paying."
         topClasses="bg-[#f3f4f6]"
         bottomClasses="bg-[#000000]"
         imgSrc="/certificate.webp"

@@ -11,74 +11,11 @@ type IntegrationItem = {
 
 const INTEGRATIONS: IntegrationItem[] = [
     {
-        name: "Zapier",
-        icon: "simple-icons:zapier",
-        iconColor: "#FF5A00",
-        tileClassName: "bg-white",
-    },
-    
-    {
-        name: "Jira",
-        icon: "simple-icons:jira",
-        iconColor: "#4C8BF5",
-        tileClassName: "bg-white",
-    },
-    {
-        name: "Pinterest",
-        icon: "simple-icons:pinterest",
-        iconColor: "#E60023",
-        tileClassName: "bg-white",
-    },
-    {
-        name: "Udemy",
-        icon: "simple-icons:udemy",
-        iconColor: "#ffffff",
-        tileClassName: "bg-black",
-    },
-    {
-        name: "OneDrive",
-        icon: "simple-icons:microsoftonedrive",
-        iconColor: "#0078D4",
-        tileClassName: "bg-white",
-    },
-    {
-        name: "TikTok",
-        icon: "simple-icons:tiktok",
-        iconColor: "#ffffff",
-        tileClassName: "bg-black",
-    },
-    {
-        name: "Segment",
-        icon: "mdi:chart-pie",
-        iconColor: "#4FB286",
-        tileClassName: "bg-white",
-    },
-    {
-        name: "Kit",
-        icon: "simple-icons:kit",
-        iconColor: "#FB6970",
-        tileClassName: "bg-white",
-    },
-    {
-        name: "Dropbox",
-        icon: "simple-icons:dropbox",
-        iconColor: "#ffffff",
-        tileClassName: "bg-[#1373E6]",
-    },
-    {
         name: "Google Drive",
         icon: "simple-icons:googledrive",
         iconColor: "#0F9D58",
         tileClassName: "bg-white",
     },
-    {
-        name: "Circle",
-        icon: "simple-icons:circle",
-        iconColor: "#155EEF",
-        tileClassName: "bg-white",
-    },
-
-
     // Video & Conferencing
     {
         name: "Zoom",
@@ -194,14 +131,13 @@ type GridLayout = {
 
 const SM_LAYOUT: GridLayout = {
     cols: 6,
-    rows: 7,
+    rows: 6,
     colsClassName: "grid-cols-6",
     placements: [
         { row: 1, cols: [1, 2, 3, 4] },
         { row: 2, cols: [1, 2, 3, 4] },
         { row: 3, cols: [1, 2, 3, 4] },
         { row: 4, cols: [1, 2, 3, 4] },
-        { row: 5, cols: [2, 3,] },
     ],
     tileBoxClassName: "h-[40px] w-[40px]",
     iconClassName: "h-5.5 w-5.5",
@@ -214,32 +150,31 @@ const MD_LAYOUT: GridLayout = {
     placements: [
         { row: 1, cols: [1, 2, 3, 4, 5, 6] },
         { row: 2, cols: [1, 2, 3, 4, 5, 6] },
-        { row: 3, cols: [1, 2, 3, 4, 5, 6] },
+        { row: 3, cols: [ 2, 3, 4, 5,] },
     ],
     tileBoxClassName: "h-[46px] w-[46px]",
     iconClassName: "h-6 w-6",
 };
 
 const LG_LAYOUT: GridLayout = {
-    cols: 11,
+    cols: 10,
     rows: 4,
-    colsClassName: "grid-cols-11",
+    colsClassName: "grid-cols-10",
     placements: [
-        { row: 1, cols: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
-        { row: 2, cols: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
+        { row: 1, cols: [1, 2, 3, 4, 5, 6, 7, 8] },
+        { row: 2, cols: [1, 2, 3, 4, 5, 6, 7, 8] },
     ],
     tileBoxClassName: "h-[56px] w-[56px]",
     iconClassName: "h-7 w-7",
 };
 
 const XL_LAYOUT: GridLayout = {
-    cols: 11,
-    rows: 5,
-    colsClassName: "grid-cols-11",
+    cols: 10,
+    rows: 4,
+    colsClassName: "grid-cols-10",
     placements: [
-        { row: 1, cols: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
-        { row: 2, cols: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
-        { row: 3, cols: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
+        { row: 1, cols: [1, 2, 3, 4, 5, 6, 7, 8] },
+        { row: 2, cols: [1, 2, 3, 4, 5, 6, 7, 8] },
     ],
     tileBoxClassName: "h-[64px] w-[64px]",
     iconClassName: "h-8 w-8",
@@ -320,7 +255,7 @@ function FramedGrid({ layout }: { layout: GridLayout }) {
     );
 }
 
-export default function IntegrationsSection({ title, description }: { title: string, description: string }) {
+export default function IntegrationsSection({ title, description, btnText = "Explore integrations" }: { title: string, description: string, btnText?: string; }) {
     return (
         <section className="bg-white px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-10 lg:py-18 xl:py-0">
             <div className="mx-auto max-w-[1500px]">
@@ -366,7 +301,7 @@ export default function IntegrationsSection({ title, description }: { title: str
                         href="/products#what-included"
                         className="outlined-btn px-7 capitalize!"
                     >
-                        Explore integrations
+                        {btnText}
                     </Link>
                 </div>
             </div>

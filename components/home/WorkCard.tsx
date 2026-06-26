@@ -60,7 +60,7 @@ export default function WorksCard({
                             />
                         </div>
 
-                        <p className="paragraph-text my-6 text-black/85 sm:my-8 md:my-10 lg:my-16">
+                        <p className="paragraph-text my-6 text-black/85 sm:my-8 md:my-9 lg:my-10">
                             {item.description}
                         </p>
 

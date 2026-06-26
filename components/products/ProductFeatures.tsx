@@ -14,6 +14,7 @@ type ProductFeaturesSectionProps = {
     imgAlt?: string;
     features: ProductFeatureItem[];
     wrapperClassName?: string;
+    btnText?: string;
 };
 
 export default function ProductFeaturesSection({
@@ -24,6 +25,7 @@ export default function ProductFeaturesSection({
     imgSrc,
     imgAlt = "Product feature image",
     features,
+    btnText= "Talk to Our Team",
 }: ProductFeaturesSectionProps) {
     const imageOrderClass = imgShown === "left" ? "order-2 lg:order-1" : "order-2";
     const contentOrderClass = imgShown === "left" ? "order-1 lg:order-2" : "order-1";
@@ -78,7 +80,7 @@ export default function ProductFeaturesSection({
                             href="/"
                             className="contained-btn mt-8 px-8 py-3 sm:mt-10 capitalize!"
                         >
-                            Start for free
+                           {btnText}
                         </Link>
                     </div>
                     

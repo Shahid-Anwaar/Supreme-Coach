@@ -65,9 +65,9 @@ function InstructorCard({
       ) : null} */}
 
       <div className="absolute inset-x-0 bottom-0 px-3 pb-4 sm:px-4 sm:pb-5">
-        <h3 className="font-serif text-[29px] font-normal leading-[1.1] tracking-[-0.04em] text-white sm:text-[32px]">
-          {item.title}
-          <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
+        <h3 className="font-serif text-nowrap text-[29px] font-normal leading-[1.1] tracking-[-0.04em] text-white sm:text-[32px]">
+          <span className="text-wrap">{item.title}</span>
+          <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
             →
           </span>
         </h3>

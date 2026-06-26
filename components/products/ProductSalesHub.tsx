@@ -10,38 +10,38 @@ type SalesHubFeatureItem = {
 };
 
 const SALES_HUB_FEATURES: SalesHubFeatureItem[] = [
-    {
-        title: "Easy payments",
-        description:
-            "Sell with peace of mind using Supreme Coach:pay, our built-in checkout. You’ll get fraud protection, tax-inclusive pricing, flexible payout options, and more.",
-        image:
-            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e311765fa29efc8085f497_943111b162257a8d92b15efa8ad802c4_courses-payments-2.webp",
-        imageAlt: "Easy payments preview",
-        objClass: "",
-    },
-    {
-        title: "Less tax complexity",
-        description:
-            "We calculate, collect, and remit sales taxes, VAT, and GST on your behalf—so you don’t have to deal with additional accounting work.",
-        image:
-            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176548905717e562e8a_4ce85045ea6d6abfccfc6ba00aed2594_courses-payments-1.webp",
-        imageAlt: "Less tax complexity preview",
-        objClass: "lg:-translate-y-28",
-    },
-    {
-        title: "Pay their way",
-        description:
-            "Let students choose their preferred payment method, including PayPal, Apple Pay, Google Pay, Afterpay, and Klarna¹.",
-        image:
-            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176a0248cabd8f02012_763b4baf45e90e34561637b98bbac9d5_courses-pay-their-way.webp",
-        imageAlt: "Multiple payment methods preview",
-        objClass: "lg:-translate-y-14",
-    },
+  {
+    title: "Payments",
+    description:
+      "One-time, instalment, or subscription attach any payment structure to any programme or offer. Stripe, PayPal, Google Pay, and Apple Pay all native. Clients pay their way. You get paid on time, automatically.",
+    image:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e311765fa29efc8085f497_943111b162257a8d92b15efa8ad802c4_courses-payments-2.webp",
+    imageAlt: "Payments preview",
+    objClass: "",
+  },
+  {
+    title: "Tax-compliant",
+    description:
+      "Every invoice generated, formatted, and sent without you touching it. VAT applied correctly per client location. Corporate clients get one company-level invoice regardless of how many employees are enrolled.",
+    image:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176548905717e562e8a_4ce85045ea6d6abfccfc6ba00aed2594_courses-payments-1.webp",
+    imageAlt: "Tax-compliant invoicing preview",
+    objClass: "lg:-translate-y-28",
+  },
+  {
+    title: "BFM Dashboard",
+    description:
+      "MRR, lifetime client value, pipeline revenue, outstanding invoices, and revenue per programme every number in one real-time view. No spreadsheet. No accountant is required to understand it.",
+    image:
+      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176a0248cabd8f02012_763b4baf45e90e34561637b98bbac9d5_courses-pay-their-way.webp",
+    imageAlt: "BFM dashboard preview",
+    objClass: "lg:-translate-y-14",
+  },
 ];
 
-function SalesHubCard({ item, }: { item: SalesHubFeatureItem;  }) {
+function SalesHubCard({ item, }: { item: SalesHubFeatureItem; }) {
     return (
-        <div className={`min-w-0 ${item.objClass }`}>
+        <div className={`min-w-0 ${item.objClass}`}>
             <div className="rounded-lg bg-linear-to-b from-[#f0f0f0] to-[#c0c0c0] sm:rounded-[14px] lg:rounded-xl">
                 <Image
                     src={item.image}
@@ -64,39 +64,45 @@ function SalesHubCard({ item, }: { item: SalesHubFeatureItem;  }) {
     );
 }
 
-export default function ProductSalesHubSection() {
+export default function ProductSalesHubSection(
+    {
+        btnText = "Talk to Our Team",
+        features = SALES_HUB_FEATURES,
+        classes = "grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-5 xl:gap-7",
+        title = "Your course platform and your sales hub",
+        subtitle = "Our selling and payment features are designed to meet the needs of advanced creators and business owners. Sell in 120 different currencies in more than 200 countries and regions."
+    }
+        : { btnText?: string; title?: string; subtitle?: string; classes?: string; features?: SalesHubFeatureItem[] }) {
     return (
         <section className="bg-[#ffffff]">
             <div className="section-container py-10 sm:py-12 md:py-14 lg:py-18">
                 <div className="grid grid-cols-1 gap-y-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-start lg:gap-x-12 xl:gap-x-16">
                     <div>
                         <h2 className="section-title max-w-100 text-black">
-                            Your course platform and your sales hub
+                            {title}
                         </h2>
                     </div>
 
                     <div className="">
                         <p className="max-w-full text-[18px] font-normal leading-[1.45] tracking-[-0.02em] text-black sm:text-[20px] md:text-[22px] lg:text-[21px]">
-                            Our selling and payment features are designed to meet the
-                            needs of advanced creators and business owners. Sell in 120
-                            different currencies in more than 200 countries and regions.
+                            {subtitle}
                         </p>
                     </div>
                 </div>
 
-                <div className="mt-12 grid grid-cols-1 gap-3 sm:mt-16 sm:gap-4 md:grid-cols-2 lg:mt-48 lg:grid-cols-3 lg:gap-5 xl:gap-7">
-                    {SALES_HUB_FEATURES.map((item, index) => (
+                <div className={`mt-12 sm:mt-16 lg:mt-48 grid ${classes} `}>
+                    {features.map((item, index) => (
                         <SalesHubCard key={item.title} item={item} />
                     ))}
                 </div>
 
                 <div className="flex justify-center">
                     <Link
-                            href="/"
-                            className="contained-btn mt-3 px-8 py-3 sm:mt-10 capitalize!"
-                        >
-                            Start for free
-                        </Link>
+                        href="/"
+                        className="contained-btn mt-3 px-8 py-3 sm:mt-10 capitalize!"
+                    >
+                        {btnText}
+                    </Link>
                 </div>
             </div>
         </section>

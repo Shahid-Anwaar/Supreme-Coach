@@ -1,12 +1,13 @@
 "use client";
 
-import { HOW_IT_WORKS_CARDS } from "@/data/data";
+import { HOW_IT_WORKS_CARDS, HowItWorksCardItem } from "@/data/data";
 import WorksCard from "./WorkCard";
 import { useEffect, useRef, useState } from "react";
 
-const steps = ["Capture", "Nurture", "Convert", "Deliver", "Retain"];
+const tempSteps = ["Capture", "Nurture", "Convert", "Deliver", "Retain"];
 
-export default function HowItWorksCard({ classes }: { classes?: string }) {
+export default function HowItWorksCard({ classes, steps= tempSteps, cards = HOW_IT_WORKS_CARDS }
+  : { classes?: string; steps?: string[], cards?: HowItWorksCardItem[] }) {
   const [activeStep, setActiveStep] = useState(0);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -110,7 +111,7 @@ export default function HowItWorksCard({ classes }: { classes?: string }) {
         </div>
 
         <div className="ml-0 flex w-full flex-col gap-5 md:gap-8 lg:ml-10">
-          {HOW_IT_WORKS_CARDS.map((item, index) => (
+          {cards.map((item, index) => (
             <div
               key={index}
               id={`index${index + 1}`}

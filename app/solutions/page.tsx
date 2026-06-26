@@ -6,7 +6,7 @@ import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import ProductsHeroSection from "@/components/products/ProductsHero";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { COURSE_FEATURES, COURSE_FEATURES2, homeFaqs, solutionsFaqs } from "@/data/data";
+import { Firms_FEATURES, Firms_FEATURES2, homeFaqs, solutionsFaqs } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import FAQSection from "@/components/home/FaqSection";
 
@@ -46,7 +46,7 @@ export default function SolutionsPage() {
         imgShown="left"
         imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e3117618576ae8098abc7b_b98cb8e56c799a3342711e81f7fb0fce_courses-quiz-1.webp"
         imgAlt="Supreme Coach course onboarding and quiz preview"
-        features={COURSE_FEATURES}
+        features={Firms_FEATURES}
 
       />
       <ProductFeaturesSection
@@ -54,7 +54,7 @@ export default function SolutionsPage() {
         description="When you’re big on ambition and light on time, you need a platform that’s reliable and doesn't limit your creativity."
         imgShown="right"
         imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176489d43d06d91c2a4_de40b7dd8f24f29c9f0a8704b2f53a34_courses-quiz-2.webp"
-        features={COURSE_FEATURES2}
+        features={Firms_FEATURES2}
         wrapperClassName="bg-white"
       />
       <ProductSalesHubSection />

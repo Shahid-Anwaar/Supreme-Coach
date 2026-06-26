@@ -100,7 +100,11 @@ body {
 
   /* Small uppercase label above titles */
   .section-label {
-    @apply text-[16px] font-normal uppercase tracking-[0.02em] text-white/95;
+    @apply text-[15px] font-normal uppercase tracking-[0.02em] text-white/95;
+  }
+
+  .section-label-border {
+    @apply border rounded-full px-3 py-1.5;
   }
 
   .custom-para {

@@ -1138,39 +1138,75 @@ export const whyAugmentSlides: WhyAugmentSlide[] = [
   },
 ];
 
-export const COURSE_FEATURES = [
+export const Coaches_FEATURES = [
   {
-    title: "On-the-go learning",
+    title: "Build it your way",
     description:
-      "It’s your course, anywhere. Let students take it to go, with offline access on our top-rated iOS and Android mobile apps.",
+      "Video, audio, lessons, or worksheets structure your programme exactly how your methodology works. Drag modules, set drip schedules, and unlock lessons by milestone.",
   },
   {
-    title: "Meaningful engagement",
+    title: "Engagement that runs between sessions",
     description:
-      "Motivate your students and drive their progress with graded quizzes, certificates, drip content, and more.",
+      "Habit trackers, journals, quizzes, scorecards, and 30-day challenges built directly into the programme so clients stay active, progress compounds, and results follow.",
   },
   {
-    title: "Conversion boosters",
+    title: "Launch-ready from day one",
     description:
-      "Reach the right people (and make more sales) using marketing features like student referrals and upsells.",
+      "Every programme comes with a built-in funnel, free lesson preview, and payment plan attached from the start. One click to go live. Leads start coming in immediately.",
   },
 ];
 
-export const COURSE_FEATURES2 = [
+export const Coaches_FEATURES2 = [
   {
-    title: "Intuitive course builder",
+    title: "Free or paid, your call",
     description:
-      "Our drag-and-drop builder makes it easy to create and customize your course. Rearrange and add content blocks with ease.",
+      "Attach a community to any programme, offer it as a premium upgrade, or run it free to warm up leads not ready to buy yet. No Facebook group, no Discord, no separate platform to manage.",
   },
   {
-    title: "Powered by AI",
+    title: "A space that feels like yours",
     description:
-      "Use our built-in AI tools to kickstart ideas, draft content, create sales pages, transcribe and translate video subtitles, and more in no time.",
+      "Fully branded with your name and your domain. Polls, discussions, challenges, and stories all inside an environment your clients associate with your practice, not someone else's platform.",
   },
   {
-    title: "Make it yours",
+    title: "Community that drives results, not just conversation",
     description:
-      "With advanced customizations, a custom domain, and a white label website, you can make your course totally yours.",
+      "Gamification, leaderboards, badges, and progress sharing built in so members celebrate each other's milestones, stay consistent between sessions, and turn community into long-term client relationships.",
+  },
+];
+
+export const Firms_FEATURES = [
+  {
+    title: "Corporate client management",
+    description:
+      "Manage organisations, budget holders, and entire employee cohorts under one clean account. Bulk enrollment, company-level access controls, and separate invoicing built for how corporate buyers actually work.",
+  },
+  {
+    title: "Consistent delivery across every coach",
+    description:
+      "Shared programme templates and standardised onboarding flows mean every client gets the same premium experience regardless of which coach delivers it or how many cohorts are running.",
+  },
+  {
+    title: "ROI reporting that renews contracts for you",
+    description:
+      "Company-level dashboards showing utilisation, programme completion, and engagement scores across every employee generated automatically, ready to present to any L&D director without your team touching a report.",
+  },
+];
+
+export const Firms_FEATURES2 = [
+   {
+    title: "Automation that runs the operation",
+    description:
+      "Connect every process in your firm onboarding, invoicing, session reminders, renewal flows into workflows that run permanently. Built once, running forever, no recurring manual tasks across your team.",
+  },
+  {
+    title: "Powered by Modeller Agents",
+    description:
+      "The Modeller runs financial scenarios in plain language. The Analyst scans firm-wide data and flags what needs attention. The Planner delivers clear recommendations based on live numbers so your leadership team focuses on decisions, not on finding information.",
+  },
+  {
+    title: "Completely and permanently yours",
+    description:
+      "Four fully white-label portals Admin, Coach, Team, and Client all on your custom domain, carrying your firm's brand on every touchpoint. Owned outright under a lifetime licence. No Supreme Coach branding. No monthly fee to keep it running.",
   },
 ];
 

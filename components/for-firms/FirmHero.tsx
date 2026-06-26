@@ -10,16 +10,19 @@ export default function FirmHeroSection() {
     return (
         <section className="hero-carousel relative z-1 overflow-hidden bg-black">
             <div className="relative mx-auto flex max-w-full flex-col bg-black px-4 pb-10 pt-14 sm:px-6 sm:pt-28 lg:px-8 2xl:max-w-400">
-                
+
                 {/* Top Center Content */}
                 <div className="relative z-30 mx-auto flex w-full max-w-5xl flex-col items-center text-center text-white">
-                    <h1 className="section-title hero-title mx-auto max-w-[13ch] text-white sm:max-w-[15ch] lg:max-w-[17ch]">
-                        The MBA for Entrepreneurs
+                    <p className="section-label section-label-border mb-5">
+                        For Coaching Firms & Organisations
+                    </p>
+                    <h1 className="section-title hero-title mx-auto max-w-[15ch] text-white sm:max-w-[18ch] lg:max-w-[20ch]">
+                        Built with intelligence. For the firms of tomorrow.
+
                     </h1>
 
                     <p className="section-description mx-auto mt-4 max-w-3xl text-sm leading-6 sm:mt-5 sm:text-base">
-                        Join the Business School for Entrepreneurs. Built by the founders
-                        of YouTube, Waze, Siri and Wikipedia. For the founders of tomorrow.
+                        The complete operating layer for multi-coach businesses with the intelligence built in. Team coordination, corporate client management, and the infrastructure to grow without complexity. Built for the firms of tomorrow.
                     </p>
 
                     <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2.5 sm:mt-8 sm:gap-y-3 md:gap-x-5">
@@ -41,7 +44,7 @@ export default function FirmHeroSection() {
                             href="https://augment.school/sHK7SoG?"
                             className="group flex w-full items-center justify-center px-6 contained-btn sm:w-auto sm:min-w-65"
                         >
-                            Book A Demo
+                            Talk to Our Team
                             <Icon
                                 icon={"mingcute:arrow-right-fill"}
                                 width="19"
@@ -54,7 +57,7 @@ export default function FirmHeroSection() {
                             href="/contact-sales"
                             className="flex w-full items-center justify-center px-6 closed-btn sm:w-auto sm:min-w-65"
                         >
-                            Contact Sales
+                            See What's Included
                         </Link>
                     </div>
 
@@ -102,7 +105,7 @@ export default function FirmHeroSection() {
                         items={HERO_SLIDES}
                         options={{ loop: true, align: "center", skipSnaps: false, }}
                         wrapperClassName="min-h-[350px]"
-                        autoplayConfig={{delay: 3500}}
+                        autoplayConfig={{ delay: 3500 }}
                     />
                 </div>
             </div>
@@ -114,7 +117,7 @@ function HeroCard({ slide }: { slide: HeroSlide }) {
     return (
         <article className="group relative h-full min-h-[350px] w-full overflow-hidden rounded-[18px] border border-white/10 bg-[#080808] text-white shadow-[0_20px_60px_rgba(0,0,0,0.35)] sm:rounded-[22px]">
             <div className="grid h-full min-h-[350px] grid-cols-1 overflow-hidden md:grid-cols-[1.4fr_1.0fr]">
-                
+
                 {/* Card Content Left */}
                 <div className="relative z-10 flex flex-col justify-center px-5 py-7 sm:px-7 md:px-8 lg:px-10">
                     <div className="mb-5">

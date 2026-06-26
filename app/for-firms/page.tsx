@@ -8,7 +8,6 @@ import { Firms_FEATURES, Firms_FEATURES2, HowItWorksCardItem, teamFaqs } from "@
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
-import AugmentHeroSection from "@/components/home/HeroSection";
 import FirmHeroSection from "@/components/for-firms/FirmHero";
 import FeaturesSection from "@/components/home/FacultySection";
 
@@ -113,7 +112,7 @@ const steps = [
   "Scale Operations",
 ];
 
-export const HOW_IT_WORKS_CARDS : HowItWorksCardItem[] = [
+const HOW_IT_WORKS_CARDS : HowItWorksCardItem[] = [
   {
     id: 1,
     step: "01",

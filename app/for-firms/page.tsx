@@ -300,41 +300,7 @@ export default function FirmsPage() {
         description="Imagine all the tools you know and love in one place. Connect with third-party integrations—including MailChimp, Zapier, Kit, Google Analytics, and dozens more."
       />
       <ClientsSection title="Supreme Coach success stories write themselves" isShowCompanies={true} />
-      {/* <ProductTools /> */}
-      {/* <ProductSold /> */}
-      {/* <FAQSection faqs={FAQS} /> */}
-
-
-
-      {/* <FeaturedInSection />
-            
-            <FacultySection />
-            <EmblaCarousel /> */}
-
-
-      {/* <ClientsSection /> */}
-
-
-      {/* <BookCallSection
-                title="Stand out with the Supreme Coach LinkedIn Certificate"
-                btnText="Enroll Now"
-                subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
-                topClasses="bg-[#f3f4f6]"
-                bottomClasses="bg-[#000000]"
-                imgSrc="/certificate.webp"
-            />
-            <MissionComparisonSection /> */}
-
-
       <FAQSection faqs={teamFaqs} />
-      {/* <BookCallSection
-              title="Stand out with the Supreme Coach LinkedIn Certificate"
-              btnText="Enroll Now"
-              subTitle="Earn a certificate upon completion and display your business credentials on your resume and LinkedIn."
-              topClasses="bg-[#f3f4f6]"
-              bottomClasses="bg-[#000000]"
-              imgSrc="/certificate.webp"
-            /> */}
       <BookCallSection
               title="Your Business. Your Licence. Your Infrastructure For Life."
               btnText="Book a Discovery Call"

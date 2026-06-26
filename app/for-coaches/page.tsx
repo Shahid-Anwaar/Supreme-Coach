@@ -42,7 +42,7 @@ const steps = [
   "Grow Quietly",
 ];
 
-export const HOW_IT_WORKS_CARDS = [
+const HOW_IT_WORKS_CARDS = [
   {
     id: 1,
     step: "01",
@@ -185,7 +185,6 @@ export const HOW_IT_WORKS_CARDS = [
     ],
   },
 ];
-
 
 export const metadata = createMetadata({
   title:

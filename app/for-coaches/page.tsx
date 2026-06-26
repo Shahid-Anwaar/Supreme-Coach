@@ -4,7 +4,7 @@ import HowItWorksCard from "@/components/home/HowItWorks";
 import IntegrationsSection from "@/components/home/Integrations";
 import ClientsSection from "@/components/home/clients";
 import ProductFeaturesSection from "@/components/products/ProductFeatures";
-import { Coaches_FEATURES, Coaches_FEATURES2, coachesFaqs, Firms_FEATURES, Firms_FEATURES2 } from "@/data/data";
+import { Coaches_FEATURES, Coaches_FEATURES2, coachesFaqs, Firms_FEATURES, Firms_FEATURES2, HowItWorksCardItem } from "@/data/data";
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
@@ -42,7 +42,7 @@ const steps = [
   "Grow Quietly",
 ];
 
-const HOW_IT_WORKS_CARDS = [
+const HOW_IT_WORKS_CARDS: HowItWorksCardItem[] = [
   {
     id: 1,
     step: "01",
@@ -254,13 +254,13 @@ export default function CoachesPage() {
       <ClientsSection title="Supreme Coach success stories write themselves" isShowCompanies={true} />
       <FAQSection faqs={coachesFaqs} />
       <BookCallSection
-              title="Your Business. Your Licence. Your Infrastructure For Life."
-              btnText="Book a Discovery Call"
-              subTitle="Every Supreme Coach client receives a personal lifetime licence not a subscription, not a rental, not access that expires when you stop paying. "
-              topClasses="bg-[#f3f4f6]"
-              bottomClasses="bg-[#000000]"
-              imgSrc="/certificate.webp"
-            />
+        title="Your Business. Your Licence. Your Infrastructure For Life."
+        btnText="Book a Discovery Call"
+        subTitle="Every Supreme Coach client receives a personal lifetime licence not a subscription, not a rental, not access that expires when you stop paying. "
+        topClasses="bg-[#f3f4f6]"
+        bottomClasses="bg-[#000000]"
+        imgSrc="/certificate.webp"
+      />
     </main>
   );
 }

@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="bg-white text-black relative">
       <AugmentHeroSection />
-      {/* <div className="w-full bg-black">
+      <div className="w-full bg-black">
         <div className="max-w-full bg-white py-4 mx-auto">
           <div className="mx-auto bg-white px-0">
             <CompanyLogoCarousel
@@ -35,7 +35,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>  */}
+      </div> 
       <BrainFeatureSection />
       <TeamSolutionsSection />
       {/* <FeaturedInSection /> */}

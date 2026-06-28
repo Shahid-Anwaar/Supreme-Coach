@@ -35,7 +35,7 @@ const INTEGRATIONS: IntegrationItem[] = [
         name: "Cal.com",
         icon: "simple-icons:caldotcom",
         iconColor: "#ffffff",
-        tileClassName: "bg-black",
+        tileClassName: "bg-white/5",
     },
     {
         name: "Google Calendar",
@@ -47,7 +47,7 @@ const INTEGRATIONS: IntegrationItem[] = [
         name: "Apple Calendar",
         icon: "simple-icons:apple",
         iconColor: "#ffffff",
-        tileClassName: "bg-black",
+        tileClassName: "bg-white/5",
     },
 
     // Email Marketing
@@ -93,7 +93,7 @@ const INTEGRATIONS: IntegrationItem[] = [
         name: "Apple Pay",
         icon: "simple-icons:applepay",
         iconColor: "#ffffff",
-        tileClassName: "bg-black",
+        tileClassName: "bg-white/5",
     },
 
     // Analytics & Tracking
@@ -206,12 +206,12 @@ function IntegrationTile({
     iconClassName: string;
 }) {
     return (
-        <div className="group relative aspect-square w-full border-r border-b border-[#f1f0ec]">
+        <div className="group relative aspect-square w-full border-r border-b border-white/20">
             {item ? (
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div
                         className={[
-                            "relative flex items-center justify-center border border-[#eeece9]",
+                            "relative flex items-center justify-center border border-white/50",
                             tileBoxClassName,
                             item.tileClassName ?? "bg-white",
                         ].join(" ")}
@@ -242,7 +242,7 @@ function FramedGrid({ layout }: { layout: GridLayout }) {
     const totalSlots = layout.cols * layout.rows;
 
     return (
-        <div className={`grid border-l border-t border-[#f1f0ec] ${layout.colsClassName}`}>
+        <div className={`grid border-l border-t border-black/30 ${layout.colsClassName}`}>
             {Array.from({ length: totalSlots }).map((_, index) => (
                 <IntegrationTile
                     key={index}
@@ -257,14 +257,14 @@ function FramedGrid({ layout }: { layout: GridLayout }) {
 
 export default function IntegrationsSection({ title, description, btnText = "Explore integrations" }: { title: string, description: string, btnText?: string; }) {
     return (
-        <section className="bg-white px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-10 lg:py-18 xl:py-0">
+        <section className="bg-black px-4 py-12 sm:px-6 sm:py-14 md:px-8 lg:px-10 lg:py-18 xl:py-0">
             <div className="mx-auto max-w-[1500px]">
                 <div className="mx-auto max-w-[900px] text-center xl:relative top-12">
-                    <h2 className="section-title text-black">
+                    <h2 className="section-title text-white">
                         {title}
                     </h2>
 
-                    <p className="section-description relative z-20 mx-auto mt-4 max-w-2xl text-black">
+                    <p className="section-description relative z-20 mx-auto mt-4 max-w-2xl text-white">
                         {description}
                     </p>
                 </div>
@@ -290,10 +290,10 @@ export default function IntegrationsSection({ title, description, btnText = "Exp
                         <FramedGrid layout={XL_LAYOUT} />
                     </div>
 
-                    <div className="absolute top-0 z-10 h-20 w-full bg-linear-to-b from-white to-transparent sm:h-24 lg:h-32" />
-                    <div className="absolute bottom-0 z-10 h-20 w-full bg-linear-to-t from-white to-transparent sm:h-24 lg:h-32" />
-                    <div className="absolute left-0 top-0 z-10 h-full w-10 bg-linear-to-r from-white via-transparent to-transparent sm:w-14 lg:w-24" />
-                    <div className="absolute right-0 top-0 z-10 h-full w-10 bg-linear-to-l from-white via-transparent to-transparent sm:w-14 lg:w-24" />
+                    <div className="absolute top-0 z-10 h-20 w-full bg-linear-to-b from-black to-transparent sm:h-24 lg:h-32" />
+                    <div className="absolute bottom-0 z-10 h-20 w-full bg-linear-to-t from-black to-transparent sm:h-24 lg:h-32" />
+                    <div className="absolute left-0 top-0 z-10 h-full w-10 bg-linear-to-r from-black via-transparent to-transparent sm:w-14 lg:w-24" />
+                    <div className="absolute right-0 top-0 z-10 h-full w-10 bg-linear-to-l from-black via-transparent to-transparent sm:w-14 lg:w-24" />
                 </div>
 
                 <div className="mt-3 flex justify-center xl:mt-0 xl:relative xl:bottom-14 z-20">

@@ -1,0 +1,79 @@
+import Image from "next/image";
+
+type BrainCard = {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    alt: string;
+};
+
+const BRAIN_CARDS: BrainCard[] = [
+    {
+        id: 1,
+        title: "Context",
+        description:
+            "Brain² sees your tasks, docs, and conversations. It does not need a brief because it knows what is happening in real-time.",
+        image:
+            "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Team working on tasks and documents",
+    },
+    {
+        id: 2,
+        title: "Intelligence",
+        description:
+            "Brain² picks the best AI model for each job. One subscription. Every frontier model running with full context.",
+        image:
+            "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Artificial intelligence and software system",
+    },
+    {
+        id: 3,
+        title: "Personality",
+        description:
+            "Brain² learns how you and your team talk: your tone, your shorthand, your preferences.",
+        image:
+            "https://images.pexels.com/photos/9655624/pexels-photo-9655624.jpeg",
+        alt: "Team communication and collaboration",
+    },
+];
+
+export default function BrainGrid({cards = BRAIN_CARDS, classes = "rounded-lg"}: {cards?: BrainCard[], classes?: string}) {
+    return <div className={`grid overflow-hidden border border-white/10 bg-black md:grid-cols-3 ${classes}`}>
+        {cards.map((card) => (
+            <article
+                key={card.id}
+                className="relative min-h-[430px] overflow-hidden border-b border-white/10 bg-black last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0"
+            >
+                {/* Text */}
+                <div className="relative z-20 px-6 py-7 sm:px-8 sm:py-8 lg:px-10">
+                    <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.22em] text-white/90">
+                        {card.title}
+                    </p>
+
+                    <p className="max-w-full text-[16px] font-normal leading-[1.45] tracking-[-0.03em] text-white/80 sm:text-[17px]">
+                        {card.description}
+                    </p>
+                </div>
+
+                {/* Image */}
+                <div className="absolute bottom-0 left-0 h-[255px] w-full overflow-hidden">
+                    <Image
+                        src={card.image}
+                        alt={card.alt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover opacity-75 grayscale"
+                    />
+
+                    {/* Dark overlay like screenshot */}
+                    {/* <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#000_0%,rgba(0,0,0,0.35)_35%,rgba(0,0,0,0.95)_100%)]" /> */}
+
+                    {/* Soft color tint */}
+                    {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(214,253,58,0.12),rgba(15,136,255,0.12))]" /> */}
+                </div>
+            </article>
+        ))}
+    </div>
+
+}

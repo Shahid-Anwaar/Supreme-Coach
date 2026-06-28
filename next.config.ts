@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "clickup.com",
+      },
+      {
+        protocol: "https",
         hostname: "www.thinkific.com",
       },
       {

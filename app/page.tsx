@@ -18,12 +18,15 @@ import ClientsSection from "@/components/home/clients";
 import CoursesCommunity from "@/components/home/CoursesCommunity";
 import { companyLogos, homeFaqs } from "@/data/data";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
+import BrainFeatureSection from "@/components/home/BrainFeature";
+import TeamSolutionsSection from "@/components/home/TeamSolution";
+import AiPoweredWorkSection from "@/components/home/AIWorkedSection";
 
 export default function Home() {
   return (
     <main className="bg-white text-black relative">
       <AugmentHeroSection />
-      <div className="w-full bg-black pb-7">
+      {/* <div className="w-full bg-black">
         <div className="max-w-full bg-white py-4 mx-auto">
           <div className="mx-auto bg-white px-0">
             <CompanyLogoCarousel
@@ -32,8 +35,10 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
-      <FeaturedInSection />
+      </div>  */}
+      <BrainFeatureSection />
+      <TeamSolutionsSection />
+      {/* <FeaturedInSection /> */}
       <ViewsSection />
       <FeaturesSection />
       <EmblaCarousel />
@@ -43,6 +48,7 @@ export default function Home() {
         description="Every integration Supreme Coach supports is set up, tested, and live before we hand over the keys. No documentation to follow. No API keys to paste. No hoping two platforms will finally sync. You open your business and everything already works."
       />
       <ClientsSection title="Trusted by growing companies" isShowCompanies={true} />
+      <AiPoweredWorkSection />
       <BookCallSection
         title="Book a Discovery Call With Our Team"
         icon="solar:phone-linear"

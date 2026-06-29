@@ -41,7 +41,7 @@ export default function FirmHeroSection() {
 
                     <div className="mx-auto mt-7 flex w-full max-w-88 flex-col items-center gap-3 sm:mt-8 sm:max-w-none sm:flex-row sm:justify-center">
                         <Link
-                            href="https://augment.school/sHK7SoG?"
+                            href="/team"
                             className="group flex w-full items-center justify-center px-6 contained-btn sm:w-auto sm:min-w-65"
                         >
                             Talk to Our Team

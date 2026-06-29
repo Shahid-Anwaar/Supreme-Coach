@@ -26,65 +26,65 @@ type EventItem = {
 //   {
 //     id: 1,
 //     image:
-//       "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-0aeb00e7.webp",
 //   },
 //   {
 //     id: 2,
 //     image:
-//       "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-a936d161.webp",
 //   },
 
 
 //   {
 //     id: 3,
 //     image:
-//       "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-28b116eb.webp",
 //   },
 //   {
 //     id: 4,
 //     image:
-//       "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-b13eb5e9.webp",
 //   },
 //   {
 //     id: 5,
 //     image:
-//       "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-ccc46701.webp",
 //   },
 //   {
 //     id: 6,
 //     image:
-//       "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-c4952244.webp",
 //   },
 
 //   {
 //     id: 8,
 //     image:
-//       "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-b1de1c49.webp",
 //   },
 //   {
 //     id: 9,
 //     image:
-//       "https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-893d0751.webp",
 //   },
 //   {
 //     id: 10,
 //     image:
-//       "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-d5a1e627.webp",
 //   },
 //   {
 //     id: 7,
 //     image:
-//       "https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-02566826.webp",
 //   },
 //   {
 //     id: 11,
 //     image:
-//       "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-56664d31.webp",
 //   },
 //   {
 //     id: 12,
 //     image:
-//       "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=1200",
+//       "/external-images/img-e549bd28.webp",
 //   },
 // ];
 
@@ -92,162 +92,162 @@ const eventImages: EventItem[] = [
   {
     id: 1,
     image:
-      "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-0aeb00e7.webp",
   },
   {
     id: 2,
     image:
-      "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-cc03c5d9.webp",
   },
   {
     id: 3,
     image:
-      "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "/external-images/img-7de23983.webp",
   },
   {
     id: 4,
     image:
-      "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      "/external-images/img-3d360ec4.webp",
   },
   {
     id: 5,
     image:
-      "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1300",
+      "/external-images/img-9c6d2fa4.webp",
   },
   {
     id: 6,
     image:
-      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-9c9d37fe.webp",
   },
   {
     id: 7,
     image:
-      "https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-02566826.webp",
   },
   {
     id: 8,
     image:
-      "https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1500",
+      "/external-images/img-88abb07c.webp",
   },
   {
     id: 9,
     image:
-      "https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=950",
+      "/external-images/img-0153b626.webp",
   },
   {
     id: 10,
     image:
-      "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1250",
+      "/external-images/img-1b189b7e.webp",
   },
   {
     id: 11,
     image:
-      "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1100",
+      "/external-images/img-34f82e96.webp",
   },
   {
     id: 12,
     image:
-      "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=1350",
+      "/external-images/img-915bdc67.webp",
   },
   {
     id: 13,
     image:
-      "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-84d8d9dd.webp",
   },
   {
     id: 14,
     image:
-      "https://images.pexels.com/photos/5685936/pexels-photo-5685936.jpeg",
+      "/external-images/img-45b27ecb.webp",
   },
   {
     id: 15,
     image:
-      "https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      "/external-images/img-3fd9a0fd.webp",
   },
   // {
   //   id: 16,
   //   image:
-  //     "https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  //     "/external-images/img-a94938f7.webp",
   // },
   // {
   //   id: 17,
   //   image:
-  //     "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&w=850",
+  //     "/external-images/img-08ffe280.webp",
   // },
   // {
   //   id: 18,
   //   image:
-  //     "https://images.pexels.com/photos/1181562/pexels-photo-1181562.jpeg?auto=compress&cs=tinysrgb&w=1300",
+  //     "/external-images/img-2f81cefe.webp",
   // },
   // {
   //   id: 19,
   //   image:
-  //     "https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=950",
+  //     "/external-images/img-b07283be.webp",
   // },
   // {
   //   id: 20,
   //   image:
-  //     "https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=1500",
+  //     "/external-images/img-39411294.webp",
   // },
   // {
   //   id: 21,
   //   image:
-  //     "https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg?auto=compress&cs=tinysrgb&w=1050",
+  //     "/external-images/img-2cce96ce.webp",
   // },
   // {
   //   id: 22,
   //   image:
-  //     "https://images.pexels.com/photos/1181400/pexels-photo-1181400.jpeg?auto=compress&cs=tinysrgb&w=1250",
+  //     "/external-images/img-f3b629b2.webp",
   // },
   // {
   //   id: 23,
   //   image:
-  //     "https://images.pexels.com/photos/1181415/pexels-photo-1181415.jpeg?auto=compress&cs=tinysrgb&w=900",
+  //     "/external-images/img-81544235.webp",
   // },
   // {
   //   id: 24,
   //   image:
-  //     "https://images.pexels.com/photos/1181529/pexels-photo-1181529.jpeg?auto=compress&cs=tinysrgb&w=1350",
+  //     "/external-images/img-6cc32ed0.webp",
   // },
   // {
   //   id: 25,
   //   image:
-  //     "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1000",
+  //     "/external-images/img-69bb5c34.webp",
   // },
   {
     id: 26,
     image:
-      "https://images.pexels.com/photos/1181552/pexels-photo-1181552.jpeg?auto=compress&cs=tinysrgb&w=1450",
+      "/external-images/img-6414f225.webp",
   },
   {
     id: 27,
     image:
-      "https://images.pexels.com/photos/1181571/pexels-photo-1181571.jpeg?auto=compress&cs=tinysrgb&w=850",
+      "/external-images/img-dfa08992.webp",
   },
   {
     id: 28,
     image:
-      "https://images.pexels.com/photos/1181605/pexels-photo-1181605.jpeg?auto=compress&cs=tinysrgb&w=1150",
+      "/external-images/img-48432a02.webp",
   },
   {
     id: 29,
     image:
-      "https://images.pexels.com/photos/5685763/pexels-photo-5685763.jpeg",
+      "/external-images/img-1716f856.webp",
   },
   {
     id: 30,
     image:
-      "https://images.pexels.com/photos/1181631/pexels-photo-1181631.jpeg?auto=compress&cs=tinysrgb&w=1300",
+      "/external-images/img-23b8b8de.webp",
   },
   // {
   //   id: 31,
   //   image:
-  //     "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1100",
+  //     "/external-images/img-db4b81d8.webp",
   // },
   // {
   //   id: 32,
   //   image:
-  //     "https://images.pexels.com/photos/1181717/pexels-photo-1181717.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  //     "/external-images/img-b63fc44c.webp",
   // },
 ];
 export default function InPersonEventsSection({

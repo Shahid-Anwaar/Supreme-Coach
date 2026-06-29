@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Icon } from "@iconify/react";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
-import { ReviewItem, reviews } from "@/data/data";
+import { ReviewItem, reviewsContent } from "@/data/data";
 import Image from "next/image";
 
 type EmblaCarouselProps = {
@@ -135,7 +135,7 @@ function ReviewCard({
 
             <p
                 className="
-                    quote-text mt-4 max-w-full
+                    quote-text stylish-family mt-4 max-w-full
                     text-left
                     sm:mt-5
                     md:mt-6 md:max-w-2xl
@@ -223,7 +223,7 @@ export default function EmblaCarousel({
                 ref={emblaRef}
             >
                 <div className="-ml-3 flex touch-pan-y sm:-ml-4">
-                    {reviews.map((review, index) => (
+                    {reviewsContent.map((review, index) => (
                         <div key={`${review.id}-${index}`} className="pl-3 sm:pl-4">
                             <ReviewCard item={review} />
                         </div>

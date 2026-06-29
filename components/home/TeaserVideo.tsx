@@ -38,7 +38,7 @@ export default function TeaserSection() {
 
         <div className="mt-12 flex justify-center">
           <Link
-            href="https://s13rwwhxhl9.typeform.com/to/d2IccJb1"
+            href="/call"
             target="_blank"
             className="px-7 py-4 contained-btn"
           >

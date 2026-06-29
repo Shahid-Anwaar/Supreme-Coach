@@ -104,7 +104,7 @@ export const students: Student[] = [
     company: "StrategIQ",
     location: "London, U.K.",
     image:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-5952654b.webp",
     quote:
       "Supreme Coach helped me sharpen my offer and build a stronger network with business owners who think bigger.",
     classLabel: "Class of March '23",
@@ -116,7 +116,7 @@ export const students: Student[] = [
     company: "Google",
     location: "Austin, USA",
     image:
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-6c7ff720.webp",
     quote:
       "Supreme Coach teaches business with the best value proposition for busy professionals like me. I grew alongside my client's needs.",
     classLabel: "Class of March '23",
@@ -128,7 +128,7 @@ export const students: Student[] = [
     company: "Stelacasa",
     location: "Tennessee, USA",
     image:
-      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-29733e45.webp",
     quote:
       "The network I built through Supreme Coach opened doors to partnerships I would not have reached alone.",
     classLabel: "Class of April '23",
@@ -140,7 +140,7 @@ export const students: Student[] = [
     company: "Air National Guard",
     location: "Boise, USA",
     image:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-49000e52.webp",
     quote:
       "This community helped me turn business learning into practical systems I could apply immediately.",
     classLabel: "Class of April '23",
@@ -152,7 +152,7 @@ export const students: Student[] = [
     company: "CUA",
     location: "Los Angeles, USA",
     image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-c835e689.webp",
     quote:
       "The mentorship and peer learning made this much more than a course. It felt like a real growth circle.",
     classLabel: "Class of April '23",
@@ -164,7 +164,7 @@ export const students: Student[] = [
     company: "Potter Clarkson",
     location: "London, U.K.",
     image:
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-021d0a1f.webp",
     quote:
       "I found clear frameworks, a supportive cohort, and business lessons I could use right away.",
     classLabel: "Class of May '23",
@@ -176,7 +176,7 @@ export const students: Student[] = [
     company: "NeighborTrailer",
     location: "Chicago, USA",
     image:
-      "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-f7d82f99.webp",
     quote:
       "Supreme Coach’s instructors simplify business concepts while the supportive community helped me overcome any challenge I faced.",
     classLabel: "Class of April '23",
@@ -188,7 +188,7 @@ export const students: Student[] = [
     company: "Taptap Send",
     location: "Dubai, UAE",
     image:
-      "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-c72a846b.webp",
     quote:
       "I came for the learning, but stayed for the network. The people in this program are exceptional.",
     classLabel: "Class of May '23",
@@ -200,7 +200,7 @@ export const students: Student[] = [
     company: "Thinking Labs",
     location: "Austin, USA",
     image:
-      "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-eb4c84fb.webp",
     quote:
       "The Supreme Coach student directory itself became one of the most valuable assets of the experience.",
     classLabel: "Class of June '23",
@@ -212,7 +212,7 @@ export const students: Student[] = [
     company: "Bountisphere",
     location: "San Francisco, USA",
     image:
-      "https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-60a7cd47.webp",
     quote:
       "The program gave me better clarity, stronger positioning, and direct access to ambitious operators.",
     classLabel: "Class of June '23",
@@ -224,7 +224,7 @@ export const students: Student[] = [
     company: "Terrifit",
     location: "Mumbai, India",
     image:
-      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-90580a60.webp",
     quote:
       "What stood out most was how practical and founder-focused everything felt.",
     classLabel: "Class of June '23",
@@ -236,7 +236,7 @@ export const students: Student[] = [
     company: "Electrifying Ventures",
     location: "Miami, USA",
     image:
-      "https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-37640afc.webp",
     quote:
       "I left with more than business insight — I left with genuine connections.",
     classLabel: "Class of July '23",
@@ -248,7 +248,7 @@ export const students: Student[] = [
     company: "Social To Go",
     location: "New York, USA",
     image:
-      "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-646b7487.webp",
     quote:
       "The peer conversations pushed my thinking further than any traditional course ever had.",
     classLabel: "Class of July '23",
@@ -260,7 +260,7 @@ export const students: Student[] = [
     company: "H.J. Baker",
     location: "Chicago, USA",
     image:
-      "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-76c3106f.webp",
     quote:
       "Supreme Coach gave me both confidence and clarity in how to communicate my business value.",
     classLabel: "Class of August '23",
@@ -272,7 +272,7 @@ export const students: Student[] = [
     company: "BCG",
     location: "Paris, France",
     image:
-      "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-6c1e50e8.webp",
     quote:
       "I met people from different industries, yet the advice always felt surprisingly relevant.",
     classLabel: "Class of August '23",
@@ -284,7 +284,7 @@ export const students: Student[] = [
     company: "Greenwave Media",
     location: "Boston, USA",
     image:
-      "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-68669422.webp",
     quote:
       "The content was strong, but the caliber of the community is what made it memorable.",
     classLabel: "Class of August '23",
@@ -296,7 +296,7 @@ export const students: Student[] = [
     company: "Media Ventures",
     location: "New York, USA",
     image:
-      "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-30505ee7.webp",
     quote:
       "Thanks to the flexibility of remote learning, I balanced reserve duty and becoming a parent while having a great experience.",
     classLabel: "Class of April '24",
@@ -308,7 +308,7 @@ export const students: Student[] = [
     company: "PressShop",
     location: "California, USA",
     image:
-      "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-7fef4487.webp",
     quote:
       "The structure of the program made every lesson easy to apply and easy to remember.",
     classLabel: "Class of April '24",
@@ -320,7 +320,7 @@ export const students: Student[] = [
     company: "Dromotics",
     location: "Malaysia",
     image:
-      "https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-7e4c2c15.webp",
     quote:
       "The experience was practical, high quality, and rich with smart people from across the world.",
     classLabel: "Class of May '24",
@@ -332,7 +332,7 @@ export const students: Student[] = [
     company: "Learning Center",
     location: "Mexico City, Mexico",
     image:
-      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-9ed2e6d6.webp",
     quote:
       "It was one of the few programs where I felt every session added real value.",
     classLabel: "Class of May '24",
@@ -344,7 +344,7 @@ export const students: Student[] = [
     company: "Independent",
     location: "London, U.K.",
     image:
-      "https://images.pexels.com/photos/3777568/pexels-photo-3777568.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-bc304c07.webp",
     quote:
       "I appreciated how welcoming the cohort felt from the very first session.",
     classLabel: "Class of June '24",
@@ -356,7 +356,7 @@ export const students: Student[] = [
     company: "Lava Construction",
     location: "Washington, USA",
     image:
-      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-d4ded7bd.webp",
     quote:
       "The network was real, the lessons were useful, and the experience exceeded expectations.",
     classLabel: "Class of June '24",
@@ -368,7 +368,7 @@ export const students: Student[] = [
     company: "Stratbright",
     location: "Ghent, Belgium",
     image:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-5952654b.webp",
     quote:
       "I joined for growth and left with a stronger support system than I expected.",
     classLabel: "Class of June '24",
@@ -380,7 +380,7 @@ export const students: Student[] = [
     company: "BrightPath Studio",
     location: "Lisbon, Portugal",
     image:
-      "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "/external-images/img-57845ea0.webp",
     quote:
       "The sessions were practical, the people were inspiring, and I left with ideas I could use immediately.",
     classLabel: "Class of July '24",
@@ -391,7 +391,7 @@ export const ProductStoriesTestimonials = [
   {
     id: 1,
     avatar:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472413569b297952cca46_913afd2f27884db7e271d63afae0dc26_AnnaGeiger.webp",
+      "/external-images/img-014aabd8.webp",
     name: "Anna Geiger",
     role: "The Science of Reading",
     title: "Revenue Engine",
@@ -401,7 +401,7 @@ export const ProductStoriesTestimonials = [
   {
     id: 2,
     avatar:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47241731fcd597b0e34c7_5eac61fb053a8becdbd0a29455c59bb5_LeilaGharani_xel.webp",
+      "/external-images/img-cddf2e96.webp",
     name: "Leila Gharani",
     role: "XelPlus Academy",
     title: "Global Reach",
@@ -411,7 +411,7 @@ export const ProductStoriesTestimonials = [
   {
     id: 3,
     avatar:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e696146624fd498ea179d8_fd7a70083fe8fe915699fc2085035a53_ErinBooth.webp",
+      "/external-images/img-43fb6fb6.webp",
     name: "Erin Booth",
     role: "Virtual Assistant Coach",
     title: "Get Full Control",
@@ -421,7 +421,7 @@ export const ProductStoriesTestimonials = [
   {
     id: 4,
     avatar:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472416ae55881ceb0b6ab_a2de2377ce4b09a8b5f8b765899567ca_RazvanCiobanu.webp",
+      "/external-images/img-c1ff8444.webp",
     name: "Razvan Ciobanu",
     role: "Voxyde",
     title: "Peace of Mind",
@@ -431,7 +431,7 @@ export const ProductStoriesTestimonials = [
   {
     id: 5,
     avatar:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e696151b1e1847cbe8c324_6f744f022c2b792ccc48c4e542526f9f_FrancescoCositore.webp",
+      "/external-images/img-2198e7aa.webp",
     name: "Francesco Cositore",
     role: "Vaporetto Italiano",
     title: "Has Been Essential",
@@ -441,7 +441,7 @@ export const ProductStoriesTestimonials = [
   {
     id: 6,
     avatar:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472412b52873214f161ed_af941bac35e86470a5fc50c0e4d11805_DanGeorge.webp",
+      "/external-images/img-fdebe4f0.webp",
     name: "Dan George",
     role: "FlightInsight",
     title: "10,000+ Students",
@@ -451,7 +451,7 @@ export const ProductStoriesTestimonials = [
   {
     id: 7,
     avatar:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e472411eac276ecb2a885d_acd3419cdc23d64a536b9362a0f77c55_Headshot.webp",
+      "/external-images/img-bb68a76c.webp",
     name: "Huzan R & Nicoleta S",
     role: "Speak Norsk",
     title: "Made Simple",
@@ -463,23 +463,23 @@ export const ProductStoriesTestimonials = [
 export const companyLogos = [
   {
     title: "AA",
-    image: "https://www.gogetta.com/home/logo-aa.svg",
+    image: "/external-images/img-cdcf3d31.webp",
   },
   {
     title: "AK",
-    image: "https://www.gogetta.com/home/logo-ak.svg",
+    image: "/external-images/img-e982166d.webp",
   },
   {
     title: "CIET",
-    image: "https://www.gogetta.com/home/logo-ciet.svg",
+    image: "/external-images/img-129b3243.webp",
   },
   {
     title: "Visy",
-    image: "https://www.gogetta.com/home/logo-visy.svg",
+    image: "/external-images/img-c6334e3e.webp",
   },
   {
     title: "GFS",
-    image: "https://www.gogetta.com/home/logo-gfs.svg",
+    image: "/external-images/img-696b08de.webp",
   },
 ];
 
@@ -631,10 +631,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 1,
     name: "Jimmy Wales",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F3a370c96d97b4942b42ad70f3382c000",
+      "/external-images/img-69b955eb.webp",
     role: "Founder of Wikipedia",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F234946f583ab4a7e98dd9bba047775d2",
+      "/external-images/img-7ac2afa7.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F52f0105d32714e168307b5da0a27b4fc%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=52f0105d32714e168307b5da0a27b4fc&alt=media&optimized=true",
     description:
@@ -644,10 +644,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 2,
     name: "Georgia Lewis",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fad8c245895824a339ee40830d041c26c",
+      "/external-images/img-a079a90c.webp",
     role: "Former Prompt Engineer at Meta",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F7835a8f882ef450b84d1c16324fc8d75",
+      "/external-images/img-180b7ff1.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F7cfe202a016644adb4552d366932c01c%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=7cfe202a016644adb4552d366932c01c&alt=media&optimized=true",
     description:
@@ -657,10 +657,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 3,
     name: "Steve Chen",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fa2bab8fba2434d09b01c553d115e3fbe",
+      "/external-images/img-28c76c34.webp",
     role: "Founder of Youtube",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F47dbb563aed44486b28b4631c8833235",
+      "/external-images/img-28536b35.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F509807a034044fd0b3aff3c3a6c3266a%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=509807a034044fd0b3aff3c3a6c3266a&alt=media&optimized=true",
     description:
@@ -670,10 +670,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 4,
     name: "Zack Kass",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F56f4f4ee156f43b3847270e2669fd324",
+      "/external-images/img-c0422752.webp",
     role: "Former Head of Go-To-Market at OpenAI",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F513af209523041388c737f66336e62e5",
+      "/external-images/img-b571095c.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F7c887e35c3a54751a8b7d63c2eb59f28%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=7c887e35c3a54751a8b7d63c2eb59f28&alt=media&optimized=true",
     description:
@@ -683,10 +683,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 5,
     name: "Ann Hiatt",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fc33f8dc7073c4e65ad88bb99143e721a",
+      "/external-images/img-546dc9e8.webp",
     role: "Chief of Staff",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F03323b1302d94d50a9bba04594d829ac",
+      "/external-images/img-4dcdb991.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fbc1c38b516ad4255bfb4cbfd2e6a0627%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=bc1c38b516ad4255bfb4cbfd2e6a0627&alt=media&optimized=true",
     description:
@@ -696,10 +696,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 6,
     name: "Morin Oluwole",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fad8c245895824a339ee40830d041c26c",
+      "/external-images/img-a079a90c.webp",
     role: "Ex-Director at Meta",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F2e7ee683820648d9ab0ded82e21402de",
+      "/external-images/img-4422cf8c.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F4d37000288bc4898afba44b5568d0d7c%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=4d37000288bc4898afba44b5568d0d7c&alt=media&optimized=true",
     description:
@@ -711,7 +711,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     company: "",
     role: "Founder of Shazam",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fb4bfaa5158ac467ebda01fc7802240d8",
+      "/external-images/img-0aa41876.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F92eef86c59e44cb9bf88943ee46097eb%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=92eef86c59e44cb9bf88943ee46097eb&alt=media&optimized=true",
     description:
@@ -721,10 +721,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 8,
     name: "Caen Contee",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F6a1f6df1d2d44b5fb5212174b1afcc41",
+      "/external-images/img-98378e77.webp",
     role: "Founder of Lime",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fc115f60499c24833971a20af6d253375",
+      "/external-images/img-cf98df01.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F734172ad92114e84ab3a068f9722cdfa%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=734172ad92114e84ab3a068f9722cdfa&alt=media&optimized=true",
     description:
@@ -734,10 +734,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 9,
     name: "Uri Levine",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fb5387309aa2842f2b27b60f26a397778",
+      "/external-images/img-7264ec14.webp",
     role: "Founder of Waze",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F3c1232896777476e9b5704d580aec96f",
+      "/external-images/img-766f6ec2.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2Fe9701219a7e743408c14fa27cc8edd3a%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=e9701219a7e743408c14fa27cc8edd3a&alt=media&optimized=true",
     description:
@@ -747,10 +747,10 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 10,
     name: "Kelly Richmond Pope",
     company:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F31d24bcfe549491f971d154458d493ab",
+      "/external-images/img-06092097.webp",
     role: "Best-Selling Author",
     image:
-      "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F27cc610e575c4478bc245cc94889dc15",
+      "/external-images/img-44e39a2a.webp",
     video:
       "https://cdn.builder.io/o/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F80aee6543c4946ec854dc7c019eaf8c8%2Fcompressed?apiKey=20c9f56ee0104a98bd873ddbe200463a&token=80aee6543c4946ec854dc7c019eaf8c8%2F80aee6543c4946ec854dc7c019eaf8c8&alt=media&optimized=true",
     description:
@@ -773,7 +773,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Build once. Enrol forever. Video, audio, lessons, and free previews with a built-in funnel and payment plan attached from the start.",
     image:
-      "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-7001ff63.webp",
     href: "/features/coaching",
   },
   {
@@ -782,7 +782,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Free or paid. Attached to a programme or standalone. A private space where your clients connect, stay engaged, and go further together.",
     image:
-      "https://images.pexels.com/photos/4144224/pexels-photo-4144224.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-1cd5482a.webp",
     href: "/features/courses",
   },
   {
@@ -791,7 +791,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "1-on-1 and group bookings, automated reminders, and session notes stored on the client profile. Your calendar, finally under control.",
     image:
-      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-9c9d37fe.webp",
     href: "/features/community",
   },
   {
@@ -800,7 +800,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "A fully branded space where clients access their programmes, track goals, message you, and see exactly how far they've come.",
     image:
-      "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-85fe1f68.webp",
     href: "/features/memberships",
   },
   {
@@ -809,7 +809,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Set goals. Break them into milestones. Track every step. Clients who can see their progress stay longer and this makes progress impossible to miss.",
     image:
-      "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-f4b27b7d.webp",
     href: "/features/live-sessions",
   },
   {
@@ -818,7 +818,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Habit trackers, workbooks, journals, quizzes, challenges, scorecards, and accountability partners everything that keeps clients active between sessions.",
     image:
-      "https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-ff1f1dad.webp",
     href: "/features/digital-products",
   },
   {
@@ -827,7 +827,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Every session, payment, message, and milestone logged automatically in chronological order. Open a client profile and know the full story instantly.",
     image:
-      "https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-3cdc23b2.webp",
     href: "/features/booking",
   },
   {
@@ -836,7 +836,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Sales pages, landing pages, and opt-in funnels built inside Supreme Coach. Launch a programme and the funnel goes live with it no separate setup.",
     image:
-      "https://images.pexels.com/photos/6863259/pexels-photo-6863259.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-7dabeb01.webp",
     href: "/features/payments",
   },
   {
@@ -845,7 +845,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "One-time, instalment, or subscription. Stripe, PayPal, Google Pay, and Apple Pay. Automated invoices. Zero manual chasing.",
     image:
-      "https://images.pexels.com/photos/29502370/pexels-photo-29502370.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-62a0e9fc.webp",
     href: "/features/payments",
   },
   {
@@ -854,7 +854,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Track every prospect from first enquiry to signed client with ICP profiling, pipeline value, and forecasting built in.",
     image:
-      "https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-d796c29b.webp",
     href: "/features/sales-pipeline",
   },
   {
@@ -863,7 +863,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Connect every part of your business and remove every recurring manual task permanently. Build the workflow once. It runs forever.",
     image:
-      "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-e16544ce.webp",
     href: "/features/automation-workflows",
   },
   {
@@ -872,7 +872,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Coach-to-client, group channels, and internal team messaging all inside Supreme Coach. Not WhatsApp. Not email threads.",
     image:
-      "https://images.pexels.com/photos/5053765/pexels-photo-5053765.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-3868f8fb.webp",
     href: "/features/chat-messaging",
   },
   {
@@ -881,7 +881,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Zoom, Calendly, Stripe, Mailchimp, ActiveCampaign, Google Analytics, Meta Pixel, and more configured and live before we hand over the keys.",
     image:
-      "https://images.pexels.com/photos/8284729/pexels-photo-8284729.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-815b09a3.webp",
     href: "/features/integrations",
   },
   {
@@ -890,7 +890,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Programme performance, client engagement, funnel conversions, and revenue every number that matters, in one place.",
     image:
-      "https://images.pexels.com/photos/7947996/pexels-photo-7947996.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-7de96a7c.webp",
     href: "/features/analytics",
   },
   {
@@ -899,7 +899,7 @@ export const featuredItems: FeaturedItem[] = [
     description:
       "Your name. Your brand. Your domain. Client portal, coach portal, team portal every touchpoint carries your identity, not ours.",
     image:
-      "https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/external-images/img-ee160e5e.webp",
     href: "/features/white-label",
   },
 ];
@@ -929,7 +929,7 @@ export const instructors: InstructorItem[] = [
     role: "Founder of Shazam",
     company: "Shazam",
     image:
-      "https://images.pexels.com/photos/12616223/pexels-photo-12616223.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-99f718b9.webp",
     logoIcon: "mdi:music-circle",
   },
   {
@@ -938,7 +938,7 @@ export const instructors: InstructorItem[] = [
     role: "Managing Director at BCG",
     company: "BCG",
     image:
-      "https://images.pexels.com/photos/36934779/pexels-photo-36934779/free-photo-of-business-portrait-in-formal-suit-on-black-background.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-e7f9ff13.webp",
     logoIcon: "mdi:briefcase-variant",
   },
   {
@@ -947,7 +947,7 @@ export const instructors: InstructorItem[] = [
     role: "Founding Team at Lime",
     company: "Lime",
     image:
-      "https://images.pexels.com/photos/28186654/pexels-photo-28186654/free-photo-of-business-meeting.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-56b47496.webp",
     logoIcon: "mdi:leaf-circle",
   },
   {
@@ -956,7 +956,7 @@ export const instructors: InstructorItem[] = [
     role: "Ex-Director at Meta",
     company: "Meta",
     image:
-      "https://images.pexels.com/photos/10375939/pexels-photo-10375939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-50b82161.webp",
     logoIcon: "mdi:infinity",
   },
   {
@@ -974,7 +974,7 @@ export const instructors: InstructorItem[] = [
     role: "Founder of Huckletree",
     company: "Huckletree",
     image:
-      "https://images.pexels.com/photos/7710091/pexels-photo-7710091.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-810fc6e5.webp",
     logoIcon: "mdi:tree",
   },
   {
@@ -983,7 +983,7 @@ export const instructors: InstructorItem[] = [
     role: "Best-Selling Sales Author",
     company: "The New York Times",
     image:
-      "https://images.pexels.com/photos/12616223/pexels-photo-12616223.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-99f718b9.webp",
     logoIcon: "mdi:newspaper-variant",
   },
   {
@@ -992,7 +992,7 @@ export const instructors: InstructorItem[] = [
     role: "LinkedIn Creator & Entrepreneur",
     company: "LinkedIn",
     image:
-      "https://images.pexels.com/photos/5717304/pexels-photo-5717304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-183fbc87.webp",
     logoIcon: "mdi:linkedin",
   },
   {
@@ -1001,7 +1001,7 @@ export const instructors: InstructorItem[] = [
     role: "Founder of Waze",
     company: "Waze",
     image:
-      "https://images.pexels.com/photos/8424520/pexels-photo-8424520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-12f849b6.webp",
     logoIcon: "mdi:car",
   },
   {
@@ -1010,7 +1010,7 @@ export const instructors: InstructorItem[] = [
     role: "First Chief of Staff at Google",
     company: "Google",
     image:
-      "https://images.pexels.com/photos/7710091/pexels-photo-7710091.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-810fc6e5.webp",
     logoIcon: "mdi:google",
   },
   {
@@ -1019,7 +1019,7 @@ export const instructors: InstructorItem[] = [
     role: "Best-Selling Finance Author",
     company: "",
     image:
-      "https://images.pexels.com/photos/7394350/pexels-photo-7394350.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-e33c36da.webp",
     logoIcon: "mdi:cash-multiple",
   },
   {
@@ -1058,7 +1058,7 @@ export const instructors: InstructorItem[] = [
     role: "Best-Selling Author",
     company: "The New York Times",
     image:
-      "https://images.pexels.com/photos/8424520/pexels-photo-8424520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-12f849b6.webp",
     logoIcon: "mdi:newspaper-variant",
   },
   {
@@ -1076,7 +1076,7 @@ export const instructors: InstructorItem[] = [
     role: "Former Prompt Engineer at Microsoft",
     company: "Microsoft",
     image:
-      "https://images.pexels.com/photos/10375939/pexels-photo-10375939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-50b82161.webp",
     logoIcon: "mdi:microsoft-windows",
   },
   {
@@ -1085,7 +1085,7 @@ export const instructors: InstructorItem[] = [
     role: "Founder of 20VC",
     company: "20VC",
     image:
-      "https://images.pexels.com/photos/5717304/pexels-photo-5717304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-183fbc87.webp",
     logoIcon: "mdi:numeric-20-circle",
   },
   {
@@ -1094,7 +1094,7 @@ export const instructors: InstructorItem[] = [
     role: "Founder of Siri",
     company: "Apple",
     image:
-      "https://images.pexels.com/photos/756484/pexels-photo-756484.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/external-images/img-c691f61f.webp",
     logoIcon: "mdi:apple",
   },
 ];
@@ -1210,7 +1210,7 @@ export const Firms_FEATURES2 = [
   },
 ];
 
-export const reviews: ReviewItem[] = [
+export const reviewsContent: ReviewItem[] = [
   {
     id: 1,
     quote:
@@ -1218,7 +1218,7 @@ export const reviews: ReviewItem[] = [
     name: "Anwar Molette",
     role: "Executive Chef",
     avatar:
-      "https://cdn.senja.io/public/media/19579b7f-13ac-4b0f-84b9-c8345980ad33_a054ae06-e274-4f49-92c0-ec2e5ee931bc_c-AnwarMolette__62CAAD5443E64C7D86B1E9C108EDDCFD_1663889156012.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-166f6f59.webp",
   },
   {
     id: 2,
@@ -1227,7 +1227,7 @@ export const reviews: ReviewItem[] = [
     name: "Simon Lee Maryiah",
     role: "Founder",
     avatar:
-      "https://cdn.senja.io/public/media/d4461c1b-ef42-4846-9e34-78a7e716e50d_634b1196-1666-478d-991c-e0878299b2f1_1708357355889.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-a0cd922d.webp",
   },
   {
     id: 3,
@@ -1236,7 +1236,7 @@ export const reviews: ReviewItem[] = [
     name: "Ivan Nappo",
     role: "Financial Regulation Specialist",
     avatar:
-      "https://cdn.senja.io/public/media/1e94f3b8-6b05-4c30-bba2-18b801d2f71b_35706b17-b7fb-459c-95e1-7a7df87795e9_1721121911975.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-f76f6529.webp",
   },
   {
     id: 4,
@@ -1245,7 +1245,7 @@ export const reviews: ReviewItem[] = [
     name: "Heather D. Whelan",
     role: "Business Coach",
     avatar:
-      "https://cdn.senja.io/public/media/638a23de-6410-44cd-a303-082ca0626542_590cd49f-9b96-478b-9c4c-e4dd6e53f7e3_1759273290357.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-8da14f0a.webp",
   },
   {
     id: 5,
@@ -1254,7 +1254,7 @@ export const reviews: ReviewItem[] = [
     name: "Delise Mutuc",
     role: "Sales & Marketing Strategist",
     avatar:
-      "https://cdn.senja.io/public/media/6302d82b-4d1e-405d-9e5a-7e2e5a7db96e_e761f846-19ea-40f6-95bc-15593eb0758c_1645047645371.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-7984e069.webp",
   },
   {
     id: 6,
@@ -1263,7 +1263,7 @@ export const reviews: ReviewItem[] = [
     name: "Johabh Muldoogh",
     role: "Managing Director",
     avatar:
-      "https://cdn.senja.io/public/media/e643a944-708a-4b21-9fd0-f43f6951d1a5_2c2b3852-2f50-4d1a-a848-f0d7903d9651_1727294476692.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-3e9e34da.webp",
   },
   {
     id: 7,
@@ -1272,7 +1272,7 @@ export const reviews: ReviewItem[] = [
     name: "Iloha Z.",
     role: "Self Employed",
     avatar:
-      "https://cdn.senja.io/public/media/b4d547ec-8818-42b9-9a5e-3360170e5ec5_7609080a-0e9d-4e58-93dd-31ea2ad62e05_1700770061020.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-392a53b6.webp",
   },
   {
     id: 8,
@@ -1281,7 +1281,7 @@ export const reviews: ReviewItem[] = [
     name: "Matt Marsh",
     role: "Business Owner",
     avatar:
-      "https://cdn.senja.io/public/media/1c647c47-6181-4ae7-bb07-2c2905def07d_fd7e0340-9629-435d-98a9-07bffb44b0ea_1638380870191.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-c621b6fc.webp",
   },
   {
     id: 9,
@@ -1290,7 +1290,7 @@ export const reviews: ReviewItem[] = [
     name: "Daisy White",
     role: "Senior Talent Manager",
     avatar:
-      "https://cdn.senja.io/public/media/ec11df5f-a26f-4bf0-8e0d-20899d34aa1b_c736df24-6a01-49b5-bb1a-d4e184c44de5_1719262805462.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-7496287f.webp",
   },
   {
     id: 10,
@@ -1299,7 +1299,7 @@ export const reviews: ReviewItem[] = [
     name: "Arthur Shaba",
     role: "Finance",
     avatar:
-      "https://cdn.senja.io/public/media/4267d4da-6c01-4a9f-98a2-526f45f27fee_fbdcd35a-844f-457c-a338-db41ae5e8e5e_1655971000970.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-ae7148aa.webp",
   },
   {
     id: 11,
@@ -1308,7 +1308,7 @@ export const reviews: ReviewItem[] = [
     name: "Hester Scotton",
     role: "Strategic CFO",
     avatar:
-      "https://cdn.senja.io/public/media/3a33864d-9dc8-4424-a092-c7614df9e489_avatar.png?width=63&height=63&format=webp",
+      "/external-images/img-84ab76b5.webp",
   },
   {
     id: 12,
@@ -1317,7 +1317,7 @@ export const reviews: ReviewItem[] = [
     name: "Donavon Flegeance",
     role: "Business Consultant",
     avatar:
-      "https://cdn.senja.io/public/media/00ea40b3-588e-421b-95e2-f8d0e3678612_71e63fc0-c30e-4bbf-8172-15224a0a317b_1525798117586.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-426d4eea.webp",
   },
   {
     id: 13,
@@ -1326,7 +1326,7 @@ export const reviews: ReviewItem[] = [
     name: "Mikhail Sieni",
     role: "Sales Director",
     avatar:
-      "https://cdn.senja.io/public/media/4a407c0b-0a42-471e-a997-3ed9aaa8bbd3_8de82ba6-2e69-47b7-8586-7296435440e2_1756214871399.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-3d2aa84a.webp",
   },
   {
     id: 14,
@@ -1335,7 +1335,7 @@ export const reviews: ReviewItem[] = [
     name: "June Burton",
     role: "Financial Services Advisor",
     avatar:
-      "https://cdn.senja.io/public/media/e06ce752-5618-4418-b7ea-bd9d705d455d_85ef1206-d9a6-4445-93fe-e4d051b9fcbf_1707946558049.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-e208a441.webp",
   },
   {
     id: 15,
@@ -1344,7 +1344,7 @@ export const reviews: ReviewItem[] = [
     name: "Oren Broshi",
     role: "Entrepreneur | Founder of Stealth Mode Startup",
     avatar:
-      "https://cdn.senja.io/public/media/KpWRnRxiS7skl0e6yOfcO0VV.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-6c29657f.webp",
   },
   {
     id: 16,
@@ -1353,7 +1353,7 @@ export const reviews: ReviewItem[] = [
     name: "Gary Lamach II",
     role: "Director @ AICPA",
     avatar:
-      "https://cdn.senja.io/public/media/37691754-9e62-4885-a7d8-c2d13dbfd448_640eb926-bfce-4154-9728-837745e75c68_Screenshot%202023-11-20%20at%2012.27.48.png?width=63&height=63&format=webp",
+      "/external-images/img-4d213539.webp",
   },
   {
     id: 17,
@@ -1362,7 +1362,7 @@ export const reviews: ReviewItem[] = [
     name: "Mubarak AlBahar",
     role: "Trade Relations Officer at The C Holding",
     avatar:
-      "https://cdn.senja.io/public/media/lNTQ2RuqGaYj2tw98bAM0TAz.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-b5ff7663.webp",
   },
   {
     id: 18,
@@ -1371,7 +1371,7 @@ export const reviews: ReviewItem[] = [
     name: "Shkumbin Mustafa",
     role: "Branding & Digital Marketing",
     avatar:
-      "https://cdn.senja.io/public/media/zmwDBMlEeR6ME5ZNVqx6HfnQ.jpeg?width=63&height=63&format=webp",
+      "/external-images/img-06a08520.webp",
   },
   {
     id: 19,
@@ -1380,7 +1380,7 @@ export const reviews: ReviewItem[] = [
     name: "Patricia Paisis-Oakwell",
     role: "Certified Health Coach",
     avatar:
-      "https://cdn.senja.io/public/media/afdccf8f-2d59-4ea5-87c2-b1bef06b2141_avatar.png?width=63&height=63&format=webp",
+      "/external-images/img-c0f7bc22.webp",
   },
   {
     id: 20,
@@ -1389,7 +1389,7 @@ export const reviews: ReviewItem[] = [
     name: "Jamaal Bethea",
     role: "Business Owner",
     avatar:
-      "https://cdn.senja.io/public/media/db143e9b-0cc1-4ae7-af3a-7124a4491063_2d6fc2a4-ee81-4cc9-8a1e-e1f13ddcf46e_e3b213ae-8bec-4fdb-af91-8eacb9f32aa6_ab2bc69e-ef2a-4d0e-8b40-82ce701c04a9_1732653211541.webp?width=63&height=63&format=webp",
+      "/external-images/img-c673b5ce.webp",
   },
 ];
 
@@ -1398,35 +1398,35 @@ export const testimonials: TestimonialItem[] = [
     id: 1,
     name: "Heather D. Whelan",
     role: "Business Coach",
-    avatar: "https://cdn.senja.io/public/media/638a23de-6410-44cd-a303-082ca0626542_590cd49f-9b96-478b-9c4c-e4dd6e53f7e3_1759273290357.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-8da14f0a.webp",
     text: "This was the most enjoyable online educational program that I have ever completed. I could feel the impact of their experiences on their perspectives and enjoyed the quality of the content. I love how the program allows you to continue to be a part of the community and have access to new modules and materials as they are developed. I am very excited about what I learned through the program and looking forward to the continuing education component. Thank you! The quality and execution of the content.",
   },
   {
     id: 2,
     name: "Simon Lee Maryan",
     role: "Founder",
-    avatar: "https://cdn.senja.io/public/media/d4461c1b-ef42-4846-9e34-78a7e716e50d_634b1196-1666-478d-991c-e0878299b2f1_1708357355889.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-a0cd922d.webp",
     text: "This program is so different from typical MBA's, and although it is still growing content, what it currently provides is so practical, realistic and valuable. I can't wait to see what comes next. It is online, self paced and great",
   },
   {
     id: 3,
     name: "Janene Nadolny-Jimenez",
     role: "Business Owner",
-    avatar: "https://cdn.senja.io/public/media/727b3e2e-aab0-4a17-9e76-8fdccbc42f87_08553bdc-a032-487e-95b7-71b41efe2dc9_1756077942174.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-fc706fca.webp",
     text: "My experience with Supreme Coach completely changed how I approach my business, my work, and my rest. It gave me a fresh perspective on old ideas and pushed me to face the hard parts instead of avoiding them. One chapter in particular made me realize I had to ‘fire’ the old version of myself, to stop playing small and start running a real, scalable company. The teachers were authentic, the content was current and practical, and the course was worth every penny.",
   },
   {
     id: 4,
     name: "Ivan Nappo",
     role: "Financial Regulation Specialist",
-    avatar: "https://cdn.senja.io/public/media/1e94f3b8-6b05-4c30-bba2-18b801d2f71b_35706b17-b7fb-459c-95e1-7a7df87795e9_1721121911975.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-f76f6529.webp",
     text: "I think Supreme Coach is a game changer. It's a brilliant concept and the contents, program and interface are just great. As soon as you start a module it becomes hard to stop. Also there is a human contact and great support from the orientation to graduation. I highly recommend it.",
   },
   {
     id: 5,
     name: "Hester Scotton",
     role: "Strategic CFO",
-    avatar: "https://cdn.senja.io/public/media/3a33864d-9dc8-4424-a092-c7614df9e489_avatar.png?width=63&height=63&format=webp",
+    avatar: "/external-images/img-84ab76b5.webp",
     text: "When I started this course, I got asked the question ‘how are you going to fit it in? You have a full time job as a CFO, you have two children, you are training for a marathon…’. The truthful answer was that I wasn’t sure. However, what I’ve found is that it’s easy to fit the learning into my life. The modules are all short and easy to digest. The content is enjoyable and engaging so I often do some of it as my lunch break or first thing in the morning. If you want to learn more about business but are worried you don’t have the time then I would highly recommend you look at Supreme Coach.",
     linkedin: true,
   },
@@ -1434,35 +1434,35 @@ export const testimonials: TestimonialItem[] = [
     id: 6,
     name: "Donavon Flegeance",
     role: "Business Consultant",
-    avatar: "https://cdn.senja.io/public/media/00ea40b3-588e-421b-95e2-f8d0e3678612_71e63fc0-c30e-4bbf-8172-15224a0a317b_1525798117586.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-426d4eea.webp",
     text: "I’ve learned so much here that it feels like I could’ve spent 4 years in college and still not retained as much. I love being able to move at my own pace and hear from people who’ve actually done it, not just professors who’ve never built anything.",
   },
   {
     id: 7,
     name: "Daisy White",
     role: "Senior Talent Manager",
-    avatar: "https://cdn.senja.io/public/media/ec11df5f-a26f-4bf0-8e0d-20899d34aa1b_c736df24-6a01-49b5-bb1a-d4e184c44de5_1719262805462.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-7496287f.webp",
     text: "Flexibility, incredible resources, and inspiring live classes, I loved the Supreme Coach MBA Program. It taught me so much about the industry, helped me understand key things I’d never considered, and gave me the freedom to learn on my own time. The support from the network was invaluable, and I couldn’t be more grateful or proud of what I’ve achieved.",
   },
   {
     id: 8,
     name: "Mikhail Sieni",
     role: "Sales Director",
-    avatar: "https://cdn.senja.io/public/media/4a407c0b-0a42-471e-a997-3ed9aaa8bbd3_8de82ba6-2e69-47b7-8586-7296435440e2_1756214871399.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-3d2aa84a.webp",
     text: "The idea behind Supreme Coach is one I truly stand for. I LOVED this course and its structure. I’ll definitely keep coming back to its content because it’s that valuable.",
   },
   {
     id: 9,
     name: "June Burton",
     role: "Financial Services Advisor",
-    avatar: "https://cdn.senja.io/public/media/e06ce752-5618-4418-b7ea-bd9d705d455d_85ef1206-d9a6-4445-93fe-e4d051b9fcbf_1707946558049.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-e208a441.webp",
     text: "The course touches on a lot of key areas most classes don't discuss that are paramount to success in business. I found the Supreme Coach program very accommodating to busy schedules.",
   },
   {
     id: 10,
     name: "Oren Broshi",
     role: "Entrepreneur | Founder of Stealth Mode Startup",
-    avatar: "https://cdn.senja.io/public/media/KpWRnRxiS7skl0e6yOfcO0VV.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-6c29657f.webp",
     text: "Supreme Coach is not just another program; it’s built by founders, for founders, designed to give entrepreneurs the practical insights, network, and mindset they need to scale. Grateful to be part of it and highly recommend it to every entrepreneur who’s serious about leveling up",
     linkedin: true,
   },
@@ -1470,7 +1470,7 @@ export const testimonials: TestimonialItem[] = [
     id: 11,
     name: "Gary Lamach II",
     role: "Director @ AICPA",
-    avatar: "https://cdn.senja.io/public/media/37691754-9e62-4885-a7d8-c2d13dbfd448_640eb926-bfce-4154-9728-837745e75c68_Screenshot%202023-11-20%20at%2012.27.48.png?width=63&height=63&format=webp",
+    avatar: "/external-images/img-4d213539.webp",
     text: "From developing a deep understanding of emerging technologies to exploring new business models, the program equipped me with the skills and knowledge necessary to take on new challenges in the industry. Thank you, Supreme Coach , for this amazing opportunity!",
     linkedin: true,
   },
@@ -1478,7 +1478,7 @@ export const testimonials: TestimonialItem[] = [
     id: 12,
     name: "Mubarak AlBahar",
     role: "Trade Relations Officer at The C Holding",
-    avatar: "https://cdn.senja.io/public/media/lNTQ2RuqGaYj2tw98bAM0TAz.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-b5ff7663.webp",
     text: "In a world where traditional MBA teachings often revolve around academic research, Supreme Coach offers a modern and innovative approach to business education, emphasizing real-world insights directly from renowned entrepreneurial leaders. Supreme Coach's curriculum, characterized by its practical, founder-driven approach, has enriched my understanding of contemporary business practices grounded in genuine experiences.",
     linkedin: true,
   },
@@ -1486,7 +1486,7 @@ export const testimonials: TestimonialItem[] = [
     id: 13,
     name: "Shkumbin Mustafa",
     role: "Branding & Digital Marketing",
-    avatar: "https://cdn.senja.io/public/media/zmwDBMlEeR6ME5ZNVqx6HfnQ.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-06a08520.webp",
     text: "Last year, I decided to give Supreme Coach.org MBA a try. It's a new way of learning at your own pace and at an affordable price. The program offers direct advice from some of the smartest people in business, including the founders of Wikipedia, Waze, Shazam, and Lime. It’s a straightforward, fast, and affordable way to gain the skills and confidence needed to succeed in business. If you’re looking to learn how the best in the business made it and you want to start your own venture, I highly recommend giving Supreme Coach MBA a try.",
     linkedin: true,
   },
@@ -1494,7 +1494,7 @@ export const testimonials: TestimonialItem[] = [
     id: 14,
     name: "Patricia Paisis-Oakwell",
     role: "Certified Health Coach",
-    avatar: "https://cdn.senja.io/public/media/afdccf8f-2d59-4ea5-87c2-b1bef06b2141_avatar.png?width=63&height=63&format=webp",
+    avatar: "/external-images/img-c0f7bc22.webp",
     text: "What happens when you take the advice of a marketing and personal branding expert? On Thursday, I had the pleasure of attending an inspiring masterclass led by Tobi Oluwole on Marketing and Personal Branding, hosted by Ariel Renous and Elyssa Goldberg from Supreme Coach.org . The insights I gained were invaluable! Tonight, while reviewing my stats, I was excited to see that my post impressions increased by 90% in just one day. It’s amazing to see how quickly effective strategies can make an impact!",
     linkedin: true,
   },
@@ -1502,98 +1502,98 @@ export const testimonials: TestimonialItem[] = [
     id: 15,
     name: "Arthur Shaba",
     role: "Finance",
-    avatar: "https://cdn.senja.io/public/media/4267d4da-6c01-4a9f-98a2-526f45f27fee_fbdcd35a-844f-457c-a338-db41ae5e8e5e_1655971000970.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-ae7148aa.webp",
     text: "This has been the most life-changing program I’ve ever done. Great lessons from people who have the experience. No textbook staff but knowledge straight from those who’ve lived it and can vouch that it works.",
   },
   {
     id: 16,
     name: "Jamaal Bethea",
     role: "Business Owner",
-    avatar: "https://cdn.senja.io/public/media/db143e9b-0cc1-4ae7-af3a-7124a4491063_2d6fc2a4-ee81-4cc9-8a1e-e1f13ddcf46e_e3b213ae-8bec-4fdb-af91-8eacb9f32aa6_ab2bc69e-ef2a-4d0e-8b40-82ce701c04a9_1732653211541.webp?width=63&height=63&format=webp",
+    avatar: "/external-images/img-c673b5ce.webp",
     text: "Supreme Coach is democratizing access to education against the traditional school systems that are for profit. These systems are archaic and don’t represent the needs of many communities that don’t have access to economic resources or connections.",
   },
   {
     id: 17,
     name: "Momchil Tsonev",
     role: "Commodity Trader",
-    avatar: "https://cdn.senja.io/public/media/ff125b6c-e92a-4935-984a-a9cd29748376_8d9afcda-124a-4edc-a4ee-7d82c713aa98_1517628067223.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-c9743e4a.webp",
     text: "Program is structured in very unique and intuitive way. It gives exposure to diverse perspectives and practical wisdom that make business and everyday concepts more tangible and easy to understand. But most important it could inspire more people to approach challenges with a creative and entrepreneurial mindset and help them set up their own business ventures. The program goes beyond the conventional by integrating real-world insights from practitioners, entrepreneurs, and business founders.",
   },
   {
     id: 18,
     name: "Anwar Molette",
     role: "Executive Chef",
-    avatar: "https://cdn.senja.io/public/media/19579b7f-13ac-4b0f-84b9-c8345980ad33_a054ae06-e274-4f49-92c0-ec2e5ee931bc_c-AnwarMolette__62CAAD5443E64C7D86B1E9C108EDDCFD_1663889156012.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-166f6f59.webp",
     text: "This was a goal I have wanted to accomplish to further my knowledge and understanding as I continue to grow my business and continue my journey as an entrepreneur! It taught me many useful things I needed to know in order to be successful, the baffling things that I had questions for, that went unanswered in my mind, gave me a different look at how to handle myself as a business owner and leader of my company",
   },
   {
     id: 19,
     name: "Swaroop Rath",
     role: "Software Engineer",
-    avatar: "https://cdn.senja.io/public/media/e8e49af0-db9b-4117-994b-1e8fd95c2a4b_d4613783-58db-4912-ab6e-02f7039da1e0_1731644373149.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-6c8e428f.webp",
     text: "Love it! And I learnt a lot. What I like the most is the content, format, summaries, knowledge and the fact that it’s always available and growing. Also the community, social media channels and the support group are great",
   },
   {
     id: 20,
     name: "Kenneth Maynard",
     role: "Business Owner",
-    avatar: "https://cdn.senja.io/public/media/79003e85-84e1-4b09-a2df-1014a9ee67e3_ff623dd9-dc9d-49b3-a805-4834507a12e7_1610196548115%20%281%29.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-4f05bfe0.webp",
     text: "It is priceless to have such esteemed and successful faculty, they teach business concepts that are immediately applicable for entrepreneurs, not to mention the most outstanding value for money!",
   },
   {
     id: 21,
     name: "Jason Doubt",
     role: "Co-Founder",
-    avatar: "https://cdn.senja.io/public/media/ec6125f7-9d10-46de-a317-64f3e96b868c_34b2cbbe-7c3e-46f4-8087-bb72952ed5c7_1744816316399.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-6e294497.webp",
     text: "Supreme Coach is the future of learning for business-minded people looking to gain real, practical knowledge about starting a business and developing in a successful way.",
   },
   {
     id: 22,
     name: "Muzammil Kamran",
     role: "Writer",
-    avatar: "https://ik.imagekit.io/senja/tr:f-jpeg/Avatars/avatar_aOgsMJ-eZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1657796891741",
+    avatar: "/external-images/img-8cce212e.webp",
     text: "This is the best entrepreneurship course out there which distinguishes itself from traditional business education which teaches ages old theories and frameworks leaving you in no place to start your own venture. Supreme Coach not only teaches practical concepts but a comprehensive understanding which enables you to start your own venture. When do you get a chance to learn from founders of Youtube, Shazam, Waze and Wikipedia etc? The course gave me an insight into the mindset of people who made the magic happen and changed the world.",
   },
   {
     id: 23,
     name: "Denise Mutuc",
     role: "Sales & Marketing Strategist",
-    avatar: "https://cdn.senja.io/public/media/6302d82b-4d1e-405d-9e5a-7e2e5a7db96e_e761f846-19ea-40f6-95bc-15593eb0758c_1645047645371.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-7984e069.webp",
     text: "The instructors incorporating their own experiences in the lesson made learning very easy on my part as it kept my interest level high.I'm happy to have access to the lessons along with the downloadable PDF files as I would love to come back and revisit every now and then. I wish Supreme Coach will continue adding more lectures as these are all gold!",
   },
   {
     id: 24,
     name: "Johann Muldoon",
     role: "Managing Director",
-    avatar: "https://cdn.senja.io/public/media/e643a944-708a-4b21-9fd0-f43f6951d1a5_2c2b3852-2f50-4d1a-a848-f0d7903d9651_1727294476692.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-3e9e34da.webp",
     text: "I found the course really straightforward, a positive experience! The micro units are suited around busy lifestyles and meant I could jump on as a break or even sitting in the coffee shop!",
   },
   {
     id: 25,
     name: "Iliona Zablockaja",
     role: "Self Employed",
-    avatar: "https://cdn.senja.io/public/media/b4d547ec-8818-42b9-9a5e-3360170e5ec5_7609080a-0e9d-4e58-93dd-31ea2ad62e05_1700770061020.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-392a53b6.webp",
     text: "A valuable content that is accessible as a self-passed format. Beloved entrepreneurs and equally famous and highly respected creators and CEOs share their personal insights and journeys. That's a valuable resource to gain knowledge about the business world, especially for those, who never had a chance to familiarize with this part of the professionals in the business society.",
   },
   {
     id: 26,
     name: "Matt Marsh",
     role: "Business Owner",
-    avatar: "https://cdn.senja.io/public/media/1c647c47-6181-4ae7-bb07-2c2905def07d_fd7e0340-9629-435d-98a9-07bffb44b0ea_1638380870191.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-c621b6fc.webp",
     text: "The content was very professionally presented and engaging. I also loved having the handbook takeaways for each model to be able to reference and refresh when needed.",
   },
   {
     id: 27,
     name: "Victory Oluwagbemiga",
     role: "Business Owner",
-    avatar: "https://ik.imagekit.io/senja/tr:f-jpeg/Avatars/avatar_aOgsMJ-eZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1657796891741",
+    avatar: "/external-images/img-8cce212e.webp",
     text: "I still remember my first Supreme Coach trial with Ann Hiatt, I thought, ‘There’s no way I’m going to let this go.’ I felt like I found gold!. Joining Supreme Coach to get coached by some of the best minds in the world has been a major milestone in my professional career. Meeting the Supreme Coach team in London was amazing and I will never forget it, thank you for such a powerful experience!",
   },
   {
     id: 28,
     name: "Amit Bhundhoo, CPA",
     role: "Cloud Accounting | Tax | Strategy | Financial Management  Tax Planning | Fractional SMB Support",
-    avatar: "https://cdn.senja.io/public/media/G7vjrwnP4JicDZ8S6OSebuQH.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-b0f0e276.webp",
     text: "I’ve officially graduated from the Supreme Coach.org MBA. A new-age program built for entrepreneurs, innovators, and modern business leaders. Unlike traditional MBAs, Supreme Coach is practical, immersive, and refreshingly honest about what it takes to grow a sustainable business today. It has sharpened how I think strategically about business, finance, and leadership; lessons I’m already applying in my own work.",
     linkedin: true,
   },
@@ -1601,7 +1601,7 @@ export const testimonials: TestimonialItem[] = [
     id: 29,
     name: "Mohit Patel",
     role: "Founder of TruText | Building a Better Way to Connect | Ex-Mathnasium Owner",
-    avatar: "https://cdn.senja.io/public/media/jyG5asuSIPH3uhev0YxM0YKq.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-f9efaa4d.webp",
     text: "Last week, I officially completed the Supreme Coach Business School MBA course—but the real learning is just beginning. Supreme Coach Business School is not a normal MBA course. You get real advice from real entrepreneurs who have been through every struggle you can think of. It’s not just theory—it’s real-world strategies, lessons from failures, and insights you won’t find in a textbook. One of the biggest takeaways? You don’t have to figure it all out alone. Building a business can feel isolating, but surrounding yourself with the right people changes everything. Hearing from founders who have been in the same trenches—solving the same problems—gave me perspectives I never would’ve considered on my own. I also love how Supreme Coach is always adding new material and new resources for students. Can't wait to see what 2025 has in store! 📌 Lesson learned: The best investment you can make is in learning from others. A huge thanks to the Supreme Coach team and the incredible entrepreneurs in the program. Now, it’s time to apply what I’ve learned! For all the business owners out there—what’s the best piece of advice you’ve ever received? Drop it in the comments!",
     linkedin: true,
   },
@@ -1609,7 +1609,7 @@ export const testimonials: TestimonialItem[] = [
     id: 30,
     name: "Christopher Mensah",
     role: "Solution Consultant Digital Assets, Web3, Board Advisor, Digital Assets Educator: Bridging the gap from web2 to web3",
-    avatar: "https://cdn.senja.io/public/media/6b21fd33-874d-4698-84a9-373d1835b606_57ed6256-060c-4c90-b891-f0aab8b800a7_Christopher%20Mensah.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-11462a2c.webp",
     text: "When you decide to upgrade your knowledge, I recommend studying business. Supreme Coach's alternative MBA was invaluable in its content and its insights were exactly what I was looking for, I was able to apply the principles immediately. Entrepreneurship, intrapreneurship or solopreneurship is accessible to all when you understand the principles and applications of business. If you were thinking of a course to upgrade your knowledge, check Supreme Coach.org",
     linkedin: true,
   },
@@ -1617,7 +1617,7 @@ export const testimonials: TestimonialItem[] = [
     id: 31,
     name: "Gilles Chetelat",
     role: "CEO at mediarithmics",
-    avatar: "https://cdn.senja.io/public/media/KWOdCWqXPsusDFhRHp5O86p7.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-e3128b05.webp",
     text: "This is in fact my 3rd master's degree after Georgia Institute of Technology and ESC Clermont Business School but this experience was invaluable: 👉 Taught by the best tech entrepreneurs from the Silicon Valley including founders from Shazam, Youtube, Wikipedia, Waze and Lime... ⛵️ Fully Remote and 20 times less expensive than a full time MBA, ⛳️ Graduated >20 years after my last degree (Was worth the update), ♻️ No travel needed.",
     linkedin: true,
   },
@@ -1625,7 +1625,7 @@ export const testimonials: TestimonialItem[] = [
     id: 32,
     name: "Aidan Kaye",
     role: "Servant Leader | Entrepreneur",
-    avatar: "https://cdn.senja.io/public/media/Xbnj0kZS7jU4j2CMmv7MMuLC.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-7d5fb164.webp",
     text: "Happy to have completed the Supreme Coach MBA program. I loved the course, as it filled gaps in my knowledge of my business skills, including leadership, business strategy, entrepreneurship, and financial accounting. I'm excited to put these skills to use!",
     linkedin: true,
   },
@@ -1633,7 +1633,7 @@ export const testimonials: TestimonialItem[] = [
     id: 33,
     name: "Gregory T. Lande",
     role: "Award-Winning Sales Leader",
-    avatar: "https://cdn.senja.io/public/media/e5a5830a-7aa4-4b37-a7fe-7a245294e745_avatar.png?width=63&height=63&format=webp",
+    avatar: "/external-images/img-d2ef96df.webp",
     text: "I recently completed my MBA program with The #Supreme Coach Business School; it was an incredibly educational and rewarding experience. The support and guidance from #Supreme Coach's faculty was invaluable...from Joaquim Berryer convincing me that at this stage of my career #Supreme Coach was undoubtedly the right choice, to Joceline Perrot continually communicating with me ensuring that the modules. I couldn't be happier with the choice I made with #Supreme Coach...you have added to my life in multiple ways, and I couldn't be more grateful.",
     linkedin: true,
   },
@@ -1641,7 +1641,7 @@ export const testimonials: TestimonialItem[] = [
     id: 34,
     name: "Grace Randall",
     role: "Project Manager at StrategiQ",
-    avatar: "https://cdn.senja.io/public/media/iiLW8IfJmSblVPZFGTVCdPyv.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-f610b6db.webp",
     text: "This course has given me actionable insights from the world's most successful founders and top executives, supporting me to progress my professional career. It's especially helped to elevate my thinking which will be invaluable when delivering projects and working with our brilliant clients.",
     linkedin: true,
   },
@@ -1649,7 +1649,7 @@ export const testimonials: TestimonialItem[] = [
     id: 35,
     name: "Kelvin Alaneme",
     role: "CEO Mindhelpa",
-    avatar: "https://cdn.senja.io/public/media/SMqW64grLFL5ww0wzuH3hYc3.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-85a5b5a2.webp",
     text: "If you are a startup founder and there is just one book to read, I will recommend Uri Levine’s masterpiece - 'Fall in Love with the Problem, Not the Solution'. Uri is the Co-Founder of Waze and Moovit - 2 unicorns (private companies valued at over $1 billion). I encountered him during my Supreme Coach.org MBA program and he spits gems after gems.",
     linkedin: true,
   },
@@ -1657,7 +1657,7 @@ export const testimonials: TestimonialItem[] = [
     id: 36,
     name: "Carl Morris",
     role: "Experienced EdTech Founder",
-    avatar: "https://cdn.senja.io/public/media/7d3d1476-2946-452f-95b9-b776a79702ed_96342f07-3720-4291-af72-a230ab8e69d6_Carl%20Morris.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-ce2d9435.webp",
     text: "Huge thanks for the mention in the latest Supreme Coach.org community update. 🙏 Calling all aspiring entrepreneurs! If you're looking to level up your skills, this course is a game-changer. Packed with invaluable insights and advice from seasoned innovators. 💡💪",
     linkedin: true,
   },
@@ -1665,7 +1665,7 @@ export const testimonials: TestimonialItem[] = [
     id: 37,
     name: "Kevin Creery",
     role: "Planning Analyst @ Resort Municipality Of Whistler | Community Planning | Policy Planning | Bylaw Enforcement",
-    avatar: "https://cdn.senja.io/public/media/05jOlcp3Wzqf6bGHJKw1O2VV.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-355eaaee.webp",
     text: "Supreme Coach offers great insights from tech founders and CEOs about how they started their businesses. Supreme Coach fits my needs to grow my business and tech expertise with real-world examples from successful tech founders. Supreme Coach enables me to learn the modules as I go and handbooks provide more background and context. As a lifelong learner who embraces innovation, Supreme Coach provides me with many skills and the knowledge necessary to advance my career and enhance opportunities.",
     linkedin: true,
   },
@@ -1673,7 +1673,7 @@ export const testimonials: TestimonialItem[] = [
     id: 38,
     name: "Azam Khan",
     role: "ASM Software Manager | Driving Quality and Efficiency",
-    avatar: "https://ik.imagekit.io/senja/tr:f-jpeg/Avatars/avatar_aOgsMJ-eZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1657796891741",
+    avatar: "/external-images/img-8cce212e.webp",
     text: "What an MBA ⭐️⭐️⭐️⭐️⭐️",
     linkedin: true,
   },
@@ -1681,7 +1681,7 @@ export const testimonials: TestimonialItem[] = [
     id: 39,
     name: "Tamzidul Matin",
     role: "Cloud DevOps Engineer",
-    avatar: "https://cdn.senja.io/public/media/YnUwwlQziXs7Ah1Ud9xlC3TQ.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-cb9966eb.webp",
     text: "This revolutionary program, taught by some of the world's most accomplished founders, has been an incredible journey of learning and growth. The knowledge and insights I've gained throughout this program are invaluable. I've had the opportunity to delve deep into the world of business, learning from the best in the field, and applying these learnings to real-world scenarios.",
     linkedin: true,
   },
@@ -1689,7 +1689,7 @@ export const testimonials: TestimonialItem[] = [
     id: 40,
     name: "Jean Boutros",
     role: "Data Engineering and Analytics Lead at PwC UK",
-    avatar: "https://cdn.senja.io/public/media/5tD266xB8DBfi0rcpxt0MASg.jpeg?width=63&height=63&format=webp",
+    avatar: "/external-images/img-7e6d3717.webp",
     text: "I have studied at 6 different universities, some of which I graduated with a degree, others I didn't. While I still have a special place for academia in my life, and while I'm still planning to pursue my PhD in social sciences, there's a reality that keeps striking me every time I think back about my academic journeys. I can describe my academic journeys as enriching and eye-opening, but also economically straining and socially exclusionist. I can also confidently say that classic education still got a long way before it becomes aligned with real-life and market skills. I am delighted to share that I’ve started my Master of Business Administration - MBA at Supreme Coach. Supreme Coach's mission is to democratise business education, enabling access to a wider audience, away from systemic selectivism that is strengthened by socio-economic factors. Supreme Coach's objective is also to form people with market-ready skills and a growth make-it-happen mindset. #business #education #mba #growth #Supreme Coachmba Voir la traduction",
     linkedin: true,
   },
@@ -1792,7 +1792,7 @@ export const securityItems: SecurityItem[] = [
   },
   {
     name: "AICPA",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/6953d5310fcdb2da81b8b4d5_soc2-badge-teachable.svg",
+    src: "/external-images/img-278521d2.webp",
     width: 56,
     height: 56,
   },

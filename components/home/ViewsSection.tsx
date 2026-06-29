@@ -12,14 +12,14 @@ const views: View[] = [
         description:
             "Easily create programs, manage sessions, run communities, track progress, manage your business, and personalize client experiences all in one place.",
         image:
-            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1edeb440ab80fdf439_0eb0b462897381c9122d4546e00aca77_ui-main-hero-tab-2.webp",
+            "/external-images/img-3f4ca6a1.webp",
     },
     {
         title: "Your client's view",
         description:
             "Your client’s view is intuitive, mobile-friendly, and designed for seamless access to their programs, content, progress and experience.",
         image:
-            "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
+            "/external-images/img-ef6a7f79.webp",
     },
 ];
 
@@ -102,31 +102,14 @@ export default function ViewsSection(
         <section className="overflow-hidden bg-white px-4 pb-16 pt-8 sm:pb-18 sm:pt-10 md:px-6 md:pb-24 md:pt-12">
             <div className="mx-auto max-w-8xl text-center">
                 <div className="text-center">
-                    <h2 className="section-title mx-auto max-w-88 text-black sm:max-w-xl">
+                    <h2 className="section-title mx-auto max-w-3xl text-black">
                         {title}
                     </h2>
-                    <p className="section-description mx-auto max-w-152 text-black">
+                    <p className="section-description mx-auto max-w-4xl text-black">
                         {subtitle}
                     </p>
                 </div>
-
-                {/* <div className="mt-12 flex justify-center">
-            <Link
-                href="https://s13rwwhxhl9.typeform.com/to/d2IccJb1"
-                target="_blank"
-                className="px-7 py-4 contained-btn capitalize!"
-            >
-                Start For Free
-            </Link>
-            <Link
-                href="https://s13rwwhxhl9.typeform.com/to/lmPnaKUF?utm_source=website&"
-                className="ml-4 px-7 py-4 text-sm outlined-btn capitalize!"
-            >
-                Explore Our Plans
-            </Link>
-        </div> */}
-
-                <div className="mx-auto mt-10 max-w-330 overflow-hidden rounded-[12px] bg-gray-100 sm:mt-12 sm:rounded-[15px]">
+                <div className="mx-auto mt-4 max-w-330 overflow-hidden rounded-[12px] bg-gray-100 sm:mt-5 sm:rounded-[15px] md:mt-6">
                     <div className=" flex flex-col px-2 py-2 lg:px-4 lg:py-4 md:mb-5 md:flex-row md:flex-wrap items-stretch justify-items-stretch">
                         {usedItems.map((view, index) => (
                             <div
@@ -164,13 +147,11 @@ export default function ViewsSection(
                             />
                         ))}
                     </div>
-
-
                 </div>
 
                 <Link
-                    href="https://s13rwwhxhl9.typeform.com/to/lmPnaKUF?utm_source=website&"
-                    className="contained-btn mx-auto mt-6 inline-flex w-full max-w-[220px] items-center justify-center px-7 py-4 text-sm capitalize! sm:mt-7 sm:w-auto sm:max-w-none"
+                    href="/demo"
+                    className="contained-btn mx-auto mt-4 inline-flex w-full max-w-[220px] items-center justify-center px-7 py-4 text-sm capitalize! sm:mt-5 sm:w-auto sm:max-w-none md:mt-6"
                 >
                     Explore Demo
                 </Link>

@@ -108,19 +108,19 @@ function ComparisonCard({
 export default function MissionComparisonSection() {
   return (
     <section className="overflow-hidden bg-black">
-      <div className="mx-auto w-full max-w-340 px-4 pb-8 pt-12 sm:px-6 sm:pb-10 sm:pt-16 md:px-8 md:pb-12 md:pt-20 lg:px-12 lg:pb-16 lg:pt-28">
-        <div className="mx-auto max-w-265 text-center">
+      <div className="mx-auto w-full max-w-340 px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 lg:px-12 lg:py-16">
+        <div className=" text-center">
           <p className="section-label">
             Our Mission
           </p>
 
-          <h2 className="section-title mt-5 text-white sm:mt-6">
+          <h2 className="section-title mx-auto mt-3 text-white">
            We're Challenging How Coaching Businesses Are Built
 
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 items-start gap-5 sm:mt-12 sm:gap-6 md:gap-7 lg:mt-18 lg:grid-cols-2 lg:gap-9">
+        <div className="mt-4 grid grid-cols-1 items-start gap-5 sm:mt-5 sm:gap-6 md:gap-7 lg:mt-6 lg:grid-cols-2 lg:gap-9">
           <ComparisonCard
             title="The Old Way"
             items={traditionalMbaItems}

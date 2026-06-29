@@ -264,7 +264,7 @@ export default function IntegrationsSection({ title, description, btnText = "Exp
                         {title}
                     </h2>
 
-                    <p className="section-description relative z-20 mx-auto mt-4 max-w-2xl text-white">
+                    <p className="section-description relative z-20 mx-auto mt-3 text-white">
                         {description}
                     </p>
                 </div>

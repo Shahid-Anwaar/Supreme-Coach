@@ -135,7 +135,7 @@ export function QuoteCard({
       <div className="mt-0.5 h-px w-full bg-black/70" />
 
       <div className="mt-10 flex-1">
-        <p className="font-serif text-[16px] leading-[1.38] text-black/70 sm:text-[18px] lg:text-[20px] lg:leading-[1.45]">
+        <p className="stylish-family text-[16px] leading-[1.38] text-black/70 sm:text-[18px] lg:text-[20px] lg:leading-[1.45]">
           {student.quote}
         </p>
       </div>

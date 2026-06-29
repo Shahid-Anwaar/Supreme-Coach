@@ -46,7 +46,7 @@ export default function ProductsPage() {
         title="Course creation tools for higher student engagement"
         description="So we give you the tools to give them the best learning experience possible. Keep them coming back—and referring their friends, too."
         imgShown="left"
-        imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e3117618576ae8098abc7b_b98cb8e56c799a3342711e81f7fb0fce_courses-quiz-1.webp"
+        imgSrc="/external-images/img-15da9c81.webp"
         imgAlt="Supreme Coach course onboarding and quiz preview"
         features={Firms_FEATURES}
 
@@ -55,7 +55,7 @@ export default function ProductsPage() {
         title="Simple to build—and keep growing"
         description="When you’re big on ambition and light on time, you need a platform that’s reliable and doesn't limit your creativity."
         imgShown="right"
-        imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176489d43d06d91c2a4_de40b7dd8f24f29c9f0a8704b2f53a34_courses-quiz-2.webp"
+        imgSrc="/external-images/img-2aeeec10.webp"
         features={Firms_FEATURES2}
         wrapperClassName="bg-white"
       />

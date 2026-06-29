@@ -21,7 +21,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 1,
     image: "/client (1).webp",
-    logo: "https://www.gogetta.com/home/testimonials/mckay.svg",
+    logo: "/external-images/img-fb6f8dd6.webp",
     quote:
       "Their approach to collaborative problem-solving ensures that proposed solutions are aligned with our objectives and deliver real value. As a result, they have become a valued partner—contributing not only to the success of individual projects but also supporting our long-term strategic outcomes.",
     name: "Carolyn Chapman",
@@ -31,7 +31,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 2,
     image: "/client (2).webp",
-    logo: "https://www.gogetta.com/home/testimonials/hrv.svg",
+    logo: "/external-images/img-b77df556.webp",
     quote:
       "Advertising is easy and efficient. Staff are always helpful, and quick to respond, and give great advice, and recommendation to tailor your advertising or social campaigns here in NZ and overseas. Good calibre of candidates would definitely recommend.",
     name: "Natalie James",
@@ -41,7 +41,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 3,
     image: "/client (3).webp",
-    logo: "https://www.gogetta.com/home/testimonials/chatham.svg",
+    logo: "/external-images/img-5d8075eb.webp",
     quote:
       "Chatham Islands Electricity Ltd engaged the team to help us fill 2 vacant positions. We had been trying the traditional way of advertising the positions for a long time with little success. The team put together a campaign that attracted a lot of interest and applications for us. Through this process, we have been able to fill both positions with people who will be a benefit to our company and the Chatham Islands community.",
     name: "Stuart Holdaway",
@@ -51,7 +51,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 4,
     image: "/client (4).webp",
-    logo: "https://www.gogetta.com/home/testimonials/ak.svg",
+    logo: "/external-images/img-194a3dea.webp",
     quote:
       "Working with the team was great. The radio and social media were very effective at getting our listings in front of a targeted audience and really got people talking. We received a large number of quality applications and were able to fill 3 roles as a result.",
     name: "Robby (Bobby) Elliot",
@@ -61,7 +61,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 5,
     image: "/client (5).webp",
-    logo: "https://www.gogetta.com/home/testimonials/gfs.svg",
+    logo: "/external-images/img-8eb724d7.webp",
     quote:
       "The experience was very positive and we were blown away by the number of quality applications we received from the campaign. We found this to be a very economical way of sourcing candidates and we'd definitely recommend working with them.",
     name: "Peter Leitch",
@@ -127,12 +127,12 @@ export function TestimonialCard({ item }: { item: TestimonialItem }) {
 
 export default function ClientsSection({ title, isShowCompanies = true }: { title: string, isShowCompanies?: boolean }) {
   return (
-    <section className="overflow-hidden bg-[#f3f4f6] py-14 sm:py-16 md:py-20 lg:py-24 xl:py-32">
+    <section className="overflow-hidden bg-[#f3f4f6] py-8 sm:py-10 md:py-12 lg:py-16">
       <div className="mx-auto max-w-400 px-4 sm:px-6 lg:px-0">
         <div className="text-center">
           <span className="section-label text-black">Testimonials</span>
 
-          <h2 className="section-title mx-auto mt-5 text-black">
+          <h2 className="section-title mx-auto mt-3 text-black">
             {title}
           </h2>
 
@@ -150,10 +150,10 @@ export default function ClientsSection({ title, isShowCompanies = true }: { titl
             isAutoplay={false}
             items={TESTIMONIALS}
             options={{ loop: true, align: "start", skipSnaps: false }}
-            wrapperClassName="mt-20 min-h-0 bg-transparent sm:mt-24 lg:mt-32"
+            wrapperClassName="mt-16 min-h-0 bg-transparent sm:mt-18 lg:mt-20"
             CustomButtonWrapper={(onPrevClick, onNextClick) => {
               return (
-                <div className="absolute -top-14 flex w-full items-center justify-center gap-3 sm:-top-16 sm:gap-4 lg:-top-20">
+                <div className="absolute -top-12 flex w-full items-center justify-center gap-3 sm:-top-14 sm:gap-4 lg:-top-16">
                   <button
                     type="button"
                     onClick={onPrevClick}
@@ -178,7 +178,7 @@ export default function ClientsSection({ title, isShowCompanies = true }: { titl
         </div>
 
         {isShowCompanies &&
-          <div className="mx-auto max-w-340 mt-18 px-4 sm:px-6 lg:px-0">
+          <div className="mx-auto max-w-340 mt-6 px-4 sm:px-6 lg:px-0">
             <CompanyLogoCarousel companyLogos={[...companyLogos, ...companyLogos]} />
           </div>}
       </div>

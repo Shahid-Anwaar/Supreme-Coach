@@ -15,23 +15,23 @@ import FeaturesSection from "@/components/home/FacultySection";
 const companyLogos = [
   {
     title: "AA",
-    image: "https://www.gogetta.com/home/logo-aa.svg",
+    image: "/external-images/img-cdcf3d31.webp",
   },
   {
     title: "AK",
-    image: "https://www.gogetta.com/home/logo-ak.svg",
+    image: "/external-images/img-e982166d.webp",
   },
   {
     title: "CIET",
-    image: "https://www.gogetta.com/home/logo-ciet.svg",
+    image: "/external-images/img-129b3243.webp",
   },
   {
     title: "Visy",
-    image: "https://www.gogetta.com/home/logo-visy.svg",
+    image: "/external-images/img-c6334e3e.webp",
   },
   {
     title: "GFS",
-    image: "https://www.gogetta.com/home/logo-gfs.svg",
+    image: "/external-images/img-696b08de.webp",
   },
 ];
 const steps = [
@@ -222,7 +222,7 @@ export default function CoachesPage() {
         title="Programme creation tools built for coaches who take their client results seriously."
         description="A client who gets real, measurable outcomes doesn't just complete your programme they renew, refer, and come back for everything you build next."
         imgShown="left"
-        imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e3117618576ae8098abc7b_b98cb8e56c799a3342711e81f7fb0fce_courses-quiz-1.webp"
+        imgSrc="/external-images/img-15da9c81.webp"
         imgAlt="Supreme Coach course onboarding and quiz preview"
         features={Coaches_FEATURES}
         btnText="Book a Discovery Call"
@@ -232,7 +232,7 @@ export default function CoachesPage() {
         title="A community that keeps clients engaged long after the session ends."
         description="The coaches who retain clients longest don't just deliver great sessions they create a space where clients stay connected, stay motivated, and keep showing up. Supreme Coach builds that space directly into your practice."
         imgShown="right"
-        imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176489d43d06d91c2a4_de40b7dd8f24f29c9f0a8704b2f53a34_courses-quiz-2.webp"
+        imgSrc="/external-images/img-2aeeec10.webp"
         features={Coaches_FEATURES2}
         wrapperClassName="bg-white"
         btnText="Book a Discovery Call"

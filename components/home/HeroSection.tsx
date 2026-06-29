@@ -43,7 +43,7 @@ export default function AugmentHeroSection({
   description = defaultHeroDescription,
   features = FEATURES,
   primaryButtonText = "Book a Strategy Call",
-  primaryButtonHref = "https://augment.school/sHK7SoG?",
+  primaryButtonHref = "/call",
   primaryButtonIcon = "solar:phone-linear",
   secondaryButtonText = "See What We Build",
   secondaryButtonHref = "/contact-sales",

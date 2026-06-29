@@ -10,22 +10,10 @@ import { companyLogos, Firms_FEATURES, Firms_FEATURES2, productFaqs } from "@/da
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import ProductTools from "@/components/products/ProductTools";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
-import { createMetadata } from "@/lib/seo";
+import { productsMetadata } from "@/lib/seo";
 import WhatToInclude from "@/components/products/WhatInclude";
 
-export const metadata = createMetadata({
-  title: "What We Build | Supreme Coach — Custom Coaching Business Infrastructure",
-  description: "Supreme Coach builds 8 custom coaching infrastructure components — website, CRM, client portal, programme delivery, funnels, AI, community, and payments — deployed on your own servers, owned by you.",
-  keywords: [
-    "done-for-you coaching business infrastructure", 
-    "coaching website design service UK", 
-    "custom coaching platform build", 
-    "coaching CRM setup service", 
-    "coaching business setup", 
-    "coaching programme delivery system"
-  ],
-  path: "/products",
-});
+export const metadata = productsMetadata;
 
 export default function ProductsPage() {
   return (

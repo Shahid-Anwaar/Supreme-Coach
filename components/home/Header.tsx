@@ -78,7 +78,7 @@ export default function HeaderSection() {
                 >
                   Contact Sales
                 </Link>
-                <PrimaryCta href="#" />
+                <PrimaryCta href="/call" />
               </div>
             </div>
 
@@ -150,7 +150,7 @@ export default function HeaderSection() {
               >
                 Contact Sales
               </Link>
-              <PrimaryCta href="#" mobile />
+              <PrimaryCta href="/call" mobile />
             </div>
           </div>
         </div>

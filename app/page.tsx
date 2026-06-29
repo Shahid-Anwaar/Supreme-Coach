@@ -13,7 +13,9 @@ import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import BrainFeatureSection from "@/components/home/BrainFeature";
 import TeamSolutionsSection from "@/components/home/TeamSolution";
 import AiPoweredWorkSection from "@/components/home/AIWorkedSection";
+import { homeMetadata } from "@/lib/seo";
 
+export const metadata = homeMetadata;
 export default function Home() {
   return (
     <main className="bg-white text-black relative">

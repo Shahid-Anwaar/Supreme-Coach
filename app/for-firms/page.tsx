@@ -10,6 +10,7 @@ import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
 import FirmHeroSection from "@/components/for-firms/FirmHero";
 import FeaturesSection from "@/components/home/FacultySection";
+import { forFirmsMetadata } from "@/lib/seo";
 
 const views = [
   {
@@ -258,7 +259,7 @@ const HOW_IT_WORKS_CARDS : HowItWorksCardItem[] = [
   },
 ];
 
-
+export const metadata = forFirmsMetadata;
 export default function FirmsPage() {
   return (
     <main className="bg-white text-black relative">

@@ -8,7 +8,7 @@ import { Coaches_FEATURES, Coaches_FEATURES2, coachesFaqs, Firms_FEATURES, Firms
 import ProductSalesHubSection from "@/components/products/ProductSalesHub";
 import CompanyLogoCarousel from "@/components/home/CompaniesSlider";
 import FAQSection from "@/components/home/FaqSection";
-import { createMetadata } from "@/lib/seo";
+import { forCoachesMetadata } from "@/lib/seo";
 import CoachHeroSection from "@/components/for-coach/CoachHero";
 import FeaturesSection from "@/components/home/FacultySection";
 
@@ -186,22 +186,7 @@ const HOW_IT_WORKS_CARDS: HowItWorksCardItem[] = [
   },
 ];
 
-export const metadata = createMetadata({
-  title:
-    "Custom Coaching Business Infrastructure for Professional Coaches | Supreme Coach",
-  description:
-    "Supreme Coach builds custom coaching websites, client portals, CRM systems, and programme delivery — deployed on your own servers. For ACC, PCC, and MCC coaches. One-time investment, lifetime ownership.",
-  keywords: [
-    "done-for-you coaching business setup",
-    "coaching website design for coaches",
-    "ICF coach website",
-    "coaching CRM setup",
-    "coaching client portal",
-    "professional coach infrastructure",
-    "coaching business build",
-  ],
-  path: "/for-coaches",
-});
+export const metadata = forCoachesMetadata;
 
 export default function CoachesPage() {
   return (

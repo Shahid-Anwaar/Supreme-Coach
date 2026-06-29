@@ -20,28 +20,28 @@ type SecurityItem = {
 const trustedLogos: LogoItem[] = [
   {
     name: "University of Pennsylvania",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/69e0d2d84a7346a752b39181_1f76f88275861077a90fbdc3fa6089aa_upenn-logo-black.svg",
+    src: "/external-images/img-ce939f0a.webp",
     width: 140,
     height: 48,
     className: "h-12 w-auto sm:h-16",
   },
   {
     name: "BBC",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/69e0d2d8a9139c3c33c4dddd_68bd2fea137c68506d295fdcb16a5bb7_bbc-logo-black.svg",
+    src: "/external-images/img-5a39bf7a.webp",
     width: 110,
     height: 40,
     className: "h-8 w-auto sm:h-16",
   },
   {
     name: "Manychat",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/69e0d2d80951bd87a9a079d2_e33f9312470aee49cd7f2c3e2e4db60d_manychat-logo-black.svg",
+    src: "/external-images/img-ce73385b.webp",
     width: 170,
     height: 40,
     className: "h-8 w-auto sm:h-10",
   },
   {
     name: "Shopify",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/69e0d2d8a523bbe12950cc43_70745516ac53e02c9f92e7455dd38c38_shopify-logo-black.svg",
+    src: "/external-images/img-3f44759b.webp",
     width: 150,
     height: 42,
     className: "h-8 w-auto sm:h-10",
@@ -51,25 +51,25 @@ const trustedLogos: LogoItem[] = [
 const securityItems: SecurityItem[] = [
   {
     name: "SOC 2",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/69e0e2f8ab376492b66e3173_security-soc2-icon-black.svg",
+    src: "/external-images/img-d0725a4f.webp",
     width: 56,
     height: 56,
   },
   {
     name: "PCI DSS",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/69e0e2f8bba97ee0f04598a9_security-pci-dss-icon-black.svg",
+    src: "/external-images/img-e9fb7b48.webp",
     width: 56,
     height: 56,
   },
   {
     name: "GDPR",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/69e0e2f8f3673b5a9d910a2e_security-gdpr-icon-black.svg",
+    src: "/external-images/img-02043d1e.webp",
     width: 56,
     height: 56,
   },
   {
     name: "CCPA",
-    src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/69e0e2f8a1fd8534085a20b3_security-ccpa-icon-black.svg",
+    src: "/external-images/img-8c81bd5c.webp",
     width: 56,
     height: 56,
   },

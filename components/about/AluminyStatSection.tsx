@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const alumniImages = [
-  "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=120",
-  "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=120",
-  "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=120",
+  "/external-images/img-1281c174.webp",
+  "/external-images/img-d87d83ff.webp",
+  "/external-images/img-728defcf.webp",
 ];
 
 export default function AlumniStatsSection() {

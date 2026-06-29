@@ -40,7 +40,7 @@ export default function ManifestoSection() {
             <div className="flex w-full max-w-[230px] flex-col items-center text-center sm:max-w-none lg:items-start lg:text-start">
               <Image
                 src={
-                  "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F65c1b01240b7458a871b8e02e16a0f8c"
+                  "/external-images/img-dccbd533.webp"
                 }
                 width={180}
                 height={100}
@@ -56,7 +56,7 @@ export default function ManifestoSection() {
             <div className="flex w-full max-w-[230px] flex-col items-center text-center sm:max-w-none lg:items-start lg:text-start">
               <Image
                 src={
-                  "https://cdn.builder.io/api/v1/image/assets%2F20c9f56ee0104a98bd873ddbe200463a%2F0b7154d10c66468a82d9f38a67cb086e"
+                  "/external-images/img-d634d4ef.webp"
                 }
                 width={180}
                 height={100}

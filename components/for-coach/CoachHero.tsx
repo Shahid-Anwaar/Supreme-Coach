@@ -43,7 +43,7 @@ export default function CoachHeroSection({
     description = defaultHeroDescription,
     features = FEATURES,
     primaryButtonText = "Book a Discovery Call",
-    primaryButtonHref = "https://augment.school/sHK7SoG?",
+    primaryButtonHref = "/call",
     primaryButtonIcon = "solar:phone-linear",
     secondaryButtonText = "See What's Included",
     secondaryButtonHref = "/contact-sales",

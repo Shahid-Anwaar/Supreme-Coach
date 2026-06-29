@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://augmentation.netlify.app";
+const SITE_URL = "https://supreme-coach.netlify.app";
 
 const routes = [
   {
-    path: "",
+    path: "/",
     priority: 1,
     changeFrequency: "weekly",
   },

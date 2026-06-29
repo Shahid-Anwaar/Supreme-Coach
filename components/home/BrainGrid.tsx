@@ -15,7 +15,7 @@ const BRAIN_CARDS: BrainCard[] = [
         description:
             "Brain² sees your tasks, docs, and conversations. It does not need a brief because it knows what is happening in real-time.",
         image:
-            "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+            "/external-images/img-c4952244.webp",
         alt: "Team working on tasks and documents",
     },
     {
@@ -24,7 +24,7 @@ const BRAIN_CARDS: BrainCard[] = [
         description:
             "Brain² picks the best AI model for each job. One subscription. Every frontier model running with full context.",
         image:
-            "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200",
+            "/external-images/img-e8d22da5.webp",
         alt: "Artificial intelligence and software system",
     },
     {
@@ -33,7 +33,7 @@ const BRAIN_CARDS: BrainCard[] = [
         description:
             "Brain² learns how you and your team talk: your tone, your shorthand, your preferences.",
         image:
-            "https://images.pexels.com/photos/9655624/pexels-photo-9655624.jpeg",
+            "/external-images/img-a0a262a4.webp",
         alt: "Team communication and collaboration",
     },
 ];

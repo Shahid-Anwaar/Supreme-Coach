@@ -2,7 +2,7 @@ import Image from "next/image";
 import BrainGrid from "./BrainGrid";
 
 const footerImage =
-  "https://clickup.com/assets/home_2026/Footer40.webp";
+  "/external-images/img-52ea6f0c.webp";
 
 function ClickUpStyleLogo() {
   return (

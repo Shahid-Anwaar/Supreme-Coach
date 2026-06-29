@@ -56,7 +56,7 @@ export const heroSecurityItems: SecurityItem[] = [
   },
 //   {
 //     name: "AICPA",
-//     src: "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/6953d5310fcdb2da81b8b4d5_soc2-badge-teachable.svg",
+//     src: "/external-images/img-278521d2.webp",
 //     width: 56,
 //     height: 56,
 //   },

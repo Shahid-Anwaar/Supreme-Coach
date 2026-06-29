@@ -17,14 +17,14 @@ const views = [
     description:
       "Full visibility across the entire firm, every coach, every client, every programme, every invoice, and every financial metric in one command centre. Nothing happens in your business without you being able to see it.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1edeb440ab80fdf439_0eb0b462897381c9122d4546e00aca77_ui-main-hero-tab-2.webp",
+      "/external-images/img-3f4ca6a1.webp",
   },
   {
     title: "Coach Portal",
     description:
       "Every coach on your team gets their own dedicated workspace, their clients, their sessions, their programmes, and their pipeline organised, accessible, and completely separate from everyone else's.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e47a1d7727e0f7bd1ac19e_8b04a4deab039f00b369cedcd9295a73_ui-main-hero-tab-1.webp",
+      "/external-images/img-ef6a7f79.webp",
   },
   {
     title: "Team Portal",
@@ -38,30 +38,30 @@ const views = [
     description:
       "A fully branded, white-label experience your clients associate entirely with your firm programmes, goals, sessions, community, and resources on any device, any time. Not a platform. Your practice.",
     image:
-      "https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-2f2f6a27.webp",
   },
 ];
 
 const companyLogos = [
   {
     title: "AA",
-    image: "https://www.gogetta.com/home/logo-aa.svg",
+    image: "/external-images/img-cdcf3d31.webp",
   },
   {
     title: "AK",
-    image: "https://www.gogetta.com/home/logo-ak.svg",
+    image: "/external-images/img-e982166d.webp",
   },
   {
     title: "CIET",
-    image: "https://www.gogetta.com/home/logo-ciet.svg",
+    image: "/external-images/img-129b3243.webp",
   },
   {
     title: "Visy",
-    image: "https://www.gogetta.com/home/logo-visy.svg",
+    image: "/external-images/img-c6334e3e.webp",
   },
   {
     title: "GFS",
-    image: "https://www.gogetta.com/home/logo-gfs.svg",
+    image: "/external-images/img-696b08de.webp",
   },
 ];
 
@@ -71,7 +71,7 @@ const SALES_HUB_FEATURES = [
     description:
       "One invoice per company regardless of how many employees are enrolled. Every corporate client billed professionally and automatically with no manual step, no chasing.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e311765fa29efc8085f497_943111b162257a8d92b15efa8ad802c4_courses-payments-2.webp",
+      "/external-images/img-f04c8b1e.webp",
     imageAlt: "Corporate payments preview",
     objClass: "",
   },
@@ -80,7 +80,7 @@ const SALES_HUB_FEATURES = [
     description:
       "Every invoice generated, formatted, and sent without your team touching it. Individual receipts, company invoices, and VAT applied correctly per client location all handled automatically.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176548905717e562e8a_4ce85045ea6d6abfccfc6ba00aed2594_courses-payments-1.webp",
+      "/external-images/img-a96842b1.webp",
     imageAlt: "Tax-compliant invoicing preview",
     objClass: "lg:-translate-y-28",
   },
@@ -89,7 +89,7 @@ const SALES_HUB_FEATURES = [
     description:
       "Revenue per coach, pipeline forecasting, corporate contract values, and lifetime client value across the entire operation in one real-time view, no spreadsheet required.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176a0248cabd8f02012_763b4baf45e90e34561637b98bbac9d5_courses-pay-their-way.webp",
+      "/external-images/img-ae29ee70.webp",
     imageAlt: "BFM dashboard preview",
     // objClass: "lg:-translate-y-14",
   },
@@ -98,7 +98,7 @@ const SALES_HUB_FEATURES = [
     description:
       "The Modeller simulates revenue scenarios in seconds. The Analyst flags anomalies before they become problems. The Planner tells you exactly what to do next based on live data, not gut feeling.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176548905717e562e8a_4ce85045ea6d6abfccfc6ba00aed2594_courses-payments-1.webp",
+      "/external-images/img-a96842b1.webp",
     imageAlt: "Modeller agents analytics dashboard preview",
   objClass: "lg:-translate-y-28",
   },
@@ -276,7 +276,7 @@ export default function FirmsPage() {
         title="Built for firms that deliver at scale and prove it with data."
         description="Your firm needs more than a coaching platform; it needs an operating system that coordinates your team, manages corporate clients, and generates reports that renew contracts automatically."
         imgShown="left"
-        imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e3117618576ae8098abc7b_b98cb8e56c799a3342711e81f7fb0fce_courses-quiz-1.webp"
+        imgSrc="/external-images/img-15da9c81.webp"
         imgAlt="Supreme Coach course onboarding and quiz preview"
         features={Firms_FEATURES}
       />
@@ -284,7 +284,7 @@ export default function FirmsPage() {
         title="Powerful enough for enterprise. Clean enough for one person to run."
         description="When you're managing multiple coaches, corporate clients, and complex delivery you need infrastructure that handles the complexity without creating more of it."
         imgShown="right"
-        imgSrc="https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176489d43d06d91c2a4_de40b7dd8f24f29c9f0a8704b2f53a34_courses-quiz-2.webp"
+        imgSrc="/external-images/img-2aeeec10.webp"
         features={Firms_FEATURES2}
         wrapperClassName="bg-white"
       />

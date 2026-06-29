@@ -4,48 +4,48 @@ import Image from "next/image";
 
 const topBadges = [
   {
-    src: "https://simply.coach/wp-content/uploads/2026/03/Coaching_BestRelationship_Total.svg",
+    src: "/external-images/img-e7d280bd.webp",
     alt: "Best Relationship",
   },
   {
-    src: "https://simply.coach/wp-content/uploads/2026/03/Coaching_BestResults_Total.svg",
+    src: "/external-images/img-ac1548a0.webp",
     alt: "Best Results",
   },
   {
-    src: "https://simply.coach/wp-content/uploads/2026/03/Coaching_HighPerformer_HighPerformer.svg",
+    src: "/external-images/img-75d7f268.webp",
     alt: "High Performer",
   },
   {
-    src: "https://simply.coach/wp-content/uploads/2026/03/Coaching_MomentumLeader_Leader.svg",
+    src: "/external-images/img-6b178155.webp",
     alt: "Momentum Leader",
   },
   {
-    src: "https://simply.coach/wp-content/uploads/2026/03/Mentoring_BestEstimatedROI_Roi.svg",
+    src: "/external-images/img-d5430c16.webp",
     alt: "Best Estimated ROI",
   },
   {
-    src: "https://simply.coach/wp-content/uploads/2026/03/Coaching_BestUsability_Total.svg",
+    src: "/external-images/img-c0af4181.webp",
     alt: "Best Usability",
   },
   {
-    src: "https://simply.coach/wp-content/uploads/2025/04/Mentoring_FastestImplementation_GoLiveTime.svg",
+    src: "/external-images/img-4aeacb58.webp",
     alt: "Fastest Implementation",
   },
 ];
 
 const securityBadges = [
   {
-    src: "https://simply.coach/wp-content/uploads/2022/11/21972-312_SOC_NonCPA.png",
+    src: "/external-images/img-8921ea20.webp",
     alt: "AICPA SOC",
     className: "w-[78px] sm:w-[90px] md:w-[98px]",
   },
   {
-    src: "https://simply.coach/wp-content/uploads/2022/11/PNG_GDPR-1-e1667800110908-1024x1006.webp",
+    src: "/external-images/img-9708ab6d.webp",
     alt: "GDPR",
     className: "w-[78px] sm:w-[90px] md:w-[98px]",
   },
   {
-    src: "https://simply.coach/wp-content/uploads/2022/11/hipaa-logo.png",
+    src: "/external-images/img-c16d13a5.webp",
     alt: "HIPAA",
     className: "w-[95px] sm:w-[110px] md:w-[125px]",
   },
@@ -53,12 +53,12 @@ const securityBadges = [
 
 const reviewBadges = [
   {
-    src: "https://badges.softwareadvice.com/reviews/d7ec0222-85d4-41c8-941e-24fa39baa542",
+    src: "/external-images/img-19020ef5.webp",
     alt: "Software Advice Reviews",
     className: "w-[150px] sm:w-[165px]",
   },
   {
-    src: "https://assets.capterra.com/badge/56a26c6b517de952384d6b060a74ec22.svg?v=2193033&p=232231",
+    src: "/external-images/img-7aa2526d.webp",
     alt: "Capterra Reviews",
     className: "w-[130px] sm:w-[145px]",
   },

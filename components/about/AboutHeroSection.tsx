@@ -18,98 +18,98 @@ const highlightItems: HighlightItem[] = [
     category: "Scenes",
     title: "Supreme Coach: An MBA for entrepreneurs",
     image:
-      "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-28b116eb.webp",
   },
   {
     id: 2,
     category: "Filming",
     title: "New course with Adam Cheyer, founder of Siri",
     image:
-      "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-a936d161.webp",
   },
   {
     id: 3,
     category: "Filming",
     title: "Recording the Prompt Engineering Module",
     image:
-      "https://images.pexels.com/photos/8197530/pexels-photo-8197530.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-ff732f3b.webp",
   },
   {
     id: 4,
     category: "Press",
     title: "Ariel and Roy made it to Forbes 30 Under 30",
     image:
-      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-c4952244.webp",
   },
   {
     id: 5,
     category: "In-Person Event",
     title: "Gathering Supreme Coach Students In San Francisco",
     image:
-      "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-ea50d06e.webp",
   },
   {
     id: 6,
     category: "Workshop",
     title: "Building practical business skills with founders",
     image:
-      "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-b13eb5e9.webp",
   },
   {
     id: 7,
     category: "Community",
     title: "Students collaborating on real startup challenges",
     image:
-      "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-0aeb00e7.webp",
   },
   {
     id: 8,
     category: "Mentorship",
     title: "Learning directly from experienced operators",
     image:
-      "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-d5a1e627.webp",
   },
   {
     id: 9,
     category: "Online Session",
     title: "Live founder sessions with students worldwide",
     image:
-      "https://images.pexels.com/photos/7551442/pexels-photo-7551442.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-55f427e4.webp",
   },
   {
     id: 10,
     category: "Event",
     title: "Bringing entrepreneurs together for practical learning",
     image:
-      "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-01819536.webp",
   },
   {
     id: 11,
     category: "Networking",
     title: "Connecting ambitious founders and business builders",
     image:
-      "https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-39db6cef.webp",
   },
   {
     id: 12,
     category: "Business Class",
     title: "A modern business school built for entrepreneurs",
     image:
-      "https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-e0178c8f.webp",
   },
   {
     id: 13,
     category: "Founder Talk",
     title: "Conversations with leaders building real companies",
     image:
-      "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-156375b6.webp",
   },
   {
     id: 14,
     category: "Behind The Scenes",
     title: "Inside the making of practical MBA lessons",
     image:
-      "https://images.pexels.com/photos/1181562/pexels-photo-1181562.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-3c1e9ed2.webp",
   },
 ];
 

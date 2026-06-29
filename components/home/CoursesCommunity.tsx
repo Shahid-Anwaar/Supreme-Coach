@@ -5,11 +5,11 @@ import TrustBadgesSection from './TrustBadgesSeciton'
 
 export default function CoursesCommunity() {
     const tempArray = [
-        "https://www.thinkific.com/wp-content/uploads/2026/02/G2BestSoftware2026-Badge-Global-Canadian-260x300.png",
-        "https://www.thinkific.com/wp-content/uploads/2026/02/G2BestSoftware2026-Badge-Persona-EducationProducts-260x300.png",
-        "https://www.thinkific.com/wp-content/uploads/2025/05/TrustRadius-BuyersChoice-2026-150x150.png",
-        "https://www.thinkific.com/wp-content/uploads/2026/02/G2users-love-us-258x300.png",
-        "https://www.thinkific.com/wp-content/uploads/2025/05/g2-momentum-leader-2026-261x300.png"
+        "/external-images/img-9408e7b0.webp",
+        "/external-images/img-6b4723c1.webp",
+        "/external-images/img-ec59bc6d.webp",
+        "/external-images/img-539641b0.webp",
+        "/external-images/img-c606fe40.webp"
     ]
     return (
         <div className="overflow-hidden bg-black text-white">

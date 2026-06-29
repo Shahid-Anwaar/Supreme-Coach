@@ -15,7 +15,7 @@ const SALES_HUB_FEATURES: SalesHubFeatureItem[] = [
     description:
       "One-time, instalment, or subscription attach any payment structure to any programme or offer. Stripe, PayPal, Google Pay, and Apple Pay all native. Clients pay their way. You get paid on time, automatically.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e311765fa29efc8085f497_943111b162257a8d92b15efa8ad802c4_courses-payments-2.webp",
+      "/external-images/img-f04c8b1e.webp",
     imageAlt: "Payments preview",
     objClass: "",
   },
@@ -24,7 +24,7 @@ const SALES_HUB_FEATURES: SalesHubFeatureItem[] = [
     description:
       "Every invoice generated, formatted, and sent without you touching it. VAT applied correctly per client location. Corporate clients get one company-level invoice regardless of how many employees are enrolled.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176548905717e562e8a_4ce85045ea6d6abfccfc6ba00aed2594_courses-payments-1.webp",
+      "/external-images/img-a96842b1.webp",
     imageAlt: "Tax-compliant invoicing preview",
     objClass: "lg:-translate-y-28",
   },
@@ -33,7 +33,7 @@ const SALES_HUB_FEATURES: SalesHubFeatureItem[] = [
     description:
       "MRR, lifetime client value, pipeline revenue, outstanding invoices, and revenue per programme every number in one real-time view. No spreadsheet. No accountant is required to understand it.",
     image:
-      "https://cdn.prod.website-files.com/687904fb2b26c434698c47e9/68e31176a0248cabd8f02012_763b4baf45e90e34561637b98bbac9d5_courses-pay-their-way.webp",
+      "/external-images/img-ae29ee70.webp",
     imageAlt: "BFM dashboard preview",
     objClass: "lg:-translate-y-14",
   },

@@ -21,7 +21,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 1,
     image: "/client (1).webp",
-    logo: "https://www.gogetta.com/home/testimonials/mckay.svg",
+    logo: "/external-images/img-fb6f8dd6.webp",
     quote:
       "Their approach to collaborative problem-solving ensures that proposed solutions are aligned with our objectives and deliver real value. As a result, they have become a valued partner—contributing not only to the success of individual projects but also supporting our long-term strategic outcomes.",
     name: "Carolyn Chapman",
@@ -31,7 +31,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 2,
     image: "/client (2).webp",
-    logo: "https://www.gogetta.com/home/testimonials/hrv.svg",
+    logo: "/external-images/img-b77df556.webp",
     quote:
       "Advertising is easy and efficient. Staff are always helpful, and quick to respond, and give great advice, and recommendation to tailor your advertising or social campaigns here in NZ and overseas. Good calibre of candidates would definitely recommend.",
     name: "Natalie James",
@@ -41,7 +41,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 3,
     image: "/client (3).webp",
-    logo: "https://www.gogetta.com/home/testimonials/chatham.svg",
+    logo: "/external-images/img-5d8075eb.webp",
     quote:
       "Chatham Islands Electricity Ltd engaged the team to help us fill 2 vacant positions. We had been trying the traditional way of advertising the positions for a long time with little success. The team put together a campaign that attracted a lot of interest and applications for us. Through this process, we have been able to fill both positions with people who will be a benefit to our company and the Chatham Islands community.",
     name: "Stuart Holdaway",
@@ -51,7 +51,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 4,
     image: "/client (4).webp",
-    logo: "https://www.gogetta.com/home/testimonials/ak.svg",
+    logo: "/external-images/img-194a3dea.webp",
     quote:
       "Working with the team was great. The radio and social media were very effective at getting our listings in front of a targeted audience and really got people talking. We received a large number of quality applications and were able to fill 3 roles as a result.",
     name: "Robby (Bobby) Elliot",
@@ -61,7 +61,7 @@ const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 5,
     image: "/client (5).webp",
-    logo: "https://www.gogetta.com/home/testimonials/gfs.svg",
+    logo: "/external-images/img-8eb724d7.webp",
     quote:
       "The experience was very positive and we were blown away by the number of quality applications we received from the campaign. We found this to be a very economical way of sourcing candidates and we'd definitely recommend working with them.",
     name: "Peter Leitch",

@@ -16,9 +16,9 @@ const companiesData: CompanyCardType[] = [
   {
     id: 1,
     image:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252Fe01eee5df70b49fc8fbe63a228966543&w=1920&q=75",
+      "/external-images/img-f4152475.webp",
     profileImage:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252Fb826ed6f063e4dec87e2caada88897c3&w=64&q=75",
+      "/external-images/img-e8cc1063.webp",
     companyLogo: "mdi:linkedin",
     name: "Quin Wills",
     company: "Founder of Ochre Bio",
@@ -26,9 +26,9 @@ const companiesData: CompanyCardType[] = [
   {
     id: 2,
     image:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252F9e7fef320cdb4371861527c95a9dbba9&w=1920&q=75",
+      "/external-images/img-8dcedbeb.webp",
     profileImage:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252Ffff8db9fcf404a5488e835759afff68a&w=64&q=75",
+      "/external-images/img-771d6d47.webp",
     companyLogo: "mdi:linkedin",
     name: "Ron Davis",
     company: "Founder of Joust",
@@ -36,9 +36,9 @@ const companiesData: CompanyCardType[] = [
   {
     id: 3,
     image:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252Ff29e15adf8844048a0398d773afae340&w=1920&q=75",
+      "/external-images/img-3a06b771.webp",
     profileImage:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252F2c4634601d304bbabe8c560a014026ed&w=64&q=75",
+      "/external-images/img-58eef3ee.webp",
     companyLogo: "mdi:linkedin",
     name: "Jon-David Hague",
     company: "Founder of Bountisphere",
@@ -46,9 +46,9 @@ const companiesData: CompanyCardType[] = [
   {
     id: 4,
     image:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252F18df76ee7f974a829cd2112496332c79&w=1920&q=75",
+      "/external-images/img-a7a19f5a.webp",
     profileImage:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252Faabac41c308d4d2bafe4bd40e6dba597&w=64&q=75",
+      "/external-images/img-7cf9a655.webp",
     companyLogo: "mdi:linkedin",
     name: "Kate Cotterill",
     company: "Founder of SheGrows Veg",
@@ -56,9 +56,9 @@ const companiesData: CompanyCardType[] = [
   {
     id: 5,
     image:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252F7d690bc323ad475db6bbc39709c1d204&w=1920&q=75",
+      "/external-images/img-61d33279.webp",
     profileImage:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252F0696deee491c43f8bb1a74b84dcc21ec&w=64&q=75",
+      "/external-images/img-6c47b844.webp",
     companyLogo: "mdi:linkedin",
     name: "Max Lewandowski",
     company: "Founder of Uhub",
@@ -66,9 +66,9 @@ const companiesData: CompanyCardType[] = [
   {
     id: 6,
     image:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252F3903fd7619ad4e60a112ea7d637d11cd&w=1920&q=75",
+      "/external-images/img-9269abc7.webp",
     profileImage:
-      "https://augment.org/_next/image?url=https%3A%2F%2Fcdn.builder.io%2Fapi%2Fv1%2Fimage%2Fassets%252F20c9f56ee0104a98bd873ddbe200463a%252Fa90319e3cb084524b7d39f518f5ee777&w=64&q=75",
+      "/external-images/img-349a8480.webp",
     companyLogo: "mdi:linkedin",
     name: "Mohit Patel",
     company: "Founder of TruText",

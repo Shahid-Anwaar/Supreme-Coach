@@ -20,7 +20,7 @@ const pressItems: PressItem[] = [
     logoText: "Forbes 30",
     title: "Ariel and Roy made it to Forbes 30 Under 30",
     image:
-      "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-56664d31.webp",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const pressItems: PressItem[] = [
     logoText: "Maddyness",
     title: "Supreme Coach is providing the missing pieces of the puzzle",
     image:
-      "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-0aeb00e7.webp",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const pressItems: PressItem[] = [
     logoText: "GULF TIMES",
     title: "Alternative MBA program to enhance skills of entrepreneurs",
     image:
-      "https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-a936d161.webp",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const pressItems: PressItem[] = [
     logoText: "Poets & Quants",
     title: "Supreme Coach Business School Provides A MasterClass-Like MBA",
     image:
-      "https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-28b116eb.webp",
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const pressItems: PressItem[] = [
     logoText: "euronews.",
     title: "How global media is covering the future of online business education",
     image:
-      "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-b13eb5e9.webp",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const pressItems: PressItem[] = [
     logoText: "Bloomberg",
     title: "Business education is shifting toward flexible digital learning",
     image:
-      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-c4952244.webp",
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const pressItems: PressItem[] = [
     logoText: "TechCrunch",
     title: "A startup-style approach to business school is gaining momentum",
     image:
-      "https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-34218493.webp",
   },
   {
     id: 8,
@@ -83,7 +83,7 @@ const pressItems: PressItem[] = [
     logoText: "Business Insider",
     title: "The new wave of online business education is gaining attention",
     image:
-      "https://images.pexels.com/photos/3182777/pexels-photo-3182777.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-df0857de.webp",
   },
   {
     id: 9,
@@ -92,7 +92,7 @@ const pressItems: PressItem[] = [
     logoText: "Fast Company",
     title: "A modern approach to business education for ambitious founders",
     image:
-      "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-f08a53bf.webp",
   },
   {
     id: 10,
@@ -101,7 +101,7 @@ const pressItems: PressItem[] = [
     logoText: "Yahoo Finance",
     title: "Business learning platforms are reshaping executive education",
     image:
-      "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "/external-images/img-864ad758.webp",
   },
 ];
 

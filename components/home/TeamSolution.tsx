@@ -364,7 +364,7 @@ export default function TeamSolutionsSection() {
                     <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
                         {/* Left content */}
                         <div>
-                            <h2 className="max-w-[1700px] section-title font-bold text-[#202124] ">
+                            <h2 className="max-w-[1700px] section-title font-[600] text-[#202124] ">
                                 {activeTeam.titleBlack.map((line) => (
                                     <span key={line} className="block">
                                         {line}
@@ -447,7 +447,7 @@ export default function TeamSolutionsSection() {
 
                             <button
                                 type="button"
-                                className="closed-btn mt-4 "
+                                className="outlined-btn mt-4 "
                             >
                                 Explore solution
                                 <Icon icon="lucide:arrow-right" className="text-[16px]" />

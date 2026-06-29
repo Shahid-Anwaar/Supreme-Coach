@@ -22,7 +22,7 @@ export default function FeaturedInSection() {
             </div>
           </div>
 
-          <p className="mx-auto mt-6 max-w-[860px] px-1 text-center font-serif text-[20px] font-[100] leading-[1.35] tracking-[-0.03em] text-white/90 sm:mt-8 sm:text-[26px] md:mt-10 md:text-[34px] lg:mt-8 lg:px-0 lg:text-[27px] lg:leading-[1.28]">
+          <p className="mx-auto mt-6 max-w-[860px] px-1 text-center text-[20px] font-[100] leading-[1.35] tracking-[-0.03em] text-white/90 sm:mt-8 sm:text-[26px] md:mt-10 md:text-[34px] lg:mt-8 lg:px-0 lg:text-[27px] lg:leading-[1.28]">
             &quot;Supreme Coach is building a curriculum tailor-made for entrepreneurs&quot;
           </p>
         </div>

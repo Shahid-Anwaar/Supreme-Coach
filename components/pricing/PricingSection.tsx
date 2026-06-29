@@ -144,14 +144,14 @@ export default function PricingSection() {
     return (
         <section className="section-spacing pb-5">
             <div className="section-container">
-                <div className="section-title-wrap">
-                    <h2 className="section-title stylish-family text-[36px] leading-[1.05] sm:text-[44px] md:text-[58px]">
+                <div className="">
+                    <h2 className="section-title max-w-5xl hero-title mx-auto text-center">
                         Project Investment Levels. One-Time. You Own Everything. Forever.
                     </h2>
-                    <p className="section-description text-black mx-auto mt-4 max-w-4xl text-sm leading-6 sm:mt-5 sm:text-base">
-                    Supreme Coach is not a subscription service. These are not monthly plan prices. When you work with Supreme Coach, you are commissioning a custom build project — and your investment is made once. After delivery, your coaching infrastructure belongs to you, runs on your servers, and costs nothing monthly. Ever.</p>
+                    <p className="section-description text-black text-center mx-auto mt-4">
+                        Supreme Coach is not a subscription service. These are not monthly plan prices. When you work with Supreme Coach, you are commissioning a custom build project — and your investment is made once. After delivery, your coaching infrastructure belongs to you, runs on your servers, and costs nothing monthly. Ever.</p>
 
-                    <div className="mt-6 w-full overflow-x-auto sm:mt-8">
+                    <div className="mt-6 w-full overflow-x-auto sm:mt-8 mx-auto text-center">
                         <div className="mx-auto inline-flex min-w-max rounded-full border border-black bg-white p-1">
                             {tabs.map((tab) => (
                                 <button
@@ -159,8 +159,8 @@ export default function PricingSection() {
                                     type="button"
                                     onClick={() => setActiveTab(tab.value)}
                                     className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2.5 text-[11px] font-bold uppercase transition sm:gap-2 sm:px-5 sm:py-3 sm:text-[13px] md:text-[14px] ${activeTab === tab.value
-                                            ? "bg-black text-white"
-                                            : "text-black hover:bg-gray-100"
+                                        ? "bg-black text-white"
+                                        : "text-black hover:bg-gray-100"
                                         }`}
                                 >
                                     <Icon icon={tab.icon} className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
@@ -170,7 +170,7 @@ export default function PricingSection() {
                         </div>
                     </div>
 
-                    <p className="paragraph-text mx-auto mt-5 max-w-[680px] px-2 text-[15px] leading-[1.45] sm:mt-7 sm:text-[16px] md:mt-8 md:max-w-[760px]">
+                    <p className="paragraph-text text-center mx-auto my-3 max-w-[680px] px-2 text-[15px] leading-[1.45] sm:mt-5 sm:text-[16px] md:mt-6 md:max-w-[760px]">
                         One-time plans built to launch, sell, and scale your online
                         business.
                     </p>
@@ -237,10 +237,10 @@ export default function PricingSection() {
                                 <button
                                     type="button"
                                     className={`mt-5 w-full sm:mt-6 ${plan.custom
-                                            ? "closed-btn"
-                                            : plan.popular
-                                                ? "contained-btn"
-                                                : "outlined-btn hover:bg-primary"
+                                        ? "closed-btn"
+                                        : plan.popular
+                                            ? "contained-btn"
+                                            : "outlined-btn hover:bg-primary"
                                         }`}
                                 >
                                     {plan.buttonText}

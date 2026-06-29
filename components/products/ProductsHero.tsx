@@ -13,7 +13,7 @@ export default function ProductsHeroSection() {
                         </p>
 
                         <h1 className="section-title hero-title mt-5 text-black lg:mt-6 lg:max-w-130">
-                            Eight Components. One Custom Build. Deployed on Your Servers. Owned by You.
+                         Deployed on Your Servers. Owned by You.
                         </h1>
 
                         <p className="section-description mx-auto mt-5 max-w-2xl text-black lg:mx-0 lg:mt-6 lg:max-w-130">

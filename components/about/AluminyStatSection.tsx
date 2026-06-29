@@ -41,7 +41,7 @@ export default function AlumniStatsSection() {
           <div className="mt-8 grid gap-3 sm:mt-10 sm:gap-4 md:mt-12 md:grid-cols-3">
             <div className="rounded-[7px] border border-primary-400/40 bg-white/[0.04] px-4 py-4 sm:px-5">
               <p className="text-center text-[20px] leading-[1.25] text-white sm:text-[22px] md:text-start md:leading-none md:text-[24px]">
-                <span className="font-serif font-[700] italic">10,000+</span>{" "}
+                <span className="font-[700] italic">10,000+</span>{" "}
                 <span className="font-sans text-[16px] font-[400] sm:text-[18px] md:text-[22px]">
                   students & alumni
                 </span>
@@ -50,7 +50,7 @@ export default function AlumniStatsSection() {
 
             <div className="rounded-[7px] border border-primary-400/40 bg-white/[0.04] px-4 py-4 sm:px-5">
               <p className="text-center text-[20px] leading-[1.25] text-white sm:text-[22px] md:text-start md:leading-none md:text-[24px]">
-                <span className="font-serif font-[700] italic">4.8/5</span>{" "}
+                <span className=" font-[700] italic">4.8/5</span>{" "}
                 <span className="font-sans text-[16px] font-[400] sm:text-[18px] md:text-[22px]">
                   rated by our students
                 </span>
@@ -59,7 +59,7 @@ export default function AlumniStatsSection() {
 
             <div className="rounded-[7px] border border-primary-400/40 bg-white/[0.04] px-4 py-4 sm:px-5">
               <p className="text-center text-[20px] leading-[1.25] text-white sm:text-[22px] md:text-start md:leading-none md:text-[24px]">
-                <span className="font-serif font-[700] italic">36</span>{" "}
+                <span className="font-[700] italic">36</span>{" "}
                 <span className="font-sans text-[16px] font-[400] sm:text-[18px] md:text-[22px]">
                   nationalities
                 </span>

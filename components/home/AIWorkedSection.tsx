@@ -50,7 +50,7 @@ function ClickUpStyleLogo() {
 export default function AiPoweredWorkSection() {
   return (
     <section className="bg-gray-100 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto section-container pt-0 max-w-[1360px]">
+      <div className="mx-auto section-container pt-3 max-w-[1360px]">
         <div className="relative overflow-hidden rounded-t-[28px] bg-[radial-gradient(circle_at_20%_85%,#087BFF_0%,rgba(8,123,255,0.92)_18%,rgba(117,59,255,0.95)_38%,rgba(238,36,161,0.96)_68%,#FF5A2D_100%)] px-5 pt-10 text-center text-white sm:px-8 sm:pt-12 lg:pt-12">
           {/* Grain / soft texture */}
           <div className="pointer-events-none absolute inset-0 opacity-[0.18] [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.45)_1px,transparent_0)] [background-size:4px_4px]" />

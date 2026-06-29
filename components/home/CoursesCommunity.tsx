@@ -14,11 +14,11 @@ export default function CoursesCommunity() {
     return (
         <div className="overflow-hidden bg-black text-white">
             <div className="section-container section-spacing text-center">
-                <h2 className="section-title mx-auto max-w-88 text-white sm:max-w-[32rem] lg:max-w-200">
+                <h2 className="section-title mx-auto text-white">
                     Better Client Relationships. Data Backed Results. Predictable Business Growth.
                 </h2>
 
-                <p className="section-description mx-auto max-w-[36rem] text-white/90 sm:max-w-[42rem] lg:max-w-200">
+                <p className="section-description mx-auto text-white/90">
                    Supreme Coach designs and builds the complete infrastructure behind your coaching practice  so you attract the right clients, deliver an exceptional experience, and grow a business that runs without you holding it together.
                 </p>
 

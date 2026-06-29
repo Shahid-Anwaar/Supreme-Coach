@@ -47,7 +47,7 @@ export default function BrainGrid({cards = BRAIN_CARDS, classes = "rounded-lg"}:
             >
                 {/* Text */}
                 <div className="relative z-20 px-6 py-7 sm:px-8 sm:py-8 lg:px-10">
-                    <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.22em] text-white/90">
+                    <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.22em] text-white/90">
                         {card.title}
                     </p>
 

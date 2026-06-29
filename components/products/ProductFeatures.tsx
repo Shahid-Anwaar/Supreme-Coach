@@ -34,11 +34,11 @@ export default function ProductFeaturesSection({
         <section className={`bg-[#efefef] ${wrapperClassName}`}>
             <div className="section-container py-10 sm:py-12 md:py-18 lg:py-24">
                 <div className="text-center">
-                    <h2 className="section-title mx-auto mb-5 max-w-88 text-black sm:mb-6 sm:max-w-xl">
+                    <h2 className="section-title mx-auto text-black">
                         {title}
                     </h2>
 
-                    <p className="section-description mx-auto max-w-220 text-black">
+                    <p className="section-description mx-auto text-black">
                         {description}
                     </p>
                 </div>

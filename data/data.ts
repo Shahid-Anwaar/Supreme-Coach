@@ -1210,7 +1210,7 @@ export const Firms_FEATURES2 = [
   },
 ];
 
-export const reviews: ReviewItem[] = [
+export const reviewsContent: ReviewItem[] = [
   {
     id: 1,
     quote:

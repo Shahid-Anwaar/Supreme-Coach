@@ -102,14 +102,14 @@ export default function ViewsSection(
         <section className="overflow-hidden bg-white px-4 pb-16 pt-8 sm:pb-18 sm:pt-10 md:px-6 md:pb-24 md:pt-12">
             <div className="mx-auto max-w-8xl text-center">
                 <div className="text-center">
-                    <h2 className="section-title mx-auto max-w-88 text-black sm:max-w-xl">
+                    <h2 className="section-title mx-auto max-w-3xl text-black">
                         {title}
                     </h2>
-                    <p className="section-description mx-auto max-w-152 text-black">
+                    <p className="section-description mx-auto max-w-4xl text-black">
                         {subtitle}
                     </p>
                 </div>
-  <div className="mx-auto mt-10 max-w-330 overflow-hidden rounded-[12px] bg-gray-100 sm:mt-12 sm:rounded-[15px]">
+                <div className="mx-auto mt-4 max-w-330 overflow-hidden rounded-[12px] bg-gray-100 sm:mt-5 sm:rounded-[15px] md:mt-6">
                     <div className=" flex flex-col px-2 py-2 lg:px-4 lg:py-4 md:mb-5 md:flex-row md:flex-wrap items-stretch justify-items-stretch">
                         {usedItems.map((view, index) => (
                             <div
@@ -151,7 +151,7 @@ export default function ViewsSection(
 
                 <Link
                     href="/demo"
-                    className="contained-btn mx-auto mt-6 inline-flex w-full max-w-[220px] items-center justify-center px-7 py-4 text-sm capitalize! sm:mt-7 sm:w-auto sm:max-w-none"
+                    className="contained-btn mx-auto mt-4 inline-flex w-full max-w-[220px] items-center justify-center px-7 py-4 text-sm capitalize! sm:mt-5 sm:w-auto sm:max-w-none md:mt-6"
                 >
                     Explore Demo
                 </Link>

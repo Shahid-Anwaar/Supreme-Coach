@@ -65,7 +65,7 @@ function InstructorCard({
       ) : null} */}
 
       <div className="absolute inset-x-0 bottom-0 px-3 pb-4 sm:px-4 sm:pb-5">
-        <h3 className="font-serif text-nowrap text-[29px] font-normal leading-[1.1] tracking-[-0.04em] text-white sm:text-[32px]">
+        <h3 className="text-nowrap text-[29px] font-normal leading-[1.1] tracking-[-0.04em] text-white sm:text-[32px]">
           <span className="text-wrap">{item.title}</span>
           <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">
             →
@@ -222,12 +222,12 @@ export default function FeaturesSection({ isShowBtn = true }: { isShowBtn?: bool
         <div className="px-4 text-center">
           <p className="section-label">FEATURES</p>
 
-          <h2 className="section-title mt-5 text-white sm:mt-6">
+          <h2 className="section-title mt-3 mx-auto text-white">
             Everything Your Coaching Business Needs. Nothing It Doesn't.
           </h2>
         </div>
 
-        <div className="relative mt-10 sm:mt-12 md:mt-14">
+        <div className="relative mt-4 sm:mt-5 md:mt-6">
           <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-6 bg-[linear-gradient(90deg,#000_0%,rgba(0,0,0,0)_100%)] sm:w-10 md:w-16" />
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-6 bg-[linear-gradient(270deg,#000_0%,rgba(0,0,0,0)_100%)] sm:w-10 md:w-16" />
 
@@ -266,7 +266,7 @@ export default function FeaturesSection({ isShowBtn = true }: { isShowBtn?: bool
           </div>
         </div>
 
-        {isShowBtn && <div className="mt-10 flex justify-center sm:mt-12 md:mt-14">
+        {isShowBtn && <div className="mt-4 flex justify-center sm:mt-5 md:mt-6">
           <Link
             href="/products"
             className="closed-btn mx-auto inline-flex w-full max-w-[220px] items-center justify-center px-8 sm:w-auto sm:max-w-none sm:px-14 lg:px-20"

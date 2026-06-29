@@ -10,7 +10,7 @@ import {
 } from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import { reviews, type ReviewItem } from "@/data/data";
+import { reviewsContent, type ReviewItem } from "@/data/data";
 
 const CENTER_W = 820;
 const SIDE_W = 320;
@@ -43,7 +43,7 @@ function ReviewCard({
     >
       <StarRow />
 
-      <p className="mt-6 max-w-180 font-thin font-[Georgia] text-[26px] leading-[1.1] tracking-[-0.03em] text-[#2f2f2f]">
+      <p className="mt-6 max-w-180 font-thin stylish-family text-[26px] leading-[1.1] tracking-[-0.03em] text-[#2f2f2f]">
         “{item.quote}”
       </p>
 
@@ -72,10 +72,10 @@ function ReviewCard({
 }
 
 export default function TestimonialsSliderSection() {
-  const total = reviews.length;
+  const total = reviewsContent.length;
 
   const loopedReviews = useMemo(() => {
-    return [...reviews, ...reviews, ...reviews];
+    return [...reviewsContent, ...reviewsContent, ...reviewsContent];
   }, []);
 
   const [activeIndex, setActiveIndex] = useState(total);

@@ -23,11 +23,11 @@ const routes = [
     priority: 0.8,
     changeFrequency: "monthly",
   },
-  {
-    path: "/explore-integration",
-    priority: 0.7,
-    changeFrequency: "monthly",
-  },
+  // {
+  //   path: "/explore-integration",
+  //   priority: 0.7,
+  //   changeFrequency: "monthly",
+  // },
   {
     path: "/for-coaches",
     priority: 0.9,
@@ -42,11 +42,6 @@ const routes = [
     path: "/products",
     priority: 0.9,
     changeFrequency: "weekly",
-  },
-  {
-    path: "/solutions",
-    priority: 0.9,
-    changeFrequency: "monthly",
   },
   {
     path: "/privacy-policy",
